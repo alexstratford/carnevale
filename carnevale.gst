@@ -121,6 +121,8 @@ In addition, while in line of sight to another (X) character they use that char
       <alias>Companion (House of Virtue)</alias>
       <alias>Companion (Trade)</alias>
       <alias>Companion (End of Days)</alias>
+      <alias>Companion (Dog)</alias>
+      <alias>Bodyguard (Hero, Henchman)</alias>
     </rule>
     <rule name="Concealment (X)" id="b7b0-685b-3bfb-81b2" hidden="false">
       <description>While in cover this character modifies its PROTECTION by (X).</description>
@@ -909,9 +911,6 @@ If that line does not pass through Impassable Terrain, any character touched by
           </profiles>
         </selectionEntry>
       </selectionEntries>
-      <categoryLinks>
-        <categoryLink targetId="1c8e-4a5e-59b3-37b6" id="b5be-327f-dec2-f078" primary="false" name="Discipline (Blood Rites)"/>
-      </categoryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Discipline Choice" id="9638-bcc3-0602-1d0a" hidden="false" collective="false">
       <constraints>
@@ -1082,14 +1081,8 @@ If that line does not pass through Impassable Terrain, any character touched by
         <entryLink import="true" name="Divinity" hidden="false" id="580b-37ab-a4c6-df88" type="selectionEntryGroup" targetId="fc4d-ad28-7eaf-8b29"/>
         <entryLink import="true" name="Cantrip of the Sun" hidden="false" id="ca39-cae6-d954-60a6" type="selectionEntry" targetId="c025-b413-d96f-429f"/>
       </entryLinks>
-      <categoryLinks>
-        <categoryLink name="Discipline (Divinity)" hidden="false" id="1a30-e798-01d7-c13a" targetId="9be3-8582-1a9a-6bc8" primary="false"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fateweaving" hidden="false" id="bdc8-1542-c48b-8e73">
-      <categoryLinks>
-        <categoryLink name="Discipline (Fateweaving)" hidden="false" id="6618-2beb-5e05-644b" targetId="0edf-0a9c-7e37-e3c3" primary="false"/>
-      </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Cantrip of the Stars" hidden="false" id="ffce-9d58-ccf5-8e08" type="selectionEntry" targetId="9b22-f011-6374-d0c5"/>
         <entryLink import="true" name="Fateweaving" hidden="false" id="e271-8966-8c23-a402" type="selectionEntryGroup" targetId="212f-e939-2613-8a45"/>
@@ -1100,18 +1093,12 @@ If that line does not pass through Impassable Terrain, any character touched by
         <entryLink import="true" name="Runes of Sovereignty" hidden="false" id="801d-27cf-476b-f1fe" type="selectionEntryGroup" targetId="29e9-f176-3278-77b3"/>
         <entryLink import="true" name="Cantrip of the Chariot" hidden="false" id="9a7a-989c-2b9b-f0ad" type="selectionEntry" targetId="70be-a32e-4e31-0e26"/>
       </entryLinks>
-      <categoryLinks>
-        <categoryLink name="Discipline (Runes of Sovereignty)" hidden="false" id="c2e4-ff79-212f-e178" targetId="162f-6e00-290f-b3be" primary="false"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Wild Magic" hidden="false" id="bf67-ab4e-94ae-f6bb">
       <entryLinks>
         <entryLink import="true" name="Wild Magic" hidden="false" id="8a50-092d-57e1-12e2" type="selectionEntryGroup" targetId="5c35-8d65-7630-eaaa"/>
         <entryLink import="true" name="Cantrip of Justice" hidden="false" id="4e3c-4f9d-5fab-9ace" type="selectionEntry" targetId="229c-36a7-89e6-5188"/>
       </entryLinks>
-      <categoryLinks>
-        <categoryLink name="Discipline (Wild Magic)" hidden="false" id="c237-0ea6-1a00-e1d5" targetId="6e89-8a6f-6b8d-6133" primary="false"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Unarmed" hidden="false" id="5091-2892-6bf4-3a53">
       <constraints>
@@ -1347,6 +1334,119 @@ Any enemy characters at least partially over the Blast marker receive a Stunned 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <comment>Seamstress extra spell</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bucket of Blood" hidden="false" id="f326-e23b-8e8a-c19c">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Blood Rites" id="5b40-ae0e-2d9e-a6b5" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Boiling Veins" hidden="false" id="5329-48f1-a9db-2a0d" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="195f-abe7-349f-f697" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Boiling Veins" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="73f4-9b71-c8bd-f7b7">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">3</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Total up every Ace rolled then minus (X). Pick one enemy character in line of sight within 8”. That character takes that much Damage with Penetration (-X). If this spell reduces a character to 0 Life Points, before removing the character, place the Blast template centred on the character. Any character (friendly or enemy) touched by the template loses Life Points equal to every Ace rolled.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bloodlust" hidden="false" id="fa01-c320-cef7-60ce" sortIndex="2">
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Bloodlust" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="26cd-2d29-3d6a-aeaf">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">6</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one character in line of sight within 6”. That character loses 1 Life Point and gains +(X) ATTACK until the end of its next turn.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8fe-c5a1-9c91-7fb8" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blood Drain" hidden="false" id="198a-ce9a-8b80-2c4f" sortIndex="3">
+              <profiles>
+                <profile name="Blood Drain" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="e6c7-c991-beca-1ce4">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one enemy character in line of sight within 6”. That character takes (X) Damage with Penetration -4. If the target loses at least 1 Life Point, any friendly character within 6” of the target replenishes (X) Life Points.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63e3-b591-9775-62e1" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Kraken&apos;s Breath" hidden="false" id="6382-6474-d1e0-6342" sortIndex="4">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5296-10ee-3e2a-88dd" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Kraken&apos;s Breath" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="1242-4612-5240-0296">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44"/>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71"/>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Place the narrow end of the teardrop shaped template in base contact with the casting character. Any character (friendly or enemy) at least partially touched by the template takes (X)+2 Damage with Penetration -(X).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mother Hydra’s Claws" hidden="false" id="19b5-a5b4-91f0-6b46" sortIndex="5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8b7-a989-1cf9-89f8" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Mother Hydra’s Claws" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="c575-0c61-c771-e7cf">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">2</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">6</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Total up every Ace rolled plus (X). You cause this many Life Points to be lost in total to (X) number of characters in line of sight within 6”, sharing the amount as equally as possible. If there aren’t enough characters to target, the casting character can be counted multiple times.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Abyssal Mist" hidden="false" id="1612-41ef-180f-5e49" sortIndex="6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51d9-cc63-0a91-4e18" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Abyssal Mist" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="c169-b1cb-d093-101e">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">2</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">8</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Place the Blast marker anywhere in line of sight within 12” on solid ground. Line of sight cannot be drawn through the Blast marker. At the end of the round, any characters at least partially over the Blast marker receive a Stunned counter. Then remove the Blast marker.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="208c-97bd-26d3-8f41" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
 </gameSystem>
