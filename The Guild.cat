@@ -2024,9 +2024,6 @@ One friendly character in base contact replenishes 1 Life Point or one enemy c
               </profiles>
             </selectionEntry>
           </selectionEntries>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="97c2-debc-8eae-f4ef" includeChildSelections="true"/>
-          </constraints>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Dog Keeper" hidden="false" id="29cf-8102-a7f4-da40">
           <costs>
