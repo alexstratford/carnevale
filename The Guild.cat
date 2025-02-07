@@ -596,6 +596,13 @@ One friendly character within 6&quot; gains Pickpocket until the end of the ga
 Pick one character within 3&quot; (friendly or enemy). That character loses 1 Life Point and this character replenishes 1 Will Point.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="add" value="{this} has too many Spell selections" field="error">
+              <conditions>
+                <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="entry" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Baba-Yaga" hidden="false" id="0fc1-944d-8345-37e5" sortIndex="1">
           <categoryLinks>
@@ -661,6 +668,13 @@ Pick one character within 3&quot; (friendly or enemy). That character loses 1 L
               </profiles>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="add" value="{this} has too many Spell selections" field="error">
+              <conditions>
+                <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="entry" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Black Lamp" hidden="false" id="827c-95d5-dce7-8269" sortIndex="2">
           <categoryLinks>
@@ -1384,6 +1398,13 @@ Until the end of the round, any friendly characters with the Henchman keyword 
               <description>When picking spells for this character, the additional spells granted by Expert Sorcerer may be from any discipline it has access to (though it does not gain an additional cantrip if it is different).</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="add" value="{this} has too many Spell selections" field="error">
+              <conditions>
+                <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="entry" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Shadow Assassin" hidden="false" id="8092-421f-7c10-b73d" sortIndex="14">
           <costs>
