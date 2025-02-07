@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="aba8-ae84-09d7-e426" name="The Guild" gameSystemId="sys-c646-d5a1-2146-1042" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="model" import="true" name="Witch" hidden="false" id="a3f7-8fc3-2b82-4c9a" collective="true">
+      <costs>
+        <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
+        <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="-2"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b435-a7a2-f31d-5a82" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1206-39bc-3cc9-6f9d" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Witch" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="1392-7b05-c46f-918c">
+          <characteristics>
+            <characteristic name="AP" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+            <characteristic name="LP" typeId="31ac-58c2-51eb-d503">11</characteristic>
+            <characteristic name="WP" typeId="327e-ffc1-2c57-b476">4</characteristic>
+            <characteristic name="CP" typeId="df00-2e98-5a44-876e">2</characteristic>
+            <characteristic name="Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Witch" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="46a3-20c4-ed97-faf5">
+          <characteristics>
+            <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+            <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+            <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+            <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+            <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Witch" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="3a17-cb86-f753-9fb7">
+          <characteristics>
+            <characteristic name="Weapon" typeId="f96e-ab52-897e-10f6">Unarmed</characteristic>
+            <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">-</characteristic>
+            <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+            <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+            <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">+1</characteristic>
+            <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="79d4-9b8b-7f29-cba5" id="b844-db4b-cf79-c734" primary="true" name="Hero"/>
+        <categoryLink targetId="3357-90ff-5d46-5cea" id="e6aa-910a-5391-ff1d" primary="false" name="Faction (The Guild)"/>
+        <categoryLink targetId="2a97-7fbe-7fcc-998c" id="61ba-a877-ec9c-8037" primary="false" name="House of Virtue"/>
+        <categoryLink targetId="1c8e-4a5e-59b3-37b6" id="3694-9cfa-b752-d18a" primary="false" name="Discipline (Blood Rites)"/>
+        <categoryLink targetId="162f-6e00-290f-b3be" id="9abb-9ff7-6ea4-58f9" primary="false" name="Discipline (Runes of Sovereignty)"/>
+        <categoryLink targetId="6e89-8a6f-6b8d-6133" id="2f36-6dbd-98b9-4d5f" primary="false" name="Discipline (Wild Magic)"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Mage (X)" id="9bf9-0cb2-3a6e-4ab8" hidden="false" type="rule" targetId="28b1-e637-af03-62a7">
+          <modifiers>
+            <modifier type="set" value="Mage (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Slippery" id="0219-6d72-ed67-166e" hidden="false" type="rule" targetId="990d-6a41-e726-6337"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Blood Rites" hidden="false" id="a203-091d-f17b-81a5" type="selectionEntryGroup" targetId="6223-82c9-717d-a353"/>
+      </entryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
