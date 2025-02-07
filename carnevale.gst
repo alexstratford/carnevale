@@ -919,7 +919,7 @@ If that line does not pass through Impassable Terrain, any character touched by
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6a8-3838-c95d-1264" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Runes of Sovereignty" hidden="true" id="aaf3-d1d0-1028-0bb5" type="selectionEntry" targetId="cec0-47dc-26b8-1935" sortIndex="4">
+        <entryLink import="true" name="Runes of Sovereignty" hidden="true" id="aaf3-d1d0-1028-0bb5" type="selectionEntry" targetId="38b1-8c64-d0e7-a1c8" sortIndex="4">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -928,7 +928,7 @@ If that line does not pass through Impassable Terrain, any character touched by
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Wild Magic" hidden="true" id="eb4c-1b53-1cc5-fc5f" type="selectionEntry" targetId="bf67-ab4e-94ae-f6bb" sortIndex="5">
+        <entryLink import="true" name="Wild Magic" hidden="true" id="eb4c-1b53-1cc5-fc5f" type="selectionEntry" targetId="08b7-8718-8848-4048" sortIndex="5">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -946,7 +946,7 @@ If that line does not pass through Impassable Terrain, any character touched by
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Fateweaving" hidden="true" id="8c28-a467-6180-d11e" type="selectionEntry" targetId="bdc8-1542-c48b-8e73" sortIndex="3">
+        <entryLink import="true" name="Fateweaving" hidden="true" id="8c28-a467-6180-d11e" type="selectionEntry" targetId="8dd2-5a96-70c9-fa81" sortIndex="3">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -955,7 +955,7 @@ If that line does not pass through Impassable Terrain, any character touched by
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Divinity" hidden="true" id="8a94-1728-fb43-8823" type="selectionEntry" targetId="ce71-b168-5733-d614" sortIndex="2">
+        <entryLink import="true" name="Divinity" hidden="true" id="8a94-1728-fb43-8823" type="selectionEntry" targetId="5db2-d6a8-ff5e-32c4" sortIndex="2">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -1045,25 +1045,25 @@ If that line does not pass through Impassable Terrain, any character touched by
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Magic Disciplines" hidden="false" id="6888-b282-fc48-2764">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Divinity" hidden="false" id="ce71-b168-5733-d614">
+        <selectionEntry type="upgrade" import="true" name="Divinity" hidden="false" id="5db2-d6a8-ff5e-32c4">
           <entryLinks>
             <entryLink import="true" name="Divinity" hidden="false" id="580b-37ab-a4c6-df88" type="selectionEntryGroup" targetId="fc4d-ad28-7eaf-8b29"/>
             <entryLink import="true" name="Cantrip of the Sun" hidden="false" id="ca39-cae6-d954-60a6" type="selectionEntry" targetId="c025-b413-d96f-429f"/>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Fateweaving" hidden="false" id="bdc8-1542-c48b-8e73">
+        <selectionEntry type="upgrade" import="true" name="Fateweaving" hidden="false" id="8dd2-5a96-70c9-fa81">
           <entryLinks>
             <entryLink import="true" name="Cantrip of the Stars" hidden="false" id="ffce-9d58-ccf5-8e08" type="selectionEntry" targetId="9b22-f011-6374-d0c5"/>
             <entryLink import="true" name="Fateweaving" hidden="false" id="e271-8966-8c23-a402" type="selectionEntryGroup" targetId="212f-e939-2613-8a45"/>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Runes of Sovereignty" hidden="false" id="cec0-47dc-26b8-1935">
+        <selectionEntry type="upgrade" import="true" name="Runes of Sovereignty" hidden="false" id="38b1-8c64-d0e7-a1c8">
           <entryLinks>
             <entryLink import="true" name="Runes of Sovereignty" hidden="false" id="801d-27cf-476b-f1fe" type="selectionEntryGroup" targetId="29e9-f176-3278-77b3"/>
             <entryLink import="true" name="Cantrip of the Chariot" hidden="false" id="9a7a-989c-2b9b-f0ad" type="selectionEntry" targetId="70be-a32e-4e31-0e26"/>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Wild Magic" hidden="false" id="bf67-ab4e-94ae-f6bb">
+        <selectionEntry type="upgrade" import="true" name="Wild Magic" hidden="false" id="08b7-8718-8848-4048">
           <entryLinks>
             <entryLink import="true" name="Wild Magic" hidden="false" id="8a50-092d-57e1-12e2" type="selectionEntryGroup" targetId="5c35-8d65-7630-eaaa"/>
             <entryLink import="true" name="Cantrip of Justice" hidden="false" id="4e3c-4f9d-5fab-9ace" type="selectionEntry" targetId="229c-36a7-89e6-5188"/>
