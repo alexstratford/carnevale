@@ -4,7 +4,7 @@
     <selectionEntry type="model" import="true" name="Witch" hidden="false" id="a3f7-8fc3-2b82-4c9a" collective="true">
       <costs>
         <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
-        <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="-2"/>
+        <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="2"/>
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b435-a7a2-f31d-5a82" includeChildSelections="false"/>
@@ -13,11 +13,11 @@
       <profiles>
         <profile name="Witch" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="1392-7b05-c46f-918c">
           <characteristics>
-            <characteristic name="AP" typeId="34e2-c88d-a598-4ae8">2</characteristic>
-            <characteristic name="LP" typeId="31ac-58c2-51eb-d503">11</characteristic>
-            <characteristic name="WP" typeId="327e-ffc1-2c57-b476">4</characteristic>
-            <characteristic name="CP" typeId="df00-2e98-5a44-876e">2</characteristic>
-            <characteristic name="Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+            <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+            <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+            <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+            <characteristic name="Command" typeId="df00-2e98-5a44-876e">2</characteristic>
+            <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
           </characteristics>
         </profile>
         <profile name="Witch" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="46a3-20c4-ed97-faf5">
@@ -27,12 +27,12 @@
             <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
             <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
             <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+            <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Mage (2), Slippery</characteristic>
           </characteristics>
         </profile>
         <profile name="Unarmed" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="3a17-cb86-f753-9fb7">
           <characteristics>
-            <characteristic name="Weapon" typeId="f96e-ab52-897e-10f6">Unarmed</characteristic>
-            <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">-</characteristic>
+            <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
             <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
             <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
             <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">+1</characteristic>
@@ -48,35 +48,90 @@
         <categoryLink targetId="162f-6e00-290f-b3be" id="9abb-9ff7-6ea4-58f9" primary="false" name="Discipline (Runes of Sovereignty)"/>
         <categoryLink targetId="6e89-8a6f-6b8d-6133" id="2f36-6dbd-98b9-4d5f" primary="false" name="Discipline (Wild Magic)"/>
       </categoryLinks>
-      <infoLinks>
-        <infoLink name="Mage (X)" id="9bf9-0cb2-3a6e-4ab8" hidden="false" type="rule" targetId="28b1-e637-af03-62a7">
-          <modifiers>
-            <modifier type="set" value="Mage (2)" field="name"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Slippery" id="0219-6d72-ed67-166e" hidden="false" type="rule" targetId="990d-6a41-e726-6337"/>
-      </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Witch Discipline Choice" hidden="false" id="4baa-142c-fd9f-7047" type="selectionEntryGroup" targetId="dc38-628c-9592-e8cc"/>
+        <entryLink import="true" name="Witch Discipline Choice" hidden="false" id="4baa-142c-fd9f-7047" type="selectionEntryGroup" targetId="dc38-628c-9592-e8cc" collective="false"/>
       </entryLinks>
       <rules>
-        <rule name="Blood Rights - 1AP" id="a4bc-46c2-d065-9973" hidden="false">
-          <description>Pick one character within 3&quot; (friendly or enemy). That character loses 1 Life Point and this character replenishes 1 Will Point.</description>
+        <rule name="Blood Rights" id="a4bc-46c2-d065-9973" hidden="false">
+          <description>**- 1AP**
+
+
+Pick one character within 3&quot; (friendly or enemy). That character loses 1 Life Point and this character replenishes 1 Will Point.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Capodecina" hidden="false" id="fcc5-51bb-bf7e-a5ab" collective="true">
+      <costs>
+        <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="20"/>
+        <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="955d-3f8e-a1e3-88b9" id="2071-08f0-1a33-977d" primary="true" name="Leader"/>
+        <categoryLink targetId="3357-90ff-5d46-5cea" id="c144-b94a-6f3a-065e" primary="false" name="Faction (The Guild)"/>
+        <categoryLink targetId="16a3-bc7b-caa8-b109" id="88f6-7be3-a808-5d34" primary="false" name="Trade"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="971c-5c1f-025e-38ed" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4dfd-4a44-3565-997d" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Capodecina" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="7cf6-d561-ce0f-abb3">
+          <characteristics>
+            <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+            <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+            <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+            <characteristic name="Command" typeId="df00-2e98-5a44-876e">4</characteristic>
+            <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Capodecina" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="0b13-a7ea-2914-9806">
+          <characteristics>
+            <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+            <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">6</characteristic>
+            <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+            <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+            <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+            <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Aerial Attack, Expert Offence (2), Infiltration</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Twin Blades" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="27de-e787-30e6-2c26">
+          <characteristics>
+            <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+            <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+            <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+            <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+            <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Fight For The Guild! " id="fd09-00b0-6a6e-1ff8" hidden="false">
+          <description>*PULSE Command Ability*
+
+
+One friendly character in line of sight with the Trade keyword replenishes 2 Will Points instead of 1 from Companion until the end of the game.</description>
+        </rule>
+        <rule name="Rise Up" id="4d9a-e0ff-2463-58ce" hidden="false">
+          <description>All friendly characters with the *Trade* keyword gain Companion (Trade) as long as this character is on the board.</description>
         </rule>
       </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Witch Discipline Choice" id="dc38-628c-9592-e8cc" hidden="false">
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5ea-4d7e-611f-2560" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ab4-ce36-70da-aaaf" includeChildSelections="false"/>
-      </constraints>
+    <selectionEntryGroup name="Witch Discipline Choice" id="dc38-628c-9592-e8cc" hidden="false" collective="true">
       <entryLinks>
-        <entryLink import="true" name="Blood Rites" hidden="false" id="f86d-afcb-fc73-b78b" type="selectionEntryGroup" targetId="6223-82c9-717d-a353"/>
-        <entryLink import="true" name="Runes of Sovereignty" hidden="false" id="874f-f4bd-a250-607d" type="selectionEntryGroup" targetId="29e9-f176-3278-77b3"/>
-        <entryLink import="true" name="Wild Magic" hidden="false" id="4c56-7af2-1d5b-3bda" type="selectionEntryGroup" targetId="5c35-8d65-7630-eaaa"/>
+        <entryLink import="true" name="Blood Rites" hidden="false" id="2b48-6c18-c3ae-bf74" type="selectionEntry" targetId="cbe0-f6c0-97b0-7253"/>
+        <entryLink import="true" name="Runes of Sovereignty" hidden="false" id="b013-e0e3-16fb-16ca" type="selectionEntry" targetId="cec0-47dc-26b8-1935"/>
+        <entryLink import="true" name="Wild Magic" hidden="false" id="3908-701d-c2fc-c179" type="selectionEntry" targetId="bf67-ab4e-94ae-f6bb"/>
       </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d7aa-efe9-da73-152a" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f518-8b90-f15f-a0a4" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <entryLinks>
+    <entryLink import="true" name="Witch" hidden="false" id="3c4c-599b-1584-41e3" targetId="a3f7-8fc3-2b82-4c9a" type="selectionEntry"/>
+    <entryLink import="true" name="Capodecina" hidden="false" id="7a68-1cf2-8e91-93bc" targetId="fcc5-51bb-bf7e-a5ab" type="selectionEntry"/>
+  </entryLinks>
 </catalogue>

@@ -12,14 +12,15 @@
     <categoryEntry name="Discipline (Fateweaving)" id="0edf-0a9c-7e37-e3c3" hidden="false"/>
     <categoryEntry name="Discipline (Runes of Sovereignty)" id="162f-6e00-290f-b3be" hidden="false"/>
     <categoryEntry name="Discipline (Wild Magic)" id="6e89-8a6f-6b8d-6133" hidden="false"/>
+    <categoryEntry name="Trade" id="16a3-bc7b-caa8-b109" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Gang" hidden="false" id="aeb3-6915-af1f-2a80">
       <categoryLinks>
         <categoryLink name="Leader" hidden="false" id="5c90-5eb9-1242-6f1b" targetId="955d-3f8e-a1e3-88b9">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8627-c3a2-4976-f273-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8627-c3a2-4976-f273-max" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cea0-f290-0824-cffb" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Hero" hidden="false" id="5f2a-adb2-6c7f-4f5e" targetId="79d4-9b8b-7f29-cba5">
@@ -37,18 +38,19 @@
         <categoryLink name="Henchman" hidden="false" id="6e01-147a-211b-9ef2" targetId="cf01-1b3c-22d7-8d1b"/>
       </categoryLinks>
       <constraints>
-        <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="db7b-4a5d-e29c-8207" includeChildSelections="true"/>
+        <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="d83e-0d7f-ea3b-244e-min" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="d83e-0d7f-ea3b-244e-max" includeChildSelections="true"/>
       </constraints>
     </forceEntry>
   </forceEntries>
   <profileTypes>
     <profileType name="Attributes" id="bae0-c790-751d-d51b" hidden="false" sortIndex="1">
       <characteristicTypes>
-        <characteristicType name="AP" id="34e2-c88d-a598-4ae8"/>
-        <characteristicType name="LP" id="31ac-58c2-51eb-d503"/>
-        <characteristicType name="WP" id="327e-ffc1-2c57-b476"/>
-        <characteristicType name="CP" id="df00-2e98-5a44-876e"/>
-        <characteristicType name="Size" id="f3d7-629c-2937-da2d"/>
+        <characteristicType name="Actions" id="34e2-c88d-a598-4ae8"/>
+        <characteristicType name="Life" id="31ac-58c2-51eb-d503"/>
+        <characteristicType name="Will" id="327e-ffc1-2c57-b476"/>
+        <characteristicType name="Command" id="df00-2e98-5a44-876e"/>
+        <characteristicType name="Base Size" id="f3d7-629c-2937-da2d"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Statistics" id="6ba8-3e9b-e9ec-4fc1" hidden="false" sortIndex="2">
@@ -58,6 +60,7 @@
         <characteristicType name="ATTACK" id="772d-9054-3e95-2611"/>
         <characteristicType name="PROT." id="b01b-8d00-8a94-dfe8"/>
         <characteristicType name="MIND" id="72c9-ec3f-8c3e-6edf"/>
+        <characteristicType name="Abilities" id="332e-5255-7c9b-115f"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Weapon" id="8753-fb9c-9080-5b6d" hidden="false" sortIndex="4">
@@ -69,12 +72,7 @@
         <characteristicType name="Abilities" id="2afb-1ec3-9d1e-cf96"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Keywords" id="a1d7-3245-6d35-f0bd" hidden="false" sortIndex="3">
-      <characteristicTypes>
-        <characteristicType name="Keywords" id="0e87-b9b3-861f-2103"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType name="Spell" id="cf20-c8a5-e631-dd24" hidden="false" sortIndex="5">
+    <profileType name="Spells" id="cf20-c8a5-e631-dd24" hidden="false" sortIndex="5">
       <characteristicTypes>
         <characteristicType name="Cost" id="3fdf-3bab-154b-7d44"/>
         <characteristicType name="Difficulty" id="d6be-25b1-beed-0e71"/>
@@ -85,6 +83,11 @@
   <sharedRules>
     <rule name="Acrobatic (X)" id="123e-7fbd-e178-92ba" hidden="false">
       <description>This character may re-roll up to (X) dice when making a DEXTERITY roll as part of any Move/Climb or Jump action.</description>
+      <alias>Acrobatic (1)</alias>
+      <alias>Acrobatic (2)</alias>
+      <alias>Acrobatic (3)</alias>
+      <alias>Acrobatic (4)</alias>
+      <alias>Acrobatic (5)</alias>
     </rule>
     <rule name="Aerial Attack" id="ecd8-7fb6-e9e0-009c" hidden="false">
       <description>This character does not lose Life Points from falling, provided it makes a charge from above.</description>
@@ -106,6 +109,7 @@ Additionally, if at least 1 character with the Boat Crew ability is currently o
 
 
 If an enemy character charges (X), this character may immediately make an out of sequence Run/Climb action provided it is currently out of base contact with any enemy and it charges that active enemy. This action causes an Attack of Opportunity and takes place before the opponent’s Attack of Opportunity.</description>
+      <alias>Bodyguard</alias>
     </rule>
     <rule name="Bulky" id="00f3-82d1-348d-5868" hidden="false">
       <description>This character does not gain any benefit from being in cover, and cannot make Hide actions.</description>
@@ -118,6 +122,7 @@ If this character can draw line of sight to another (X) character at the start 
 
 
 In addition, while in line of sight to another (X) character they use that character’s MIND value instead of their own (even if it is lower). If more than one (X) character is in line of sight, use the highest MIND value.</description>
+      <alias>Companion</alias>
     </rule>
     <rule name="Concealment (X)" id="b7b0-685b-3bfb-81b2" hidden="false">
       <description>While in cover this character modifies its PROTECTION by (X).</description>
@@ -136,30 +141,71 @@ If the opposing character has Slippery however, then both players roll to disen
     </rule>
     <rule name="Expert Marksman (X)" id="11a2-ffec-01e3-44e1" hidden="false">
       <description>This character may re-roll up to (X) dice when making a Combat action while not in base contact with the target.</description>
+      <alias>Expert Marksman (1)</alias>
+      <alias>Expert Marksman (2)</alias>
+      <alias>Expert Marksman (3)</alias>
+      <alias>Expert Marksman (4)</alias>
+      <alias>Expert Marksman (5)</alias>
     </rule>
     <rule name="Expert Offence (X)" id="b90b-607b-ec2c-37e4" hidden="false">
       <description>This character may re-roll up to (X) dice when making a Combat action while in base contact with the target.</description>
+      <alias>Expert Offence (1)</alias>
+      <alias>Expert Offence (2)</alias>
+      <alias>Expert Offence (3)</alias>
+      <alias>Expert Offence (4)</alias>
+      <alias>Expert Offence (5)</alias>
     </rule>
     <rule name="Expert Protection (X)" id="fe49-7ad9-0c78-5139" hidden="false">
       <description>This character may re-roll up to (X) dice when making a Protection Roll.</description>
+      <alias>Expert Protection (1)</alias>
+      <alias>Expert Protection (2)</alias>
+      <alias>Expert Protection (3)</alias>
+      <alias>Expert Protection (4)</alias>
+      <alias>Expert Protection (5)</alias>
     </rule>
     <rule name="Expert Sorcerer (X)" id="0910-d921-8ebe-ff97" hidden="false">
       <description>This character may re-roll up to (X) dice when making a Cast Spell action or Dispelling a magic spell.
 
 
 In addition, this character knows (X) additional magic spells.</description>
+      <alias>Expert Sorcerer (1)</alias>
+      <alias>Expert Sorcerer (2)</alias>
+      <alias>Expert Sorcerer (3)</alias>
+      <alias>Expert Sorcerer (4)</alias>
+      <alias>Expert Sorcerer (5)</alias>
     </rule>
     <rule name="Fast Swimmer (X)" id="d31f-bc54-8b1f-2fad" hidden="false">
       <description>If this character starts a Run/Climb action in water, it adds (X) number of inches to its MOVE for that action (even if it leaves water during the action).</description>
+      <alias>Fast Swimmer (1)</alias>
+      <alias>Fast Swimmer (2)</alias>
+      <alias>Fast Swimmer (3)</alias>
+      <alias>Fast Swimmer (4)</alias>
+      <alias>Fast Swimmer (5)</alias>
     </rule>
     <rule name="Fear (X)" id="c73f-1fed-a6d4-ecd8" hidden="false">
       <description>When this character makes a Combat action, the target must first make a Basic MIND Roll, with their MIND value modified by (X), to a minimum of 1.
 
 
 If they roll at least 1 Ace (on a 7+ as normal), there is no effect. But if they roll no Aces, this character may re-roll any failed dice rolls for the Combat action.</description>
+      <alias>Fear (-5)</alias>
+      <alias>Fear (-4)</alias>
+      <alias>Fear (-3)</alias>
+      <alias>Fear (-2)</alias>
+      <alias>Fear (-1)</alias>
+      <alias>Fear (0)</alias>
+      <alias>Fear (1)</alias>
+      <alias>Fear (2)</alias>
+      <alias>Fear (3)</alias>
+      <alias>Fear (4)</alias>
+      <alias>Fear (5)</alias>
     </rule>
     <rule name="First Strike (X)" id="508c-edd4-a322-8ad5" hidden="false">
       <description>This character modifies its ATTACK by (X) when making an Attack of Opportunity from charging.</description>
+      <alias>First Strike (1)</alias>
+      <alias>First Strike (2)</alias>
+      <alias>First Strike (3)</alias>
+      <alias>First Strike (4)</alias>
+      <alias>First Strike (5)</alias>
     </rule>
     <rule name="Flight" id="c890-c0bc-e451-9d6a" hidden="false">
       <description>When this character makes a Run/Climb action, it may instead Fly. Measure from the character to any other point within its MOVE (whether horizontally, vertically or diagonally, and this doesn’t have to be on Solid Ground) and move it without making a DEXTERITY roll. The character cannot make any actions while “mid-air” other than further Fly actions, and if it ends its turn “mid-air” it will fall from that spot. 
@@ -184,6 +230,12 @@ In addition, this character cannot carry Mobile Objectives.</description>
     </rule>
     <rule name="Mage (X)" id="28b1-e637-af03-62a7" hidden="false">
       <description>This character is a Mage and knows (X) number of magic spells. See the Magic section for more details. A character with Mage (0) still knows a single Cantrip.</description>
+      <alias>Mage (0)</alias>
+      <alias>Mage (1)</alias>
+      <alias>Mage (2)</alias>
+      <alias>Mage (3)</alias>
+      <alias>Mage (4)</alias>
+      <alias>Mage (5)</alias>
     </rule>
     <rule name="Mindless" id="b504-ef19-0411-4707" hidden="false">
       <description>This character may interact with Objectives as normal (such as carrying, revealing, claiming, or destroying), but is ignored when scoring Victory Points for them at the end of the game. 
@@ -196,6 +248,11 @@ It can still score Victory Points from other win conditions (such as killing e
 
 
 Note that some attackers may choose to re-roll their dice too. In this situation, don’t forget that you may never re-roll a dice more than once.</description>
+      <alias>Parry (1)</alias>
+      <alias>Parry (2)</alias>
+      <alias>Parry (3)</alias>
+      <alias>Parry (4)</alias>
+      <alias>Parry (5)</alias>
     </rule>
     <rule name="Pickpocket" id="7218-8a43-2093-d8d7" hidden="false">
       <description>If this character successfully disengages, its opponent loses 1 Will Point and this character automatically takes any Mobile objective they’re carrying.
@@ -213,9 +270,19 @@ If the opposing character has Engage however, then both players roll to disenga
     </rule>
     <rule name="Universal Shielding (X)" id="3001-4444-eae1-c502" hidden="false">
       <description>This character always has a minimum PROTECTION of (X), after all modifiers. This special rule can stack higher than 3, but cannot take a character’s PROTECTION value above its starting number.</description>
+      <alias>Universal Shielding (1)</alias>
+      <alias>Universal Shielding (2)</alias>
+      <alias>Universal Shielding (3)</alias>
+      <alias>Universal Shielding (4)</alias>
+      <alias>Universal Shielding (5)</alias>
     </rule>
     <rule name="Vampiric Attack (X)" id="ff68-ca7c-ccd2-65b9" hidden="false">
       <description>If this character makes a Combat action while in base contact with its target that causes the target to lose at least 1 Life Point, it replenishes (X) of its own Life Points.</description>
+      <alias>Vampiric Attack (1)</alias>
+      <alias>Vampiric Attack (2)</alias>
+      <alias>Vampiric Attack (3)</alias>
+      <alias>Vampiric Attack (4)</alias>
+      <alias>Vampiric Attack (5)</alias>
     </rule>
     <rule name="Water Creature" id="0512-a0a2-d0cb-1e0a" hidden="false">
       <description>This character moves its full MOVE in water, may move up to 8” as part of a Dive action, and cannot be Drowned.
@@ -249,6 +316,11 @@ A character in base contact with an enemy may only use this weapon (X) number o
 
 
 *For example, a weapon with Reload (2) is used once in a character’s turn. They are then charged in the same round. The character may then only use that weapon one more time until they start a turn out of base contact.*</description>
+      <alias>Reload (1)</alias>
+      <alias>Reload (2)</alias>
+      <alias>Reload (3)</alias>
+      <alias>Reload (4)</alias>
+      <alias>Reload (5)</alias>
     </rule>
     <rule name="Poisoned" id="c49a-9058-fd44-f521" hidden="false">
       <description>If a character loses at least 1 Life Point from this weapon, that character must roll 1 dice. On a 7+ they shrug off the poison. 
@@ -281,158 +353,85 @@ A character with a Stunned counter reduces its MOVE, ATTACK, DEXTERITY, and MI
   </sharedRules>
   <costTypes>
     <costType name="Ducats" id="b5b3-aa8b-4d9c-5673" defaultCostLimit="-1"/>
-    <costType name="Spell slots" id="ef4a-6847-91c7-b1f8" defaultCostLimit="0" hidden="true"/>
+    <costType name="Spell slots" id="ef4a-6847-91c7-b1f8" defaultCostLimit="0" hidden="false"/>
   </costTypes>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Blood Rites" id="6223-82c9-717d-a353" hidden="false">
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="584b-417f-1a76-318f" includeChildSelections="false"/>
-      </constraints>
+    <selectionEntryGroup name="Divinity" id="fc4d-ad28-7eaf-8b29" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Boiling Veins" hidden="false" id="af1e-7ead-d8b6-9c28" sortIndex="2">
+        <selectionEntry type="upgrade" import="true" name="Protection of the Eye" hidden="false" id="e510-46be-1062-65a2">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7e5-d2fb-5951-2f89" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7713-273a-3ca8-7a55" includeChildSelections="false"/>
           </constraints>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="-1"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Fateweaving" id="212f-e939-2613-8a45" hidden="false"/>
+    <selectionEntryGroup name="Runes of Sovereignty" id="29e9-f176-3278-77b3" hidden="false"/>
+    <selectionEntryGroup name="Wild Magic" id="5c35-8d65-7630-eaaa" hidden="false"/>
+    <selectionEntryGroup name="Blood Rites" id="8a67-4210-43e4-12c7" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Boiling Veins" hidden="false" id="59c1-e7a5-b32d-94f7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32c2-d6d6-79e0-3630" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="-1"/>
+          </costs>
           <profiles>
-            <profile name="Boiling Veins" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="d48e-4293-05b1-b1d5">
+            <profile name="Boiling Veins" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="5eb1-8e22-92a5-df2c">
               <characteristics>
                 <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
                 <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">3</characteristic>
-                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Total up every Ace rolled then minus (X). Pick one enemy character in line of sight within 8”. That character takes that much Damage with Penetration (-X). 
+                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Total up every Ace rolled then minus (X). Pick one enemy character in line of sight within 8”.
 
-If this spell reduces a character to 0 Life Points, before removing the character, place the Blast template centred on the character. Any character (friendly or enemy) touched by the template loses Life Points equal to every Ace rolled.</characteristic>
+
+That character takes that much Damage with Penetration (-X). If this spell reduces a character to 0 Life Points, before removing the character, place the Blast template centred on the character. Any character (friendly or enemy) touched by the template loses Life Points equal to every Ace rolled.</characteristic>
               </characteristics>
             </profile>
           </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Bloodlust" hidden="false" id="8c0e-d338-a281-dfe5">
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="1"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="-1"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Bloodlust" hidden="false" id="efd6-ad41-9e2f-809f" sortIndex="3">
           <profiles>
-            <profile name="Bloodlust" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="e15c-aca8-9fe6-0bee">
+            <profile name="Bloodlust" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="e567-1f81-96c3-12bf">
               <characteristics>
                 <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
                 <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">6</characteristic>
                 <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one character in line of sight within 6”.
+
 
 That character loses 1 Life Point and gains +(X) ATTACK until the end of its next turn.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6f6-80af-7ff4-4f81" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="1"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Blood Drain" hidden="false" id="86ed-ecd6-0c7a-59e9" sortIndex="4">
-          <profiles>
-            <profile name="Blood Drain" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="0327-9285-8167-efe5">
-              <characteristics>
-                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
-                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
-                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one enemy character in line of sight within 6”.
-
-That character takes (X) Damage with Penetration -4. If the target loses at least 1 Life Point, any friendly character within 6” of the target replenishes (X) Life Points.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94e4-642f-962f-0078" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="1"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Kraken&apos;s Breath" hidden="false" id="860f-723c-e05a-de0a" sortIndex="5">
-          <profiles>
-            <profile name="Kraken&apos;s Breath" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="4178-34c1-6c2f-23d4">
-              <characteristics>
-                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">2</characteristic>
-                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">6</characteristic>
-                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Place the narrow end of the teardrop shaped template in base contact with the casting character.
-
-Any character (friendly or enemy) at least partially touched by the template takes (X)+2 Damage with Penetration -(X).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="717b-6ea7-0c98-ca47" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="1"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Mother Hydra&apos;s Claws" hidden="false" id="94dd-27f8-238f-1e05" sortIndex="6">
-          <profiles>
-            <profile name="Mother Hydra&apos;s Claws" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="42bb-48fd-87ae-9467">
-              <characteristics>
-                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">2</characteristic>
-                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">6</characteristic>
-                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Total up every Ace rolled plus (X). You cause this many Life Points to be lost in total to (X) number of characters in line of sight within 6”, sharing the amount as equally as possible. If there aren’t enough characters to target, the casting character can be counted multiple times.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d478-df39-4a33-bfc6" includeChildSelections="false"/>
-          </constraints>
-          <costs>
-            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="1"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Abyssal Mist" hidden="false" id="1258-e667-c2b2-0bba" sortIndex="7">
-          <profiles>
-            <profile name="Abyssal Mist" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="3981-8e8d-76f4-0636">
-              <characteristics>
-                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">2</characteristic>
-                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">8</characteristic>
-                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Place the Blast marker anywhere in line of sight within 12” on solid ground. 
-
-Line of sight cannot be drawn through the Blast marker. At the end of the round, any characters at least partially over the Blast marker receive a Stunned counter. Then remove the Blast marker.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="1"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36fe-6d39-443e-7d41" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Cantrip of the Devil" hidden="false" id="d799-b318-771b-6119" sortIndex="1">
-          <profiles>
-            <profile name="Cantrip of the Devil" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="9cd2-f607-6e5a-c16c">
-              <characteristics>
-                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
-                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
-                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one enemy character in line of sight within 3”. Choose for that character to either lose 1 Life Point, or take 2 Damage with Penetration -2.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f52-c8f0-a3b1-ade7" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fef5-ac21-f7f3-239c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0229-de8c-9048-22e4" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Divinity" id="fc4d-ad28-7eaf-8b29" hidden="false">
+  </sharedSelectionEntryGroups>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Divinity" hidden="false" id="ce71-b168-5733-d614">
+      <entryLinks>
+        <entryLink import="true" name="Divinity" hidden="false" id="580b-37ab-a4c6-df88" type="selectionEntryGroup" targetId="fc4d-ad28-7eaf-8b29"/>
+      </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Cantrip of the Sun" hidden="false" id="c025-b413-d96f-429f">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cbe-9602-7c6f-76e0" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="528d-ac9e-c04d-2a1c" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8240-7699-68a6-5aa3-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8240-7699-68a6-5aa3-max" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Cantrip of the Sun" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="8eb6-df67-e22f-0ab9">
+            <profile name="Cantrip of the Sun" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="8eb6-df67-e22f-0ab9">
               <characteristics>
                 <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
                 <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
@@ -445,41 +444,47 @@ That character replenishes 1 Life Point and 1 Will Point.</characteristic>
           </profiles>
         </selectionEntry>
       </selectionEntries>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dadb-d020-4dbd-8727" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Fateweaving" id="212f-e939-2613-8a45" hidden="false">
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2801-51f6-bc52-ccfa" includeChildSelections="false"/>
-      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="9be3-8582-1a9a-6bc8" id="1a30-e798-01d7-c13a" primary="false" name="Discipline (Divinity)"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Blood Rites" hidden="false" id="cbe0-f6c0-97b0-7253">
+      <entryLinks>
+        <entryLink import="true" name="Blood Rites" hidden="false" id="d753-492a-3ffe-414a" type="selectionEntryGroup" targetId="8a67-4210-43e4-12c7"/>
+      </entryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Cantrip of the Stars" hidden="false" id="9b22-f011-6374-d0c5">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af29-acee-8840-27a0" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18ae-b3fe-97c7-4718" includeChildSelections="false"/>
-          </constraints>
+        <selectionEntry type="upgrade" import="true" name="Cantrip of the Devil" hidden="false" id="dc8e-b0a0-9f2a-78cd">
           <profiles>
-            <profile name="Cantrip of the Stars" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="dae5-c53e-22b9-37eb">
+            <profile name="Cantrip of the Devil" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="1381-2941-1568-de6a">
               <characteristics>
                 <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
-                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">5</characteristic>
-                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Until the start of this character’s next turn, you may re-roll the Destiny Dice once, even though not usually able to, for whatever roll you wish.</characteristic>
+                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one enemy character in line of sight within 3”. 
+
+
+Choose for that character to either lose 1 Life Point, or take 2 Damage with Penetration -2.</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="54f6-8c91-333d-6346-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54f6-8c91-333d-6346-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Runes of Sovereignty" id="29e9-f176-3278-77b3" hidden="false">
+      <categoryLinks>
+        <categoryLink targetId="1c8e-4a5e-59b3-37b6" id="776f-8e27-5a0d-326d" primary="false" name="Discipline (Blood Rites)"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Runes of Sovereignty" hidden="false" id="cec0-47dc-26b8-1935">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Cantrip of the Chariot" hidden="false" id="2e06-5751-d327-e887">
+        <selectionEntry type="upgrade" import="true" name="Cantrip of the Chariot" hidden="false" id="70be-a32e-4e31-0e26">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4664-4af8-cef9-6ca2" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e3f-4fc3-d201-3a55" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="685c-7997-3d0a-1417-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="685c-7997-3d0a-1417-max" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Cantrip of the Chariot" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="9ec6-d712-f95c-2bd8">
+            <profile name="Cantrip of the Chariot" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="3b86-b0a6-48b4-0b78">
               <characteristics>
                 <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
                 <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
@@ -492,22 +497,22 @@ That character immediately makes a Run/Climb action that cannot move into base 
           </profiles>
         </selectionEntry>
       </selectionEntries>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="770a-b2be-549c-0522" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Wild Magic" id="5c35-8d65-7630-eaaa" hidden="false">
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f0d-b5ca-acb9-87cc" includeChildSelections="false"/>
-      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Runes of Sovereignty" hidden="false" id="801d-27cf-476b-f1fe" type="selectionEntryGroup" targetId="29e9-f176-3278-77b3"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="162f-6e00-290f-b3be" id="c2e4-ff79-212f-e178" primary="false" name="Discipline (Runes of Sovereignty)"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Wild Magic" hidden="false" id="bf67-ab4e-94ae-f6bb">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Cantrip of Justice" hidden="false" id="229c-36a7-89e6-5188">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f684-fe91-b8c3-79a4" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eea6-7079-e0b7-b66c" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7059-3c95-da31-a672-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7059-3c95-da31-a672-max" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Cantrip of Justice" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="41e9-8bc5-26fd-7b6b">
+            <profile name="Cantrip of Justice" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="41e9-8bc5-26fd-7b6b">
               <characteristics>
                 <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
                 <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
@@ -517,6 +522,37 @@ That character immediately makes a Run/Climb action that cannot move into base 
           </profiles>
         </selectionEntry>
       </selectionEntries>
-    </selectionEntryGroup>
-  </sharedSelectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Wild Magic" hidden="false" id="8a50-092d-57e1-12e2" type="selectionEntryGroup" targetId="5c35-8d65-7630-eaaa"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="6e89-8a6f-6b8d-6133" id="c237-0ea6-1a00-e1d5" primary="false" name="Discipline (Wild Magic)"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fateweaving" hidden="false" id="bdc8-1542-c48b-8e73">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Cantrip of the Stars" hidden="false" id="9b22-f011-6374-d0c5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6837-dc42-e4ac-05c0-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6837-dc42-e4ac-05c0-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Cantrip of the Stars" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="dae5-c53e-22b9-37eb">
+              <characteristics>
+                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">5</characteristic>
+                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Until the start of this character’s next turn, you may re-roll the Destiny Dice once, even though not usually able to, for whatever roll you wish.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Fateweaving" hidden="false" id="e271-8966-8c23-a402" type="selectionEntryGroup" targetId="212f-e939-2613-8a45"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="0edf-0a9c-7e37-e3c3" id="6618-2beb-5e05-644b" primary="false" name="Discipline (Fateweaving)"/>
+      </categoryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
 </gameSystem>
