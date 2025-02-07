@@ -913,6 +913,59 @@ If that line does not pass through Impassable Terrain, any character touched by
         <categoryLink targetId="1c8e-4a5e-59b3-37b6" id="b5be-327f-dec2-f078" primary="false" name="Discipline (Blood Rites)"/>
       </categoryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Discipline Choice" id="9638-bcc3-0602-1d0a" hidden="false" collective="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="35cb-9aa5-e7e1-4658" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6a8-3838-c95d-1264" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Runes of Sovereignty" hidden="true" id="aaf3-d1d0-1028-0bb5" type="selectionEntry" targetId="cec0-47dc-26b8-1935" sortIndex="4">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="162f-6e00-290f-b3be" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Wild Magic" hidden="true" id="eb4c-1b53-1cc5-fc5f" type="selectionEntry" targetId="bf67-ab4e-94ae-f6bb" sortIndex="5">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6e89-8a6f-6b8d-6133" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Blood Rites" hidden="true" id="2a8f-8be6-0c0f-8fa3" type="selectionEntry" targetId="cbe0-f6c0-97b0-7253" sortIndex="1">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1c8e-4a5e-59b3-37b6" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Fateweaving" hidden="true" id="8c28-a467-6180-d11e" type="selectionEntry" targetId="bdc8-1542-c48b-8e73" sortIndex="3">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0edf-0a9c-7e37-e3c3" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Divinity" hidden="true" id="8a94-1728-fb43-8823" type="selectionEntry" targetId="ce71-b168-5733-d614" sortIndex="2">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9be3-8582-1a9a-6bc8" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Cantrip of the Devil" hidden="false" id="dc8e-b0a0-9f2a-78cd">
@@ -990,14 +1043,39 @@ If that line does not pass through Impassable Terrain, any character touched by
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Blood Rites" hidden="false" id="cbe0-f6c0-97b0-7253">
-      <entryLinks>
-        <entryLink import="true" name="Blood Rites" hidden="false" id="d753-492a-3ffe-414a" type="selectionEntryGroup" targetId="8a67-4210-43e4-12c7"/>
-        <entryLink import="true" name="Cantrip of the Devil" hidden="false" id="0254-aa2e-ae26-e6fc" type="selectionEntry" targetId="dc8e-b0a0-9f2a-78cd"/>
-      </entryLinks>
-      <categoryLinks>
-        <categoryLink name="Discipline (Blood Rites)" hidden="false" id="776f-8e27-5a0d-326d" targetId="1c8e-4a5e-59b3-37b6" primary="false"/>
-      </categoryLinks>
+    <selectionEntry type="upgrade" import="true" name="Magic Disciplines" hidden="false" id="6888-b282-fc48-2764">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Divinity" hidden="false" id="ce71-b168-5733-d614">
+          <entryLinks>
+            <entryLink import="true" name="Divinity" hidden="false" id="580b-37ab-a4c6-df88" type="selectionEntryGroup" targetId="fc4d-ad28-7eaf-8b29"/>
+            <entryLink import="true" name="Cantrip of the Sun" hidden="false" id="ca39-cae6-d954-60a6" type="selectionEntry" targetId="c025-b413-d96f-429f"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fateweaving" hidden="false" id="bdc8-1542-c48b-8e73">
+          <entryLinks>
+            <entryLink import="true" name="Cantrip of the Stars" hidden="false" id="ffce-9d58-ccf5-8e08" type="selectionEntry" targetId="9b22-f011-6374-d0c5"/>
+            <entryLink import="true" name="Fateweaving" hidden="false" id="e271-8966-8c23-a402" type="selectionEntryGroup" targetId="212f-e939-2613-8a45"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Runes of Sovereignty" hidden="false" id="cec0-47dc-26b8-1935">
+          <entryLinks>
+            <entryLink import="true" name="Runes of Sovereignty" hidden="false" id="801d-27cf-476b-f1fe" type="selectionEntryGroup" targetId="29e9-f176-3278-77b3"/>
+            <entryLink import="true" name="Cantrip of the Chariot" hidden="false" id="9a7a-989c-2b9b-f0ad" type="selectionEntry" targetId="70be-a32e-4e31-0e26"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Wild Magic" hidden="false" id="bf67-ab4e-94ae-f6bb">
+          <entryLinks>
+            <entryLink import="true" name="Wild Magic" hidden="false" id="8a50-092d-57e1-12e2" type="selectionEntryGroup" targetId="5c35-8d65-7630-eaaa"/>
+            <entryLink import="true" name="Cantrip of Justice" hidden="false" id="4e3c-4f9d-5fab-9ace" type="selectionEntry" targetId="229c-36a7-89e6-5188"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Blood Rites" hidden="false" id="cbe0-f6c0-97b0-7253">
+          <entryLinks>
+            <entryLink import="true" name="Blood Rites" hidden="false" id="d753-492a-3ffe-414a" type="selectionEntryGroup" targetId="8a67-4210-43e4-12c7"/>
+            <entryLink import="true" name="Cantrip of the Devil" hidden="false" id="0254-aa2e-ae26-e6fc" type="selectionEntry" targetId="dc8e-b0a0-9f2a-78cd"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Divinity" hidden="false" id="ce71-b168-5733-d614">
       <entryLinks>

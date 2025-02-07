@@ -427,7 +427,7 @@ One friendly character within 6&quot; gains Pickpocket until the end of the ga
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hero" hidden="false" id="2999-e7dc-a874-a9f4">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Witch" hidden="false" id="a3f7-8fc3-2b82-4c9a" collective="true" sortIndex="15">
+        <selectionEntry type="model" import="true" name="Witch" hidden="false" id="a3f7-8fc3-2b82-4c9a" collective="false">
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="2"/>
@@ -457,10 +457,12 @@ One friendly character within 6&quot; gains Pickpocket until the end of the ga
             <categoryLink name="Hero" hidden="false" id="b844-db4b-cf79-c734" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
             <categoryLink name="Faction (The Guild)" hidden="false" id="e6aa-910a-5391-ff1d" targetId="3357-90ff-5d46-5cea" primary="false"/>
             <categoryLink name="House of Virtue" hidden="false" id="61ba-a877-ec9c-8037" targetId="2a97-7fbe-7fcc-998c" primary="false"/>
+            <categoryLink targetId="1c8e-4a5e-59b3-37b6" id="e20f-6394-f1b5-4613" primary="false" name="Discipline (Blood Rites)"/>
+            <categoryLink targetId="162f-6e00-290f-b3be" id="5230-7387-3b86-938b" primary="false" name="Discipline (Runes of Sovereignty)"/>
+            <categoryLink targetId="6e89-8a6f-6b8d-6133" id="698d-af8a-6516-84c4" primary="false" name="Discipline (Wild Magic)"/>
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Witch Discipline Choice" hidden="false" id="4baa-142c-fd9f-7047" type="selectionEntryGroup" targetId="dc38-628c-9592-e8cc" collective="false"/>
-            <entryLink import="true" name="Unarmed" hidden="false" id="4bce-03bf-ae91-cce3" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="c0ac-b6ec-c366-9bad" type="selectionEntryGroup" targetId="9638-bcc3-0602-1d0a"/>
           </entryLinks>
           <rules>
             <rule name="Blood Rights" id="a4bc-46c2-d065-9973" hidden="false">
@@ -1103,6 +1105,13 @@ Pick one friendly character within 3&quot; and one different friendly character
 Both of those characters make an immediate **Run/Climb** action. This movement cannot be used to charge, but can be used to disengage.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="add" value="{this} has too many selected spells" field="error">
+              <conditions>
+                <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="any" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Fisherman" hidden="false" id="8e36-87bf-189f-ff7a" sortIndex="10">
           <categoryLinks>
@@ -1551,83 +1560,6 @@ Up to 2 friendly characters within 3&quot; may make an immediate Run/Climb act
       </rules>
     </selectionEntry>
   </sharedSelectionEntries>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Witch Discipline Choice" id="dc38-628c-9592-e8cc" hidden="false" collective="true">
-      <entryLinks>
-        <entryLink import="true" name="Blood Rites" hidden="false" id="2b48-6c18-c3ae-bf74" type="selectionEntry" targetId="cbe0-f6c0-97b0-7253"/>
-        <entryLink import="true" name="Runes of Sovereignty" hidden="false" id="b013-e0e3-16fb-16ca" type="selectionEntry" targetId="cec0-47dc-26b8-1935"/>
-        <entryLink import="true" name="Wild Magic" hidden="false" id="3908-701d-c2fc-c179" type="selectionEntry" targetId="bf67-ab4e-94ae-f6bb"/>
-      </entryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d7aa-efe9-da73-152a" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f518-8b90-f15f-a0a4" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Baba-Yaga Discipline Choice" id="dd68-70d2-10ad-3175" hidden="false" collective="true">
-      <entryLinks>
-        <entryLink import="true" name="Blood Rites" hidden="false" id="319b-f923-9c67-8757" type="selectionEntry" targetId="cbe0-f6c0-97b0-7253"/>
-        <entryLink import="true" name="Wild Magic" hidden="false" id="42ee-ffbe-d44d-2b1a" type="selectionEntry" targetId="bf67-ab4e-94ae-f6bb"/>
-      </entryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="09e4-8557-b3ab-8bf8" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d4a-2676-463e-54e2" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Fisherman Weapon Choice" id="6608-239f-3022-a37f" hidden="false">
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ac93-dac4-e95e-20e3-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac93-dac4-e95e-20e3-max" includeChildSelections="false"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Pole Spear &amp; Net" hidden="false" id="7ab3-1b42-fada-3fe5" sortIndex="1">
-          <profiles>
-            <profile name="Pole Spear &amp; Net" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="7148-aa57-1a51-ff1c">
-              <characteristics>
-                <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
-                <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
-                <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
-                <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
-                <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="865a-c1de-4aaa-d4bc" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8528-92e2-7764-c716" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="865a-c1de-4aaa-d4bc"/>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Harpoon Gun" hidden="false" id="b4c6-99e4-a488-d67e" sortIndex="2">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09ef-828a-0240-f48e" includeChildSelections="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Harpoon Gun" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="5d59-f1d8-5136-9e16">
-              <characteristics>
-                <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">12&quot;</characteristic>
-                <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
-                <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
-                <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
-                <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Reload (1), Two-Handed</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Seamstress Discipline Choice" id="902c-4936-5737-7b58" hidden="false">
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="60c5-5ce1-f189-b4d3" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6424-e82c-634a-b29f" includeChildSelections="false"/>
-      </constraints>
-      <entryLinks>
-        <entryLink import="true" name="Divinity" hidden="false" id="c2e5-d285-536c-cfbd" type="selectionEntry" targetId="ce71-b168-5733-d614"/>
-        <entryLink import="true" name="Fateweaving" hidden="false" id="369f-5736-33e8-83ee" type="selectionEntry" targetId="bdc8-1542-c48b-8e73"/>
-      </entryLinks>
-    </selectionEntryGroup>
-  </sharedSelectionEntryGroups>
   <entryLinks>
     <entryLink import="true" name="Witch" hidden="false" id="3c4c-599b-1584-41e3" targetId="a3f7-8fc3-2b82-4c9a" type="selectionEntry"/>
     <entryLink import="true" name="Capodecina" hidden="false" id="7a68-1cf2-8e91-93bc" targetId="fcc5-51bb-bf7e-a5ab" type="selectionEntry"/>
