@@ -15,6 +15,10 @@
     <categoryEntry name="Trade" id="16a3-bc7b-caa8-b109" hidden="false"/>
     <categoryEntry name="End of Days" id="49aa-9bf9-4c6e-e493" hidden="false"/>
     <categoryEntry name="Unique" id="d3e1-4616-c557-d958" hidden="false"/>
+    <categoryEntry name="Faction (Rashaar)" id="69fa-ba23-e7f2-3a6d" hidden="false"/>
+    <categoryEntry name="Monster" id="f067-a302-b855-c50a" hidden="false"/>
+    <categoryEntry name="Feral" id="3bdc-4702-a1c6-3efe" hidden="false"/>
+    <categoryEntry name="Hydra" id="6b0f-5a84-d5b9-15b6" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Gang" hidden="false" id="aeb3-6915-af1f-2a80">
@@ -109,6 +113,7 @@ Additionally, if at least 1 character with the Boat Crew ability is currently o
       <description>For this special rule, (X) may be a character name or a character with a certain keyword. If an enemy character charges (X), this character may immediately make an out of sequence Run/Climb action provided it is currently out of base contact with any enemy and it charges that active enemy. This action causes an Attack of Opportunity and takes place before the opponent’s Attack of Opportunity.</description>
       <alias>Bodyguard</alias>
       <alias>Bodyguard (Hero)</alias>
+      <alias>Bodyguard (Hero, Henchman)</alias>
     </rule>
     <rule name="Bulky" id="00f3-82d1-348d-5868" hidden="false">
       <description>This character does not gain any benefit from being in cover, and cannot make Hide actions.</description>
@@ -122,7 +127,8 @@ In addition, while in line of sight to another (X) character they use that char
       <alias>Companion (Trade)</alias>
       <alias>Companion (End of Days)</alias>
       <alias>Companion (Dog)</alias>
-      <alias>Bodyguard (Hero, Henchman)</alias>
+      <alias>Companion (Leader)</alias>
+      <alias>Companion (Hydra)</alias>
     </rule>
     <rule name="Concealment (X)" id="b7b0-685b-3bfb-81b2" hidden="false">
       <description>While in cover this character modifies its PROTECTION by (X).</description>
@@ -140,8 +146,13 @@ If the opposing character has Slippery however, then both players roll to disen
     <rule name="Ethereal" id="4a11-e482-42a8-3ef9" hidden="false">
       <description>This character may ignore all terrain while moving, but cannot end its turn or make any other actions while “inside” Impassable Terrain.</description>
     </rule>
-    <rule name="Expert Grappler" id="e822-8e9e-1b48-3768" hidden="false">
+    <rule name="Expert Grappler (X)" id="e822-8e9e-1b48-3768" hidden="false">
       <description>This character may re-roll up to (X) dice when making or defending against a Grapple or Drown action.</description>
+      <alias>Expert Grappler (1)</alias>
+      <alias>Expert Grappler (2)</alias>
+      <alias>Expert Grappler (3)</alias>
+      <alias>Expert Grappler (4)</alias>
+      <alias>Expert Grappler (5)</alias>
     </rule>
     <rule name="Expert Marksman (X)" id="11a2-ffec-01e3-44e1" hidden="false">
       <description>This character may re-roll up to (X) dice when making a Combat action while not in base contact with the target.</description>

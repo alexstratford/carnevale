@@ -1,2 +1,1321 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="452a-ef1f-e319-87ae" name="Rashaar" gameSystemId="sys-c646-d5a1-2146-1042" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema"/>
+<catalogue library="false" id="452a-ef1f-e319-87ae" name="Rashaar" gameSystemId="sys-c646-d5a1-2146-1042" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Leader" hidden="false" id="8bdc-93bd-9a6b-1676">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="The Flame That Burns Underwater" hidden="false" id="7212-c743-5b6d-69e5">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="30"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="fcc4-2508-9660-1a51" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="7955-60ba-8961-3e6f" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+            <categoryLink name="Monster" hidden="false" id="3f5c-c3fd-d540-c2e8" targetId="f067-a302-b855-c50a" primary="false"/>
+            <categoryLink name="Unique" hidden="false" id="5e0d-388c-d984-8449" targetId="d3e1-4616-c557-d958" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Brawling Tentacles" hidden="false" id="f801-f102-c6de-8c7c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4688-9b25-1d8b-4c91-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4688-9b25-1d8b-4c91-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Brawling Tentacles" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="771b-3adb-e202-fd80">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ornate Trident" hidden="false" id="d61f-438b-b93a-cf92">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5238-6c3b-c30f-4857-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5238-6c3b-c30f-4857-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Ornate Trident" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="6ab3-2486-7cce-432e">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="The Flame That Burns Underwater" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="d1c5-a845-0674-5c16">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">22</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">5</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">4</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="The Flame That Burns Underwater" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="c1cd-ea0c-1135-c1b6">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">5</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bulky, Expert Grappler (3), Fast Swimmer (3), Limited Movement, Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5651-e274-0aa1-a3d9" includeChildSelections="true"/>
+          </constraints>
+          <rules>
+            <rule name="Hydra&apos;s Gifts" id="d162-a880-01af-e339" hidden="false">
+              <description>*PULSE Command Ability*
+Mutating tentacles emerge from flesh nearby.
+
+
+Every other character (friendly and enemy, not including this one) within 2&quot; loses 2 Life Points and gains +2 DEXTERITY until the end of the round.</description>
+            </rule>
+            <rule name="Dragging Down" id="fffb-2956-6f75-f5c7" hidden="false">
+              <description>This character may re-roll failed dice rolls when making Drown actions.</description>
+            </rule>
+            <rule name="Brawling Tentacles" id="f7ce-6dc9-4106-a00c" hidden="false">
+              <description>The Flame&apos;s tentacles thrash around, hitting anyone that gets close! When making a Combat action with this weapon, roll once, and apply the roll to every character (friendly and enemy) in base contact.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Magi-Rashaar" hidden="false" id="0ec4-2791-a11f-7cc0">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="24"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="5"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="892a-c8e9-8e64-028a" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="b8cb-cf07-1abc-bcc9" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+            <categoryLink name="Discipline (Blood Rites)" hidden="false" id="bb5a-4a07-2e0c-f5f4" targetId="1c8e-4a5e-59b3-37b6" primary="false"/>
+            <categoryLink name="Discipline (Runes of Sovereignty)" hidden="false" id="f141-e0ff-3efd-9b47" targetId="162f-6e00-290f-b3be" primary="false"/>
+            <categoryLink name="Discipline (Wild Magic)" hidden="false" id="24db-42ff-fde3-b47b" targetId="6e89-8a6f-6b8d-6133" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Magi-Rashaar" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="b1a2-ad1f-1fb4-389e">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">5</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">4</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Magi-Rashaar" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="a0ac-dd3d-b8e8-2335">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">6</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Sorcerer (2), Fast Swimmer (1), Mage (3), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="83cc-7110-8668-e481" type="selectionEntryGroup" targetId="9638-bcc3-0602-1d0a"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ancient Trident" hidden="false" id="1b71-bb17-46b1-6813">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7fc5-768d-5008-cfbb-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fc5-768d-5008-cfbb-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Magi-Rashaar" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="40bc-f375-2998-6c64">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic, Two-Handed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Fury of Dagon" id="de2a-b6b9-c15b-c96e" hidden="false">
+              <description>*PULSE Command Ability*
+Pick a friendly character in line of sight within 6&quot;. That character gains First Strike (2) until the end of their next turn.</description>
+            </rule>
+            <rule name="Rent-born" id="09be-2d9d-1354-a73f" hidden="false">
+              <description>Each round, one friendly character (including this one) may subtract 1 from the Cost of a Magic Spell they attempt to cast (to a minimum of 0).</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+              <conditions>
+                <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="entry" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Paartul Matriarch" hidden="false" id="a905-4ab4-ec75-ab8a">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="25"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="262f-bf73-33da-68a4" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="6c3c-16f6-b40b-6981" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+            <categoryLink name="Monster" hidden="false" id="ddb1-945e-0262-24f5" targetId="f067-a302-b855-c50a" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Unarmed" hidden="false" id="17c5-f89b-9c6d-5de5" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Paartul Matriarch" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="6b70-ad32-6b97-a665">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">22</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">4</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Paartul Matriarch" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="36be-86ca-a2fc-e7c9">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bulky, Fear (-1), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Birth" id="06bb-9d27-818c-7a8d" hidden="false">
+              <description>*PULSE Command Ability*
+Place one **Crybaby** within 6&quot; of this character. The new Crybaby acts just like any other friendly character, and can be activated this round as normal.</description>
+            </rule>
+            <rule name="Matriarch" id="00d3-be6f-a934-db57" hidden="false">
+              <description>All friendly characters with the *Feral* keyword gain Companion (Leader) as long as this character is on the board.</description>
+            </rule>
+            <rule name="Postpartum" id="8462-1f19-5d51-6a52" hidden="false">
+              <description>If one or more Crybabies are killed within 6&quot; of this character, it gains +3 ATT for the rest of the round.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Thalidraur" hidden="false" id="1feb-8f96-20ad-7cb6">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="26"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="d75d-9030-ebbe-f2e0" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="c548-80c5-f9ec-2fa2" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+            <categoryLink name="Monster" hidden="false" id="58db-094b-4701-54d8" targetId="f067-a302-b855-c50a" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ancient Claws" hidden="false" id="2ca1-0210-60a9-2f7c">
+              <profiles>
+                <profile name="Ancient Claws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="1ae5-6191-aba4-fc25">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b67b-d7a0-dff5-6fe9-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b67b-d7a0-dff5-6fe9-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Thalidraur" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="caea-a300-37d0-7755">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">20</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Thalidraur" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="075a-7963-d2f4-5989">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">5</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">5</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Offence (2), Fast Swimmer (2), Fear (-2), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Hide of The Deep" id="7cbc-12ee-69e9-9782" hidden="false">
+              <description>*AURA Command Ability*
+Until the end of the round, all friendly characters within 3&quot; of this character gain Expert Defence (2).</description>
+            </rule>
+            <rule name="Foetid Pheromones" id="1ff6-1600-0655-0bbd" hidden="false">
+              <description>Other friendly characters that start their activation within 6&quot; of this character gain First Strike (1) until the end of their activation.</description>
+            </rule>
+            <rule name="Lead Through Fear" id="d5b4-7f2d-f599-df30" hidden="false">
+              <description>Whenever another character (friendly or enemy) is killed within 6&quot; of this character, this character replenishes 1 Command Point and 1 Will Point.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Voice of Dagon" hidden="false" id="9fad-2fb5-9330-00e9">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="20"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="c205-1492-4ca8-d665" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Monster" hidden="false" id="9026-f4b2-6406-103d" targetId="f067-a302-b855-c50a" primary="false"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="d24c-a4c9-a971-5b1f" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Golden-Tipped Claws" hidden="false" id="f28e-00e6-1974-0f84">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8486-a083-d401-b736-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8486-a083-d401-b736-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Golden-Tipped Claws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="3062-0f2e-ebe7-547a">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Voice of Madness" hidden="false" id="1530-dd0b-3805-2cd9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f589-1b61-5a25-823a-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f589-1b61-5a25-823a-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Voice of Madness" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="3286-65b2-66c0-1a0d">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-3</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun, Template</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Voice of Dagon" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="9b03-5366-17d4-4ca1">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">14</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">5</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Voice of Dagon" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="cd0b-0cdb-17b4-7c59">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Universal Shielding (4), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Blessing of Dagon" id="965b-cf5a-75f2-feb8" hidden="false">
+              <description>*AURA Command Ability*
+Until the end of the round, anyfriendly characters within 6&quot; gain Expert Offence (2)</description>
+            </rule>
+            <rule name="Herald of an Old God" id="46e7-278f-5a04-5773" hidden="false">
+              <description>Whenever this character uses an ORDER or COUNTER Command, roll a dice.
+On a 7+ this Command doesn&apos;t use a Command Point.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hero" hidden="false" id="d72d-0d72-a168-4a3c">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Morgraur" hidden="false" id="17ba-f02d-f2f6-f5b3" sortIndex="1">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="68"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="1566-7f42-b0fa-3b11" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Monster" hidden="false" id="3157-677e-f39e-eb24" targetId="f067-a302-b855-c50a" primary="false"/>
+            <categoryLink name="Unique" hidden="false" id="5a86-2c33-be38-0a32" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="4353-ac78-bd15-89ab" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Morgraur" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="a9ff-de59-827d-6a44">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">45</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">120mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Morgraur" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="2983-4f86-03f7-f90d">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">6</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">5</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bulky, Brawler (2), Fast Swimmer (3), Fear (-3), Limited Movement, Mindless, Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Colossal Jaws" hidden="false" id="f34e-e465-28fc-f922">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c34-f088-23cd-1212-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c34-f088-23cd-1212-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Colossal Jaws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="d634-9ffc-74c8-3338">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+2</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+2</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-3</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Sirena" hidden="false" id="d280-f27b-6257-d063">
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="18"/>
+                <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="2"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Unarmed" hidden="false" id="5632-5f27-a54e-c34d" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
+                <entryLink import="true" name="Discipline Choice" hidden="false" id="e059-8e3d-6832-14ab" type="selectionEntryGroup" targetId="9638-bcc3-0602-1d0a"/>
+              </entryLinks>
+              <profiles>
+                <profile name="Sirena" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="c7e6-8cd0-5e98-6f25">
+                  <characteristics>
+                    <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                    <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                    <characteristic name="Will" typeId="327e-ffc1-2c57-b476">5</characteristic>
+                    <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                    <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Sirena" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="a897-d06a-093e-23c3">
+                  <characteristics>
+                    <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                    <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                    <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                    <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                    <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                    <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Engage, Fast Swimmer (4), Mage (2), Water Creature</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Hero" hidden="false" id="292e-885d-21d1-6a97" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+                <categoryLink name="Hydra" hidden="false" id="28c0-ced5-78dd-b0d3" targetId="6b0f-5a84-d5b9-15b6" primary="false"/>
+                <categoryLink name="Monster" hidden="false" id="0d03-a802-b038-3b65" targetId="f067-a302-b855-c50a" primary="false"/>
+                <categoryLink name="Faction (Rashaar)" hidden="false" id="96c5-1ec2-d313-aec6" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+                <categoryLink name="Discipline (Blood Rites)" hidden="false" id="d726-b771-19e1-7d8d" targetId="1c8e-4a5e-59b3-37b6" primary="false"/>
+                <categoryLink name="Discipline (Runes of Sovereignty)" hidden="false" id="d6ba-928f-2f91-6e00" targetId="162f-6e00-290f-b3be" primary="false"/>
+              </categoryLinks>
+              <modifiers>
+                <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+                  <conditions>
+                    <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="entry" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule name="Hypnotic Song" id="4da0-f8c8-c7f5-b231" hidden="false">
+                  <description>*AURA Command Ability*
+Until the end of the round, any enemy characters within 6&quot; of this character have -2 MIND.</description>
+                </rule>
+                <rule name="Dragging Down" id="fb41-f2a6-be69-36c9" hidden="false">
+                  <description>This character may re-roll failed dice rolls when making Drown actions.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Serpentine" id="93d2-e8d6-f6d9-e866" hidden="false">
+              <description>This character is able to move through spaces smaller than its base to a minimum of 2&quot;. It must be able to fit where it ends its turn.</description>
+            </rule>
+            <rule name="Swallow Whole" id="7420-2498-ed8a-1c88" hidden="false">
+              <description>When this character makes a Combat action (not an Attack of Opportunity) against a target character with a Size of 40mm or less and rolls at least 5 Aces, instead of calculating Damage as normal, instead immediately remove the target character from play as a casualty.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c620-4cc9-2514-b56f" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Brachyura" hidden="false" id="4e1d-a448-4818-19d8">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="18"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="d7ac-7908-5804-bf55" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="fb63-1d29-dbd5-4eae" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+            <categoryLink name="Monster" hidden="false" id="6e4e-e68f-5702-ac3e" targetId="f067-a302-b855-c50a" primary="false"/>
+            <categoryLink name="Feral" hidden="false" id="b8fe-1b8c-f72d-6c61" targetId="3bdc-4702-a1c6-3efe" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Crushing Claws" hidden="false" id="f5ed-ced3-f219-38ef">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="617d-7f14-d0fa-3ce0-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="617d-7f14-d0fa-3ce0-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Crushing Claws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="790c-98f8-a542-86ae">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+2</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+3</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Brachyura" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="9ed1-7f8c-ed7e-df47">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">20</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Brachyura" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="12a5-d994-8744-f0ab">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">7</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bulky, Mindless, Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Caandru Eel" hidden="false" id="e54c-20a8-5b01-76b2">
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="6fe3-209f-694a-bd98" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Feral" hidden="false" id="b7dc-b728-c573-43f4" targetId="3bdc-4702-a1c6-3efe" primary="false"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="705d-2a9a-5908-d89a" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+            <categoryLink name="Monster" hidden="false" id="6ad4-c6d8-6a8e-d09c" targetId="f067-a302-b855-c50a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="14"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mauling Talons" hidden="false" id="d383-c403-e4bb-3cf9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="570b-c930-b40f-0386-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="570b-c930-b40f-0386-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Mauling Talons" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="6420-1d01-fd03-ef5c">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Caandru Eel" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="51e0-dc68-9bc1-4ba9">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Caandru Eel" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="5956-b1dd-9a71-94be">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Grappler (2), Fast Swimmer (2), Mindless, Primitive, Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Patient Hunter" id="1ab3-a28f-1332-b51c" hidden="false">
+              <description>If this character exits water and charges in the same action, it counts as charging from above.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Cult Enforcer" hidden="false" id="2762-7188-8fc5-ce69">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="14"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="36e8-037c-2ec3-4ccb" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="26b5-e601-134b-1a60" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Iron Mace" hidden="false" id="fa1f-bcea-cd41-6101">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f56-a4e9-67ff-e51d-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f56-a4e9-67ff-e51d-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Iron Mace" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="bdd2-79cb-1cd5-7082">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">1&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Cult Enforcer" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="f72e-3110-9fa2-a4f0">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Cult Enforcer" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="6703-0fa7-0729-f842">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">5</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Offence (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Bolster Your Faith" id="2439-2010-2717-0d7e" hidden="false">
+              <description>*AURA Command Ability*
+Until the end of the round, all friendly characters within 3&quot; gain +1 PROTECTION.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Dagonite Priest" hidden="false" id="85f4-95cc-891d-fd14">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="15"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="2"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="d4f7-1c1e-fb0c-9ba8" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="10d8-24b6-d1f1-0b91" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+            <categoryLink name="Discipline (Blood Rites)" hidden="false" id="e0e4-97af-6632-5796" targetId="1c8e-4a5e-59b3-37b6" primary="false"/>
+            <categoryLink name="Discipline (Wild Magic)" hidden="false" id="a100-1cee-39ef-1c94" targetId="6e89-8a6f-6b8d-6133" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sacrificial Dagger" hidden="false" id="6fe2-bf15-70ac-b02e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="291f-82b5-1935-bf22-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="291f-82b5-1935-bf22-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Sacrificial Dagger" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="1bd6-2d02-b9a9-25c5">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Dagonite Priest" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="89ae-80c4-d2be-1fc8">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">14</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Dagonite Priest" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="5761-a88d-6273-2856">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Mage (2), Engage</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Sacrifice" id="82ff-a230-1017-d6d5" hidden="false">
+              <description>For every Life Point this character causes a character to lose with a Combat action using the Sacrificial Dagger, it replenishes 1 Will Point.
+
+
+This character may make Combat actions against friendly characters.</description>
+            </rule>
+          </rules>
+          <entryLinks>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="76d4-109c-cdc3-7872" type="selectionEntryGroup" targetId="9638-bcc3-0602-1d0a"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+              <conditions>
+                <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="entry" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Demagogue" hidden="false" id="9311-eb2a-1180-a565">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="15"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="2b75-4262-b567-9a61" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="5d03-abc8-50b0-40a0" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Burning Brand" hidden="false" id="8706-d701-9061-b2da">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b608-b67f-0bff-3d82-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b608-b67f-0bff-3d82-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Burning Brand" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="b748-f40b-3028-ba24">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-3</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Smoke, Two-Handed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Demagogue" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="dbde-83ef-32eb-c6f7">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">4</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Demagogue" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="39a6-e050-cbbf-b53c">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave, Fear (0)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Prove Yourselves to Dagon!" id="8597-a9f5-4aa6-583d" hidden="false">
+              <description>*AURA Command Ability*
+Until the end of the round, any friendly character that starts a Run/Climb action within 6&quot; gains +2&quot; MOVE for that action provided they charge.</description>
+            </rule>
+            <rule name="Eldritch Incense" id="fac9-2597-a894-fce0" hidden="false">
+              <description>Any friendly character making a Combat action within 3&quot; gains Fear (0) for that action.
+
+</description>
+            </rule>
+            <rule name="Burned Flesh" id="2429-0918-37d8-c17e" hidden="false">
+              <description>If a Combat action with the Burning Brand results in no Protection roll for the target, add 2 to the Damage.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Handler" hidden="false" id="f076-1fbd-0b0d-0175">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="54c7-20cf-e622-8c12" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="0776-6f7c-cefe-460e" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Herding Spear" hidden="false" id="888b-5d5c-cbb9-f6d5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="782e-d9c6-62c0-0bf2-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="782e-d9c6-62c0-0bf2-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Herding Spear" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="bb40-7c0b-e693-ff53">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Knockback, Two-Handed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Handler" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="15e4-dd76-226c-4043">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Handler" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="3a5d-c22e-e9c9-87b3">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave, Hunter</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Herding" id="b09d-8dcd-aa05-19b2" hidden="false">
+              <description>Any friendly character with the Monster keyword that starts a Run/Climb action within 2” of one or more characters with this rule gains +2&quot; MOVE for that action.</description>
+            </rule>
+            <rule name="Encouragement" id="fa47-d56e-bcc7-83b9" hidden="false">
+              <description>Friendly characters with the (*Feral* keyword that start their turn within 6” and line of sight of this character automatically pass their Primitive roll.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Karcharos" hidden="false" id="1623-d6e5-bcbb-caf7">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="18"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="726f-9cbf-1791-b7f8" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Monster" hidden="false" id="0f45-d70c-7b8c-8285" targetId="f067-a302-b855-c50a" primary="false"/>
+            <categoryLink name="Feral" hidden="false" id="d436-4561-a001-5bd6" targetId="3bdc-4702-a1c6-3efe" primary="false"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="f0da-b88a-d09b-6de1" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mighty Jaws" hidden="false" id="47de-6fd9-c1ca-f889">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7320-a91d-bfc5-83a4-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7320-a91d-bfc5-83a4-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Mighty Jaws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="7de4-8119-1daf-a047">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-3</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Karcharos" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="29b6-4cc1-4530-c2a5">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">15</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Karcharos" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="6ba0-f271-e79c-ce0a">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">5</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fast Swimmer (3), Fear (-2), Mindless, Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Krakenhost" hidden="false" id="45a6-f03a-bb5c-94e7">
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="d044-6d95-995b-28e4" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="c74a-785a-6aa5-5948" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="17"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Unarmed" hidden="false" id="8ced-58ae-0312-96dc" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Krakenhost" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="3f2d-e97c-c599-8203">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Krakenhost" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="fe6f-62dd-58cb-b91d">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Companion (Hydra), Expert Grappler (2), First Strike (1), Limited Movement, Mindless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Spawn" id="9989-71b7-9faf-0fe7" hidden="false">
+              <description>**-3 LP**
+Place a new Infant Kraken in base contact with this character. The new Infant Kraken acts just like any other friendly character, and can be activated this round as normal. This ability may only be used once each round and only if this character has 4 or more Life Points remaining. </description>
+            </rule>
+            <rule name="Living Vessel" id="f110-ab25-bfe0-70c0" hidden="false">
+              <description>When this character is killed, before removing it from the game, make a basic MIND roll. Place an Infant Kraken in base contact with this character, plus an additional Infant Kraken in base contact with one of the new Infant Krakens for each Ace in the roll. The new Infant Krakens act just like any other friendly character and can be activated as normal this round.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Mature Kraken" hidden="false" id="0f74-8531-4463-16ee">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="24"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="6509-8d1d-6242-1f01" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Hydra" hidden="false" id="d853-7959-1121-8f56" targetId="6b0f-5a84-d5b9-15b6" primary="false"/>
+            <categoryLink name="Monster" hidden="false" id="7ffc-8ba2-7b18-a629" targetId="f067-a302-b855-c50a" primary="false"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="cbe4-bd72-af9b-fa93" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Barbed Tentacles" hidden="false" id="6495-f74f-bd15-866e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f91f-1940-ef26-7fdb-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f91f-1940-ef26-7fdb-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Barbed Tentacles" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="6999-7163-2010-45c6">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic, Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Climbing Suckers" id="4228-a584-25a6-01d3" hidden="false">
+              <description>When this character makes a DEXTERITY roll as part of a Run/ Climb action, it counts all fumbles as failures.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Mature Kraken" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="9f13-113f-2218-dc12">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">22</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Mature Kraken" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="fbdf-a558-0200-4ab5">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">5</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Engage, Expert Grappler (2), Fear (-1), Vampiric Attack (2), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Paliaa" hidden="false" id="17a0-6cd0-5fb3-0eb3">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="19"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="1"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="a529-4feb-a4a5-ba0a" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Monster" hidden="false" id="e909-dac0-a3b6-4946" targetId="f067-a302-b855-c50a" primary="false"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="e0df-510f-929a-6ea4" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+            <categoryLink name="Discipline (Runes of Sovereignty)" hidden="false" id="791d-1a6b-0a1a-d9ad" targetId="162f-6e00-290f-b3be" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Claws" hidden="false" id="68c6-c761-cf58-dd05">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1404-9bf3-23f0-ed01-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1404-9bf3-23f0-ed01-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Claws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="e089-090a-8dda-01b4">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Paliaa" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="1d02-d345-e5e2-8305">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">5</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">2</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Paliaa" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="90b4-a1b2-beac-4b49">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fast Swimmer (2), Mage (1), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+              <conditions>
+                <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="entry" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="c342-be3a-054c-40d4" type="selectionEntryGroup" targetId="9638-bcc3-0602-1d0a"/>
+          </entryLinks>
+          <rules>
+            <rule name="New Rule" id="6151-06d0-d28c-8f69" hidden="false">
+              <description>*PULSE Command Ability*
+Until the end of the round, all friendly characters with the Henchman keyword gain +1 ATTACK while they are within 6” and line of sight of any number of other friendly characters with the *Monster* keyword.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Raadru" hidden="false" id="c764-3571-4988-b059">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="20"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="caa4-5817-2553-4b02" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Monster" hidden="false" id="4616-3fca-2342-4bc5" targetId="f067-a302-b855-c50a" primary="false"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="7fb9-f171-0ee6-f568" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Webbed Fists" hidden="false" id="39a6-4f01-267e-ba68">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="66ff-9f23-c981-c95c-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66ff-9f23-c981-c95c-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Webbed Fists" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="d715-0dd4-583d-88f7">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+2</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Raadru" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="43f6-0a5d-fa8a-5c1d">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">20</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Raadru" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="0045-902a-74f5-54f6">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">5</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fast Swimmer (2), Fear (0), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Salaacia" hidden="false" id="db27-2215-64c0-1315">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="e997-6d06-3361-a83d" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Feral" hidden="false" id="3303-8332-c7e4-4f4a" targetId="3bdc-4702-a1c6-3efe" primary="false"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="5309-c183-cf19-6875" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Water Portal" hidden="false" id="cd84-c72c-9866-fb66">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f66a-73aa-4790-13a6-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f66a-73aa-4790-13a6-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Water Portal" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="b2aa-3aa9-f3fe-817b">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic, Blast, Reload (1), Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Salaacia" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="6864-0fae-5088-bf34">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">17</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">- </characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Salaacia" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="0b8a-b1bd-a7c9-8e84">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fast Swimmer (1), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Dimensional Pool" id="4cfb-905d-dc37-1ad3" hidden="false">
+              <description>After resolving an attack with the Water Portal, leave the the blast marker in place. Until the end of the round the space beneath counts as water.</description>
+            </rule>
+            <rule name="Gusher" id="049e-ec0e-757e-c02a" hidden="false">
+              <description>This character can make Drown actions against opponents no matter whether they&apos;re in water or not.
+
+Additionally, it gains +2 ATTACK when making a Drown action.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Secreting Myxin" hidden="false" id="9104-30ab-a443-9cc3">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="23"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="5e27-373e-3e14-81e9" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="ac13-dbf3-f85d-8f22" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+            <categoryLink name="Monster" hidden="false" id="9488-9fb3-0a07-fee4" targetId="f067-a302-b855-c50a" primary="false"/>
+            <categoryLink name="Feral" hidden="false" id="7a6a-8c3a-f64d-8dc5" targetId="3bdc-4702-a1c6-3efe" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sticky Burst" hidden="false" id="243b-41cf-5fd3-9f69">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6177-668f-c792-8654-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6177-668f-c792-8654-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Sticky Burst" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="eb9e-9dbd-94a8-1349">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+2</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun, Reload (2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Grasping Jaws" hidden="false" id="b388-4eda-97ec-67bb">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd17-1d24-414e-cb57-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd17-1d24-414e-cb57-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Grasping Jaws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="17e5-c7fc-13d9-49fb">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Secreting Myxin" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="49fc-26c3-8928-1cc9">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">18</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Secreting Myxin" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="68d2-8ea2-a8c2-aa62">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">2</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Parry (3), Mindless, Slippery, Vampiric Attack (2), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Mucus" id="9bd8-2623-7943-800c" hidden="false">
+              <description>This character gains +4 DEXTERITY for any Combat actions (including Attacks of Opportunity) if the attacker is within 3&quot;.
+
+Additionally, any enemy character within 3&quot; of this character suffers -1 to their MOVEMENT and DEXTERITY.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Sirena" hidden="false" id="8935-e277-a354-e015">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="18"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="2"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Unarmed" hidden="false" id="f569-e831-a2f9-dc43" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="29e9-28c8-7967-f978" type="selectionEntryGroup" targetId="9638-bcc3-0602-1d0a"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Sirena" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="b12b-4fb5-2553-17e2">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">5</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Sirena" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="3c33-acbe-a3fd-d6d4">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Engage, Fast Swimmer (4), Mage (2), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="cc67-d87a-6774-a7c2" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Hydra" hidden="false" id="243c-ef00-726e-9345" targetId="6b0f-5a84-d5b9-15b6" primary="false"/>
+            <categoryLink name="Monster" hidden="false" id="4a1c-2622-8a44-3205" targetId="f067-a302-b855-c50a" primary="false"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="9658-835f-0892-7c2e" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+            <categoryLink name="Discipline (Blood Rites)" hidden="false" id="d965-683a-d5fb-8784" targetId="1c8e-4a5e-59b3-37b6" primary="false"/>
+            <categoryLink name="Discipline (Runes of Sovereignty)" hidden="false" id="8c8a-182c-61ba-8db1" targetId="162f-6e00-290f-b3be" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+              <conditions>
+                <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="entry" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Hypnotic Song" id="c676-d0d6-f454-7f34" hidden="false">
+              <description>*AURA Command Ability*
+Until the end of the round, any enemy characters within 6&quot; of this character have -2 MIND.</description>
+            </rule>
+            <rule name="Dragging Down" id="6872-5fbc-46a0-5f59" hidden="false">
+              <description>This character may re-roll failed dice rolls when making Drown actions.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Henchman" hidden="false" id="8225-99eb-ed6f-2ab4"/>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="The Flame That Burns Underwater" hidden="false" id="014e-ba0b-1f11-2448" targetId="7212-c743-5b6d-69e5" type="selectionEntry"/>
+    <entryLink import="true" name="Magi-Rashaar" hidden="false" id="334c-7c1a-b1d2-0cd8" targetId="0ec4-2791-a11f-7cc0" type="selectionEntry"/>
+    <entryLink import="true" name="Paartul Matriarch" hidden="false" id="6999-fd5a-2d08-b60e" targetId="a905-4ab4-ec75-ab8a" type="selectionEntry"/>
+    <entryLink import="true" name="Thalidraur" hidden="false" id="fe22-58f6-c8ef-ae35" targetId="1feb-8f96-20ad-7cb6" type="selectionEntry"/>
+    <entryLink import="true" name="Voice of Dagon" hidden="false" id="15ba-35ed-5b95-0896" targetId="9fad-2fb5-9330-00e9" type="selectionEntry"/>
+    <entryLink import="true" name="Morgraur" hidden="false" id="1453-3be4-b8b3-890c" targetId="17ba-f02d-f2f6-f5b3" type="selectionEntry"/>
+    <entryLink import="true" name="Brachyura" hidden="false" id="a3ab-e50d-6b71-3524" targetId="4e1d-a448-4818-19d8" type="selectionEntry"/>
+    <entryLink import="true" name="Caandru Eel" hidden="false" id="859e-6023-2cdd-52db" targetId="e54c-20a8-5b01-76b2" type="selectionEntry"/>
+    <entryLink import="true" name="Cult Enforcer" hidden="false" id="cb02-5f47-26b5-5ebe" targetId="2762-7188-8fc5-ce69" type="selectionEntry"/>
+    <entryLink import="true" name="Dagonite Priest" hidden="false" id="a0c7-4575-9c84-d30b" targetId="85f4-95cc-891d-fd14" type="selectionEntry"/>
+    <entryLink import="true" name="Demagogue" hidden="false" id="693f-2dee-70d8-2236" targetId="9311-eb2a-1180-a565" type="selectionEntry"/>
+    <entryLink import="true" name="Handler" hidden="false" id="0bdf-ed37-d045-db6b" targetId="f076-1fbd-0b0d-0175" type="selectionEntry"/>
+    <entryLink import="true" name="Karcharos" hidden="false" id="e42a-0d7c-ca08-6c6a" targetId="1623-d6e5-bcbb-caf7" type="selectionEntry"/>
+    <entryLink import="true" name="Krakenhost" hidden="false" id="7207-b6e1-597e-576e" targetId="45a6-f03a-bb5c-94e7" type="selectionEntry"/>
+    <entryLink import="true" name="Mature Kraken" hidden="false" id="5351-ccdb-a466-e2e2" targetId="0f74-8531-4463-16ee" type="selectionEntry"/>
+    <entryLink import="true" name="Paliaa" hidden="false" id="9d35-84b1-16ec-c291" targetId="17a0-6cd0-5fb3-0eb3" type="selectionEntry"/>
+    <entryLink import="true" name="Raadru" hidden="false" id="48dd-0b47-d69a-c284" targetId="c764-3571-4988-b059" type="selectionEntry"/>
+    <entryLink import="true" name="Salaacia" hidden="false" id="23d4-d057-fbaa-b448" targetId="db27-2215-64c0-1315" type="selectionEntry"/>
+    <entryLink import="true" name="Secreting Myxin" hidden="false" id="1538-cf88-b351-e24c" targetId="9104-30ab-a443-9cc3" type="selectionEntry"/>
+    <entryLink import="true" name="Sirena" hidden="false" id="916c-3317-4877-5b51" targetId="d280-f27b-6257-d063" type="selectionEntry"/>
+  </entryLinks>
+</catalogue>

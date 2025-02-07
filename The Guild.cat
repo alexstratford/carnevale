@@ -597,7 +597,7 @@ Pick one character within 3&quot; (friendly or enemy). That character loses 1 L
             </rule>
           </rules>
           <modifiers>
-            <modifier type="add" value="{this} has too many Spell selections" field="error">
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
               <conditions>
                 <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="entry" shared="true" includeChildSelections="false"/>
               </conditions>
@@ -669,7 +669,7 @@ Pick one character within 3&quot; (friendly or enemy). That character loses 1 L
             </selectionEntry>
           </selectionEntries>
           <modifiers>
-            <modifier type="add" value="{this} has too many Spell selections" field="error">
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
               <conditions>
                 <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="entry" shared="true" includeChildSelections="false"/>
               </conditions>
@@ -1399,7 +1399,7 @@ Until the end of the round, any friendly characters with the Henchman keyword 
             </rule>
           </rules>
           <modifiers>
-            <modifier type="add" value="{this} has too many Spell selections" field="error">
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
               <conditions>
                 <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="entry" shared="true" includeChildSelections="false"/>
               </conditions>
@@ -2553,57 +2553,57 @@ Move the character to that point as if moving down a zipline.</description>
             </profile>
           </profiles>
         </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
-    <selectionEntry type="model" import="true" name="Shipwright" hidden="false" id="f2ef-6de1-837f-eac1">
-      <costs>
-        <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
-        <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="cf01-1b3c-22d7-8d1b" id="accf-2572-559f-684b" primary="true" name="Henchman"/>
-        <categoryLink targetId="3357-90ff-5d46-5cea" id="5eed-f8cc-cb37-2d95" primary="false" name="Faction (The Guild)"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Riveting Hammer" hidden="false" id="5ec2-40ac-8358-47f6">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="992f-172b-2139-78cb-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="992f-172b-2139-78cb-max" includeChildSelections="false"/>
-          </constraints>
+        <selectionEntry type="model" import="true" name="Shipwright" hidden="false" id="f2ef-6de1-837f-eac1">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="accf-2572-559f-684b" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (The Guild)" hidden="false" id="5eed-f8cc-cb37-2d95" targetId="3357-90ff-5d46-5cea" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Riveting Hammer" hidden="false" id="5ec2-40ac-8358-47f6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="992f-172b-2139-78cb-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="992f-172b-2139-78cb-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Riveting Hammer" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="c969-b939-7d84-fa48">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+2</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Two-Handed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
           <profiles>
-            <profile name="Riveting Hammer" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="c969-b939-7d84-fa48">
+            <profile name="Shipwright" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="a127-26eb-6751-fe2d">
               <characteristics>
-                <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
-                <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
-                <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+2</characteristic>
-                <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
-                <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Two-Handed</characteristic>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Shipwright" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="4bad-720a-8972-0c1c">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Offence (2)</characteristic>
               </characteristics>
             </profile>
           </profiles>
         </selectionEntry>
       </selectionEntries>
-      <profiles>
-        <profile name="Shipwright" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="a127-26eb-6751-fe2d">
-          <characteristics>
-            <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
-            <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
-            <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
-            <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
-            <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Shipwright" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="4bad-720a-8972-0c1c">
-          <characteristics>
-            <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
-            <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
-            <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
-            <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
-            <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
-            <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Offence (2)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -2649,6 +2649,7 @@ Move the character to that point as if moving down a zipline.</description>
     <entryLink import="true" name="Poacher" hidden="false" id="73bb-1e42-db4f-f432" targetId="8e77-1c05-11a4-6cb1" type="selectionEntry"/>
     <entryLink import="true" name="Pulcinella" hidden="false" id="e124-f2ab-4394-34b4" targetId="84f3-f093-105f-2b30" type="selectionEntry"/>
     <entryLink import="true" name="Prince of Thieves" hidden="false" id="31eb-8e24-26b5-91d4" targetId="bc20-ac54-04ed-56af" type="selectionEntry"/>
+    <entryLink import="true" name="Shipwright" hidden="false" id="487c-8a48-afed-0fd6" targetId="f2ef-6de1-837f-eac1" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Fisherman Weapon Choice" id="e1b3-0e17-3d5a-6f7b" hidden="false">
