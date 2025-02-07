@@ -340,21 +340,20 @@ Until the end of the round, any friendly characters with the End of Days keywo
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Prince of Thieves" hidden="false" id="76d5-fa58-0a82-132c">
+        <selectionEntry type="model" import="true" name="Prince of Thieves" hidden="true" id="055d-c729-208d-3e15">
           <categoryLinks>
-            <categoryLink name="Leader" hidden="false" id="5dd1-6ff2-7ed2-b9a9" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
-            <categoryLink name="Hero" hidden="false" id="60fe-9395-ab15-a83d" targetId="79d4-9b8b-7f29-cba5" primary="false"/>
-            <categoryLink name="Unique" hidden="false" id="e847-96ec-ca20-d11e" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Hero" hidden="false" id="ae94-7411-3252-04d3" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Unique" hidden="false" id="8ccf-db79-59b5-e7e4" targetId="d3e1-4616-c557-d958" primary="false"/>
           </categoryLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="010b-892e-79fa-ca46" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="be1c-dfc7-66b4-9f82" includeChildSelections="true"/>
           </constraints>
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="23"/>
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
           </costs>
           <profiles>
-            <profile name="Prince of Thieves" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="367c-ce32-da80-af04">
+            <profile name="Prince of Thieves" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="a431-e8b8-7f96-1f3a">
               <characteristics>
                 <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
                 <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
@@ -363,7 +362,7 @@ Until the end of the round, any friendly characters with the End of Days keywo
                 <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
               </characteristics>
             </profile>
-            <profile name="Prince of Thieves" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="a913-cf28-84b1-2192">
+            <profile name="Prince of Thieves" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="143f-8ca5-5092-e363">
               <characteristics>
                 <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
                 <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
@@ -375,9 +374,9 @@ Until the end of the round, any friendly characters with the End of Days keywo
             </profile>
           </profiles>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Concealed Pistol" hidden="false" id="58c5-4c77-96ae-cef4" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Concealed Pistol" hidden="false" id="543e-2be8-2ece-5b24" sortIndex="1">
               <profiles>
-                <profile name="Concealed Pistol" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="8b73-9bad-8049-de74">
+                <profile name="Concealed Pistol" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="5be7-6b12-2a2c-9a30">
                   <characteristics>
                     <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">4&quot;</characteristic>
                     <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
@@ -388,13 +387,13 @@ Until the end of the round, any friendly characters with the End of Days keywo
                 </profile>
               </profiles>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ac20-887a-709b-57b1-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac20-887a-709b-57b1-max" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a37-0f50-d869-86f6" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04d3-6329-a37f-eaf4" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Gilded Sword" hidden="false" id="2593-b15e-c89d-7120" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Gilded Sword" hidden="false" id="52bc-01a3-6cbb-08a5" sortIndex="2">
               <profiles>
-                <profile name="Gilded Sword" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="240b-3692-96cd-8b6f">
+                <profile name="Gilded Sword" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="47a6-e202-b062-31f5">
                   <characteristics>
                     <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
                     <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
@@ -405,23 +404,150 @@ Until the end of the round, any friendly characters with the End of Days keywo
                 </profile>
               </profiles>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3791-318e-dded-9d01-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3791-318e-dded-9d01-max" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fb8f-8bc4-cef7-1bf5" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7304-5b2b-be7f-e61b" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
           </selectionEntries>
           <rules>
-            <rule name="Thieves Guild Training" id="60c7-93e2-9b37-a975" hidden="false">
+            <rule name="Thieves Guild Training" id="a543-5889-d4e9-63a1" hidden="false">
               <description>*PULSE Command Ability*
 One friendly character within 6&quot; gains Pickpocket until the end of the game.</description>
             </rule>
-            <rule name="Take it for the Guild!" id="6a49-b6a6-40ef-19de" hidden="false">
+            <rule name="Take it for the Guild!" id="23c8-081d-400a-ec91" hidden="false">
               <description>Any friendly characters with Pickpocket in line of sight replenish 2 Will Points instead of 1 when Disengaging.</description>
             </rule>
-            <rule name="A Hero Among Thieves" id="9365-6a98-d618-3feb" hidden="false">
+            <rule name="A Hero Among Thieves" id="077f-4167-c345-0c58" hidden="false">
               <description>If this is the only character with the Leader keyword in the gang, this character loses the Hero keyword. However, if there is another character with the Leader keyword, this character loses the Leader keyword.</description>
             </rule>
           </rules>
+          <comment>Hero</comment>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="955d-3f8e-a1e3-88b9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atMost" value="0" field="selections" scope="force" childId="bc20-ac54-04ed-56af" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Prince of Thieves" hidden="false" id="bc20-ac54-04ed-56af">
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="d2da-afc6-0d9a-dc61" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Unique" hidden="false" id="a786-e8bf-1c11-a2c5" targetId="d3e1-4616-c557-d958" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="da47-2fb6-f732-d2a4" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="23"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Prince of Thieves" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="9205-c6ee-fda6-9701">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">5</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Prince of Thieves" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="09cc-4891-e45c-850b">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">5</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Acrobatic (2), Expert Marksman (2), Pickpocket, Slippery</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Concealed Pistol" hidden="false" id="5e0f-a1a3-7edc-084a" sortIndex="1">
+              <profiles>
+                <profile name="Concealed Pistol" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="f226-16fb-0647-ca2a">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">4&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Reload (1), Knockback</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6773-d103-b16b-8a46" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f416-42e2-4413-793e" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gilded Sword" hidden="false" id="511a-b1a7-af87-7d2c" sortIndex="2">
+              <profiles>
+                <profile name="Gilded Sword" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="c980-b95b-a003-5ce1">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4216-07e9-10f9-c126" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44e3-a5bc-06e0-4962" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Thieves Guild Training" id="db1b-3b0e-1c6d-2868" hidden="false">
+              <description>*PULSE Command Ability*
+One friendly character within 6&quot; gains Pickpocket until the end of the game.</description>
+            </rule>
+            <rule name="Take it for the Guild!" id="34fb-91fc-5f22-b6c2" hidden="false">
+              <description>Any friendly characters with Pickpocket in line of sight replenish 2 Will Points instead of 1 when Disengaging.</description>
+            </rule>
+            <rule name="A Hero Among Thieves" id="3a0f-1942-35c5-7a0a" hidden="false">
+              <description>If this is the only character with the Leader keyword in the gang, this character loses the Hero keyword. However, if there is another character with the Leader keyword, this character loses the Leader keyword.</description>
+            </rule>
+          </rules>
+          <comment>Leader</comment>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="055d-c729-208d-3e15" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="955d-3f8e-a1e3-88b9" childId="bc20-ac54-04ed-56af" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="955d-3f8e-a1e3-88b9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="955d-3f8e-a1e3-88b9" childId="bc20-ac54-04ed-56af" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="955d-3f8e-a1e3-88b9" childId="bc20-ac54-04ed-56af" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -2469,7 +2595,7 @@ Move the character to that point as if moving down a zipline.</description>
     <entryLink import="true" name="King For a Day" hidden="false" id="0dfb-fd6a-617e-03d3" targetId="8e16-3590-ec8d-7f2b" type="selectionEntry"/>
     <entryLink import="true" name="Madame" hidden="false" id="ea52-0460-f7f7-4163" targetId="e165-e011-9275-f4c0" type="selectionEntry"/>
     <entryLink import="true" name="Ostrich King?!" hidden="false" id="1c3e-4ce2-7d81-5e83" targetId="2063-94a7-1c98-34d8" type="selectionEntry"/>
-    <entryLink import="true" name="Prince of Thieves" hidden="false" id="55df-139b-b130-b44d" targetId="76d5-fa58-0a82-132c" type="selectionEntry"/>
+    <entryLink import="true" name="Prince of Thieves" hidden="false" id="55df-139b-b130-b44d" targetId="055d-c729-208d-3e15" type="selectionEntry"/>
     <entryLink import="true" name="Baba-Yaga" hidden="false" id="7a59-257c-2027-e9f9" targetId="0fc1-944d-8345-37e5" type="selectionEntry"/>
     <entryLink import="true" name="Black Lamp" hidden="false" id="83db-a71e-1509-8473" targetId="827c-95d5-dce7-8269" type="selectionEntry"/>
     <entryLink import="true" name="Rialto Assassin" hidden="false" id="a699-3694-292d-9d08" targetId="be6a-9619-a31b-f2d5" type="selectionEntry"/>
@@ -2504,6 +2630,7 @@ Move the character to that point as if moving down a zipline.</description>
     <entryLink import="true" name="Pilferer" hidden="false" id="12d5-b695-004b-1446" targetId="e9a4-05d7-fb3d-a0bd" type="selectionEntry"/>
     <entryLink import="true" name="Poacher" hidden="false" id="73bb-1e42-db4f-f432" targetId="8e77-1c05-11a4-6cb1" type="selectionEntry"/>
     <entryLink import="true" name="Pulcinella" hidden="false" id="e124-f2ab-4394-34b4" targetId="84f3-f093-105f-2b30" type="selectionEntry"/>
+    <entryLink import="true" name="Prince of Thieves" hidden="false" id="31eb-8e24-26b5-91d4" targetId="bc20-ac54-04ed-56af" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Fisherman Weapon Choice" id="e1b3-0e17-3d5a-6f7b" hidden="false">
