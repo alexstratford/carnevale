@@ -62,7 +62,6 @@
     </profileType>
     <profileType name="Weapon" id="8753-fb9c-9080-5b6d" hidden="false" sortIndex="4">
       <characteristicTypes>
-        <characteristicType name="Weapon" id="f96e-ab52-897e-10f6"/>
         <characteristicType name="Range" id="3cfb-86e0-287b-a76d"/>
         <characteristicType name="Evasion" id="5f7c-5acd-3b4e-c9a7"/>
         <characteristicType name="Damage" id="b6ca-2a6b-06bb-8095"/>
@@ -286,17 +285,11 @@ A character with a Stunned counter reduces its MOVE, ATTACK, DEXTERITY, and MI
   </costTypes>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Blood Rites" id="6223-82c9-717d-a353" hidden="false">
-      <profiles>
-        <profile name="Cantrip of the Devil" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="9cd2-f607-6e5a-c16c">
-          <characteristics>
-            <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
-            <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
-            <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one enemy character in line of sight within 3”. Choose for that character to either lose 1 Life Point, or take 2 Damage with Penetration -2.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="584b-417f-1a76-318f" includeChildSelections="false"/>
+      </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Boiling Veins" hidden="false" id="af1e-7ead-d8b6-9c28" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Boiling Veins" hidden="false" id="af1e-7ead-d8b6-9c28" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7e5-d2fb-5951-2f89" includeChildSelections="false"/>
           </constraints>
@@ -316,7 +309,7 @@ If this spell reduces a character to 0 Life Points, before removing the charact
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="1"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Bloodlust" hidden="false" id="efd6-ad41-9e2f-809f" sortIndex="2">
+        <selectionEntry type="upgrade" import="true" name="Bloodlust" hidden="false" id="efd6-ad41-9e2f-809f" sortIndex="3">
           <profiles>
             <profile name="Bloodlust" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="e15c-aca8-9fe6-0bee">
               <characteristics>
@@ -336,7 +329,7 @@ That character loses 1 Life Point and gains +(X) ATTACK until the end of its nex
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="1"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Blood Drain" hidden="false" id="86ed-ecd6-0c7a-59e9" sortIndex="3">
+        <selectionEntry type="upgrade" import="true" name="Blood Drain" hidden="false" id="86ed-ecd6-0c7a-59e9" sortIndex="4">
           <profiles>
             <profile name="Blood Drain" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="0327-9285-8167-efe5">
               <characteristics>
@@ -356,7 +349,7 @@ That character takes (X) Damage with Penetration -4. If the target loses at leas
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="1"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Kraken&apos;s Breath" hidden="false" id="860f-723c-e05a-de0a" sortIndex="4">
+        <selectionEntry type="upgrade" import="true" name="Kraken&apos;s Breath" hidden="false" id="860f-723c-e05a-de0a" sortIndex="5">
           <profiles>
             <profile name="Kraken&apos;s Breath" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="4178-34c1-6c2f-23d4">
               <characteristics>
@@ -376,7 +369,7 @@ Any character (friendly or enemy) at least partially touched by the template tak
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="1"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Mother Hydra&apos;s Claws" hidden="false" id="94dd-27f8-238f-1e05" sortIndex="5">
+        <selectionEntry type="upgrade" import="true" name="Mother Hydra&apos;s Claws" hidden="false" id="94dd-27f8-238f-1e05" sortIndex="6">
           <profiles>
             <profile name="Mother Hydra&apos;s Claws" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="42bb-48fd-87ae-9467">
               <characteristics>
@@ -394,7 +387,7 @@ Any character (friendly or enemy) at least partially touched by the template tak
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="1"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Abyssal Mist" hidden="false" id="1258-e667-c2b2-0bba" sortIndex="6">
+        <selectionEntry type="upgrade" import="true" name="Abyssal Mist" hidden="false" id="1258-e667-c2b2-0bba" sortIndex="7">
           <profiles>
             <profile name="Abyssal Mist" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="3981-8e8d-76f4-0636">
               <characteristics>
@@ -411,36 +404,119 @@ Line of sight cannot be drawn through the Blast marker. At the end of the round
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="1"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e194-a535-2a33-a744" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36fe-6d39-443e-7d41" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cantrip of the Devil" hidden="false" id="d799-b318-771b-6119" sortIndex="1">
+          <profiles>
+            <profile name="Cantrip of the Devil" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="9cd2-f607-6e5a-c16c">
+              <characteristics>
+                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one enemy character in line of sight within 3”. Choose for that character to either lose 1 Life Point, or take 2 Damage with Penetration -2.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f52-c8f0-a3b1-ade7" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fef5-ac21-f7f3-239c" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Divinity" id="fc4d-ad28-7eaf-8b29" hidden="false">
-      <profiles>
-        <profile name="Cantrip of the Sun" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="8eb6-df67-e22f-0ab9">
-          <characteristics>
-            <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
-            <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
-            <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6”. 
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Cantrip of the Sun" hidden="false" id="c025-b413-d96f-429f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cbe-9602-7c6f-76e0" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="528d-ac9e-c04d-2a1c" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Cantrip of the Sun" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="8eb6-df67-e22f-0ab9">
+              <characteristics>
+                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6”. 
 
 
 That character replenishes 1 Life Point and 1 Will Point.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dadb-d020-4dbd-8727" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Fateweaving" id="212f-e939-2613-8a45" hidden="false">
-      <profiles>
-        <profile name="Cantrip of the Stars" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="dae5-c53e-22b9-37eb">
-          <characteristics>
-            <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
-            <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">5</characteristic>
-            <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Until the start of this character’s next turn, you may re-roll the Destiny Dice once, even though not usually able to, for whatever roll you wish.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2801-51f6-bc52-ccfa" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Cantrip of the Stars" hidden="false" id="9b22-f011-6374-d0c5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af29-acee-8840-27a0" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18ae-b3fe-97c7-4718" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Cantrip of the Stars" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="dae5-c53e-22b9-37eb">
+              <characteristics>
+                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">5</characteristic>
+                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Until the start of this character’s next turn, you may re-roll the Destiny Dice once, even though not usually able to, for whatever roll you wish.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Runes of Sovereignty" id="29e9-f176-3278-77b3" hidden="false"/>
+    <selectionEntryGroup name="Runes of Sovereignty" id="29e9-f176-3278-77b3" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Cantrip of the Chariot" hidden="false" id="2e06-5751-d327-e887">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4664-4af8-cef9-6ca2" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e3f-4fc3-d201-3a55" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Cantrip of the Chariot" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="9ec6-d712-f95c-2bd8">
+              <characteristics>
+                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6” that isn’t in base contact with an enemy. 
+
+
+That character immediately makes a Run/Climb action that cannot move into base contact with an enemy.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="770a-b2be-549c-0522" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Wild Magic" id="5c35-8d65-7630-eaaa" hidden="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f0d-b5ca-acb9-87cc" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Cantrip of Justice" hidden="false" id="229c-36a7-89e6-5188">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f684-fe91-b8c3-79a4" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eea6-7079-e0b7-b66c" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Cantrip of Justice" typeId="cf20-c8a5-e631-dd24" typeName="Spell" hidden="false" id="41e9-8bc5-26fd-7b6b">
+              <characteristics>
+                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">This character may immediately cast another magic spell for 0AP. This spell costs Will Points as normal, but can be any spell known by any other mage (friendly or enemy) within line of sight.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </gameSystem>

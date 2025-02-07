@@ -29,7 +29,7 @@
             <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
           </characteristics>
         </profile>
-        <profile name="Witch" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="3a17-cb86-f753-9fb7">
+        <profile name="Unarmed" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="3a17-cb86-f753-9fb7">
           <characteristics>
             <characteristic name="Weapon" typeId="f96e-ab52-897e-10f6">Unarmed</characteristic>
             <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">-</characteristic>
@@ -57,11 +57,26 @@
         <infoLink name="Slippery" id="0219-6d72-ed67-166e" hidden="false" type="rule" targetId="990d-6a41-e726-6337"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Blood Rites" hidden="false" id="a203-091d-f17b-81a5" type="selectionEntryGroup" targetId="6223-82c9-717d-a353"/>
+        <entryLink import="true" name="Witch Discipline Choice" hidden="false" id="4baa-142c-fd9f-7047" type="selectionEntryGroup" targetId="dc38-628c-9592-e8cc"/>
       </entryLinks>
+      <rules>
+        <rule name="Blood Rights - 1AP" id="a4bc-46c2-d065-9973" hidden="false">
+          <description>Pick one character within 3&quot; (friendly or enemy). That character loses 1 Life Point and this character replenishes 1 Will Point.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
-  <entryLinks>
-    <entryLink import="true" name="Witch" hidden="false" id="a48c-4f4f-4bfc-e86e" targetId="a3f7-8fc3-2b82-4c9a" type="selectionEntry"/>
-  </entryLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Witch Discipline Choice" id="dc38-628c-9592-e8cc" hidden="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5ea-4d7e-611f-2560" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ab4-ce36-70da-aaaf" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Blood Rites" hidden="false" id="f86d-afcb-fc73-b78b" type="selectionEntryGroup" targetId="6223-82c9-717d-a353"/>
+        <entryLink import="true" name="Runes of Sovereignty" hidden="false" id="874f-f4bd-a250-607d" type="selectionEntryGroup" targetId="29e9-f176-3278-77b3"/>
+        <entryLink import="true" name="Wild Magic" hidden="false" id="4c56-7af2-1d5b-3bda" type="selectionEntryGroup" targetId="5c35-8d65-7630-eaaa"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
