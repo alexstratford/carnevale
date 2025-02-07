@@ -410,6 +410,9 @@ Line of sight cannot be drawn through the Blast marker. At the end of the round
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="1"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e194-a535-2a33-a744" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>

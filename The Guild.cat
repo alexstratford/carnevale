@@ -61,4 +61,7 @@
       </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Witch" hidden="false" id="a48c-4f4f-4bfc-e86e" targetId="a3f7-8fc3-2b82-4c9a" type="selectionEntry"/>
+  </entryLinks>
 </catalogue>
