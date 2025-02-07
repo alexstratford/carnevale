@@ -108,6 +108,7 @@ Additionally, if at least 1 character with the Boat Crew ability is currently o
     <rule name="Bodyguard (X)" id="38ae-076d-0c32-3de2" hidden="false">
       <description>For this special rule, (X) may be a character name or a character with a certain keyword. If an enemy character charges (X), this character may immediately make an out of sequence Run/Climb action provided it is currently out of base contact with any enemy and it charges that active enemy. This action causes an Attack of Opportunity and takes place before the opponent’s Attack of Opportunity.</description>
       <alias>Bodyguard</alias>
+      <alias>Bodyguard (Hero)</alias>
     </rule>
     <rule name="Bulky" id="00f3-82d1-348d-5868" hidden="false">
       <description>This character does not gain any benefit from being in cover, and cannot make Hide actions.</description>
@@ -321,15 +322,23 @@ A character in base contact with an enemy may only use this weapon (X) number o
       <description>Any character hit by this weapon counts as being in cover until the end of the round, and gains a Hidden counter. If this weapon also has the Blast ability, any character under the marker is affected. Remove the marker at the end of the round.</description>
     </rule>
     <rule name="Stun" id="7e9d-14ab-7c55-c423" hidden="false">
-      <description>If a character takes Damage from this weapon (whether they lose Life Points or not) they receive a Stunned counter. A character with a Stunned counter reduces its MOVE, ATTACK, DEXTERITY, and MIND by 1 (to a minimum of 1). A character automatically removes its Stunned counter at the end of its next turn. A character can only have one Stunned counter at a time.
+      <description>If a character takes Damage from this weapon (whether they lose Life Points or not) they receive a Stun counter. A character with a Stuncounter reduces its MOVE, ATTACK, DEXTERITY, and MIND by 1 (to a minimum of 1). A character automatically removes its Stun counter at the end of its next turn. A character can only have one Stunned counter at a time.
 
-**If a character with a Stunned counter starts its turn in water it loses 2 Life Points.**</description>
+**If a character with a Stun counter starts its turn in water it loses 2 Life Points.**</description>
     </rule>
     <rule name="Template" id="5b78-830b-8718-387c" hidden="false">
       <description>This weapon uses the teardrop shaped template. Trace a line between the attacker and the target. Place the template with the centre on the line with the small end of the template in range of the weapon (base contact with the attacker if the range is 0”), and the large end further away from the attacker. Any character at least partly touched by the template (friendly or enemy) is affected by the attack. Roll once for your Attack Roll and apply the roll to every individual character hit.</description>
     </rule>
     <rule name="Two-Handed" id="f986-7560-b808-83d3" hidden="false">
       <description>This weapon increases its Evasion by +1 when making an Attack of Opportunity.</description>
+    </rule>
+    <rule name="Brawler (X)" id="0212-4c40-947a-bce6" hidden="false">
+      <alias>Brawler (1)</alias>
+      <alias>Brawler (2)</alias>
+      <alias>Brawler (3)</alias>
+      <alias>Brawler (4)</alias>
+      <alias>Brawler (5)</alias>
+      <description>This character modifies its ATTACK by (X) when in base contact with 2 or more opponents.</description>
     </rule>
   </sharedRules>
   <costTypes>
@@ -341,7 +350,7 @@ A character in base contact with an enemy may only use this weapon (X) number o
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Protection of the Eye" hidden="false" id="e510-46be-1062-65a2" sortIndex="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7713-273a-3ca8-7a55" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3d0-928b-6551-013c" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
@@ -359,7 +368,7 @@ A character in base contact with an enemy may only use this weapon (X) number o
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Eldritch Armour" hidden="false" id="488a-e216-4374-2df4" sortIndex="2">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5446-ea5c-665f-f1bd" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ce1-4181-56d4-c05e" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
@@ -377,7 +386,7 @@ A character in base contact with an enemy may only use this weapon (X) number o
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Rejuvenation" hidden="false" id="b56a-3eb6-a48b-f7d4" sortIndex="3">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dcd3-4e42-c031-29e9" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c94-38a4-92c6-3713" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
@@ -395,7 +404,7 @@ A character in base contact with an enemy may only use this weapon (X) number o
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Holy Light" hidden="false" id="4bd1-6775-9a76-75ef" sortIndex="4">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b448-61dd-7eea-e006" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b0c-31a9-8bca-738e" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
@@ -413,7 +422,7 @@ A character in base contact with an enemy may only use this weapon (X) number o
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Defender of Destiny" hidden="false" id="4019-122c-cc2f-f033" sortIndex="5">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e16-6827-5416-d59c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c75-bd43-3a7d-483b" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
@@ -431,7 +440,7 @@ A character in base contact with an enemy may only use this weapon (X) number o
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Aqua Curitiva" hidden="false" id="2008-19eb-4c63-73fc" sortIndex="6">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22e1-41c2-65c2-8fd7" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1498-d162-82de-4c49" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
@@ -793,7 +802,7 @@ If that line does not pass through Impassable Terrain, any character touched by
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Boiling Veins" hidden="false" id="59c1-e7a5-b32d-94f7" sortIndex="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32c2-d6d6-79e0-3630" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2c3-5b5a-4dff-04ac" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
@@ -824,7 +833,7 @@ If that line does not pass through Impassable Terrain, any character touched by
             </profile>
           </profiles>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0229-de8c-9048-22e4" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="475a-7aaa-4bec-7af2" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Blood Drain" hidden="false" id="32ed-510d-3c62-f059" sortIndex="3">
@@ -842,12 +851,12 @@ If that line does not pass through Impassable Terrain, any character touched by
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="-1"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0775-5809-e4a6-5689" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7854-f6dd-eb3b-7cd0" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Kraken&apos;s Breath" hidden="false" id="e4c2-620c-4b12-6433" sortIndex="4">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2764-798d-8cc4-d903" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2836-37cb-e2a9-170b" includeChildSelections="false"/>
           </constraints>
           <profiles>
             <profile name="Kraken&apos;s Breath" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="5a54-5f1a-62ab-827f">
@@ -865,7 +874,7 @@ If that line does not pass through Impassable Terrain, any character touched by
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Mother Hydra’s Claws" hidden="false" id="3c35-c933-5ac9-ca85" sortIndex="5">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55bc-6f63-865d-9099" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3bf-694e-f811-4723" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
@@ -883,7 +892,7 @@ If that line does not pass through Impassable Terrain, any character touched by
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Abyssal Mist" hidden="false" id="466c-e14d-0741-2d67" sortIndex="6">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f083-f499-5000-2396" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="deaa-89cd-518c-9bc5" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
@@ -950,9 +959,6 @@ If that line does not pass through Impassable Terrain, any character touched by
           </characteristics>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Fateweaving" hidden="false" id="e271-8966-8c23-a402" type="selectionEntryGroup" targetId="212f-e939-2613-8a45"/>
-      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cantrip of the Chariot" hidden="false" id="70be-a32e-4e31-0e26">
       <constraints>
@@ -984,53 +990,271 @@ If that line does not pass through Impassable Terrain, any character touched by
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Magic Disciplines" hidden="false" id="6888-b282-fc48-2764">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Divinity" hidden="false" id="ce71-b168-5733-d614">
-          <entryLinks>
-            <entryLink import="true" name="Divinity" hidden="false" id="580b-37ab-a4c6-df88" type="selectionEntryGroup" targetId="fc4d-ad28-7eaf-8b29"/>
-            <entryLink import="true" name="Cantrip of the Sun" hidden="false" id="ca39-cae6-d954-60a6" type="selectionEntry" targetId="c025-b413-d96f-429f"/>
-          </entryLinks>
-          <categoryLinks>
-            <categoryLink name="Discipline (Divinity)" hidden="false" id="1a30-e798-01d7-c13a" targetId="9be3-8582-1a9a-6bc8" primary="false"/>
-          </categoryLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Fateweaving" hidden="false" id="bdc8-1542-c48b-8e73">
-          <categoryLinks>
-            <categoryLink name="Discipline (Fateweaving)" hidden="false" id="6618-2beb-5e05-644b" targetId="0edf-0a9c-7e37-e3c3" primary="false"/>
-          </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Cantrip of the Stars" hidden="false" id="ffce-9d58-ccf5-8e08" type="selectionEntry" targetId="9b22-f011-6374-d0c5"/>
-          </entryLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Runes of Sovereignty" hidden="false" id="cec0-47dc-26b8-1935">
-          <entryLinks>
-            <entryLink import="true" name="Runes of Sovereignty" hidden="false" id="801d-27cf-476b-f1fe" type="selectionEntryGroup" targetId="29e9-f176-3278-77b3"/>
-            <entryLink import="true" name="Cantrip of the Chariot" hidden="false" id="9a7a-989c-2b9b-f0ad" type="selectionEntry" targetId="70be-a32e-4e31-0e26"/>
-          </entryLinks>
-          <categoryLinks>
-            <categoryLink name="Discipline (Runes of Sovereignty)" hidden="false" id="c2e4-ff79-212f-e178" targetId="162f-6e00-290f-b3be" primary="false"/>
-          </categoryLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Wild Magic" hidden="false" id="bf67-ab4e-94ae-f6bb">
-          <entryLinks>
-            <entryLink import="true" name="Wild Magic" hidden="false" id="8a50-092d-57e1-12e2" type="selectionEntryGroup" targetId="5c35-8d65-7630-eaaa"/>
-            <entryLink import="true" name="Cantrip of Justice" hidden="false" id="4e3c-4f9d-5fab-9ace" type="selectionEntry" targetId="229c-36a7-89e6-5188"/>
-          </entryLinks>
-          <categoryLinks>
-            <categoryLink name="Discipline (Wild Magic)" hidden="false" id="c237-0ea6-1a00-e1d5" targetId="6e89-8a6f-6b8d-6133" primary="false"/>
-          </categoryLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Blood Rites" hidden="false" id="cbe0-f6c0-97b0-7253">
-          <entryLinks>
-            <entryLink import="true" name="Blood Rites" hidden="false" id="d753-492a-3ffe-414a" type="selectionEntryGroup" targetId="8a67-4210-43e4-12c7"/>
-            <entryLink import="true" name="Cantrip of the Devil" hidden="false" id="0254-aa2e-ae26-e6fc" type="selectionEntry" targetId="dc8e-b0a0-9f2a-78cd"/>
-          </entryLinks>
-          <categoryLinks>
-            <categoryLink name="Discipline (Blood Rites)" hidden="false" id="776f-8e27-5a0d-326d" targetId="1c8e-4a5e-59b3-37b6" primary="false"/>
-          </categoryLinks>
-        </selectionEntry>
-      </selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Blood Rites" hidden="false" id="cbe0-f6c0-97b0-7253">
+      <entryLinks>
+        <entryLink import="true" name="Blood Rites" hidden="false" id="d753-492a-3ffe-414a" type="selectionEntryGroup" targetId="8a67-4210-43e4-12c7"/>
+        <entryLink import="true" name="Cantrip of the Devil" hidden="false" id="0254-aa2e-ae26-e6fc" type="selectionEntry" targetId="dc8e-b0a0-9f2a-78cd"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Discipline (Blood Rites)" hidden="false" id="776f-8e27-5a0d-326d" targetId="1c8e-4a5e-59b3-37b6" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Divinity" hidden="false" id="ce71-b168-5733-d614">
+      <entryLinks>
+        <entryLink import="true" name="Divinity" hidden="false" id="580b-37ab-a4c6-df88" type="selectionEntryGroup" targetId="fc4d-ad28-7eaf-8b29"/>
+        <entryLink import="true" name="Cantrip of the Sun" hidden="false" id="ca39-cae6-d954-60a6" type="selectionEntry" targetId="c025-b413-d96f-429f"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Discipline (Divinity)" hidden="false" id="1a30-e798-01d7-c13a" targetId="9be3-8582-1a9a-6bc8" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fateweaving" hidden="false" id="bdc8-1542-c48b-8e73">
+      <categoryLinks>
+        <categoryLink name="Discipline (Fateweaving)" hidden="false" id="6618-2beb-5e05-644b" targetId="0edf-0a9c-7e37-e3c3" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Cantrip of the Stars" hidden="false" id="ffce-9d58-ccf5-8e08" type="selectionEntry" targetId="9b22-f011-6374-d0c5"/>
+        <entryLink import="true" name="Fateweaving" hidden="false" id="e271-8966-8c23-a402" type="selectionEntryGroup" targetId="212f-e939-2613-8a45"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Runes of Sovereignty" hidden="false" id="cec0-47dc-26b8-1935">
+      <entryLinks>
+        <entryLink import="true" name="Runes of Sovereignty" hidden="false" id="801d-27cf-476b-f1fe" type="selectionEntryGroup" targetId="29e9-f176-3278-77b3"/>
+        <entryLink import="true" name="Cantrip of the Chariot" hidden="false" id="9a7a-989c-2b9b-f0ad" type="selectionEntry" targetId="70be-a32e-4e31-0e26"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Discipline (Runes of Sovereignty)" hidden="false" id="c2e4-ff79-212f-e178" targetId="162f-6e00-290f-b3be" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Wild Magic" hidden="false" id="bf67-ab4e-94ae-f6bb">
+      <entryLinks>
+        <entryLink import="true" name="Wild Magic" hidden="false" id="8a50-092d-57e1-12e2" type="selectionEntryGroup" targetId="5c35-8d65-7630-eaaa"/>
+        <entryLink import="true" name="Cantrip of Justice" hidden="false" id="4e3c-4f9d-5fab-9ace" type="selectionEntry" targetId="229c-36a7-89e6-5188"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Discipline (Wild Magic)" hidden="false" id="c237-0ea6-1a00-e1d5" targetId="6e89-8a6f-6b8d-6133" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Unarmed" hidden="false" id="5091-2892-6bf4-3a53">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e696-0bc4-4b6d-d84b-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e696-0bc4-4b6d-d84b-max" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Unarmed" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="4b21-5a27-f1ac-53a4">
+          <characteristics>
+            <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+            <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+            <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+            <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">+1</characteristic>
+            <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Extra Spell" hidden="false" id="6289-7611-35fc-111d">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9456-a822-1cdf-27f0-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9456-a822-1cdf-27f0-max" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Extra Spell" id="6ca3-14b4-e9da-efa0" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Protection of the Eye" hidden="false" id="081d-ff15-a053-8968" sortIndex="1">
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Protection of the Eye" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="54da-59ef-c547-4688">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">5</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6”. That character gains Universal Shielding (X)+3 until the end of its next turn.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Eldritch Armour" hidden="false" id="21ac-5bd1-a320-2478" sortIndex="2">
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Eldritch Armour" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="7f66-1e8e-90e5-41d4">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">6</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6”. That character gains +(X) PROTECTION until the end of its next turn.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rejuvenation" hidden="false" id="1a91-7df3-ff38-98d9" sortIndex="3">
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Rejuvenation" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="bf13-910b-690e-5404">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Total up every Ace rolled plus (X). Replenish this many Life Points in total from any number of characters within 12” in line of sight, distributing the amount between the characters as you wish.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Holy Light" hidden="false" id="a65c-4bfb-4e0c-d298" sortIndex="4">
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Holy Light" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="689b-f892-6415-8611">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">8</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">All enemy characters with the Mage ability within 6” receive a Stunned counter and lose (X) Life Points.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Defender of Destiny" hidden="false" id="e216-5af6-406e-85a9" sortIndex="5">
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Defender of Destiny" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="d8ad-c167-0d2f-440e">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">8</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">All friendly characters within 6” gain Parry (X) and Expert Protection (X) until the end of the round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Aqua Curitiva" hidden="false" id="35aa-8d0a-c533-6cc8" sortIndex="6">
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Aqua Curitiva" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="cab6-b010-aa61-4a13">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">2</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">8</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6”. Place the Blast marker under this character. At the end of the round, any friendly characters at least partially over the Blast marker replenish (X)+2 Life Points.
+Any enemy characters at least partially over the Blast marker receive a Stunned counter. Then remove the Blast marker.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Marksman&apos;s Fortune" hidden="false" id="d4e8-9673-d690-4178" sortIndex="7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f06-021c-ecc0-afd3" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Marksman&apos;s Fortune" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="fbab-5e06-7551-d02d">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">4</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one character (friendly or enemy) in line of sight within 18”. Any weapons that character has with Reload (X) must add or subtract 1 from the (X) value until the end of the round (caster’s choice).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Otherworldly Oddity" hidden="false" id="de73-c99e-4128-bda3" sortIndex="8">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eeb1-d130-f29f-d5b5" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Otherworldly Oddity" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="eef7-4f87-fdc3-67a1">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">5</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one terrain feature with a footprint of 6” or less in line of sight within 12” with no characters on or in it. Until the start of this character’s next turn, any friendly characters making movement actions on or in that terrain feature gain Acrobatic (X). Any enemy characters count that terrain feature as impassable terrain.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of the Sky" hidden="false" id="a3aa-7e31-7b93-d751" sortIndex="9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9e7-b7d0-b157-727c" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Blessing of the Sky" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="7473-f44a-b54c-53c3">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6”. Until the end of its next turn, that character gains +(X) to be distributed between its ATTACK, DEXTERITY, and/or MIND in any combination. A character may only be affected by Blessing of the Sky once at a time.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Curse of the Rent" hidden="false" id="73e8-d0b8-3669-b24b" sortIndex="10">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e34-a03a-33ed-30da" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Curse of the Rent" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="e745-990d-755c-7ddb">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one enemy character in line of sight within 6”. Until the end of its next turn, that character receives -(X) to be distributed by the caster between its ATTACK, DEXTERITY, and/or MIND in any combination. A character may only be affected by Curse of the Rent once at a time.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Glimpse of Glory" hidden="false" id="63f3-6660-db30-4f92" sortIndex="11">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23d6-9c79-f26d-9fd3" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Glimpse of Glory" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="291c-9563-45bc-43f9">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">8</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6”. That character gains Parry (X), Expert Offence (X), Expert Marksman (X), and Expert Protection (X) until the end of their next turn.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fate&apos;s Bounty" hidden="false" id="158b-ca0f-2885-1098" sortIndex="12">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ec9-1e1e-dd87-c09a" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Fate&apos;s Bounty" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="0f7d-d962-2e9f-747c">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">2</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">4</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Total up every Ace rolled plus (X). Until the start of this character’s next turn, you may re-roll this many dice (not the Destiny Dice), for whatever rolls you wish.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4975-4e22-f541-4884" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcbd-dd82-6421-7a12" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <comment>seamstress shenanigans</comment>
     </selectionEntry>
   </sharedSelectionEntries>
 </gameSystem>
