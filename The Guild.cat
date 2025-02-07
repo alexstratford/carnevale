@@ -427,7 +427,7 @@ One friendly character within 6&quot; gains Pickpocket until the end of the ga
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hero" hidden="false" id="2999-e7dc-a874-a9f4">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Witch" hidden="false" id="a3f7-8fc3-2b82-4c9a" collective="true" sortIndex="11">
+        <selectionEntry type="model" import="true" name="Witch" hidden="false" id="a3f7-8fc3-2b82-4c9a" collective="true" sortIndex="15">
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="2"/>
@@ -598,7 +598,7 @@ In addition, enemy characters may not use Will Points when within 3” of this
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Rialto Assassin" hidden="false" id="be6a-9619-a31b-f2d5" sortIndex="10">
+        <selectionEntry type="model" import="true" name="Rialto Assassin" hidden="false" id="be6a-9619-a31b-f2d5" sortIndex="12">
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
@@ -1104,7 +1104,7 @@ Both of those characters make an immediate **Run/Climb** action. This movement
             </rule>
           </rules>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Fisherman" hidden="false" id="8e36-87bf-189f-ff7a">
+        <selectionEntry type="model" import="true" name="Fisherman" hidden="false" id="8e36-87bf-189f-ff7a" sortIndex="10">
           <categoryLinks>
             <categoryLink name="Hero" hidden="false" id="3b08-f01e-1d25-c5fe" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
             <categoryLink name="Faction (The Guild)" hidden="false" id="2bca-59fa-314f-5557" targetId="3357-90ff-5d46-5cea" primary="false"/>
@@ -1144,7 +1144,7 @@ One friendly character within 6&quot; gains Hunter until the end of the game.</
             </rule>
           </rules>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Recruiter" hidden="false" id="cce6-d736-4790-8cbd">
+        <selectionEntry type="model" import="true" name="Recruiter" hidden="false" id="cce6-d736-4790-8cbd" sortIndex="11">
           <categoryLinks>
             <categoryLink name="Hero" hidden="false" id="35b5-dc6d-30d2-569c" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
             <categoryLink name="Faction (The Guild)" hidden="false" id="f46d-d704-88a9-8586" targetId="3357-90ff-5d46-5cea" primary="false"/>
@@ -1204,47 +1204,349 @@ Until the end of the round, any friendly characters with the Henchman keyword 
             </rule>
           </rules>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Seamstress" hidden="false" id="61e7-1aaf-08df-dc30" sortIndex="13">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="14"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="1"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="703e-67e7-2d81-1d84" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="House of Virtue" hidden="false" id="34ac-1da5-5d0d-49be" targetId="2a97-7fbe-7fcc-998c" primary="false"/>
+            <categoryLink name="Faction (The Guild)" hidden="false" id="3b4c-6055-fe37-466f" targetId="3357-90ff-5d46-5cea" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Seamstress Discipline Choice" hidden="false" id="a734-d4a1-0889-43da" type="selectionEntryGroup" targetId="902c-4936-5737-7b58" sortIndex="1"/>
+            <entryLink import="true" name="Unarmed" hidden="false" id="487c-307e-5d83-3104" type="selectionEntry" targetId="5091-2892-6bf4-3a53" sortIndex="3"/>
+            <entryLink import="true" name="Extra Spell" hidden="false" id="9f08-1187-189d-778b" type="selectionEntry" targetId="6289-7611-35fc-111d" sortIndex="2"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Seamstress" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="234f-dcf9-e997-4018">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Seamstress" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="fa70-c16c-5a12-9e9f">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Mage (1), Expert Sorcerer (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Entwined Magics " id="b6fc-8001-61e5-c603" hidden="false">
+              <description>When picking spells for this character, the additional spells granted by Expert Sorcerer may be from any discipline it has access to (though it does not gain an additional cantrip if it is different).</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Shadow Assassin" hidden="false" id="8092-421f-7c10-b73d" sortIndex="14">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="14"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="893b-eaca-16d0-8dd8" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="House of Virtue" hidden="false" id="0b38-d06f-34a0-60ab" targetId="2a97-7fbe-7fcc-998c" primary="false"/>
+            <categoryLink name="Faction (The Guild)" hidden="false" id="ba0a-b291-e833-fa05" targetId="3357-90ff-5d46-5cea" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Dual Stilettos" hidden="false" id="ea50-d0e6-9cf7-22ea">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4f0-4a7b-62ac-2d62-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4f0-4a7b-62ac-2d62-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Dual Stilettos" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="aa57-6f3d-500b-d50b">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">+1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Shadow Assassin" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="d8f2-05e1-7e5e-4a03">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Shadow Assassin" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="c952-a2bd-9f57-c014">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Slippery</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Fade to the Shadow" id="702e-fd74-8976-3fa2" hidden="false">
+              <description>**-2 AP**
+If this character is within 1&quot; of impassable terrain, they can be removed from the board and then placed back down within 1&quot; of another piece of impassable terrain on ground level at least 6&quot; away from enemy characters.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Smuggler" hidden="false" id="894d-97e4-98c7-c9e2">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="13"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="5529-c28a-c45e-8618" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (The Guild)" hidden="false" id="9ad2-5111-6311-9acd" targetId="3357-90ff-5d46-5cea" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blunderbuss" hidden="false" id="00c6-c444-0ccd-5927">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="321c-3cf4-e6ea-dade-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="321c-3cf4-e6ea-dade-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Blunderbuss" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="c627-6ecb-1c5f-3d53">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+2</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">+1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Reload (1), Template</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Smuggler" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="8439-3aa0-4d14-b21f">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Smuggler" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="0a37-2da2-5142-2ce2">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Boat Crew, Concealment (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Smuggling" id="59fa-f82b-d9b4-cdf5" hidden="false">
+              <description>When you achieve an Agenda, one character within 6&quot; and line of sight replenishes 1 Command Point.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Thief" hidden="false" id="6bfd-674b-796b-0c4d">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="14"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="6fb0-ab9d-c76f-4ff0" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (The Guild)" hidden="false" id="3a76-777e-e240-bfbd" targetId="3357-90ff-5d46-5cea" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Stiletto" hidden="false" id="539b-17ff-d561-0e71">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f30-f057-d8c3-5e50-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f30-f057-d8c3-5e50-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Stiletto" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="1351-9843-057e-b46f">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">+1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Stiletto" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="576d-5b4c-abbd-3572">
+                  <characteristics>
+                    <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                    <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                    <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                    <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                    <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Smoke Bomb" hidden="false" id="0e4a-5690-1910-7c96">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd13-a9a0-b05c-5e48-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd13-a9a0-b05c-5e48-max" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Smoke Bomb" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="fd47-ae6f-327e-89c1">
+                      <characteristics>
+                        <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
+                        <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                        <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                        <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                        <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Blast, Harmless, Smoke, Reload (1)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Thief" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="3f59-f784-c428-14e0">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Aerial Attack, Infiltration, Pickpocket</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Get to the Roof" id="b833-788c-378f-f11b" hidden="false">
+              <description>*PULSE Command Ability*
+One friendly character with the Henchman keyword within 6&quot; gains Acrobatic (3) until the end of the game.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Very Loud Ostrich" hidden="false" id="62a7-577e-8610-7b15">
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="c05f-3464-7567-3e75" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (The Guild)" hidden="false" id="ccd0-2c39-0b93-b622" targetId="3357-90ff-5d46-5cea" primary="false"/>
+            <categoryLink name="End of Days" hidden="false" id="8bc4-ce47-814b-da35" targetId="49aa-9bf9-4c6e-e493" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Trumpet" hidden="false" id="dfe9-3459-9eb5-dbf0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe54-ca65-1d38-eadb-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe54-ca65-1d38-eadb-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Trumpet" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="f599-cc68-c05b-1e3a">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Very Loud Ostrich" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="37b3-9bf8-f5e5-12f3">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">14</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">2</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Very Loud Ostrich" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="e76a-7e61-363f-803d">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">7</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bulky, Companion (End of Days), First Strike (2), Limited Movement, Mindless, Slippery</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Toot Toot Toot... Charge!" id="abd3-bc11-647d-35fc" hidden="false">
+              <description>*PULSE Command Ability*
+Up to 2 friendly characters within 3&quot; may make an immediate Run/Climb action, but this movement must be used to charge an enemy (doesn&apos;t have to be the same enemy!).</description>
+            </rule>
+            <rule name="Doot" id="3c53-37e3-c9b3-f258" hidden="false">
+              <description>Whenever this character makes a Combat action with its Trumpet weapon, all friendly characters within 3&quot; cheer and replenish 1 Will Point.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Seamstress" hidden="false" id="61e7-1aaf-08df-dc30">
+    <selectionEntry type="model" import="true" name="Whaler" hidden="false" id="326a-cd84-fe25-dd5a">
       <costs>
-        <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="14"/>
-        <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="1"/>
+        <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="17"/>
+        <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="79d4-9b8b-7f29-cba5" id="703e-67e7-2d81-1d84" primary="true" name="Hero"/>
-        <categoryLink targetId="2a97-7fbe-7fcc-998c" id="34ac-1da5-5d0d-49be" primary="false" name="House of Virtue"/>
-        <categoryLink targetId="3357-90ff-5d46-5cea" id="3b4c-6055-fe37-466f" primary="false" name="Faction (The Guild)"/>
+        <categoryLink targetId="79d4-9b8b-7f29-cba5" id="47aa-7ba3-361c-ba05" primary="true" name="Hero"/>
+        <categoryLink targetId="3357-90ff-5d46-5cea" id="fb77-3860-d928-f557" primary="false" name="Faction (The Guild)"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Seamstress Discipline Choice" hidden="false" id="a734-d4a1-0889-43da" type="selectionEntryGroup" targetId="902c-4936-5737-7b58" sortIndex="1"/>
-        <entryLink import="true" name="Unarmed" hidden="false" id="487c-307e-5d83-3104" type="selectionEntry" targetId="5091-2892-6bf4-3a53" sortIndex="3"/>
-        <entryLink import="true" name="Extra Spell" hidden="false" id="9f08-1187-189d-778b" type="selectionEntry" targetId="6289-7611-35fc-111d" sortIndex="2"/>
-      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Whaling Lance" hidden="false" id="5fdf-37d8-fb4a-2e84">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7af0-da86-f0b0-9af7-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7af0-da86-f0b0-9af7-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Whaling Lance" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="ae71-a5b4-5e24-4e50">
+              <characteristics>
+                <characteristic name="Range" typeId="3cfb-86e0-287b-a76d"/>
+                <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7"/>
+                <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095"/>
+                <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef"/>
+                <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
       <profiles>
-        <profile name="Seamstress" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="234f-dcf9-e997-4018">
+        <profile name="Whaler" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="6815-9079-4898-893d">
           <characteristics>
             <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
-            <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
-            <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+            <characteristic name="Life" typeId="31ac-58c2-51eb-d503">15</characteristic>
+            <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
             <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
-            <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+            <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
           </characteristics>
         </profile>
-        <profile name="Seamstress" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="fa70-c16c-5a12-9e9f">
+        <profile name="Whaler" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="b5a6-0d7c-f34a-75d5">
           <characteristics>
             <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
             <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
-            <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
-            <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
-            <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
-            <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Mage (1), Expert Sorcerer (1)</characteristic>
+            <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+            <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+            <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">8</characteristic>
+            <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Boat Crew, Hunter, Fast Swimmer (2)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <rules>
-        <rule name="Entwined Magics " id="b6fc-8001-61e5-c603" hidden="false">
-          <description>When picking spells for this character, the additional spells granted by Expert Sorcerer may be from any discipline it has access to (though it does not gain an additional cantrip if it is different).</description>
+        <rule name="Get Over Here" id="5ee6-de73-0f8a-5632" hidden="false">
+          <description>A Whaling Lance&apos;s Knockback can move the target in any direction.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -1347,5 +1649,9 @@ Until the end of the round, any friendly characters with the Henchman keyword 
     <entryLink import="true" name="Fisherman" hidden="false" id="cd57-3abc-cb8e-c59f" targetId="8e36-87bf-189f-ff7a" type="selectionEntry"/>
     <entryLink import="true" name="Recruiter" hidden="false" id="67f6-02c9-d8c1-99b9" targetId="cce6-d736-4790-8cbd" type="selectionEntry"/>
     <entryLink import="true" name="Seamstress" hidden="false" id="926d-a517-d291-5c33" targetId="61e7-1aaf-08df-dc30" type="selectionEntry"/>
+    <entryLink import="true" name="Shadow Assassin" hidden="false" id="a529-1a5a-36e9-df31" targetId="8092-421f-7c10-b73d" type="selectionEntry"/>
+    <entryLink import="true" name="Smuggler" hidden="false" id="b5be-53e1-ab4c-e745" targetId="894d-97e4-98c7-c9e2" type="selectionEntry"/>
+    <entryLink import="true" name="Thief" hidden="false" id="1fbb-6120-a450-cf06" targetId="6bfd-674b-796b-0c4d" type="selectionEntry"/>
+    <entryLink import="true" name="Very Loud Ostrich" hidden="false" id="5750-1ed8-d34c-10b0" targetId="62a7-577e-8610-7b15" type="selectionEntry"/>
   </entryLinks>
 </catalogue>

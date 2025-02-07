@@ -1052,209 +1052,223 @@ If that line does not pass through Impassable Terrain, any character touched by
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Extra Spell" hidden="false" id="6289-7611-35fc-111d">
+    <selectionEntry type="upgrade" import="true" name="Entwined Magics" hidden="false" id="6289-7611-35fc-111d">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9456-a822-1cdf-27f0-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9456-a822-1cdf-27f0-max" includeChildSelections="false"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Extra Spell" id="6ca3-14b4-e9da-efa0" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Protection of the Eye" hidden="false" id="081d-ff15-a053-8968" sortIndex="1">
-              <costs>
-                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Protection of the Eye" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="54da-59ef-c547-4688">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
-                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">5</characteristic>
-                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6”. That character gains Universal Shielding (X)+3 until the end of its next turn.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Eldritch Armour" hidden="false" id="21ac-5bd1-a320-2478" sortIndex="2">
-              <costs>
-                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Eldritch Armour" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="7f66-1e8e-90e5-41d4">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
-                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">6</characteristic>
-                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6”. That character gains +(X) PROTECTION until the end of its next turn.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Rejuvenation" hidden="false" id="1a91-7df3-ff38-98d9" sortIndex="3">
-              <costs>
-                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Rejuvenation" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="bf13-910b-690e-5404">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
-                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
-                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Total up every Ace rolled plus (X). Replenish this many Life Points in total from any number of characters within 12” in line of sight, distributing the amount between the characters as you wish.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Holy Light" hidden="false" id="a65c-4bfb-4e0c-d298" sortIndex="4">
-              <costs>
-                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Holy Light" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="689b-f892-6415-8611">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
-                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">8</characteristic>
-                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">All enemy characters with the Mage ability within 6” receive a Stunned counter and lose (X) Life Points.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Defender of Destiny" hidden="false" id="e216-5af6-406e-85a9" sortIndex="5">
-              <costs>
-                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Defender of Destiny" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="d8ad-c167-0d2f-440e">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
-                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">8</characteristic>
-                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">All friendly characters within 6” gain Parry (X) and Expert Protection (X) until the end of the round.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Aqua Curitiva" hidden="false" id="35aa-8d0a-c533-6cc8" sortIndex="6">
-              <costs>
-                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Aqua Curitiva" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="cab6-b010-aa61-4a13">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">2</characteristic>
-                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">8</characteristic>
-                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6”. Place the Blast marker under this character. At the end of the round, any friendly characters at least partially over the Blast marker replenish (X)+2 Life Points.
-Any enemy characters at least partially over the Blast marker receive a Stunned counter. Then remove the Blast marker.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Marksman&apos;s Fortune" hidden="false" id="d4e8-9673-d690-4178" sortIndex="7">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f06-021c-ecc0-afd3" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Marksman&apos;s Fortune" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="fbab-5e06-7551-d02d">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
-                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">4</characteristic>
-                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one character (friendly or enemy) in line of sight within 18”. Any weapons that character has with Reload (X) must add or subtract 1 from the (X) value until the end of the round (caster’s choice).</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Otherworldly Oddity" hidden="false" id="de73-c99e-4128-bda3" sortIndex="8">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eeb1-d130-f29f-d5b5" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Otherworldly Oddity" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="eef7-4f87-fdc3-67a1">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
-                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">5</characteristic>
-                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one terrain feature with a footprint of 6” or less in line of sight within 12” with no characters on or in it. Until the start of this character’s next turn, any friendly characters making movement actions on or in that terrain feature gain Acrobatic (X). Any enemy characters count that terrain feature as impassable terrain.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Blessing of the Sky" hidden="false" id="a3aa-7e31-7b93-d751" sortIndex="9">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9e7-b7d0-b157-727c" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Blessing of the Sky" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="7473-f44a-b54c-53c3">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
-                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
-                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6”. Until the end of its next turn, that character gains +(X) to be distributed between its ATTACK, DEXTERITY, and/or MIND in any combination. A character may only be affected by Blessing of the Sky once at a time.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Curse of the Rent" hidden="false" id="73e8-d0b8-3669-b24b" sortIndex="10">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e34-a03a-33ed-30da" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Curse of the Rent" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="e745-990d-755c-7ddb">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
-                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
-                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one enemy character in line of sight within 6”. Until the end of its next turn, that character receives -(X) to be distributed by the caster between its ATTACK, DEXTERITY, and/or MIND in any combination. A character may only be affected by Curse of the Rent once at a time.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Glimpse of Glory" hidden="false" id="63f3-6660-db30-4f92" sortIndex="11">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23d6-9c79-f26d-9fd3" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Glimpse of Glory" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="291c-9563-45bc-43f9">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
-                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">8</characteristic>
-                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6”. That character gains Parry (X), Expert Offence (X), Expert Marksman (X), and Expert Protection (X) until the end of their next turn.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Fate&apos;s Bounty" hidden="false" id="158b-ca0f-2885-1098" sortIndex="12">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ec9-1e1e-dd87-c09a" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
-              </costs>
-              <profiles>
-                <profile name="Fate&apos;s Bounty" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="0f7d-d962-2e9f-747c">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">2</characteristic>
-                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">4</characteristic>
-                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Total up every Ace rolled plus (X). Until the start of this character’s next turn, you may re-roll this many dice (not the Destiny Dice), for whatever rolls you wish.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
+        <selectionEntryGroup name="Entwined Magics" id="6ca3-14b4-e9da-efa0" hidden="false">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4975-4e22-f541-4884" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcbd-dd82-6421-7a12" includeChildSelections="false"/>
           </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Divinity" id="c20f-2b39-69a5-0a49" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Protection of the Eye" hidden="false" id="081d-ff15-a053-8968" sortIndex="1">
+                  <costs>
+                    <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Protection of the Eye" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="54da-59ef-c547-4688">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                        <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">5</characteristic>
+                        <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6”. That character gains Universal Shielding (X)+3 until the end of its next turn.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Eldritch Armour" hidden="false" id="21ac-5bd1-a320-2478" sortIndex="2">
+                  <costs>
+                    <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Eldritch Armour" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="7f66-1e8e-90e5-41d4">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                        <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">6</characteristic>
+                        <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6”. That character gains +(X) PROTECTION until the end of its next turn.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Rejuvenation" hidden="false" id="1a91-7df3-ff38-98d9" sortIndex="3">
+                  <costs>
+                    <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Rejuvenation" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="bf13-910b-690e-5404">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                        <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                        <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Total up every Ace rolled plus (X). Replenish this many Life Points in total from any number of characters within 12” in line of sight, distributing the amount between the characters as you wish.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Holy Light" hidden="false" id="a65c-4bfb-4e0c-d298" sortIndex="4">
+                  <costs>
+                    <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Holy Light" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="689b-f892-6415-8611">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                        <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">8</characteristic>
+                        <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">All enemy characters with the Mage ability within 6” receive a Stunned counter and lose (X) Life Points.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Defender of Destiny" hidden="false" id="e216-5af6-406e-85a9" sortIndex="5">
+                  <costs>
+                    <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Defender of Destiny" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="d8ad-c167-0d2f-440e">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                        <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">8</characteristic>
+                        <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">All friendly characters within 6” gain Parry (X) and Expert Protection (X) until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Aqua Curitiva" hidden="false" id="35aa-8d0a-c533-6cc8" sortIndex="6">
+                  <costs>
+                    <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Aqua Curitiva" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="cab6-b010-aa61-4a13">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">2</characteristic>
+                        <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">8</characteristic>
+                        <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6”. Place the Blast marker under this character. At the end of the round, any friendly characters at least partially over the Blast marker replenish (X)+2 Life Points.
+Any enemy characters at least partially over the Blast marker receive a Stunned counter. Then remove the Blast marker.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d52c-8dcc-063a-aced" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Fateweaving" id="d0bf-6134-0031-7af2" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Marksman&apos;s Fortune" hidden="false" id="d4e8-9673-d690-4178" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f06-021c-ecc0-afd3" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Marksman&apos;s Fortune" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="fbab-5e06-7551-d02d">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                        <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">4</characteristic>
+                        <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one character (friendly or enemy) in line of sight within 18”. Any weapons that character has with Reload (X) must add or subtract 1 from the (X) value until the end of the round (caster’s choice).</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Otherworldly Oddity" hidden="false" id="de73-c99e-4128-bda3" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eeb1-d130-f29f-d5b5" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Otherworldly Oddity" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="eef7-4f87-fdc3-67a1">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                        <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">5</characteristic>
+                        <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one terrain feature with a footprint of 6” or less in line of sight within 12” with no characters on or in it. Until the start of this character’s next turn, any friendly characters making movement actions on or in that terrain feature gain Acrobatic (X). Any enemy characters count that terrain feature as impassable terrain.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Blessing of the Sky" hidden="false" id="a3aa-7e31-7b93-d751" sortIndex="4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9e7-b7d0-b157-727c" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Blessing of the Sky" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="7473-f44a-b54c-53c3">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                        <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                        <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6”. Until the end of its next turn, that character gains +(X) to be distributed between its ATTACK, DEXTERITY, and/or MIND in any combination. A character may only be affected by Blessing of the Sky once at a time.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Curse of the Rent" hidden="false" id="73e8-d0b8-3669-b24b" sortIndex="3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e34-a03a-33ed-30da" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Curse of the Rent" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="e745-990d-755c-7ddb">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                        <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                        <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one enemy character in line of sight within 6”. Until the end of its next turn, that character receives -(X) to be distributed by the caster between its ATTACK, DEXTERITY, and/or MIND in any combination. A character may only be affected by Curse of the Rent once at a time.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Glimpse of Glory" hidden="false" id="63f3-6660-db30-4f92" sortIndex="5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23d6-9c79-f26d-9fd3" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Glimpse of Glory" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="291c-9563-45bc-43f9">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                        <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">8</characteristic>
+                        <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6”. That character gains Parry (X), Expert Offence (X), Expert Marksman (X), and Expert Protection (X) until the end of their next turn.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Fate&apos;s Bounty" hidden="false" id="158b-ca0f-2885-1098" sortIndex="6">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ec9-1e1e-dd87-c09a" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Fate&apos;s Bounty" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="0f7d-d962-2e9f-747c">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">2</characteristic>
+                        <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">4</characteristic>
+                        <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Total up every Ace rolled plus (X). Until the start of this character’s next turn, you may re-roll this many dice (not the Destiny Dice), for whatever rolls you wish.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f9d-4aef-1d3e-0ae3" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <comment>seamstress shenanigans</comment>
+      <comment>Seamstress extra spell</comment>
     </selectionEntry>
   </sharedSelectionEntries>
 </gameSystem>
