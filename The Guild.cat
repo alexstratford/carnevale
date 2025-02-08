@@ -587,7 +587,7 @@ One friendly character within 6&quot; gains Pickpocket until the end of the ga
             <categoryLink targetId="6e89-8a6f-6b8d-6133" id="698d-af8a-6516-84c4" primary="false" name="Discipline (Wild Magic)"/>
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Discipline Choice" hidden="false" id="c0ac-b6ec-c366-9bad" type="selectionEntryGroup" targetId="9638-bcc3-0602-1d0a"/>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="c0ac-b6ec-c366-9bad" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
           </entryLinks>
           <rules>
             <rule name="Blood Rights" id="a4bc-46c2-d065-9973" hidden="false">
@@ -646,7 +646,7 @@ Pick one character within 3&quot; (friendly or enemy). That character loses 1 L
             </rule>
           </rules>
           <entryLinks>
-            <entryLink import="true" name="Discipline Choice" hidden="false" id="1574-957d-ddf7-8d5e" type="selectionEntryGroup" targetId="9638-bcc3-0602-1d0a"/>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="1574-957d-ddf7-8d5e" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Pestle" hidden="false" id="dca8-5099-73e3-1ecb">
@@ -1367,7 +1367,7 @@ Until the end of the round, any friendly characters with the Henchman keyword 
             <categoryLink targetId="0edf-0a9c-7e37-e3c3" id="7b9e-94fa-7a6b-349f" primary="false" name="Discipline (Fateweaving)"/>
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Discipline Choice" hidden="false" id="a734-d4a1-0889-43da" type="selectionEntryGroup" targetId="9638-bcc3-0602-1d0a" sortIndex="1"/>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="a734-d4a1-0889-43da" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8" sortIndex="1"/>
             <entryLink import="true" name="Unarmed" hidden="false" id="487c-307e-5d83-3104" type="selectionEntry" targetId="5091-2892-6bf4-3a53" sortIndex="3"/>
             <entryLink import="true" name="Entwined Magics" hidden="false" id="9f08-1187-189d-778b" type="selectionEntry" targetId="6289-7611-35fc-111d" sortIndex="2"/>
           </entryLinks>

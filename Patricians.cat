@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="26d8-c60d-b12b-a483" name="Patricians" gameSystemId="sys-c646-d5a1-2146-1042" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Hero" hidden="false" id="5715-a4b9-3218-5a26"/>
+    <selectionEntry type="upgrade" import="true" name="Henchman" hidden="false" id="1e37-2291-12b4-ba08"/>
+    <selectionEntry type="upgrade" import="true" name="Leader" hidden="false" id="58e8-f48c-2da1-a641">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Guard Commander" hidden="false" id="38b5-6744-e739-726a">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="20"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="058a-fc09-58d5-c9fb" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Officer" hidden="false" id="d0f7-b020-b750-ad4f" targetId="ad7e-4dd6-e37f-b106" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="5b15-2de4-413f-12b5" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Gilded Sabre" hidden="false" id="45a2-32ae-2aa1-11af">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0f85-aacb-e8c1-c0b1-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f85-aacb-e8c1-c0b1-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Gilded Sabre" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="4d74-de21-d2bd-e94b">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Guard Commander" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="e354-3074-f874-49ec">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">14</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">5</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Guard Commander" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="d240-ef34-ef9d-0680">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave, Parry (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Take Arms" id="19c5-f09c-8e91-5086" hidden="false">
+              <description>*PULSE Command Ability*
+Until the end of the round, all friendly characters with the Soldier keyword within 3&quot; gain +1 ATTACK.</description>
+            </rule>
+            <rule name="Aim, Fire!" id="f3fb-6480-8261-a891" hidden="false">
+              <description>*PULSE Command Ability*
+Any friendly characters with the Soldier keyword in line of sight gain Expert Marksman (1) until the end of the round.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Guard Commander" hidden="false" id="1ca0-9a36-91df-8b89" targetId="38b5-6744-e739-726a" type="selectionEntry"/>
+  </entryLinks>
+</catalogue>

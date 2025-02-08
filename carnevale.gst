@@ -21,6 +21,10 @@
     <categoryEntry name="Hydra" id="6b0f-5a84-d5b9-15b6" hidden="false"/>
     <categoryEntry name="Faction (The Doctors)" id="e482-2d30-1001-a6a1" hidden="false"/>
     <categoryEntry name="Doctor" id="e76d-93d8-8615-d9ae" hidden="false"/>
+    <categoryEntry name="Animal" id="ce1c-47f0-9623-ec96" hidden="false"/>
+    <categoryEntry name="Officer" id="ad7e-4dd6-e37f-b106" hidden="false"/>
+    <categoryEntry name="Faction (Patricians)" id="bb57-55b2-0ab2-6ce9" hidden="false"/>
+    <categoryEntry name="Soldier" id="d5cc-1663-8fc4-1157" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Gang" hidden="false" id="aeb3-6915-af1f-2a80">
@@ -116,6 +120,7 @@ Additionally, if at least 1 character with the Boat Crew ability is currently o
       <alias>Bodyguard</alias>
       <alias>Bodyguard (Hero)</alias>
       <alias>Bodyguard (Hero, Henchman)</alias>
+      <alias>Bodyguard (Doctor)</alias>
     </rule>
     <rule name="Bulky" id="00f3-82d1-348d-5868" hidden="false">
       <description>This character does not gain any benefit from being in cover, and cannot make Hide actions.</description>
@@ -131,6 +136,7 @@ In addition, while in line of sight to another (X) character they use that char
       <alias>Companion (Dog)</alias>
       <alias>Companion (Leader)</alias>
       <alias>Companion (Hydra)</alias>
+      <alias>Companion (Doctor)</alias>
     </rule>
     <rule name="Concealment (X)" id="b7b0-685b-3bfb-81b2" hidden="false">
       <description>While in cover this character modifies its PROTECTION by (X).</description>
@@ -354,6 +360,12 @@ A character in base contact with an enemy may only use this weapon (X) number o
       <alias>Brawler (4)</alias>
       <alias>Brawler (5)</alias>
       <description>This character modifies its ATTACK by (X) when in base contact with 2 or more opponents.</description>
+    </rule>
+    <rule name="Full Plate" id="1f33-ab92-79c6-3428" hidden="false">
+      <description>If this character ever enters water, it receives a Stunned counter which is only removed if it ends its turn out of water.</description>
+    </rule>
+    <rule name="Nexus" id="e0d5-20e1-7a0a-6447" hidden="false">
+      <description>Any character with the Doctor keyword within 6&quot; and line of sight may use this character&apos;s Will Points as if they were their own.</description>
     </rule>
   </sharedRules>
   <costTypes>
@@ -927,11 +939,67 @@ If that line does not pass through Impassable Terrain, any character touched by
     </selectionEntryGroup>
     <selectionEntryGroup name="Discipline Choice" id="9638-bcc3-0602-1d0a" hidden="false" collective="false">
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="35cb-9aa5-e7e1-4658" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6a8-3838-c95d-1264" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Runes of Sovereignty" hidden="true" id="aaf3-d1d0-1028-0bb5" type="selectionEntry" targetId="38b1-8c64-d0e7-a1c8" sortIndex="4">
+        <entryLink import="true" name="Runes of Sovereignty" hidden="false" id="aaf3-d1d0-1028-0bb5" type="selectionEntry" targetId="38b1-8c64-d0e7-a1c8" sortIndex="4"/>
+        <entryLink import="true" name="Wild Magic" hidden="false" id="eb4c-1b53-1cc5-fc5f" type="selectionEntry" targetId="08b7-8718-8848-4048" sortIndex="5"/>
+        <entryLink import="true" name="Blood Rites" hidden="false" id="2a8f-8be6-0c0f-8fa3" type="selectionEntry" targetId="cbe0-f6c0-97b0-7253" sortIndex="1"/>
+        <entryLink import="true" name="Fateweaving" hidden="false" id="8c28-a467-6180-d11e" type="selectionEntry" targetId="8dd2-5a96-70c9-fa81" sortIndex="3"/>
+        <entryLink import="true" name="Divinity" hidden="false" id="8a94-1728-fb43-8823" type="selectionEntry" targetId="5db2-d6a8-ff5e-32c4" sortIndex="2"/>
+      </entryLinks>
+      <comment>apprentice doctor version</comment>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Discipline Choice" id="9344-c2f0-ac24-e4b0" hidden="false" collective="false">
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7f08-88e6-d998-5ecc" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Wild Magic" hidden="true" id="707c-0db6-7939-84b5" type="selectionEntry" targetId="08b7-8718-8848-4048" sortIndex="5">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6e89-8a6f-6b8d-6133" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ca4-5a8f-dfef-7e97" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Blood Rites" hidden="true" id="b494-c1b9-b983-50b0" type="selectionEntry" targetId="cbe0-f6c0-97b0-7253" sortIndex="1">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1c8e-4a5e-59b3-37b6" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13bc-7165-64d2-9f2d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Fateweaving" hidden="true" id="500f-581c-03f9-e5e7" type="selectionEntry" targetId="8dd2-5a96-70c9-fa81" sortIndex="3">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0edf-0a9c-7e37-e3c3" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b963-49e4-96ca-e94d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <comment>Firmament version</comment>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Discipline Choice" id="6b0f-3d31-2e99-66c8" hidden="false" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b63-1674-02ae-fb39" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Runes of Sovereignty" hidden="true" id="f9a0-3982-f1a6-a637" type="selectionEntry" targetId="38b1-8c64-d0e7-a1c8" sortIndex="4">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -940,7 +1008,7 @@ If that line does not pass through Impassable Terrain, any character touched by
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Wild Magic" hidden="true" id="eb4c-1b53-1cc5-fc5f" type="selectionEntry" targetId="08b7-8718-8848-4048" sortIndex="5">
+        <entryLink import="true" name="Wild Magic" hidden="true" id="8d12-047c-72a2-71ce" type="selectionEntry" targetId="08b7-8718-8848-4048" sortIndex="5">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -949,7 +1017,7 @@ If that line does not pass through Impassable Terrain, any character touched by
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Blood Rites" hidden="true" id="2a8f-8be6-0c0f-8fa3" type="selectionEntry" targetId="cbe0-f6c0-97b0-7253" sortIndex="1">
+        <entryLink import="true" name="Blood Rites" hidden="true" id="727f-6bda-c7ec-9f03" type="selectionEntry" targetId="cbe0-f6c0-97b0-7253" sortIndex="1">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -958,7 +1026,7 @@ If that line does not pass through Impassable Terrain, any character touched by
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Fateweaving" hidden="true" id="8c28-a467-6180-d11e" type="selectionEntry" targetId="8dd2-5a96-70c9-fa81" sortIndex="3">
+        <entryLink import="true" name="Fateweaving" hidden="true" id="7aa2-6258-f829-c485" type="selectionEntry" targetId="8dd2-5a96-70c9-fa81" sortIndex="3">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -967,7 +1035,7 @@ If that line does not pass through Impassable Terrain, any character touched by
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Divinity" hidden="true" id="8a94-1728-fb43-8823" type="selectionEntry" targetId="5db2-d6a8-ff5e-32c4" sortIndex="2">
+        <entryLink import="true" name="Divinity" hidden="true" id="6eac-d907-518b-e467" type="selectionEntry" targetId="5db2-d6a8-ff5e-32c4" sortIndex="2">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>

@@ -13,11 +13,11 @@
           </categoryLinks>
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="22"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="3"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
           </costs>
           <entryLinks>
             <entryLink import="true" name="Unarmed" hidden="false" id="18f5-261e-5c63-cc49" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
-            <entryLink import="true" name="Discipline Choice" hidden="false" id="8ae5-05bd-42d4-5dae" type="selectionEntryGroup" targetId="9638-bcc3-0602-1d0a"/>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="8ae5-05bd-42d4-5dae" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
           </entryLinks>
           <profiles>
             <profile name="Doctor of the Mind" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="adc5-f6d2-ea29-36e5">
@@ -49,11 +49,18 @@
 Until the end of the round, any friendly characters within 6&quot; gain Fear (-2), or increase their Fear number to (-2).</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+              <conditions>
+                <condition type="lessThan" value="-3" field="ef4a-6847-91c7-b1f8" scope="self" childId="any" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Master of Necromantic Studies" hidden="false" id="1738-9900-a19b-7889">
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="23"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="3"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Leader" hidden="false" id="1252-2e25-744d-3bd2" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
@@ -82,7 +89,7 @@ Until the end of the round, any friendly characters within 6&quot; gain Fear (
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Discipline Choice" hidden="false" id="a86f-31da-6bdf-14df" type="selectionEntryGroup" targetId="9638-bcc3-0602-1d0a"/>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="a86f-31da-6bdf-14df" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
           </entryLinks>
           <profiles>
             <profile name="Master of Necromantic Studies" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="2f3e-4a88-d6df-77f4">
@@ -115,14 +122,2410 @@ One friendly character within 1&quot; gains Vampiric Attack (2) until the end 
 In addition, change the **Nexus Link Reconfiguration** Command Ability: Every time it mentions Will Points, change it to Life Points.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+              <conditions>
+                <condition type="lessThan" value="-3" field="ef4a-6847-91c7-b1f8" scope="self" childId="any" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Master of Arcane Security" hidden="false" id="abe6-c892-dc61-75c7">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="27"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="9de4-4756-d6af-5fee" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Doctor" hidden="false" id="2566-c00d-7fe8-c3fb" targetId="e76d-93d8-8615-d9ae" primary="false"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="3df9-af66-b9d6-e865" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Master of Arcane Security" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="9398-9e56-3e9a-9fab">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">22</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">3</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Master of Arcane Security" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="05f5-15cd-e1e1-d65e">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">5</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bulky, Expert Offense (2), Expert Marksman (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Arming Blade" hidden="false" id="8f1e-ce4c-f79f-2b3c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a6e0-ef9c-771a-7711-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6e0-ef9c-771a-7711-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Arming Blade" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="70e5-365d-ec4e-482c">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Soul Burner" hidden="false" id="91b1-3620-49ff-5623">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee85-f1f9-2690-8823-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee85-f1f9-2690-8823-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Soul Burner" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="45cd-c974-72aa-4149">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-3</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Template, Reload (1)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Electrical Stimulation" id="39c8-0338-c558-ed00" hidden="false">
+              <description>*PULSE Command Ability*
+All friendly characters within 3&quot; gain +1 ATTACK until the end of the round.</description>
+            </rule>
+            <rule name="Auxiliary Systems" id="2020-5678-1577-15d0" hidden="false">
+              <description>At the start of this character&apos;s turn, it gains +2 to either its MOVEMENT, DEXTERITY, or PROTECTION until the end of the round.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Master of Zoology" hidden="false" id="fe3a-b805-289f-179d">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="20"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="0695-9e75-7e1b-5939" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Doctor" hidden="false" id="7c72-cf25-ff13-5b19" targetId="e76d-93d8-8615-d9ae" primary="false"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="29bd-be75-2a6b-51e3" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Master of Zoology" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="5adf-178b-d01c-945d">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">14</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">3</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Master of Zoology" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="ae38-1287-89b6-31cf">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">5</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Protection (2), Hunter</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Electrified Mace" hidden="false" id="8138-3a20-9882-23a7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e45d-d845-8207-0d4a-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e45d-d845-8207-0d4a-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Electrified Mace" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="ffed-a06c-bd08-ce72">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Protective Field" id="111b-d43a-e3ad-05bc" hidden="false">
+              <description>*AURA Command Ability*
+Until the end of the round, any friendly characters within 3&quot; gain Universal Shielding (4).</description>
+            </rule>
+            <rule name="Beast Master" id="4673-0736-bda5-9b5c" hidden="false">
+              <description>All friendly characters with the Animal keyword gain Companion (Doctor) while in line of sight of this character. </description>
+            </rule>
+            <rule name="Voltaic Shield" id="b6b6-05dd-9332-f2e9" hidden="false">
+              <description>If an enemy character makes a Combat action against this character in base contact and they don&apos;t lose any Life Points from the attack, the enemy character loses 3 Life Points.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Plague Doctor" hidden="false" id="b4ce-8dc4-11d1-6ddc">
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="1afe-3e5f-f3f1-8e2b" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Discipline (Fateweaving)" hidden="false" id="5893-ec7a-c1c3-36f5" targetId="0edf-0a9c-7e37-e3c3" primary="false"/>
+            <categoryLink name="Discipline (Wild Magic)" hidden="false" id="ea53-f6df-6011-c5dd" targetId="6e89-8a6f-6b8d-6133" primary="false"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="9d1b-cef0-577a-044b" targetId="e482-2d30-1001-a6a1" primary="false"/>
+            <categoryLink name="Doctor" hidden="false" id="942d-56a4-6f6a-15fd" targetId="e76d-93d8-8615-d9ae" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="21"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Scalpel" hidden="false" id="ed8d-e0ba-40ed-323a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23e3-53d4-0e35-e54b-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23e3-53d4-0e35-e54b-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Scalpel" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="938f-117d-51ac-86a0">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="514c-7e78-0905-7436" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+              <conditions>
+                <condition type="lessThan" value="-3" field="ef4a-6847-91c7-b1f8" scope="self" childId="any" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Plague Doctor" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="d0a6-a471-26be-e8af">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">4</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Plague Doctor" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="339b-9c3f-2c9c-7ae0">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Sorcerer (1), Mage (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Purifying Ungents" id="3b46-d4c9-212e-aa85" hidden="false">
+              <description>While within 6” of this character, friendly characters are immune to the Stun Ability. At the end of each friendly character’s turn, remove any Stun counters from friendly characters within 6” of this character.</description>
+            </rule>
+            <rule name="Plague-infused Anatomy" id="7799-c6b5-8d8b-e126" hidden="false">
+              <description>The Plague Doctor has laced their test subjects with a virulent new plague, activated at a moment&apos;s notice! If an enemy character kills a friendly character in base contact while either are within 6&quot; of this character, the enemy receives a Stun counter.</description>
+            </rule>
+            <rule name="Biological Studies" id="dc9c-c3cc-32f0-515f" hidden="false">
+              <description>*AURA Command Ability*
+Until the end of the round, any friendly characters within 3&quot; gain Penetration -2 on their weapons.</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Hero" hidden="false" id="b956-9e09-328a-7fbf"/>
-    <selectionEntry type="upgrade" import="true" name="Henchman" hidden="false" id="6467-0ab5-51bf-5e1e"/>
+    <selectionEntry type="upgrade" import="true" name="Hero" hidden="false" id="b956-9e09-328a-7fbf">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="The Being" hidden="false" id="e8aa-e6cd-571f-8ebd">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="15"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="ad7c-568f-10ea-48fe" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="2b6c-3993-ceac-e6c7" targetId="e482-2d30-1001-a6a1" primary="false"/>
+            <categoryLink name="Unique" hidden="false" id="1c72-1010-4939-e3d1" targetId="d3e1-4616-c557-d958" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9e34-2ca0-fc34-d059" includeChildSelections="true"/>
+          </constraints>
+          <profiles>
+            <profile name="The Being" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="cd0e-5994-a19b-1bf6">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">15</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="The Being" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="1640-59ce-add0-a999">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">5</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Berserk, Companion (Doctor), Mindless, Primitive</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Brutal Fists" hidden="false" id="3c3b-70e7-d42a-84e9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c783-374b-a595-8a41-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c783-374b-a595-8a41-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Brutal Fists" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="2390-6af5-c9d3-b177">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Locomotive Nexus Link" id="1d43-c566-92ba-1614" hidden="false">
+              <description>Whenever this character makes a Combat action, total up the amount of Damage caused (before Protection rolls).
+That many characters within 6&quot; with the Nexus ability replenish 1 Will Point.</description>
+            </rule>
+            <rule name="Pain Suppression" id="aa6d-3059-1c32-9671" hidden="false">
+              <description>Whenever this character takes Damage from a Combat action, reduce the amount of Damage caused by 1 (to a minimum of 1).</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="The Unholy Union" hidden="false" id="a2db-96df-dfcf-5eef">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="45"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="d32c-29db-22e6-be23" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="0907-378b-c8d6-8db9" targetId="e482-2d30-1001-a6a1" primary="false"/>
+            <categoryLink name="Unique" hidden="false" id="caab-bc75-ada3-f23d" targetId="d3e1-4616-c557-d958" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bf85-2ee0-586b-55b6" includeChildSelections="true"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Endless Grasping Hands" hidden="false" id="008b-aee2-b614-e5ad">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="612b-4c0b-7a63-bd90-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="612b-4c0b-7a63-bd90-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Endless Grasping Hands" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="5408-d720-a74f-c995">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">+1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="The Unholy Union" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="9a2d-5614-fb47-ae4a">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">40</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">60mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="The Unholy Union" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="a5ab-b5a5-9bf0-7f91">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">6</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bulky, Expert Grappler (3), Fear (-3), Limited Movement, Mindless, Primitive</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Convulsing" id="ac01-bc84-4153-26ed" hidden="false">
+              <description>This character is able to move through spaces smaller than its base to a minimum of 2&quot;. It must be able to fit where it ends its turn.</description>
+            </rule>
+            <rule name="Flesh Golem" id="0b64-f1fe-9271-a7b3" hidden="false">
+              <description>Every time this character kills a character, it replenishes a number of Life Points equal to that character&apos;s starting Life Points.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Doctor of Blood" hidden="false" id="054c-5256-86a4-39b9">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="84b1-c98c-062d-4f61" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="dff9-a264-2028-36b8" targetId="e482-2d30-1001-a6a1" primary="false"/>
+            <categoryLink name="Doctor" hidden="false" id="6c3b-b4e8-474c-0754" targetId="e76d-93d8-8615-d9ae" primary="false"/>
+            <categoryLink name="Discipline (Blood Rites)" hidden="false" id="7427-a9ec-89ab-9076" targetId="1c8e-4a5e-59b3-37b6" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="046c-3172-882e-6f6a" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Knife" hidden="false" id="bf3e-47fb-ea52-dba6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2280-749d-6df8-83c6-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2280-749d-6df8-83c6-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Knife" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="21a2-b923-0394-a961">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Doctor of Blood" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="0d44-fb33-9d24-f664">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Doctor of Blood" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="d11f-d83a-6591-3e65">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Frenzied, Mage (2), Vampiric Attack (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Sanguine Sorcery" id="c343-fac4-404c-f405" hidden="false">
+              <description>This character&apos;s Vampiric Attack also activates when making a Cast Spell action.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+              <conditions>
+                <condition type="lessThan" value="-2" field="ef4a-6847-91c7-b1f8" scope="self" childId="any" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Doctor of Tides" hidden="false" id="0ec1-c286-5bc9-42d9">
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="6860-8818-3ae3-b2e7" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Doctor" hidden="false" id="0d7b-dbe6-3431-c467" targetId="e76d-93d8-8615-d9ae" primary="false"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="c929-aadc-bd62-2b54" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="18"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Diving Trident" hidden="false" id="b07b-a9fc-ab31-b74f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8398-7b49-c291-6ec0-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8398-7b49-c291-6ec0-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Diving Trident" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="4809-772a-7588-2a27">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic, Two-Handed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Underwater Limelight" hidden="false" id="af57-5b3a-5794-8b60">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9429-d7cf-5436-b176-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9429-d7cf-5436-b176-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Underwater Limelight" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="63c5-bfeb-cbb8-4c68">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Harmless, Stun, Template</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Doctor of Tides" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="e049-99aa-9e78-0704">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">15</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">2</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Doctor of Tides" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="6ed9-a8eb-dc00-afaf">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">6</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Water Creature, Universal Shielding (2), Limited Movement</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Long Dive" id="3acc-24b1-87d7-35c3" hidden="false">
+              <description>*Pulse Command Ability*
+All friendly characters with an Underwater Counter gain an additional Underwater Counter.</description>
+            </rule>
+            <rule name="Deep Dive" id="225d-a35f-8062-8e24" hidden="false">
+              <description>Whenever this character makes a Dive action, you may spend 1 Will Point. If you do, you automatically score a Critical without rolling any dice.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Doctor of Poisons" hidden="false" id="9a63-945d-6d59-f1f5">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="13"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="8f50-86b7-2107-263f" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Doctor" hidden="false" id="6899-b2d4-fefe-1414" targetId="e76d-93d8-8615-d9ae" primary="false"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="be7b-11e4-ce7f-1b2d" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Poisoned Blade" hidden="false" id="6f6a-a856-0754-d370">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="17a2-5549-8e01-c598-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17a2-5549-8e01-c598-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Poisoned Blade" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="a21c-0ccd-c922-a7bc">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Poisoned</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Doctor of Poisons" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="f96c-ccce-21e7-7a8c">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">2</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Doctor of Poisons" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="2618-ff5d-2a88-35a5">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Offence (2), Slippery</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Elixir" id="2767-a2ee-1a7a-86e8" hidden="false">
+              <description>*PULSE Command Ability*
+One friendly character within 3&quot; gains either Acrobatic (3), Engage, or Slippery until the end of the game.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Doctor of the Beasts" hidden="false" id="854c-de22-1a88-4873">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="14"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Shock Staff" hidden="false" id="9537-815d-bcfc-609e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad67-ada0-869a-a449-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad67-ada0-869a-a449-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Shock Staff" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="676a-9b47-476f-fd85">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Knockback, Stun, Two-Handed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Doctor of the Beasts" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="a4da-6159-7b7f-e223">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">2</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Doctor of the Beasts" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="63da-6000-44d3-fc1c">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Hunter</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Overcharged Discipline" id="fabe-5c2a-d4da-d29d" hidden="false">
+              <description>*PULSE Command Ability*
+One friendly character with the Animal keyword within 6&quot; gains Berserk until the end of the game.</description>
+            </rule>
+            <rule name="Beast Master" id="f4db-ca01-078a-0458" hidden="false">
+              <description>All friendly characters with the Animal keyword gain Companion (Doctor) while in line of sight of this character. </description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Doctor of the Firmament" hidden="false" id="05d0-cb5c-65a9-d08e">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="d1a8-d1ae-e620-662c" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Discipline (Fateweaving)" hidden="false" id="9889-ce5c-f46a-654f" targetId="0edf-0a9c-7e37-e3c3" primary="false"/>
+            <categoryLink name="Discipline (Wild Magic)" hidden="false" id="3465-2578-2f89-7516" targetId="6e89-8a6f-6b8d-6133" primary="false"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="3eb7-4310-b770-6e51" targetId="e482-2d30-1001-a6a1" primary="false"/>
+            <categoryLink name="Doctor" hidden="false" id="844b-1aff-dcaa-68c2" targetId="e76d-93d8-8615-d9ae" primary="false"/>
+            <categoryLink name="Discipline (Blood Rites)" hidden="false" id="fa97-0b8e-5cae-fb48" targetId="1c8e-4a5e-59b3-37b6" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Doctor of the Firmament" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="802b-2535-6eaa-6012">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">2</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Doctor of the Firmament" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="f2f2-17d7-c75c-4313">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Sorcerer (2), Mage (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Unarmed" hidden="false" id="b14a-abf9-04c4-ade9" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="fdad-0d89-5136-762e" type="selectionEntryGroup" targetId="9344-c2f0-ac24-e4b0"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+              <conditions>
+                <condition type="lessThan" value="-4" field="ef4a-6847-91c7-b1f8" scope="self" childId="any" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Void Walker" id="4087-c5f9-5f30-2638" hidden="false">
+              <description>*PULSE Command Ability*
+One friendly character within 3&quot; gains Ethereal until the end of the game.</description>
+            </rule>
+            <rule name="Aetheric Gaze" id="3ee2-4032-d9b5-1728" hidden="false">
+              <description>This character may select its Magic Spells from up to 2 different Disciplines. It also gains Cantrips from both Disciplines chosen.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Ethereal Assassin" hidden="false" id="4ab2-0d8b-02b4-a262">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="13"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Ethereal Assassin" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="4f8a-14a3-848d-63db">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Ethereal Assassin" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="0bac-3d06-0524-940b">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Concealment (2), First Strike (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Stride Through The Void" id="8750-7c8c-404e-e031" hidden="false">
+              <description>**- 1AP**
+This character gains Ethereal until the end of its turn.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Poisoned Needle" hidden="false" id="40bf-aba7-2c0d-b348">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c8ab-f190-bb7a-c7f7-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8ab-f190-bb7a-c7f7-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Poisoned Needle" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="2ec0-45d8-a274-dcb4">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Poisoned</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="bcbf-077f-12d3-cdfe" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="189a-8135-f686-7eb1" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Ethereal Snatcher" hidden="false" id="3683-86c2-495f-c162">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="15"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="557d-e67c-104c-37e2" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="6ffb-09cc-5d90-4238" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Electro Gauntlet" hidden="false" id="6147-bcd1-3a84-19df">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a48e-f1f9-6637-148f-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a48e-f1f9-6637-148f-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Electro Gauntlet" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="10c3-67b5-2bb8-3b38">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Stride Through The Void" id="7b43-dce1-f11f-389a" hidden="false">
+              <description>**- 1AP**
+This character gains Ethereal until the end of its turn.</description>
+            </rule>
+            <rule name="Drag Through The Void" id="2454-5030-5895-7137" hidden="false">
+              <description>Targets of this characters Grapple actions may be moved as if they had the Ethereal special rule.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Ethereal Snatcher" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="2712-754b-8c94-2a87">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">14</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Ethereal Snatcher" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="cabb-26b3-e938-bb68">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Engage, Expert Grappler (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Alchemist Doctor" hidden="false" id="9ee4-85aa-6b0d-24c3">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="13"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="432c-59b3-92d3-fc47" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Doctor" hidden="false" id="cc3a-cfef-1ff0-2e82" targetId="e76d-93d8-8615-d9ae" primary="false"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="da58-e7c8-5be5-cc54" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Alchemist Doctor" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="2d26-49e2-f2d8-21f7">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Alchemist Doctor" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="14f9-0d7e-5a27-0d54">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Alchemical Bomb" hidden="false" id="98b6-85e4-27c3-695b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3cff-aa50-40c7-bf47-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cff-aa50-40c7-bf47-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Alchemical Bomb" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="f592-137a-902a-955a">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+2</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Blast, Reload (1)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Poison Bomb" hidden="false" id="aabe-155f-256f-cd6d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cee2-7213-c7e0-11e0-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cee2-7213-c7e0-11e0-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Poison Bomb" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="1305-115c-c3c6-0639">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Reload (1), Poisoned</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Unstable" id="d09a-10b6-8e02-5ac1" hidden="false">
+              <description>Any failed Combat actions with Alchemical Bombs and Poison Bombs always count as fumbles.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Morgue Doctor" hidden="false" id="70ba-7d69-a5b6-1226">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="15"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="02c1-7b75-5457-aa7f" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Doctor" hidden="false" id="8afb-c4ae-b9a9-44c4" targetId="e76d-93d8-8615-d9ae" primary="false"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="3932-5c44-7727-277d" targetId="e482-2d30-1001-a6a1" primary="false"/>
+            <categoryLink name="Discipline (Divinity)" hidden="false" id="9879-bafb-10c2-4c8d" targetId="9be3-8582-1a9a-6bc8" primary="false"/>
+            <categoryLink name="Discipline (Fateweaving)" hidden="false" id="cde2-e08b-05af-0e32" targetId="0edf-0a9c-7e37-e3c3" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="f1c5-d850-6492-b0f4" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+              <conditions>
+                <condition type="lessThan" value="-2" field="ef4a-6847-91c7-b1f8" scope="self" childId="any" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Morgue Doctor" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="e474-70f6-40cd-a181">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">2</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Morgue Doctor" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="7552-b958-673a-c519">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Mage (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Surgical Tools" hidden="false" id="e36d-d375-df84-cc03">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca08-d4e1-9eda-c2e5-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca08-d4e1-9eda-c2e5-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Surgical Tools" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="3658-b64a-2f8a-af32">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Power Over Death" id="1efb-5cdc-9981-05de" hidden="false">
+              <description>*PULSE Command Ability*
+This Command Ability is used out of sequence, when any other friendly character within 3&quot; is killed.
+
+
+Make a Basic MIND Roll:
+
+
+**Success:** For each Ace rolled, the target character replenishes 2 Life Points.
+**Fail:** No effect.
+**Critical:** For each Ace rolled, the target character replenishes 4 Life Points.
+**Fumble:** This character loses half its remaining Life Points (rounding up).</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Marine Biologist" hidden="false" id="8d93-00ba-ccea-9ccf">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="14"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="91bb-f575-6532-6e68" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Doctor" hidden="false" id="0406-6aec-ebfd-9ca0" targetId="e76d-93d8-8615-d9ae" primary="false"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="8459-d1e1-abda-5f3e" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Tranquiliser Harpoon Gun" hidden="false" id="a315-1828-24b0-46d8">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c110-6310-2a31-3326-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c110-6310-2a31-3326-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Tranquiliser Harpoon Gun" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="5978-a232-6d29-16f0">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Reload, Aquatic, Two-Handed, Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Marine Biologist" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="c40b-c8f8-5e7e-f471">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Marine Biologist" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="6be2-2f40-34c2-2fb7">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Hunter, Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Ordnance Doctory" hidden="false" id="c43f-4d85-3c43-f659">
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="fbcb-5a77-a03f-296e" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Doctor" hidden="false" id="4910-e531-b654-8bb3" targetId="e76d-93d8-8615-d9ae" primary="false"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="0bb4-fdb6-96d3-7086" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Spirit Cannon" hidden="false" id="e29a-d3f7-ef4a-3219">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc38-6c8a-f5ee-a571-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc38-6c8a-f5ee-a571-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Spirit Cannon" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="ae9e-55cb-183d-347a">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">12&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+2</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Reload (1), Two-Handed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Ordnance Doctory" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="8f2d-3c85-1e29-408c">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Ordnance Doctory" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="9de0-48bd-0fad-4815">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Marksman (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="15"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Soul Ammunition" id="78ed-eb26-ce82-9652" hidden="false">
+              <description>When making a Combat action with the Spirit Cannon, this character may use 2 Will Points to have it gain one of the following for that action:
+• Increase Range from 12” to 18”.
+• Gain the Blast ability.
+• Gain the Knockback ability</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Unleashed Madman" hidden="false" id="8f2f-e1ed-78dd-86d7">
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="57a2-313f-26c9-b01a" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="9204-db1e-8f13-24b3" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="15"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Grasping Tentacles" hidden="false" id="4c3f-e733-ad7d-dcf4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd61-da3b-a59a-9f31-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd61-da3b-a59a-9f31-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Grasping Tentacles" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="fae8-9537-59e7-0390">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Unleashed Madman" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="2c1f-86d3-b6ad-d024">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Unleashed Madman" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="df2c-2768-4d4e-6700">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brawler (1), Expert Grappler (3), Mindless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Nexus" id="0adb-3364-a020-9d25" hidden="false" type="rule" targetId="e0d5-20e1-7a0a-6447"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Unleashed Madman" hidden="false" id="2e0c-154d-5931-e9b6">
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="07ab-305d-8413-bd98" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="ea6f-6e95-70c3-f28e" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="15"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Grasping Tentacles" hidden="false" id="5148-4848-3d2a-b298">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="00e9-4fc6-ac14-6715-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="00e9-4fc6-ac14-6715-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Grasping Tentacles" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="935f-43a3-9a9e-efd8">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Unleashed Madman" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="9799-4288-b6bf-9435">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Unleashed Madman" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="1a7b-bbd0-0380-c9a8">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brawler (1), Expert Grappler (3), Mindless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Nexus" id="6d77-0bd2-04f8-faab" hidden="false" type="rule" targetId="e0d5-20e1-7a0a-6447"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Voltage Bombardier" hidden="false" id="abbc-80db-dcdc-02fa">
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="ca16-1dd1-bbd8-e6b8" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Doctor" hidden="false" id="8e60-2ba4-52b0-8132" targetId="e76d-93d8-8615-d9ae" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Soul Bombard" hidden="false" id="609c-026a-b01f-0ded">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="06f9-ac05-1faa-3626-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06f9-ac05-1faa-3626-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Soul Bombard" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="91f7-7a78-bb26-eb5f">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+2</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-3</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Blast</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Voltage Bombardier" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="76b7-4f00-25be-9f42">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Voltage Bombardier" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="59ec-7380-928e-c8b0">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brawler (2), Limited Movement, Mindless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Nexus" id="4b69-dad2-1146-e8ad" hidden="false" type="rule" targetId="e0d5-20e1-7a0a-6447"/>
+          </infoLinks>
+          <rules>
+            <rule name="Detonation" id="e332-f46e-5348-f95c" hidden="false">
+              <description>When placing the Blast template for Soul Bombard, it must be centred over this character (and is also hit).</description>
+            </rule>
+            <rule name="Explosive Mind" id="d8b6-3bb8-2975-4a85" hidden="false">
+              <description>Whenever this character loses Will Points (through using them itself or being used as part of the Nexus special rule), after the action is resolved, it must immediately make an out of sequence Combat action using Soul Bombard. This is done only once per action.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Warden" hidden="false" id="d4ba-59e1-e1b2-75fb">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="13"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="a5e4-91df-b507-8dc1" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="4ebb-19f2-4167-bade" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mace" hidden="false" id="8f40-6945-1fb1-50e7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a1ed-5dff-1050-7b62-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1ed-5dff-1050-7b62-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Mace" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="08dd-a091-d8d2-6cc1">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Knockback</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Warden" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="8d94-0423-6112-e7f6">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Warden" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="9394-35e8-d8a6-f847">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bodyguard (Doctor), Expert Protection (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Henchman" hidden="false" id="6467-0ab5-51bf-5e1e">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Apprentice Doctor" hidden="false" id="4ba6-9fb3-faf3-9ce1">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="863b-cffd-2ff9-a1a6" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Doctor" hidden="false" id="32bc-706d-6955-8b2d" targetId="e76d-93d8-8615-d9ae" primary="false"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="6c73-341d-ea8a-15f2" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Scalpel" hidden="false" id="238f-2b97-7ae9-0e6e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b3f-099c-5333-087a-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b3f-099c-5333-087a-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Scalpel" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="8a23-d0ad-9a36-b3eb">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Selected Mage as gained ability" hidden="false" id="fc1e-47df-5e81-64ef">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f2df-ddb9-23d5-5123" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Discipline Choice" hidden="false" id="2601-2461-5c0f-eacf" type="selectionEntryGroup" targetId="9638-bcc3-0602-1d0a">
+                  <modifiers>
+                    <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+                      <conditions>
+                        <condition type="lessThan" value="-1" field="ef4a-6847-91c7-b1f8" scope="self" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Apprentice Doctor" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="16a4-d52a-0c9f-f57a">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Apprentice Doctor" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="22dc-8ff0-69ec-c170">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Companion (Doctor)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Apprenticeship" id="1901-af27-8ce8-4d95" hidden="false">
+              <description>When choosing this character, pick one character in your gang with both the Doctor and Hero keywords to be this character’s mentor.
+
+
+Choose one Character Ability, unique skill, or weapon profile that mentor has for this character to gain. A character can only be a mentor to one Apprentice Doctor. 
+
+
+If choosing the Mage ability, the disciplines available are the same as the mentor. If choosing a weapon with a relevant unique rule, that rule is taken as well (such as Unstable on Alchemical Bombs).</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Basilisk" hidden="false" id="2c06-fb40-d7ff-2b24">
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="4156-9ca5-988e-c1b6" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Animal" hidden="false" id="879c-b75d-dcce-a1b5" targetId="ce1c-47f0-9623-ec96" primary="false"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="1a41-16ab-481d-b485" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="13"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Venomous Spray" hidden="false" id="40ac-3436-51a3-31a2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="78b9-f5ab-d25e-2249-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78b9-f5ab-d25e-2249-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Venomous Spray" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="cc79-0884-4f9b-8f0f">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Poisoned, Template</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Poison Burst" id="3434-5755-e15b-761b" hidden="false">
+              <description>When this character is killed, before removing it from the game, each character in base contact (friendly and enemy) loses Life Points as if they were damaged by an attack with the Poisoned rule.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Basilisk" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="03d8-158d-f152-c7d5">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Basilisk" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="e523-695b-88e6-f94f">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fear (2), Limited Movement, Mindless, Primitive</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Carrion" hidden="false" id="509d-38ce-b7bf-2b20">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="10"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="1de0-5f5c-8449-1dbf" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="a9de-1d85-632c-5cd7" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Implanted Tools" hidden="false" id="3e70-ed86-32d1-3a32">
+              <profiles>
+                <profile name="Implanted Tools" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="fd73-b96f-ba8c-7d47">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Carrion" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="142c-6652-ed8d-1c51">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">8</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Carrion" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="e1da-e469-66e6-7aad">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">6</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Infiltration, Mindless, Pickpocket</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Nexus" id="cf3b-a46d-30f1-c681" hidden="false" type="rule" targetId="e0d5-20e1-7a0a-6447"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Crocodile" hidden="false" id="a811-56b8-f0e7-9424">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="14"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="da73-4417-f011-33bf" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Animal" hidden="false" id="bf05-8318-17cb-97e3" targetId="ce1c-47f0-9623-ec96" primary="false"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="14e7-3513-1238-d7e5" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Enhanced Jaws" hidden="false" id="8d3a-5850-127c-cb28">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1157-f90a-4331-aeb7-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1157-f90a-4331-aeb7-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Enhanced Jaws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="cc84-8099-7c11-765b">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-3</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Crocodile" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="9828-adcb-571e-4684">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Crocodile" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="2f19-43cc-59e1-f7b3">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fast Swimmer (3), Limited Movement, Mindless, Primitive, Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Doctor of Venesection" hidden="false" id="fec2-76ba-6bb0-728b">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="10"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="d08d-a5a8-e72b-81e7" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="c9f7-3c16-8389-f50a" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Fangs" hidden="false" id="b6da-bb96-6b28-8e40">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="769c-8d6d-ced0-5c43-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="769c-8d6d-ced0-5c43-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Fangs" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="f657-8598-321b-5cc4">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Doctor of Venesection" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="208b-302f-7b12-7af5">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">9</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Doctor of Venesection" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="0691-ca8a-deed-1124">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Frenzied, Limited Movement, Primitive, Vampiric Attack (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Diving Assistant" hidden="false" id="a88d-ddf9-d061-e1fd">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="13"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="c8b1-1075-ecd2-9033" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="579d-d17c-15d9-deaf" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Trident" hidden="false" id="496b-cb81-0fc0-7aa9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b4c-b9be-037b-3c20-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b4c-b9be-037b-3c20-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Trident" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="4205-dd54-b27d-d1f4">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic, Two-Handed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Diving Assistant" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="f311-73ad-5fca-b13d">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Diving Assistant" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="5c4b-9b6a-07e7-58b5">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bodyguard (Doctor), Universal Shielding (2), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Deep Dive" id="d48a-c19d-a967-4b58" hidden="false">
+              <description>Whenever this character makes a Dive action, you may spend 1 Will Point. If you do, you automatically score a Critical without rolling any dice.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Electron Cannoneer" hidden="false" id="f2cb-003a-7993-de92">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="5e8a-8ef3-da94-b4d2" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="888f-585a-140c-42e1" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Electron Cannon" hidden="false" id="71d2-2e90-8e68-0183">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eee5-3692-5289-6542-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eee5-3692-5289-6542-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Electron Cannon" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="9904-f2a9-8f4a-e1bb">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">12&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Reload (1), Two-Handed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Electron Cannoneer" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="4fad-4d82-24ec-747a">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Electron Cannoneer" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="96f0-68fb-0111-3dcc">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Universal Shielding (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Volatile Arc Power" id="dfaf-e6b3-16a5-e4e8" hidden="false">
+              <description>After resolving a successful Combat action with an Electron Cannon, pick 1 other character within 3&quot; of the target (friend or foe - including this character), they lose an equal amount of Life Points as the original target. If there are no other characters in range, this rule has no effect.</description>
+            </rule>
+            <rule name="Unstable" id="1062-372e-748b-6c43" hidden="false">
+              <description>Any failed Combat actions with the Electron Cannon always count as fumbles.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Gorilla" hidden="false" id="faae-be13-d32a-b198">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="13"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="8ccf-54de-6525-b456" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Animal" hidden="false" id="2a95-d15f-500c-4643" targetId="ce1c-47f0-9623-ec96" primary="false"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="2511-a2b8-c0f6-c73d" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Titanic Fists" hidden="false" id="32bb-2ab8-94d3-cfea">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3122-5cc7-409d-32ef-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3122-5cc7-409d-32ef-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Titanic Fists" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="c51b-97e0-bc8b-c955">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Gorilla" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="72f2-8a6e-5bc5-eb87">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Gorilla" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="04f8-eead-a7f5-6936">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bodyguard (Doctor), Flight, Primitive</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Hippocampus" hidden="false" id="79b9-6720-73f7-01da">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="19"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="976a-b590-417e-d783" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Animal" hidden="false" id="327c-f254-69ef-2ed9" targetId="ce1c-47f0-9623-ec96" primary="false"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="7cc9-103a-e2de-b888" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hoof Stomp" hidden="false" id="14af-ce88-a275-27c5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0913-5177-22fc-3df4-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0913-5177-22fc-3df4-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Hoof Stomp" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="713d-a19f-0a3d-0e57">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Hippocampus" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="3a13-f915-dcb5-0a7e">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">14</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Hippocampus" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="a346-39a4-0f36-f2ff">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bulky, Fast Swimmer (4), Limited Movement, Mindless, Primitive, Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Hyppogryph" hidden="false" id="b620-b869-691f-10fd">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="7"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="04e3-9005-ed4d-521c" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Doctor" hidden="false" id="400e-ecee-5770-4f16" targetId="e76d-93d8-8615-d9ae" primary="false"/>
+            <categoryLink name="Animal" hidden="false" id="df7c-b7c4-074d-719b" targetId="ce1c-47f0-9623-ec96" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Beak &amp; Claws" hidden="false" id="5189-9444-99e7-24d7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="479b-34d5-10a9-94f1-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="479b-34d5-10a9-94f1-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Beak &amp; Claws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="1f11-33be-7ef0-7187">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Hyppogryph" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="7e47-41eb-f639-8c4a">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Hyppogryph" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="c8a9-e9f3-71b1-4ab3">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">6</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Flight, Infiltration, Mindless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Hollowman" hidden="false" id="e420-4a26-6539-5bc7">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="6"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="e6c4-b3c0-0d3d-3725" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="291b-38bb-eef3-e365" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Unarmed" hidden="false" id="3e03-61c3-1478-86ac" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Hollowman" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="33c9-ed6f-186e-732d">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">6</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Hollowman" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="d9e6-ee11-4954-2267">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Frenzied, Mindless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Blood Nexus" id="8f1f-2b8f-7fff-2da6" hidden="false">
+              <description>Every time this character loses Life Points (including from the Frenzied rule), you may replenish that many Will Points for all characters within 6&quot; with the Nexus ability.</description>
+            </rule>
+            <rule name="Death Throes Overload" id="d75f-1f88-40f0-067f" hidden="false">
+              <description>When this character dies, every character with the Doctor keyword within 6&quot; replenishes 2 Will Points.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Harvester" hidden="false" id="30d8-c18e-70a3-7e37">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="11"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="bcfe-9110-728b-393b" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="5160-df33-5612-d3eb" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Meat Hook" hidden="false" id="b242-0478-860d-930e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7ed2-7794-d5cf-c5bd-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ed2-7794-d5cf-c5bd-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Meat Hook" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="1b11-5b51-5462-e1cb">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Harvester" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="900c-4b3e-8d2c-fafe">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Harvester" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="97ed-3db3-6b48-7290">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Grappler (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Shepherd" id="f7a2-f781-5936-4c5f" hidden="false">
+              <description>This character gains +2 ATTACK when making Grapple actions against characters with a larger base size.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Husk" hidden="false" id="77c6-9241-155a-54fe">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="4"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="8347-35b8-7de0-f1b3" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="28f2-a08b-4cac-bfa3" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Unarmed" hidden="false" id="b86a-1ca7-2e5f-448a" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Husk" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="7d54-420b-9a21-1e1c">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">8</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Husk" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="af18-494f-2844-8115">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">2</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">0</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Grappler (2), Mindless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Corpse" id="58b2-ee3d-29b7-6824" hidden="false">
+              <description>If this character takes 4 or more Damage in one action (before making a Protection roll), add 2 extra Damage to the attack.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Lab Assistant" hidden="false" id="68ab-c7e7-8d11-5bc4">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="10"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="7cfa-89aa-36a4-2205" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Doctor" hidden="false" id="b158-64c4-2ce9-7138" targetId="e76d-93d8-8615-d9ae" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Shock Prod" hidden="false" id="d8c5-292c-0f7f-5bb5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f67d-9c09-9a89-fcb8-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f67d-9c09-9a89-fcb8-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Shock Prod" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="cec7-34d6-2312-bba9">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Lab Assistant" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="3e45-4cd2-1605-9504">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Lab Assistant" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="ae77-1d50-c604-c088">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Companion (Doctor), Hunter</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Lion" hidden="false" id="31ac-f35e-fb6a-642d">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="ad82-5041-6388-d141" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="9ada-358a-c71d-f1f6" targetId="e482-2d30-1001-a6a1" primary="false"/>
+            <categoryLink name="Animal" hidden="false" id="d3fe-2145-23da-ef87" targetId="ce1c-47f0-9623-ec96" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ripping Teeth" hidden="false" id="46fd-1f6e-3d2f-0178">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8fc8-09e0-d30d-c8a7-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8fc8-09e0-d30d-c8a7-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Ripping Teeth" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="2e3b-41f5-8e50-510e">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Lion" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="a90d-0d30-3854-59fc">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Lion" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="86af-8bf5-69c4-7cb8">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Engage, Expert Offence (3), Mindless, Primitive</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Madman" hidden="false" id="4fb2-01c3-7212-1547">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="5"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="2467-5d1b-acca-cf8d" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="0362-7f02-2617-80e5" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Unarmed" hidden="false" id="311e-3acf-54ec-5e48" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Nexus" id="e40d-a1d4-89fd-bffd" hidden="false" type="rule" targetId="e0d5-20e1-7a0a-6447"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Madman" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="6205-f1fe-2ca2-3548">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">8</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">6</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Madman" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="79a8-8774-26c8-10eb">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">1</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Limited Movement, Mindless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Manticore" hidden="false" id="00b5-17ef-fee7-c10f">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="9"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="6c4b-b214-a169-56a2" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="4ec1-0798-4895-340a" targetId="e482-2d30-1001-a6a1" primary="false"/>
+            <categoryLink name="Animal" hidden="false" id="61ac-5156-e3d0-6c41" targetId="ce1c-47f0-9623-ec96" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Quilled Spines" hidden="false" id="7255-af97-b47c-788e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3bed-e4d4-17b7-e008-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3bed-e4d4-17b7-e008-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Quilled Spines" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="813d-2e31-d622-bbed">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">8&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Manticore" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="e5d9-fbdb-89bb-0305">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Manticore" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="f95a-ef03-989a-c2da">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">6</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Marksman (2), Primitive</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Spined Hide" id="d0e1-80e3-aa31-a183" hidden="false">
+              <description>At the end of this character&apos;s turn, all enemy characters in base contact lose 1 Life Point.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Mermaid" hidden="false" id="6a5c-a6be-508d-486b">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="13"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="75d9-160f-af8f-3f05" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="6af5-96f3-0164-0219" targetId="e482-2d30-1001-a6a1" primary="false"/>
+            <categoryLink name="Discipline (Runes of Sovereignty)" hidden="false" id="469d-cff2-cdf1-0c60" targetId="162f-6e00-290f-b3be" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Cantrip of the Chariot" hidden="false" id="dfbd-4b2c-9133-b8db" type="selectionEntry" targetId="70be-a32e-4e31-0e26"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hidden Claws" hidden="false" id="cb40-5660-4861-2b46">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6fd0-6585-8a99-ef56-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fd0-6585-8a99-ef56-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Hidden Claws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="5ddf-1e6f-a053-0fd9">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Mermaid" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="70d6-4baa-62f5-aff5">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Mermaid" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="826c-360d-bcf4-7c88">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fast Swimmer (3), Mage (0), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Monstrosity" hidden="false" id="a6c0-73ba-7727-fdfe">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="9"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="3fc5-e6fc-6b6f-bc87" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="484a-9d1b-750d-1adc" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Rusty Blade" hidden="false" id="cae8-e031-d38d-6d00">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce71-92f0-8baa-9109-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce71-92f0-8baa-9109-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Rusty Blade" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="4397-5375-80b0-0dbc">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+2</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Monstrosity" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="5afa-58fa-6070-e447">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">14</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Monstrosity" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="026a-dc6a-4b28-9432">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">2</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">0</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brawler (1), Mindless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Nurse" hidden="false" id="e56d-331c-1b66-56d5">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="7"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="ce4e-9098-7318-0b63" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="05a2-53f3-4a23-2382" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Rusty Knife" hidden="false" id="71fb-dae6-0910-973e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="499e-cf59-c212-d284-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="499e-cf59-c212-d284-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Rusty Knife" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="546a-5dd7-0985-0138">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Nurse" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="943c-649e-1496-d28e">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Nurse" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="b7d6-4b82-086c-dfaf">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Frenzied, Primitive</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Healer " id="0d9b-0068-b443-2fd1" hidden="false">
+              <description>**-1AP**
+Pick a character within 3&quot; and make a basic MIND roll. That character replenishes 2 Life Points for each Ace rolled.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Rhino" hidden="false" id="4a80-5310-5e59-67bd">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="15"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="43b8-bd51-369e-83f9" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Animal" hidden="false" id="d93a-122a-29ec-7953" targetId="ce1c-47f0-9623-ec96" primary="false"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="07db-c733-7b13-7e7f" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Horns" hidden="false" id="e38b-e5eb-8aa7-b458">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b2ce-9ec8-39fb-815b-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2ce-9ec8-39fb-815b-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Horns" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="7cda-292d-4183-c963">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Knockback</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Rhino" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="680e-2165-1492-cd14">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">20</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Rhino" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="77fd-4fbd-b67b-a289">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">5</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bulky, First Strike (2), Limited Movement, Mindless, Primitive</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Husk" hidden="false" id="f56d-ca8f-c5f9-1aa4" targetId="77c6-9241-155a-54fe" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Doctor of the Mind" hidden="false" id="d7e4-e025-15ee-18d7" targetId="fb5b-b078-4f1b-6dfb" type="selectionEntry"/>
     <entryLink import="true" name="Master of Necromantic Studies" hidden="false" id="5ecd-be9a-72c5-3ffe" targetId="1738-9900-a19b-7889" type="selectionEntry"/>
+    <entryLink import="true" name="Master of Arcane Security" hidden="false" id="4236-9ac4-f4e4-a2aa" targetId="abe6-c892-dc61-75c7" type="selectionEntry"/>
+    <entryLink import="true" name="Master of Zoology" hidden="false" id="2d5f-dc89-1c14-2017" targetId="fe3a-b805-289f-179d" type="selectionEntry"/>
+    <entryLink import="true" name="Plague Doctor" hidden="false" id="9821-9691-e888-5ada" targetId="b4ce-8dc4-11d1-6ddc" type="selectionEntry"/>
+    <entryLink import="true" name="The Being" hidden="false" id="be51-7542-e1fb-373e" targetId="e8aa-e6cd-571f-8ebd" type="selectionEntry"/>
+    <entryLink import="true" name="The Unholy Union" hidden="false" id="252e-1bf9-465b-741b" targetId="a2db-96df-dfcf-5eef" type="selectionEntry"/>
+    <entryLink import="true" name="Doctor of Blood" hidden="false" id="84d2-8915-fe53-d457" targetId="054c-5256-86a4-39b9" type="selectionEntry"/>
+    <entryLink import="true" name="Doctor of Tides" hidden="false" id="775c-3884-411e-f10f" targetId="0ec1-c286-5bc9-42d9" type="selectionEntry"/>
+    <entryLink import="true" name="Doctor of Poisons" hidden="false" id="4d0c-2ba9-e639-04f5" targetId="9a63-945d-6d59-f1f5" type="selectionEntry"/>
+    <entryLink import="true" name="Doctor of the Beasts" hidden="false" id="5aef-00b4-a085-484e" targetId="854c-de22-1a88-4873" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="79d4-9b8b-7f29-cba5" id="f962-8656-ad6f-e99a" primary="true" name="Hero"/>
+        <categoryLink targetId="e76d-93d8-8615-d9ae" id="b669-17c0-9884-e5ea" primary="false" name="Doctor"/>
+        <categoryLink targetId="e482-2d30-1001-a6a1" id="81f4-0c57-89e0-1145" primary="false" name="Faction (The Doctors)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Doctor of the Firmament" hidden="false" id="1519-181e-1a0b-b17c" targetId="05d0-cb5c-65a9-d08e" type="selectionEntry"/>
+    <entryLink import="true" name="Ethereal Assassin" hidden="false" id="971e-7e33-79cc-da97" targetId="4ab2-0d8b-02b4-a262" type="selectionEntry"/>
+    <entryLink import="true" name="Ethereal Snatcher" hidden="false" id="0076-5e4a-5653-f748" targetId="3683-86c2-495f-c162" type="selectionEntry"/>
+    <entryLink import="true" name="Alchemist Doctor" hidden="false" id="05ad-c4ac-331d-8a7f" targetId="9ee4-85aa-6b0d-24c3" type="selectionEntry"/>
+    <entryLink import="true" name="Morgue Doctor" hidden="false" id="bb1b-67c7-da12-254b" targetId="70ba-7d69-a5b6-1226" type="selectionEntry"/>
+    <entryLink import="true" name="Marine Biologist" hidden="false" id="e493-b1bb-f638-aea8" targetId="8d93-00ba-ccea-9ccf" type="selectionEntry"/>
+    <entryLink import="true" name="Ordnance Doctory" hidden="false" id="eebd-13bb-aefd-cbd7" targetId="c43f-4d85-3c43-f659" type="selectionEntry"/>
+    <entryLink import="true" name="Unleashed Madman" hidden="false" id="b4d9-f6a3-fee7-7edc" targetId="2e0c-154d-5931-e9b6" type="selectionEntry"/>
+    <entryLink import="true" name="Voltage Bombardier" hidden="false" id="6752-5a53-0d1a-fcfb" targetId="abbc-80db-dcdc-02fa" type="selectionEntry"/>
+    <entryLink import="true" name="Warden" hidden="false" id="3aa8-0120-1851-deed" targetId="d4ba-59e1-e1b2-75fb" type="selectionEntry"/>
+    <entryLink import="true" name="Apprentice Doctor" hidden="false" id="8643-4cae-a8e0-dfb5" targetId="4ba6-9fb3-faf3-9ce1" type="selectionEntry"/>
+    <entryLink import="true" name="Basilisk" hidden="false" id="274f-a807-1f98-9357" targetId="2c06-fb40-d7ff-2b24" type="selectionEntry"/>
+    <entryLink import="true" name="Carrion" hidden="false" id="f9d2-adbc-60d9-d160" targetId="509d-38ce-b7bf-2b20" type="selectionEntry"/>
+    <entryLink import="true" name="Crocodile" hidden="false" id="a4bd-f2bc-2d9b-144c" targetId="a811-56b8-f0e7-9424" type="selectionEntry"/>
+    <entryLink import="true" name="Doctor of Venesection" hidden="false" id="be6a-39bc-d1f3-6bc6" targetId="fec2-76ba-6bb0-728b" type="selectionEntry"/>
+    <entryLink import="true" name="Diving Assistant" hidden="false" id="3a61-4906-9b5b-d921" targetId="a88d-ddf9-d061-e1fd" type="selectionEntry"/>
+    <entryLink import="true" name="Electron Cannoneer" hidden="false" id="2d94-10f6-35ca-9de9" targetId="f2cb-003a-7993-de92" type="selectionEntry"/>
+    <entryLink import="true" name="Gorilla" hidden="false" id="bb35-7e26-4551-c966" targetId="faae-be13-d32a-b198" type="selectionEntry"/>
+    <entryLink import="true" name="Hippocampus" hidden="false" id="bca2-f7d1-2387-1d5a" targetId="79b9-6720-73f7-01da" type="selectionEntry"/>
+    <entryLink import="true" name="Hyppogryph" hidden="false" id="d083-b2d4-1474-cf5d" targetId="b620-b869-691f-10fd" type="selectionEntry"/>
+    <entryLink import="true" name="Hollowman" hidden="false" id="08b2-2ce6-8d29-49e6" targetId="e420-4a26-6539-5bc7" type="selectionEntry"/>
+    <entryLink import="true" name="Harvester" hidden="false" id="bba5-a659-bf25-50b2" targetId="30d8-c18e-70a3-7e37" type="selectionEntry"/>
+    <entryLink import="true" name="Lab Assistant" hidden="false" id="42e5-161f-9672-a76c" targetId="68ab-c7e7-8d11-5bc4" type="selectionEntry"/>
+    <entryLink import="true" name="Lion" hidden="false" id="978b-7369-83ff-127a" targetId="31ac-f35e-fb6a-642d" type="selectionEntry"/>
+    <entryLink import="true" name="Madman" hidden="false" id="c579-d7fe-1a3d-cbe1" targetId="4fb2-01c3-7212-1547" type="selectionEntry"/>
+    <entryLink import="true" name="Manticore" hidden="false" id="af50-3dd0-ae99-3bfa" targetId="00b5-17ef-fee7-c10f" type="selectionEntry"/>
+    <entryLink import="true" name="Mermaid" hidden="false" id="c6aa-adc1-f9e8-4aaf" targetId="6a5c-a6be-508d-486b" type="selectionEntry"/>
+    <entryLink import="true" name="Monstrosity" hidden="false" id="3367-8a4f-7264-60fd" targetId="a6c0-73ba-7727-fdfe" type="selectionEntry"/>
+    <entryLink import="true" name="Nurse" hidden="false" id="1e97-b80c-12e3-0820" targetId="e56d-331c-1b66-56d5" type="selectionEntry"/>
+    <entryLink import="true" name="Rhino" hidden="false" id="a77d-f3e7-7c02-045e" targetId="4a80-5310-5e59-67bd" type="selectionEntry"/>
   </entryLinks>
 </catalogue>
