@@ -123,7 +123,7 @@ Every other character (friendly and enemy, not including this one) within 2&qu
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Discipline Choice" hidden="false" id="83cc-7110-8668-e481" type="selectionEntryGroup" targetId="9638-bcc3-0602-1d0a"/>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="83cc-7110-8668-e481" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Ancient Trident" hidden="false" id="1b71-bb17-46b1-6813">
@@ -410,7 +410,7 @@ On a 7+ this Command doesn&apos;t use a Command Point.</description>
               </costs>
               <entryLinks>
                 <entryLink import="true" name="Unarmed" hidden="false" id="5632-5f27-a54e-c34d" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
-                <entryLink import="true" name="Discipline Choice" hidden="false" id="e059-8e3d-6832-14ab" type="selectionEntryGroup" targetId="9638-bcc3-0602-1d0a"/>
+                <entryLink import="true" name="Discipline Choice" hidden="false" id="e059-8e3d-6832-14ab" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
               </entryLinks>
               <profiles>
                 <profile name="Sirena" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="c7e6-8cd0-5e98-6f25">
@@ -695,7 +695,7 @@ This character may make Combat actions against friendly characters.</descriptio
             </rule>
           </rules>
           <entryLinks>
-            <entryLink import="true" name="Discipline Choice" hidden="false" id="76d4-109c-cdc3-7872" type="selectionEntryGroup" targetId="9638-bcc3-0602-1d0a"/>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="76d4-109c-cdc3-7872" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
           </entryLinks>
           <modifiers>
             <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
@@ -1035,7 +1035,7 @@ Place a new Infant Kraken in base contact with this character. The new Infant 
             </modifier>
           </modifiers>
           <entryLinks>
-            <entryLink import="true" name="Discipline Choice" hidden="false" id="c342-be3a-054c-40d4" type="selectionEntryGroup" targetId="9638-bcc3-0602-1d0a"/>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="c342-be3a-054c-40d4" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
           </entryLinks>
           <rules>
             <rule name="New Rule" id="6151-06d0-d28c-8f69" hidden="false">
@@ -1238,7 +1238,7 @@ Additionally, any enemy character within 3&quot; of this character suffers -1 
           </costs>
           <entryLinks>
             <entryLink import="true" name="Unarmed" hidden="false" id="f569-e831-a2f9-dc43" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
-            <entryLink import="true" name="Discipline Choice" hidden="false" id="29e9-28c8-7967-f978" type="selectionEntryGroup" targetId="9638-bcc3-0602-1d0a"/>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="29e9-28c8-7967-f978" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
           </entryLinks>
           <profiles>
             <profile name="Sirena" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="b12b-4fb5-2553-17e2">
@@ -1354,7 +1354,7 @@ Until the end of the round, any enemy characters within 6&quot; of this charac
           </categoryLinks>
           <entryLinks>
             <entryLink import="true" name="Unarmed" hidden="false" id="f24b-f3f3-95d8-cf67" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
-            <entryLink import="true" name="Discipline Choice" hidden="false" id="8bed-6716-4d93-e884" type="selectionEntryGroup" targetId="9638-bcc3-0602-1d0a"/>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="8bed-6716-4d93-e884" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
           </entryLinks>
           <profiles>
             <profile name="Agalope" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="6067-38ba-4284-3703">
