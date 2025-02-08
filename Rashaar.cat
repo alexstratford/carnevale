@@ -1294,7 +1294,840 @@ Until the end of the round, any enemy characters within 6&quot; of this charac
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Henchman" hidden="false" id="8225-99eb-ed6f-2ab4"/>
+    <selectionEntry type="upgrade" import="true" name="Henchman" hidden="false" id="8225-99eb-ed6f-2ab4">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Advanced Hybrid" hidden="false" id="4282-0f92-2378-a40b">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="38b3-ff5b-da9a-a937" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="c7f1-4424-1aeb-9a68" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Weak Claws" hidden="false" id="17ba-0199-a93f-a400">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="55a1-09ba-ae93-c0fd-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55a1-09ba-ae93-c0fd-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Weak Claws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="0485-4f40-1389-76bf">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Advanced Hybrid" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="0c03-14d9-8c6c-3b67">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Advanced Hybrid" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="36d9-a1b1-81b5-d067">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Acrobatic (2), First Strike (1), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Agalope" hidden="false" id="8b4f-7da0-9d3f-6a84">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="2"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="a579-9d09-7709-6fd1" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Monster" hidden="false" id="de8d-a179-31a1-e8c2" targetId="f067-a302-b855-c50a" primary="false"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="256e-db23-1263-8a65" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+            <categoryLink name="Discipline (Wild Magic)" hidden="false" id="e673-2314-55a3-e736" targetId="6e89-8a6f-6b8d-6133" primary="false"/>
+            <categoryLink name="Discipline (Fateweaving)" hidden="false" id="741c-4ae1-71c7-8689" targetId="0edf-0a9c-7e37-e3c3" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Unarmed" hidden="false" id="f24b-f3f3-95d8-cf67" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="8bed-6716-4d93-e884" type="selectionEntryGroup" targetId="9638-bcc3-0602-1d0a"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Agalope" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="6067-38ba-4284-3703">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">5</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Agalope" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="8667-a0f9-141d-d8fa">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Sorcerer (1), Fast Swimmer (2), Mage (1), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+              <conditions>
+                <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="entry" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Dragging Down" id="2934-a4cf-d90e-e7c1" hidden="false">
+              <description>This character may re-roll failed dice rolls when making Drown actions.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Bouncing Telchine" hidden="false" id="d2e2-3898-36ac-19f0">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="9"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="911a-bad4-f6fa-18dc" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Feral" hidden="false" id="34ea-a4f8-c9d8-5f48" targetId="3bdc-4702-a1c6-3efe" primary="false"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="6c56-4e45-43c9-23be" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Unarmed" hidden="false" id="7f6d-4f9b-6eff-bb71" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Bouncing Telchine" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="d970-b6dd-f3e0-ad6b">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Bouncing Telchine" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="39d3-bd67-af75-8af8">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Primitive, Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Leaper" id="32c5-2966-13f9-1c28" hidden="false">
+              <description>When this character makes a successful Jump action, add 2&quot; to the movement distance.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Bulbous Toad" hidden="false" id="a94e-ab47-dcb8-fa20">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="13"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="125d-a998-f410-f031" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Monster" hidden="false" id="eeff-5db3-3c43-4a11" targetId="f067-a302-b855-c50a" primary="false"/>
+            <categoryLink name="Feral" hidden="false" id="9b59-65cf-6a0e-9067" targetId="3bdc-4702-a1c6-3efe" primary="false"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="6b39-34d6-34ed-796e" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Tongue Harpoon" hidden="false" id="d260-ed84-258f-3636">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8383-4233-a225-2fe4-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8383-4233-a225-2fe4-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Tongue Harpoon" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="7716-11bd-a1ac-dec6">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">12&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic, Knockbakc, Reload (1)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Bulbous Toad" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="5bbf-886d-4b8c-0c2e">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">14</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Bulbous Toad" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="1024-587e-cfbf-6674">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">2</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fast Swimmer (2), Mindless, Primitive, Vampiric Attack (1), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Barbed Tongue" id="69d9-ef02-9954-cfba" hidden="false">
+              <description>The Tongue Harpoon&apos;s Knockback moves the target directly towards this character rather than away.</description>
+            </rule>
+            <rule name="Feeder" id="89f0-8e54-d0e1-f4ad" hidden="false">
+              <description>This character&apos;s Vampiric Attack special rule activates even if it isn&apos;t in base contact with its target.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Crybaby" hidden="false" id="d0e1-4d01-a4ef-70f1">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="5"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="f5fb-fd1a-2a5c-913b" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Feral" hidden="false" id="ac5d-c725-46fe-1612" targetId="3bdc-4702-a1c6-3efe" primary="false"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="709d-18c7-ec51-8466" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Unarmed" hidden="false" id="b684-97d7-4846-5e30" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Crybaby" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="4d77-ae0e-63c5-530d">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">4</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Crybaby" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="7024-4a67-3d3f-8250">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">6</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">0</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Concealment (2), Mindless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Bait" id="53aa-5b1b-aa39-4d88" hidden="false">
+              <description>Friendly characters may attack this character as if it were an enemy. If a friendly character kills this character, it loses the Mindless rule for the rest of the game.</description>
+            </rule>
+            <rule name="Piercing Wail" id="9276-5f4f-37e6-d92e" hidden="false">
+              <description>Any enemy characters within 6&quot; of this character have -1 DEXTERITY.</description>
+            </rule>
+            <rule name="Unsightly" id="933a-c176-2807-f6be" hidden="false">
+              <description>This character can be deployed anywhere on the board at ground level, at least 6&quot; away from any enemy characters or objectives.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Cymothoan Crusher" hidden="false" id="6cdb-b902-4748-41e6">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="17"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="dd39-4376-fbd6-ecde" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Feral" hidden="false" id="05e3-412a-e051-b2b9" targetId="3bdc-4702-a1c6-3efe" primary="false"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="7b23-74bf-39be-4ac5" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Crusted Fist" hidden="false" id="2572-a937-0799-c3b1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f782-147d-124d-f008-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f782-147d-124d-f008-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Crusted Fist" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="8957-10b1-19f6-085c">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Knockback, Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Cymothoan Crusher" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="f614-f647-ad44-460a">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">17</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Cymothoan Crusher" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="a24d-216b-7f78-0d9c">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">5</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bulky, First Strike (3), Primitive, Mindless, Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Dagon Officiant" hidden="false" id="4bf9-e6c1-e4fa-466c">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="11"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="850d-a4e7-365d-91cb" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="3542-c125-52e5-d3b2" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Khopesh Daggers" hidden="false" id="bbb8-2eef-6123-1f82">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d105-160c-424e-452a-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d105-160c-424e-452a-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Khopesh Daggers" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="eef8-82ab-d3e2-3872">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Khopesh Daggers" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="8dd6-4b83-723c-b684">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Khopesh Daggers" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="f543-c37e-9e30-790d">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Offence (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Dagonite Zealot" hidden="false" id="b60b-64e1-c541-e423">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="11"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="63cd-3cfc-393a-3812" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="8c9d-bfd9-a244-70a5" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Wave-Blade Knife" hidden="false" id="150f-c807-9ab4-2b82">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4904-54b0-ab66-88fa-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4904-54b0-ab66-88fa-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Wave-Blade Knife" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="8ac8-a887-4d30-85ec">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Dagonite Zealot" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="1e62-0908-c593-35f9">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Dagonite Zealot" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="091e-8772-1abf-17be">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">6</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Aerial Attack, Expert Offence (1), Mindless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Half-Breed" hidden="false" id="2000-7fbd-c6df-ba42">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="92a5-feb1-cfb4-f733" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="ab12-cafa-c3e2-1a2c" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heavy Tentacles" hidden="false" id="fd11-2404-6d06-448f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38c5-e038-13de-6f27-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38c5-e038-13de-6f27-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Heavy Tentacles" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="c934-e196-5ba9-ef49">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">1&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Knockback</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Half-Breed" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="93fd-e593-c575-23a2">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Half-Breed" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="4b5a-c996-2322-0be5">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Berserk, Companion (Hydra), Expert Grappler (2), Fast Swimmer (2), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Hellhound" hidden="false" id="e2dd-3fe7-4f56-98ee">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="10"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Gaping Maw" hidden="false" id="42fa-78bd-b3a3-91a2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ebb1-9200-a44a-9885-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebb1-9200-a44a-9885-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Gaping Maw" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="e21c-567f-27dc-fdf7">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Climber" id="3643-a38f-a885-57da" hidden="false">
+              <description>This character always counts as rolling at least one Ace when making Climb rolls.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Hellhound" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="7bfd-77ae-1e44-24c3">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Hellhound" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="ddd6-b000-462e-9b47">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">First Strike (1), Primitive, Mindless, Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="4f47-bb99-ac0a-cf62" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Hybrid" hidden="false" id="0ec8-4ab1-3a63-bb81">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Dive Knife" hidden="false" id="be1b-28a1-3cb4-240a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ab0-91a8-c5bc-99db-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ab0-91a8-c5bc-99db-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Dive Knife" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="aaaa-791e-05bc-b39d">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="9"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="05ee-9a3f-c469-ac04" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="3c77-1c47-4432-de55" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Hybrid" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="4194-74b0-cf32-459f">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Hybrid" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="ae93-79b0-8819-91b5">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fast Swimmer (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Infant Kraken" hidden="false" id="449b-40b8-774b-2cc2">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="5"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="b016-42a2-cdc4-7701" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="a34e-0c25-41cc-464d" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+            <categoryLink name="Hydra" hidden="false" id="af21-bc91-5245-bfc7" targetId="6b0f-5a84-d5b9-15b6" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Unarmed" hidden="false" id="82aa-7ef0-c1d7-5da3" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Infant Kraken" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="ba6d-0ff8-b223-6d23">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">5</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Infant Kraken" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="f79c-a402-12bc-d3f6">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Concealment (2), Primitive, Water Creature, Vampiric Attack (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="One Mind" id="86bb-413e-02af-9e97" hidden="false">
+              <description>When this character makes a Combat action, it gains +1 to its ATTACK for every other Infant Kraken in base contact with the target.</description>
+            </rule>
+            <rule name="Writhe Inside" id="f219-b596-bb93-232b" hidden="false">
+              <description>When this character successfully damages an enemy character, you may remove this character from the game as if it were killed. If you do, place it on the damaged character’s card. For the rest of the game, that character always counts as having a Stun counter.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Lesser Rhyll" hidden="false" id="1605-6ad9-4e2b-a5cf">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="13"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="8367-f60d-cd86-9a3d" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Monster" hidden="false" id="7a0f-5fef-55dc-0e88" targetId="f067-a302-b855-c50a" primary="false"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="14e4-d9c4-3cfb-e706" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Dementing Tentacles" hidden="false" id="99b7-9e8d-ff36-17c9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a1f-4c7a-8b3b-5d30-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a1f-4c7a-8b3b-5d30-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Dementing Tentacles" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="bf34-8b24-ccf1-75b4">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic, Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Lesser Rhyll" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="da16-2f3d-ee7f-25e7">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Lesser Rhyll" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="e73e-6d9f-0358-e9ff">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fast Swimmer (1), Fear (0), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Lesser Ugdru" hidden="false" id="986f-be1e-5997-1f67">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="14"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="e1e0-6f94-6080-19ba" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="e64f-7c0b-167b-297e" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+            <categoryLink name="Monster" hidden="false" id="1f1a-79ea-7aee-fee2" targetId="f067-a302-b855-c50a" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Claws" hidden="false" id="d91e-1480-fa47-1539">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9fc2-3db7-da7f-1a34-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9fc2-3db7-da7f-1a34-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Claws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="1af1-d97a-8265-5f22">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Lesser Ugdru" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="6963-761e-708a-47bd">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Lesser Ugdru" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="e10b-e58f-f825-6528">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fast Swimmer (2), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Slave" hidden="false" id="55d3-d9bd-9727-59df">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="4"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="d8ec-8918-2d39-bdba" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="fe83-5849-7d99-5281" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Unarmed" hidden="false" id="5571-4619-1ba4-60ee" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
+          </entryLinks>
+          <rules>
+            <rule name="Feast For Dagon" id="29c8-d2d1-9cde-b253" hidden="false">
+              <description>If this character ends its turn in base contact with a friendly character with the *Monster* keyword, you may choose to remove it from play as a casualty. 
+
+
+The *Monster* character immediately replenishes 5 Life Points.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Slave" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="bdeb-21a4-56a5-f684">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">8</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Slave" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="8cbb-6207-de2a-683a">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Mindless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Urchin" hidden="false" id="af32-6a0b-e06d-4b13">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="8"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="4c94-d461-f6ae-d7c5" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="cd31-dadc-509b-ebf0" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Flint Dagger" hidden="false" id="f2a1-3356-1fc5-f209">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6633-faba-25f1-0101-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6633-faba-25f1-0101-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Flint Dagger" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="fa53-ed38-ac99-9564">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Urchin" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="8082-9056-33a6-152e">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">8</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">- </characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Urchin" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="f4d2-21f1-0eb5-0926">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Mindless, Pickpocket</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Wet Nurse" hidden="false" id="1d50-5e6d-d605-10be">
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="32c2-3158-a637-6c4c" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="0f64-09d6-2fd6-48f8" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Unarmed" hidden="false" id="514e-0882-477b-02c5" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Wet Nurse" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="c5a7-efb9-4506-218e">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">2</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Wet Nurse" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="68a8-2055-f0c0-50f9">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Companion (Hydra), Concealment (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="10"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Surrogate" id="793a-6765-d6b1-2fe4" hidden="false">
+              <description>Friendly characters with the Hydra keyword within 6” and line of sight may use this character’s Will Points as if they were their own.</description>
+            </rule>
+            <rule name="Kraken Nurse" id="3226-dee2-ea3a-0250" hidden="false">
+              <description>When you place a new Infant Kraken in line of sight of this character, this character recovers 1 lost Will Point.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="The Flame That Burns Underwater" hidden="false" id="014e-ba0b-1f11-2448" targetId="7212-c743-5b6d-69e5" type="selectionEntry"/>
@@ -1317,5 +2150,22 @@ Until the end of the round, any enemy characters within 6&quot; of this charac
     <entryLink import="true" name="Salaacia" hidden="false" id="23d4-d057-fbaa-b448" targetId="db27-2215-64c0-1315" type="selectionEntry"/>
     <entryLink import="true" name="Secreting Myxin" hidden="false" id="1538-cf88-b351-e24c" targetId="9104-30ab-a443-9cc3" type="selectionEntry"/>
     <entryLink import="true" name="Sirena" hidden="false" id="916c-3317-4877-5b51" targetId="d280-f27b-6257-d063" type="selectionEntry"/>
+    <entryLink import="true" name="Advanced Hybrid" hidden="false" id="23bb-5e98-2963-2769" targetId="4282-0f92-2378-a40b" type="selectionEntry"/>
+    <entryLink import="true" name="Agalope" hidden="false" id="66c1-54fa-539f-f94d" targetId="8b4f-7da0-9d3f-6a84" type="selectionEntry"/>
+    <entryLink import="true" name="Bouncing Telchine" hidden="false" id="1bef-f3a2-47d8-c7d7" targetId="d2e2-3898-36ac-19f0" type="selectionEntry"/>
+    <entryLink import="true" name="Bulbous Toad" hidden="false" id="072c-05b1-833e-5a98" targetId="a94e-ab47-dcb8-fa20" type="selectionEntry"/>
+    <entryLink import="true" name="Crybaby" hidden="false" id="e077-7097-30d7-aef5" targetId="d0e1-4d01-a4ef-70f1" type="selectionEntry"/>
+    <entryLink import="true" name="Cymothoan Crusher" hidden="false" id="4f77-bc61-4635-13ff" targetId="6cdb-b902-4748-41e6" type="selectionEntry"/>
+    <entryLink import="true" name="Dagon Officiant" hidden="false" id="9dab-170d-55c3-61b6" targetId="4bf9-e6c1-e4fa-466c" type="selectionEntry"/>
+    <entryLink import="true" name="Dagonite Zealot" hidden="false" id="3812-2273-d3ac-d43e" targetId="b60b-64e1-c541-e423" type="selectionEntry"/>
+    <entryLink import="true" name="Half-Breed" hidden="false" id="c902-61cd-eef0-f3d7" targetId="2000-7fbd-c6df-ba42" type="selectionEntry"/>
+    <entryLink import="true" name="Hellhound" hidden="false" id="fa05-c7e3-a76d-b538" targetId="e2dd-3fe7-4f56-98ee" type="selectionEntry"/>
+    <entryLink import="true" name="Hybrid" hidden="false" id="704c-83ca-7fcf-f5d5" targetId="0ec8-4ab1-3a63-bb81" type="selectionEntry"/>
+    <entryLink import="true" name="Infant Kraken" hidden="false" id="cbf9-3c2a-982d-7e06" targetId="449b-40b8-774b-2cc2" type="selectionEntry"/>
+    <entryLink import="true" name="Lesser Rhyll" hidden="false" id="3ea7-45bc-3a8b-9375" targetId="1605-6ad9-4e2b-a5cf" type="selectionEntry"/>
+    <entryLink import="true" name="Lesser Ugdru" hidden="false" id="ef61-c5a3-ab86-6f02" targetId="986f-be1e-5997-1f67" type="selectionEntry"/>
+    <entryLink import="true" name="Slave" hidden="false" id="2531-e3e6-3dbe-df68" targetId="55d3-d9bd-9727-59df" type="selectionEntry"/>
+    <entryLink import="true" name="Urchin" hidden="false" id="f4a7-980d-ab7f-7ba9" targetId="af32-6a0b-e06d-4b13" type="selectionEntry"/>
+    <entryLink import="true" name="Wet Nurse" hidden="false" id="6879-f959-87ab-94a1" targetId="1d50-5e6d-d605-10be" type="selectionEntry"/>
   </entryLinks>
 </catalogue>
