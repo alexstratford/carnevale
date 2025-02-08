@@ -356,7 +356,7 @@ A character in base contact with an enemy may only use this weapon (X) number o
   </sharedRules>
   <costTypes>
     <costType name="Ducats" id="b5b3-aa8b-4d9c-5673" defaultCostLimit="-1"/>
-    <costType name="Spell slots" id="ef4a-6847-91c7-b1f8" defaultCostLimit="0" hidden="false"/>
+    <costType name="Spell slots" id="ef4a-6847-91c7-b1f8" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Divinity" id="fc4d-ad28-7eaf-8b29" hidden="false">

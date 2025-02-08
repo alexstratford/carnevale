@@ -556,7 +556,6 @@ One friendly character within 6&quot; gains Pickpocket until the end of the ga
         <selectionEntry type="model" import="true" name="Witch" hidden="false" id="a3f7-8fc3-2b82-4c9a" collective="false" sortIndex="19">
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="2"/>
           </costs>
           <profiles>
             <profile name="Witch" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="1392-7b05-c46f-918c">
@@ -599,7 +598,7 @@ Pick one character within 3&quot; (friendly or enemy). That character loses 1 L
           <modifiers>
             <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
               <conditions>
-                <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="entry" shared="true" includeChildSelections="false"/>
+                <condition type="lessThan" value="-2" field="ef4a-6847-91c7-b1f8" scope="self" childId="entry" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -617,7 +616,7 @@ Pick one character within 3&quot; (friendly or enemy). That character loses 1 L
           </constraints>
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="19"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="3"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
           </costs>
           <profiles>
             <profile name="Baba-Yaga" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="8f30-6c82-3adf-e1f8">
@@ -671,7 +670,7 @@ Pick one character within 3&quot; (friendly or enemy). That character loses 1 L
           <modifiers>
             <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
               <conditions>
-                <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="entry" shared="true" includeChildSelections="false"/>
+                <condition type="lessThan" value="-3" field="ef4a-6847-91c7-b1f8" scope="self" childId="any" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1358,7 +1357,7 @@ Until the end of the round, any friendly characters with the Henchman keyword 
         <selectionEntry type="model" import="true" name="Seamstress" hidden="false" id="61e7-1aaf-08df-dc30" sortIndex="13">
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="14"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="1"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Hero" hidden="false" id="703e-67e7-2d81-1d84" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
@@ -1401,7 +1400,7 @@ Until the end of the round, any friendly characters with the Henchman keyword 
           <modifiers>
             <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
               <conditions>
-                <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="entry" shared="true" includeChildSelections="false"/>
+                <condition type="lessThan" value="-1" field="ef4a-6847-91c7-b1f8" scope="self" childId="entry" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
           </modifiers>

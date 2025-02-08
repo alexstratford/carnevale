@@ -93,7 +93,6 @@ Every other character (friendly and enemy, not including this one) within 2&qu
         <selectionEntry type="model" import="true" name="Magi-Rashaar" hidden="false" id="0ec4-2791-a11f-7cc0">
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="24"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="5"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Leader" hidden="false" id="892a-c8e9-8e64-028a" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
@@ -157,7 +156,7 @@ Pick a friendly character in line of sight within 6&quot;. That character gains
           <modifiers>
             <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
               <conditions>
-                <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="entry" shared="true" includeChildSelections="false"/>
+                <condition type="lessThan" value="-5" field="ef4a-6847-91c7-b1f8" scope="self" childId="entry" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -640,7 +639,6 @@ Until the end of the round, all friendly characters within 3&quot; gain +1 PRO
         <selectionEntry type="model" import="true" name="Dagonite Priest" hidden="false" id="85f4-95cc-891d-fd14">
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="15"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="2"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Hero" hidden="false" id="d4f7-1c1e-fb0c-9ba8" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
@@ -702,7 +700,7 @@ This character may make Combat actions against friendly characters.</descriptio
           <modifiers>
             <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
               <conditions>
-                <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="entry" shared="true" includeChildSelections="false"/>
+                <condition type="lessThan" value="-2" field="ef4a-6847-91c7-b1f8" scope="self" childId="entry" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -762,9 +760,7 @@ This character may make Combat actions against friendly characters.</descriptio
 Until the end of the round, any friendly character that starts a Run/Climb action within 6&quot; gains +2&quot; MOVE for that action provided they charge.</description>
             </rule>
             <rule name="Eldritch Incense" id="fac9-2597-a894-fce0" hidden="false">
-              <description>Any friendly character making a Combat action within 3&quot; gains Fear (0) for that action.
-
-</description>
+              <description>Any friendly character making a Combat action within 3&quot; gains Fear (0) for that action.</description>
             </rule>
             <rule name="Burned Flesh" id="2429-0918-37d8-c17e" hidden="false">
               <description>If a Combat action with the Burning Brand results in no Protection roll for the target, add 2 to the Damage.</description>
@@ -917,7 +913,7 @@ Until the end of the round, any friendly character that starts a Run/Climb act
           <rules>
             <rule name="Spawn" id="9989-71b7-9faf-0fe7" hidden="false">
               <description>**-3 LP**
-Place a new Infant Kraken in base contact with this character. The new Infant Kraken acts just like any other friendly character, and can be activated this round as normal. This ability may only be used once each round and only if this character has 4 or more Life Points remaining. </description>
+Place a new Infant Kraken in base contact with this character. The new Infant Kraken acts just like any other friendly character, and can be activated this round as normal. This ability may only be used once each round and only if this character has 4 or more Life Points remaining.</description>
             </rule>
             <rule name="Living Vessel" id="f110-ab25-bfe0-70c0" hidden="false">
               <description>When this character is killed, before removing it from the game, make a basic MIND roll. Place an Infant Kraken in base contact with this character, plus an additional Infant Kraken in base contact with one of the new Infant Krakens for each Ace in the roll. The new Infant Krakens act just like any other friendly character and can be activated as normal this round.</description>
@@ -984,7 +980,6 @@ Place a new Infant Kraken in base contact with this character. The new Infant 
         <selectionEntry type="model" import="true" name="Paliaa" hidden="false" id="17a0-6cd0-5fb3-0eb3">
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="19"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="1"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Hero" hidden="false" id="a529-4feb-a4a5-ba0a" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
@@ -1035,7 +1030,7 @@ Place a new Infant Kraken in base contact with this character. The new Infant 
           <modifiers>
             <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
               <conditions>
-                <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="entry" shared="true" includeChildSelections="false"/>
+                <condition type="lessThan" value="-1" field="ef4a-6847-91c7-b1f8" scope="self" childId="entry" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1135,7 +1130,7 @@ Until the end of the round, all friendly characters with the Henchman keyword 
                 <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
                 <characteristic name="Life" typeId="31ac-58c2-51eb-d503">17</characteristic>
                 <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
-                <characteristic name="Command" typeId="df00-2e98-5a44-876e">- </characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
                 <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
               </characteristics>
             </profile>
@@ -1240,7 +1235,6 @@ Additionally, any enemy character within 3&quot; of this character suffers -1 
         <selectionEntry type="model" import="true" name="Sirena" hidden="false" id="8935-e277-a354-e015">
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="18"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="2"/>
           </costs>
           <entryLinks>
             <entryLink import="true" name="Unarmed" hidden="false" id="f569-e831-a2f9-dc43" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
@@ -1278,7 +1272,7 @@ Additionally, any enemy character within 3&quot; of this character suffers -1 
           <modifiers>
             <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
               <conditions>
-                <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="entry" shared="true" includeChildSelections="false"/>
+                <condition type="lessThan" value="-2" field="ef4a-6847-91c7-b1f8" scope="self" childId="entry" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1349,7 +1343,7 @@ Until the end of the round, any enemy characters within 6&quot; of this charac
         <selectionEntry type="model" import="true" name="Agalope" hidden="false" id="8b4f-7da0-9d3f-6a84">
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="2"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Henchman" hidden="false" id="a579-9d09-7709-6fd1" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
@@ -1386,7 +1380,7 @@ Until the end of the round, any enemy characters within 6&quot; of this charac
           <modifiers>
             <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
               <conditions>
-                <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="entry" shared="true" includeChildSelections="false"/>
+                <condition type="lessThan" value="-2" field="ef4a-6847-91c7-b1f8" scope="self" childId="entry" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2068,7 +2062,7 @@ The *Monster* character immediately replenishes 5 Life Points.</description>
                 <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
                 <characteristic name="Life" typeId="31ac-58c2-51eb-d503">8</characteristic>
                 <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
-                <characteristic name="Command" typeId="df00-2e98-5a44-876e">- </characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
                 <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
               </characteristics>
             </profile>
@@ -2149,7 +2143,7 @@ The *Monster* character immediately replenishes 5 Life Points.</description>
     <entryLink import="true" name="Raadru" hidden="false" id="48dd-0b47-d69a-c284" targetId="c764-3571-4988-b059" type="selectionEntry"/>
     <entryLink import="true" name="Salaacia" hidden="false" id="23d4-d057-fbaa-b448" targetId="db27-2215-64c0-1315" type="selectionEntry"/>
     <entryLink import="true" name="Secreting Myxin" hidden="false" id="1538-cf88-b351-e24c" targetId="9104-30ab-a443-9cc3" type="selectionEntry"/>
-    <entryLink import="true" name="Sirena" hidden="false" id="916c-3317-4877-5b51" targetId="d280-f27b-6257-d063" type="selectionEntry"/>
+    <entryLink import="true" name="Sirena" hidden="false" id="916c-3317-4877-5b51" targetId="8935-e277-a354-e015" type="selectionEntry"/>
     <entryLink import="true" name="Advanced Hybrid" hidden="false" id="23bb-5e98-2963-2769" targetId="4282-0f92-2378-a40b" type="selectionEntry"/>
     <entryLink import="true" name="Agalope" hidden="false" id="66c1-54fa-539f-f94d" targetId="8b4f-7da0-9d3f-6a84" type="selectionEntry"/>
     <entryLink import="true" name="Bouncing Telchine" hidden="false" id="1bef-f3a2-47d8-c7d7" targetId="d2e2-3898-36ac-19f0" type="selectionEntry"/>
