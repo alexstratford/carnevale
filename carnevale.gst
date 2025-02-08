@@ -19,6 +19,8 @@
     <categoryEntry name="Monster" id="f067-a302-b855-c50a" hidden="false"/>
     <categoryEntry name="Feral" id="3bdc-4702-a1c6-3efe" hidden="false"/>
     <categoryEntry name="Hydra" id="6b0f-5a84-d5b9-15b6" hidden="false"/>
+    <categoryEntry name="Faction (The Doctors)" id="e482-2d30-1001-a6a1" hidden="false"/>
+    <categoryEntry name="Doctor" id="e76d-93d8-8615-d9ae" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Gang" hidden="false" id="aeb3-6915-af1f-2a80">

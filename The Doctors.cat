@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="e115-e082-65a1-8eed" name="The Doctors" gameSystemId="sys-c646-d5a1-2146-1042" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Leader" hidden="false" id="b7e5-7875-73fb-8060">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Doctor of the Mind" hidden="false" id="fb5b-b078-4f1b-6dfb">
+          <categoryLinks>
+            <categoryLink name="Doctor" hidden="false" id="9106-5bcc-26f5-9394" targetId="e76d-93d8-8615-d9ae" primary="false"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="5fea-9ee3-9f86-4b07" targetId="e482-2d30-1001-a6a1" primary="false"/>
+            <categoryLink name="Discipline (Blood Rites)" hidden="false" id="96e5-8e99-d404-f2e0" targetId="1c8e-4a5e-59b3-37b6" primary="false"/>
+            <categoryLink name="Discipline (Runes of Sovereignty)" hidden="false" id="1149-9917-338c-b4e6" targetId="162f-6e00-290f-b3be" primary="false"/>
+            <categoryLink name="Leader" hidden="false" id="7ccb-6071-bf8d-e321" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="22"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="3"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Unarmed" hidden="false" id="18f5-261e-5c63-cc49" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="8ae5-05bd-42d4-5dae" type="selectionEntryGroup" targetId="9638-bcc3-0602-1d0a"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Doctor of the Mind" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="adc5-f6d2-ea29-36e5">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">2</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Doctor of the Mind" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="7d78-0cfc-a753-f04e">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">6</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fear (-2), Mage (3), Parry (3)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Aetheric Control" id="49e8-3779-b534-7e3f" hidden="false">
+              <description>This character replenishes all of its Command Points at the start of each character turn.</description>
+            </rule>
+            <rule name="Mind Gazing" id="3266-24cf-1000-d800" hidden="false">
+              <description>*AURA Command Ability*
+Until the end of the round, any friendly characters within 6&quot; gain Fear (-2), or increase their Fear number to (-2).</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Master of Necromantic Studies" hidden="false" id="1738-9900-a19b-7889">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="23"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="3"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="1252-2e25-744d-3bd2" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="a701-52de-33da-5d25" targetId="e482-2d30-1001-a6a1" primary="false"/>
+            <categoryLink name="Doctor" hidden="false" id="faca-aac2-06b6-8216" targetId="e76d-93d8-8615-d9ae" primary="false"/>
+            <categoryLink name="Discipline (Blood Rites)" hidden="false" id="7be5-d59b-4bc3-59ec" targetId="1c8e-4a5e-59b3-37b6" primary="false"/>
+            <categoryLink name="Discipline (Divinity)" hidden="false" id="aca4-3d2e-3f34-a02f" targetId="9be3-8582-1a9a-6bc8" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Surgical Tools" hidden="false" id="02e7-ab0b-114f-238e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d680-ca48-3278-35e0-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d680-ca48-3278-35e0-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Surgical Tools" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="296a-523f-ee33-5cc1">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="a86f-31da-6bdf-14df" type="selectionEntryGroup" targetId="9638-bcc3-0602-1d0a"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Master of Necromantic Studies" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="2f3e-4a88-d6df-77f4">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">4</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Master of Necromantic Studies" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="26a1-f0e0-6e47-8e15">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Sorcerer (1), Frenzied, Mage (2), Vampiric Attack (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Unliving Curse" id="13ba-3f7f-0d3c-5e03" hidden="false">
+              <description>*PULSE Command Ability*
+One friendly character within 1&quot; gains Vampiric Attack (2) until the end of the game.</description>
+            </rule>
+            <rule name="Elixir of Death" id="8b2d-ad75-f4fb-1904" hidden="false">
+              <description>Every friendly character who starts the game with Will Points loses all of their Will Points and gains Frenzied. This change remains in play even if this character is killed. Note that characters with the Nexus ability may still use their Life Points as Will Points, even for other characters!
+In addition, change the **Nexus Link Reconfiguration** Command Ability: Every time it mentions Will Points, change it to Life Points.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hero" hidden="false" id="b956-9e09-328a-7fbf"/>
+    <selectionEntry type="upgrade" import="true" name="Henchman" hidden="false" id="6467-0ab5-51bf-5e1e"/>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Doctor of the Mind" hidden="false" id="d7e4-e025-15ee-18d7" targetId="fb5b-b078-4f1b-6dfb" type="selectionEntry"/>
+    <entryLink import="true" name="Master of Necromantic Studies" hidden="false" id="5ecd-be9a-72c5-3ffe" targetId="1738-9900-a19b-7889" type="selectionEntry"/>
+  </entryLinks>
+</catalogue>
