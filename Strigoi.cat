@@ -1,2 +1,2386 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="facf-e53f-c27e-928e" name="Strigoi" gameSystemId="sys-c646-d5a1-2146-1042" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema"/>
+<catalogue library="false" id="facf-e53f-c27e-928e" name="Strigoi" gameSystemId="sys-c646-d5a1-2146-1042" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Leader" hidden="false" id="cb7d-66ba-977c-58e1">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Vlad Dracula" hidden="false" id="69cd-421b-c3cf-b7c4">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="27"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="3762-68b7-f853-3dc9" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Unique" hidden="false" id="0f28-26c5-48cb-3682" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Vampire" hidden="false" id="8e19-483b-33c0-9e62" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="98fe-49d1-d19f-a81b" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="598f-fa5c-292b-6c01" includeChildSelections="true"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Wallachian Halberd" hidden="false" id="024c-da08-fdea-6f47">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d32-8764-94e3-edb3-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d32-8764-94e3-edb3-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Wallachian Halberd" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="7a25-b735-910c-25d4">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Two-Handed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Vlad Dracula" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="466e-5f0d-74f4-4736">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">15</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">5</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Vlad Dracula" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="322c-e9bf-ac20-1a8b">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">5</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">5</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Offence (2), Expert Protection (2), Frenzied</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Transformation" id="2d36-4b9c-b6fd-57c7" hidden="false">
+              <description>*PULSE Command Ability*
+Remove this character and place it anywhere on solid ground within 8”, at least 3” away from any enemy characters. This ability cannot be used while in base contact with an enemy character.</description>
+            </rule>
+            <rule name="Master Bloodline" id="5015-db81-663c-0a7f" hidden="false">
+              <description>All friendly characters with the Vampire keyword in line of sight to this character gain Bodyguard (Vlad Dracula) and Companion (Vlad Dracula).</description>
+            </rule>
+            <rule name="Connoisseur" id="4157-9cf3-79d4-802c" hidden="false">
+              <description>Vlad will not drink the blood of just anyone. When attacking a character with the Hero keyword, he gains Vampiric Attack (1). When attacking a character with the Leader keyword, he gains Vampiric Attack (3).
+
+</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Blood Crone" hidden="false" id="5624-cc80-7840-a43e">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="18"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="adc6-8da2-ef55-c690" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="b2e1-efa8-3410-521a" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+            <categoryLink name="Discipline (Blood Rites)" hidden="false" id="821f-fd74-2083-eab0" targetId="1c8e-4a5e-59b3-37b6" primary="false"/>
+            <categoryLink name="Discipline (Runes of Sovereignty)" hidden="false" id="df39-e8f8-61b8-91ea" targetId="162f-6e00-290f-b3be" primary="false"/>
+            <categoryLink name="Discipline (Fateweaving)" hidden="false" id="567b-2404-dd98-3e31" targetId="0edf-0a9c-7e37-e3c3" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Unarmed" hidden="false" id="5227-1f12-38d3-420f" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="f686-bc23-4b52-ab59" type="selectionEntryGroup" targetId="6b5c-39fb-112a-2a21"/>
+          </entryLinks>
+          <rules>
+            <rule name="Clairvoyancy" id="0813-b09f-8e32-e75a" hidden="false">
+              <description>*AURA Command Ability*
+Until the end of the round, any friendly characters within 6&quot; may re-roll 1 dice on any of their rolls. Note that this does not include the Destiny dice!</description>
+            </rule>
+            <rule name="Major Arcana" id="86c9-4526-a7f6-e6a8" hidden="false">
+              <description>When picking spells, this character always knows all Cantrips from all Disciplines (even those she doesn&apos;t have access to).</description>
+            </rule>
+            <rule name="Minor Incantata" id="d958-64ef-53c5-4b32" hidden="false">
+              <description> This character may cast a Cantrip for 0AP once per character turn. All the standard rules for casting spells apply.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+              <conditions>
+                <condition type="lessThan" value="-3" field="ef4a-6847-91c7-b1f8" scope="self" childId="entry" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Blood Crone" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="26df-6cda-3d2e-f9f4">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">5</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">3</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Blood Crone" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="9c86-82b6-f838-b237">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Mage (3), Slippery</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Cantrip of Justice" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="1bcd-42da-18eb-e779">
+              <characteristics>
+                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">This character may immediately cast another magic spell for 0AP. This spell costs Will Points as normal, but can be any spell known by any other mage (friendly or enemy) within line of sight.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Cantrip of the Chariot" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="ee33-f0d4-ea7e-67d3">
+              <characteristics>
+                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6” that isn’t in base contact with an enemy. That character immediately makes a Run/Climb action that cannot move into base contact with an enemy.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Cantrip of the Devil" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="5713-c5c7-df09-d5a3">
+              <characteristics>
+                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one enemy character in line of sight within 3”. Choose for that character to either lose 1 Life Point, or take 2 Damage with Penetration -2.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Cantrip of the Stars" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="154f-9293-54e8-b6c6">
+              <characteristics>
+                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">5</characteristic>
+                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Until the start of this character’s next turn, you may re-roll the Destiny Dice once, even though not usually able to, for whatever roll you wish.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Cantrip of the Sun" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="1a2b-5388-0575-543b">
+              <characteristics>
+                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6”. That character replenishes 1 Life Point and 1 Will Point.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Noble Strigoi" hidden="false" id="dd25-89f1-b816-8ac5">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="21"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="a7f2-ff16-0c7d-15d5" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Vampire" hidden="false" id="f120-175f-209e-d05c" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="4e18-14d1-8887-945a" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Fangs" hidden="false" id="76a9-4777-b11a-8215" type="selectionEntry" targetId="4356-14a1-0956-071d"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Noble Strigoi" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="6825-ed01-2320-2ed8">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">4</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Noble Strigoi" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="c610-d379-65a4-7df7">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Offence (3), Frenzied, Vampiric Attack (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Blood Frenzy" id="42fd-d215-71fe-a8e1" hidden="false">
+              <description>*AURA Command Ability*
+Until the end of the round, any friendly characters with the Vampire keyword within Line of Sight increase their Vampiric Attack by 1 to a maximum of 2.</description>
+            </rule>
+            <rule name="Bloodline" id="1086-6c87-9bac-c719" hidden="false">
+              <description>All friendly characters with the Vampire keyword in line of sight to this character gain Companion (Noble Strigoi).</description>
+            </rule>
+            <rule name="Sanguine Sabotage" id="90eb-165d-0c0d-0486" hidden="false">
+              <description>The Noble Strigoi has infiltrated the opponent&apos;s gang to take them down from within. Whenever an enemy character uses a Command within 6&quot; of this character, roll a dice. On a 7+ the Command costs an extra Command Point if possible.
+
+</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Stryha Crone" hidden="false" id="8edc-ba92-3ff1-5d3d">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="22"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="3d50-8f78-38d3-445d" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Vampire" hidden="false" id="1f1f-a5dc-fb36-80d2" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="e194-5bc2-cb76-7568" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Talons" hidden="false" id="8c37-a924-61c0-b5fb">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea78-bab2-38f2-1e45-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea78-bab2-38f2-1e45-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Talons" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="a44e-e764-1347-7e98">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-3</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Stryha Crone" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="7cd9-db94-9637-7816">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">3</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Stryha Crone" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="7f05-3bff-f104-e2bc">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Concealment (2), Flight, Frenzied, Infiltration, Vampiric Attack (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Natural Camouflage" id="61ce-74a0-c8d8-5973" hidden="false">
+              <description>*PULSE Command Ability*
+Pick one friendly character within 6&quot;. That character gains Concealment (2) until the end of the game. A character can only be affected by this Command Ability once.</description>
+            </rule>
+            <rule name="Carrion" id="24b5-7079-b8f5-bfa8" hidden="false">
+              <description>Before deployment, choose 3 friendly characters. They gain Infiltration.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Wallachian Hospodar" hidden="false" id="2dbd-bb29-0677-a50e">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="21"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="418f-718a-a57f-4348" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Vampire" hidden="false" id="2174-a3e2-a4be-17b2" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+            <categoryLink name="Soldier" hidden="false" id="cfc4-c19b-6645-99c7" targetId="d5cc-1663-8fc4-1157" primary="false"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="ee76-19ab-810e-e16c" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Longsword" hidden="false" id="ccab-af0e-19d4-795f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f30-dda7-e434-786e-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f30-dda7-e434-786e-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Longsword" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="98ee-e56d-7295-5252">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Wallachian Hospodar" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="b5ce-7f36-f272-80f2">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">14</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">3</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Wallachian Hospodar" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="7a25-f0ac-b6a8-f5fc">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">6</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Vampiric Attack (1), Universal Shielding (3), Frenzied</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Full Plate" id="f71e-ca0e-42a0-6331" hidden="false" type="rule" targetId="1f33-ab92-79c6-3428"/>
+          </infoLinks>
+          <rules>
+            <rule name="Defensive Lines" id="3a5d-a92c-51d2-1fa5" hidden="false">
+              <description>*PULSE Command Ability*
+Until the end of the round, all other friendly characters within 3&quot; gain Universal Shielding (2).</description>
+            </rule>
+            <rule name="Warlord" id="b9db-9362-f62c-209d" hidden="false">
+              <description>Friendly characters with the Soldier keyword may use this character&apos;s MIND instead of their own while they are in Line of Sight of this character.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hero" hidden="false" id="804c-8123-696a-dc0d">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ceres" hidden="false" id="90f5-b301-bb68-e277">
+          <comment>Hero version</comment>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="19"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f456-22c6-a631-3833" includeChildSelections="true"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="022f-227c-27a9-c9d3" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Vampire" hidden="false" id="ce5e-f9f6-ed24-d023" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="9b05-8406-9584-08b0" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+            <categoryLink name="Unique" hidden="false" id="5cbc-b0a2-fb5d-2e7d" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Bride" hidden="false" id="7e9a-ae4b-8f54-66de" targetId="0f7c-81d3-1da5-961c" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Fangs" hidden="false" id="16a0-8580-19a9-af61" type="selectionEntry" targetId="4356-14a1-0956-071d"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Ceres" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="f8cf-ea5b-0e93-2958">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Ceres" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="cfa8-5f0b-9798-bcd0">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Concealment (2), Frenzied, Infiltration, Slippery, Vampiric Attack (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Romani Fury" id="c224-7b6e-8f83-a9ec" hidden="false">
+              <description>*PULSE Command Ability*
+Every friendly character with the Bride keyword gains Expert Offence (3) until the end of the round.</description>
+            </rule>
+            <rule name="Procession of Brides" id="5d14-7ab1-28e2-f64c" hidden="false">
+              <description>While building your Gang, if it contains Vlad Dracula, this character counts as having the Henchman keyword instead of the Hero keyword for the purposes of Frequency.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="69cd-421b-c3cf-b7c4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="Cannot be taken as a Hero if Vlad Dracula is present. Delete and re-add as Henchman." field="error">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="69cd-421b-c3cf-b7c4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="69cd-421b-c3cf-b7c4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="Cannot be taken as a Hero if Vlad Dracula is present. Delete and re-add as Henchman." field="error">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="69cd-421b-c3cf-b7c4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Ceres" hidden="true" id="1ead-8104-19e7-5a69">
+          <comment>Henchman version</comment>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="19"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9ac3-a151-ab8b-b780" includeChildSelections="true"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vampire" hidden="false" id="0101-2c97-185f-0e6a" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="5c4c-7a13-d8f1-577d" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+            <categoryLink name="Unique" hidden="false" id="61a3-3ff8-7b91-538b" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Bride" hidden="false" id="e15f-fc54-cab1-4408" targetId="0f7c-81d3-1da5-961c" primary="false"/>
+            <categoryLink name="Henchman" hidden="false" id="d464-f904-4965-e7af" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Fangs" hidden="false" id="9eef-1fe9-3f24-3f96" type="selectionEntry" targetId="4356-14a1-0956-071d"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Ceres" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="73cd-de45-539c-2b46">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Ceres" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="f7a3-9db8-4b7d-4f4e">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Concealment (2), Frenzied, Infiltration, Slippery, Vampiric Attack (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Romani Fury" id="ec07-1db5-960b-fd16" hidden="false">
+              <description>*PULSE Command Ability*
+Every friendly character with the Bride keyword gains Expert Offence (3) until the end of the round.</description>
+            </rule>
+            <rule name="Procession of Brides" id="73f9-e529-085c-b531" hidden="false">
+              <description>While building your Gang, if it contains Vlad Dracula, this character counts as having the Henchman keyword instead of the Hero keyword for the purposes of Frequency.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="69cd-421b-c3cf-b7c4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="Cannot be taken as a Henchman if Vlad Dracula is not present. Delete and re-add as Hero." field="error">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="69cd-421b-c3cf-b7c4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Cibele" hidden="false" id="daa1-cfbe-910d-48c8">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="19"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="1704-7b02-73d1-35e9" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Vampire" hidden="false" id="5118-45a8-3f02-7240" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="cdf1-de6c-4c9b-ee7c" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+            <categoryLink name="Bride" hidden="false" id="3cf1-3b47-bea9-8375" targetId="0f7c-81d3-1da5-961c" primary="false"/>
+            <categoryLink name="Unique" hidden="false" id="85b8-1099-be7b-7eb7" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Discipline (Blood Rites)" hidden="false" id="2074-bde5-c63a-65a5" targetId="1c8e-4a5e-59b3-37b6" primary="false"/>
+            <categoryLink name="Discipline (Runes of Sovereignty)" hidden="false" id="934d-20c4-9363-9399" targetId="162f-6e00-290f-b3be" primary="false"/>
+            <categoryLink name="Discipline (Fateweaving)" hidden="false" id="f4f6-c629-c312-1035" targetId="0edf-0a9c-7e37-e3c3" primary="false"/>
+          </categoryLinks>
+          <comment>hero version</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2d40-a5e2-377a-7305" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="69cd-421b-c3cf-b7c4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="Cannot be taken as a Hero if Vlad Dracula is present. Delete and re-add as Henchman." field="error">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="69cd-421b-c3cf-b7c4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+              <conditions>
+                <condition type="lessThan" value="-3" field="ef4a-6847-91c7-b1f8" scope="self" childId="entry" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Cibele" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="60bc-d997-00b3-0391">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Cibele" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="6df8-f7c9-5c0f-4e63">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Sorcerer (1), Frenzied, Mage (2), Vampiric Attack (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Fangs" hidden="false" id="1400-55ba-ce99-f0d4" type="selectionEntry" targetId="4356-14a1-0956-071d"/>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="1e7e-85af-715a-b499" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
+          </entryLinks>
+          <rules>
+            <rule name="African Bewitching" id="cc2e-a67b-dee4-b889" hidden="false">
+              <description>*PULSE Command Ability*
+Every friendly character with the Bride keyword gains Stun on their weapons until the end of the round.</description>
+            </rule>
+            <rule name="Procession of Brides" id="4a05-9a22-5dbc-d944" hidden="false">
+              <description>While building your Gang, if it contains Vlad Dracula, this character counts as having the Henchman keyword instead of the Hero keyword for the purposes of Frequency.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Cibele" hidden="true" id="4212-9b74-7b23-6d26">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="19"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Vampire" hidden="false" id="5cc5-2a67-43f2-09d3" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="e8c4-7df8-833d-b739" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+            <categoryLink name="Bride" hidden="false" id="231d-0020-f807-2903" targetId="0f7c-81d3-1da5-961c" primary="false"/>
+            <categoryLink name="Unique" hidden="false" id="a5a9-72f2-d044-cfef" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Discipline (Blood Rites)" hidden="false" id="8b1e-ef76-f02c-ddd1" targetId="1c8e-4a5e-59b3-37b6" primary="false"/>
+            <categoryLink name="Discipline (Runes of Sovereignty)" hidden="false" id="df26-6b8e-3060-4a3d" targetId="162f-6e00-290f-b3be" primary="false"/>
+            <categoryLink name="Discipline (Fateweaving)" hidden="false" id="b989-6988-d7a6-294e" targetId="0edf-0a9c-7e37-e3c3" primary="false"/>
+            <categoryLink name="Henchman" hidden="false" id="1ab6-4217-2586-5e8d" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+          </categoryLinks>
+          <comment>henchman version</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="56f8-5a99-4dae-6c56" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+              <conditions>
+                <condition type="lessThan" value="-3" field="ef4a-6847-91c7-b1f8" scope="self" childId="entry" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="69cd-421b-c3cf-b7c4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="Cannot be taken as a Henchman if Vlad Dracula is not present. Delete and re-add as Hero." field="error">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="69cd-421b-c3cf-b7c4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Cibele" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="f69c-a219-2fae-0269">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Cibele" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="b515-e6b2-8aa8-c2dc">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Sorcerer (1), Frenzied, Mage (2), Vampiric Attack (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Fangs" hidden="false" id="5581-a044-7f02-2297" type="selectionEntry" targetId="4356-14a1-0956-071d"/>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="3120-9af5-b44e-c8cf" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
+          </entryLinks>
+          <rules>
+            <rule name="African Bewitching" id="a4ca-4786-e411-bc64" hidden="false">
+              <description>*PULSE Command Ability*
+Every friendly character with the Bride keyword gains Stun on their weapons until the end of the round.</description>
+            </rule>
+            <rule name="Procession of Brides" id="ebda-9856-86dc-b429" hidden="false">
+              <description>While building your Gang, if it contains Vlad Dracula, this character counts as having the Henchman keyword instead of the Hero keyword for the purposes of Frequency.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Miriam" hidden="true" id="77e6-3c66-aee6-7f65">
+          <comment>Henchman version</comment>
+          <categoryLinks>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="740a-f943-d78e-8b46" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+            <categoryLink name="Bride" hidden="false" id="e2f9-10d3-2377-be55" targetId="0f7c-81d3-1da5-961c" primary="false"/>
+            <categoryLink name="Vampire" hidden="false" id="130a-22c8-5a57-c780" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+            <categoryLink name="Unique" hidden="false" id="dfe1-408f-079b-dd7c" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Henchman" hidden="false" id="8349-d439-e68e-d604" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e76c-0c9b-26b3-dd9c" includeChildSelections="true"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Fangs" hidden="false" id="4f69-0628-1927-8877" type="selectionEntry" targetId="4356-14a1-0956-071d"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Miriam" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="ecdd-42c8-dbd8-af73">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">4</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Miriam" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="2819-2c73-998f-f3c3">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Frenzied, Vampiric Attack (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Procession of Brides" id="5478-daae-f893-66de" hidden="false">
+              <description>While building your Gang, if it contains Vlad Dracula, this character counts as having the Henchman keyword instead of the Hero keyword for the purposes of Frequency.</description>
+            </rule>
+            <rule name="Eastern Swiftness" id="6c10-5a3d-eee4-c97f" hidden="false">
+              <description>*PULSE Command Ability*
+Every friendly character with the Bride keyword gains 1 AP until the end of the round.</description>
+            </rule>
+            <rule name="Sisters of Gélô" id="3259-f071-ffa2-1903" hidden="false">
+              <description>This character replenishes 1 Command Point at the start of each character turn if it has line of sight to any other friendly character with the Bride keyword.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="19"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="69cd-421b-c3cf-b7c4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="Cannot be taken as a Henchman if Vlad Dracula is not present. Delete and re-add as Hero." field="error">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="69cd-421b-c3cf-b7c4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Miriam" hidden="false" id="bfe9-f8e3-6ca3-0c6c">
+          <comment>Hero version</comment>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="122d-d288-648b-6eb3" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="b46c-3329-c014-b36c" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+            <categoryLink name="Bride" hidden="false" id="d16a-e171-f22a-78b3" targetId="0f7c-81d3-1da5-961c" primary="false"/>
+            <categoryLink name="Vampire" hidden="false" id="2c57-7813-34fe-5ec1" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+            <categoryLink name="Unique" hidden="false" id="c351-ab72-e016-e395" targetId="d3e1-4616-c557-d958" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b60d-1901-56ec-24a2" includeChildSelections="true"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Fangs" hidden="false" id="9b37-a953-e1d7-8c2b" type="selectionEntry" targetId="4356-14a1-0956-071d"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Miriam" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="d5ab-1e28-1436-c7ee">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">4</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Miriam" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="38e0-ed2f-0655-36b8">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Frenzied, Vampiric Attack (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Procession of Brides" id="8606-27d6-eb5f-45f8" hidden="false">
+              <description>While building your Gang, if it contains Vlad Dracula, this character counts as having the Henchman keyword instead of the Hero keyword for the purposes of Frequency.</description>
+            </rule>
+            <rule name="Eastern Swiftness" id="b2ba-f2a5-cc56-0340" hidden="false">
+              <description>*PULSE Command Ability*
+Every friendly character with the Bride keyword gains 1 AP until the end of the round.</description>
+            </rule>
+            <rule name="Sisters of Gélô" id="d82c-59d3-a563-876f" hidden="false">
+              <description>This character replenishes 1 Command Point at the start of each character turn if it has line of sight to any other friendly character with the Bride keyword.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="19"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="69cd-421b-c3cf-b7c4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="Cannot be taken as a Hero if Vlad Dracula is present. Delete and re-add as Henchman." field="error">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="69cd-421b-c3cf-b7c4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Monstrous Stryx" hidden="false" id="a76a-ff42-d28e-2a9d">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="40"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="9191-9ff2-dae6-9939" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Unique" hidden="false" id="29bd-7efd-01d0-9435" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="e3b0-aac8-f742-fdea" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+            <categoryLink name="Vampire" hidden="false" id="08ee-16d7-53c5-00d8" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="433b-255a-40f1-9651" includeChildSelections="true"/>
+          </constraints>
+          <profiles>
+            <profile name="Monstrous Stryx" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="302d-1a70-8e9c-9cc4">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">30</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">60mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Monstrous Stryx" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="d7b7-b311-7956-9d7f">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">6</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">5</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bulky, Flight, Frenzied, Mindless, Slippery, Vampiric Attack (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Monstrous Claws" hidden="false" id="9dfb-fc29-54e5-cb1f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c5b-8dbf-9e72-6024-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c5b-8dbf-9e72-6024-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Monstrous Claws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="f5a0-b734-2359-f37e">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+2</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Baleful Screech" hidden="false" id="46fb-b425-f9d3-9c0c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37a6-1f76-67cb-3330-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37a6-1f76-67cb-3330-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Baleful Screech" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="4c56-ee39-edd9-7dc2">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-2</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Blast, Harmless, Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Aerial Aggression" id="19fd-a203-4cb1-194f" hidden="false">
+              <description>When this character moves into base contact with an enemy character that is either 3&quot; above or 3&quot; below it at the start of the action, that enemy character skips their Protection roll for this character&apos;s Attack of Opportunity.</description>
+            </rule>
+            <rule name="Serpentine" id="f1e1-022f-ea6c-0115" hidden="false">
+              <description>This character is able to move through spaces smaller than its base to a minimum of 2&quot;. It must be able to fit where it ends its turn.</description>
+            </rule>
+            <rule name="Rip and Tear" id="d6b5-3b1c-bb2b-7d9c" hidden="false">
+              <description>When this character makes a Combat action with Monstrous Claws against an enemy character with full Life Points, for the rest of this character&apos;s activation, it may re-roll any failed dice for Combat actions against that enemy character.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Aquatic Strigoi" hidden="false" id="a400-1478-4c73-f085">
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="28c5-1f55-c172-9dea" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Vampire" hidden="false" id="39cb-f0ac-f4a6-eb99" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="2d9f-cdb2-676d-cf97" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="14"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Webbed Talons" hidden="false" id="669b-2be7-3d44-696e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e401-bef5-ab3a-9333-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e401-bef5-ab3a-9333-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Webbed Talons" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="5281-060d-8d1f-29c6">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Aquatic Strigoi" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="298d-1b2e-2cb2-64e4">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Aquatic Strigoi" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="3696-7209-873b-4746">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fast Swimmer (2), Frenzied, Vampiric Attack (1), Water Creature
+
+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Cetean Upiór" hidden="false" id="48df-269c-c9fe-0c4e">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="21"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="1fe4-778a-518a-d789" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Vampire" hidden="false" id="cc3a-fa09-af38-84c7" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="7462-1717-a298-133c" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+          <rules>
+            <rule name="Hydrodynamic" id="edc4-83e0-3995-3ff2" hidden="false">
+              <description>This character increases its DEXTERITY to 5 while in water.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Cetean Upiór" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="8ccb-a92d-5613-a8bd">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">17</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Cetean Upiór" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="f32d-eea7-346a-fdf1">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">5</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Grappler (3), Fast Swimmer (2), Frenzied, Vampiric Attack (1), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Distended Jaws" hidden="false" id="6a92-19e4-7942-688c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1715-b806-b27a-b075-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1715-b806-b27a-b075-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Distended Jaws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="ff45-51cd-dfb7-acae">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-3</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Highborn Servant" hidden="false" id="a5c3-7b47-ed78-6205">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="13"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="36e6-ee48-d213-77d6" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="d269-3d94-55d1-8295" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sword" hidden="false" id="526e-e9b9-d452-107c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9897-d70a-db69-f754-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9897-d70a-db69-f754-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Sword" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="aef5-d362-6ffa-61d8">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="69a4-a92d-ece7-4260">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4163-a7ef-5bf9-bf92-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4163-a7ef-5bf9-bf92-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Pistol" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="b349-afa6-197b-f0ae">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">8&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Reload (2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Highborn Servant" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="1082-3f3d-5c0f-bd2e">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Highborn Servant" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="d671-f528-d6bb-83ac">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Companion (Vampire), Parry (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Bankroll" id="29c8-5d52-926b-3e8b" hidden="false">
+              <description>For every character with this ability in your gang at the start of the round, select a different piece of Equipment that you have already used. You may use this piece of Equipment once more this round.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Hulking Moroi" hidden="false" id="8065-d657-7053-289d">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="14"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="29fa-3819-6774-8a97" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Vampire" hidden="false" id="f4e8-06f7-a877-ce49" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="1004-768d-8a97-0578" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Clawed Hands" hidden="false" id="a4c6-9fe9-4ab6-eb84">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0151-1dab-8b11-7ec6-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0151-1dab-8b11-7ec6-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Clawed Hands" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="643a-fbf1-235a-81fe">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Hulking Moroi" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="90be-5148-df2e-450c">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">15</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Hulking Moroi" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="3591-ff14-02aa-5f32">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bulky, First Strike (2), Frenzied, Mindless, Vampiric Attack (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Leech" hidden="false" id="e4ab-d4b0-38f5-d854">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="6a87-5bb0-a2dd-7bdb" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Vampire" hidden="false" id="80a5-4d89-33e8-e00f" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="3c73-f6d5-a447-8fca" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="A Thousand Teeth" hidden="false" id="e14f-8a20-c3f2-8e6a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="39db-bad3-1ce9-73db-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39db-bad3-1ce9-73db-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="A Thousand Teeth" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="def3-51ba-e8d8-e04c">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Leech" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="415d-bd9e-a79a-3800">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">8</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Leech" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="90f3-c5b0-5afa-27fb">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Frenzied, Primitive, Vampiric Attack (3), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Brain Leech" id="2847-2011-4931-ac97" hidden="false">
+              <description>When this character replenishes Life Points due to the Vampiric Attack (X) ability, the target character lowers any abilities with a number down by 1 until the end of the game, to a minimum of 0. 
+
+
+*For example Acrobatic (3) becomes Acrobatic (2).*</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Moon Eater" hidden="false" id="9716-74ee-001c-b71e">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="23"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="20c4-ccc1-d835-2279" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="eb0a-883f-4c13-f9b0" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Brutal Claws" hidden="false" id="51f9-5cf9-a3d7-3aa6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed1a-fa43-354a-18e6-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed1a-fa43-354a-18e6-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Brutal Claws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="729c-2a41-7a42-3987">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-3</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Moon Eater" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="c80d-d456-656f-2327">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">17</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Moon Eater" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="b1db-c911-4432-b4f6">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">5</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Berserk, Brawler (2), Fear (-3), Mindless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Lunar Might" id="c966-b59b-efd2-057e" hidden="false">
+              <description>During deployment let your opponent know when the moon will be brightest. Choose either the first 3 rounds, or the remaining rounds. 
+When the moon is brightest, all characters with this rule increase their MOVEMENT, DEXTERITY, and ATTACK by 1.
+</description>
+            </rule>
+            <rule name="Devourer of Will" id="7060-a478-02c5-5e20" hidden="false">
+              <description>When this character kills an enemy character, it gains their starting Will Points. This is cumulative and can take this character above its starting Will Points.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Reaper" hidden="false" id="47ef-6af4-00fd-7c0e">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="13"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="9d45-efb4-ac7f-54a3" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="8084-c57c-4ee5-ca95" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+            <categoryLink name="Vampire" hidden="false" id="7401-c002-d990-3622" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Fangs" hidden="false" id="ac89-b1ea-2e79-3b03" type="selectionEntry" targetId="4356-14a1-0956-071d"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Reaper" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="dcdb-f985-be62-f3b3">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Reaper" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="3be8-0bfe-bd56-9229">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Aerial Attack, Frenzied, Mindless, Vampiric Attack (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Seer" hidden="false" id="b243-6e52-a557-09e6">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="15"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="806e-175e-0425-f4bb" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="92e1-7ead-7362-195e" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+            <categoryLink name="Discipline (Fateweaving)" hidden="false" id="af90-1b06-cff7-f27e" targetId="0edf-0a9c-7e37-e3c3" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Staff" hidden="false" id="a051-177e-549c-d797">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18ff-2dd1-cb2b-dab8-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18ff-2dd1-cb2b-dab8-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Staff" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="7771-2427-e605-b033">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">1&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="86c4-528a-81f1-587d" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+              <conditions>
+                <condition type="lessThan" value="-2" field="ef4a-6847-91c7-b1f8" scope="self" childId="entry" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Seer" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="32c2-3301-c3d6-2fa1">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">2</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Seer" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="6973-5cea-a688-1051">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Mage (2), Slippery</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Soothsaying" id="ebb0-c671-8f8f-d4f3" hidden="false">
+              <description>*PULSE Command Ability*
+For every enemy character in line of sight to this character, add a re-roll to your **Soothsaying Pool**. Until the end of the round, any friendly character may use these re-rolls on any roll this round - one re-roll per dice.</description>
+            </rule>
+            <rule name="Premonition" id="750b-608d-3bba-7944" hidden="false">
+              <description>Whenever rolling dice for this character, you may re-roll the Destiny Dice.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Spatar" hidden="false" id="ccb1-85e8-6e7e-d009">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="c295-a4d8-302a-5ff6" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Vampire" hidden="false" id="9687-a48a-5660-ea90" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="58e6-8473-fa72-6bc9" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+            <categoryLink name="Soldier" hidden="false" id="f38c-0059-b672-02be" targetId="d5cc-1663-8fc4-1157" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Flanged Mace" hidden="false" id="bcc5-a3ab-d73d-bf4e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8234-22b3-d442-6d9c-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8234-22b3-d442-6d9c-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Flanged Mace" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="7e5d-12bc-9d90-2401">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Knockback</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Coustille" hidden="false" id="0a1a-7644-2c3d-ecd7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="90ed-348b-f884-3fc0-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90ed-348b-f884-3fc0-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Coustille" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="6cbc-b79d-9bff-6360">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Spatar" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="e7ca-fb6a-b8fc-1e53">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">2</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Spatar" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="25e5-f6dd-f5f0-468d">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">5</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Vampiric Attack (1), Bodyguard (Leader), Parry (1), Frenzied
+
+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Strige" hidden="false" id="2b6b-c474-8ec0-9276">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="14"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="01ed-af01-b59b-72d7" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Vampire" hidden="false" id="ce11-a339-bca9-3770" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="0c10-8995-1b45-0d6a" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Fangs" hidden="false" id="f53f-d0d6-d3de-7715" type="selectionEntry" targetId="4356-14a1-0956-071d"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Strige" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="0301-d84a-e9f2-07d8">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Strige" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="d3f4-e5c2-aad1-b107">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Flight, Frenzied, Hunter, Vampiric Attack (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Strigoi Priest" hidden="false" id="8f65-ccea-b40b-8470">
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="6054-0b59-aace-5a35" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Vampire" hidden="false" id="40a2-3c80-d40c-b8fd" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="4d20-0fc7-46a4-4850" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="14"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Fangs" hidden="false" id="edf4-e546-a45c-ab5e" type="selectionEntry" targetId="4356-14a1-0956-071d"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Strigoi Priest" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="d9a4-3089-112b-8fb4">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Strigoi Priest" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="ff14-97d8-59fe-ae8d">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Frenzied, Vampiric Attack (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Devil Incarnate" id="2649-d978-f381-3d84" hidden="false">
+              <description>This character may attempt to Dispel magic spells as if it has Mage (2). In addition, enemy characters may not use Will Points when in base contact with this character.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Strzyga" hidden="false" id="b854-a340-8bad-9387">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="18"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="c1a4-ed79-2518-835e" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Vampire" hidden="false" id="7ff5-fa43-33c4-5bd7" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="c841-1995-972d-8b3e" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Monstrous Claws" hidden="false" id="696a-7965-5f7e-d414">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ced7-ce01-ec39-2733-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ced7-ce01-ec39-2733-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Monstrous Claws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="e17b-63ee-58c8-6775">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-3</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Strzyga" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="1ab6-6048-6635-0c6b">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">15</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Strzyga" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="5990-da50-cc1b-82cc">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Offence (2), Flight, Frenzied, Vampiric Attack (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Tarot Reader" hidden="false" id="f4c6-c87c-516e-e6c5">
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="fa73-595a-835d-4cf1" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="dbc0-a479-8eff-3a4c" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+            <categoryLink name="Discipline (Runes of Sovereignty)" hidden="false" id="693b-ef9a-21de-2c74" targetId="162f-6e00-290f-b3be" primary="false"/>
+            <categoryLink name="Discipline (Fateweaving)" hidden="false" id="5570-56eb-dfd3-810d" targetId="0edf-0a9c-7e37-e3c3" primary="false"/>
+            <categoryLink name="Discipline (Wild Magic)" hidden="false" id="6f28-118d-fabd-bb56" targetId="6e89-8a6f-6b8d-6133" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Unarmed" hidden="false" id="876a-94f2-53c5-b6cc" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="64c1-7d01-3310-160d" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
+            <entryLink import="true" name="Minor Arcana Cantrip Choice" hidden="false" id="f677-593a-a2e6-1814" type="selectionEntryGroup" targetId="1e68-94b2-f0ed-3671"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Tarot Reader" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="46e9-d190-278c-1298">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Tarot Reader" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="51d4-edf8-1d7d-9285">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Sorcerer (1), Mage (2), Slippery</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Minor Arcana" id="16f1-b324-488d-af8b" hidden="false">
+              <description>When picking spells for this character, you must also choose 1 additional Cantrip for it to know from a different available Discipline.</description>
+            </rule>
+            <rule name="Cartomancy" id="b983-74ee-1c91-8ccb" hidden="false">
+              <description>If this character successfully casts a Cantrip, this character or any friendly character within 6&quot; replenishes 1 Will Point.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Varcolac" hidden="false" id="cd31-1b34-9e8c-5bfc">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="17"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="2cd1-2958-2331-b867" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="80fb-1fd6-342f-c20a" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Canine Claws" hidden="false" id="2817-76ba-93b6-af7b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e091-3e8c-dd80-20db-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e091-3e8c-dd80-20db-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Canine Claws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="b615-141c-25c3-d0b6">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Varcolac" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="82ef-79d4-c861-9843">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">14</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Varcolac" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="3e09-8bcf-d462-7e7b">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">First Strike (1), Mindless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Lunar Might" id="f528-c38d-6f2d-6a5b" hidden="false">
+              <description>During deployment let your opponent know when the moon will be brightest. Choose either the first 3 rounds, or the remaining rounds. 
+When the moon is brightest, all characters with this rule increase their MOVEMENT, DEXTERITY, and ATTACK by 1.
+</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Wallachian Impaler" hidden="false" id="e814-38d2-f923-1fb4">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="18"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="c7b4-8a2b-dff3-a4ea" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Vampire" hidden="false" id="b976-c81e-38b3-5948" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="8e9c-7817-5cab-e366" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+            <categoryLink name="Soldier" hidden="false" id="22b3-10aa-394f-3027" targetId="d5cc-1663-8fc4-1157" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Impaling Stake" hidden="false" id="4c4d-f0a7-131b-2d8c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cebe-a1f5-c56d-c3bf-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cebe-a1f5-c56d-c3bf-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Impaling Stake" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="62d2-fa5e-dfff-4d83">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+2</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Two-Handed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Impaler" id="118c-9073-272f-577f" hidden="false">
+              <description>Each time an enemy character is killed within 3&quot; of this character, this character increases its Fear and Vampiric Attack value by 1.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Wallachian Impaler" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="4e6e-d1c7-831c-ebe7">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">14</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Wallachian Impaler" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="dc2c-9712-055a-ed8b">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Vampiric Attack (1), Expert Offence (2), Fear (1), Frenzied</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Zoryi" hidden="false" id="cb66-c4c0-499e-4243">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="19"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="9b73-f733-2ea9-9733" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="8e24-5a95-5f9e-9c0d" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+            <categoryLink name="Vampire" hidden="false" id="f6eb-7a6b-2360-8315" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Calcified Fists" hidden="false" id="ec61-62d6-dc9d-8a8e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="abc2-4445-01e6-cd87-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abc2-4445-01e6-cd87-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Calcified Fists" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="d28a-f2b2-87dc-735c">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fresh Claws" hidden="false" id="f147-4612-87b5-95ca">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f7d-b220-4c25-86e4-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f7d-b220-4c25-86e4-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Fresh Claws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="67c8-a4df-61c5-d369">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Zoryi" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="b950-0f48-bedb-5280">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">19</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Zoryi" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="b320-2708-4696-ae98">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">5</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brawler (2), Bulky, Fear (0), Frenzied, Vampiric Attack (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Henchman" hidden="false" id="fdcf-6d75-cd47-05a7">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Al Naibii" hidden="false" id="f33d-0457-59f5-5193">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="11"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="5953-7ef0-9bcd-a6f8" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+            <categoryLink name="Henchman" hidden="false" id="063d-3996-4bf2-c9b5" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sica" hidden="false" id="fa38-c1a4-8820-2d8b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ddc-af54-4d82-ac2d-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ddc-af54-4d82-ac2d-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Sica" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="a4f3-aa41-f200-212e">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="The End is Near" id="991f-89ea-3b00-3924" hidden="false">
+              <description>At the start of each turn, this character loses 2 Life Points and gains 1 to either MOVEMENT, DEXTERITY, or ATTACK for the rest of the game.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Al Naibii" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="cb43-e474-6e2f-1b92">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Al Naibii" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="8f4e-4bb5-12e7-c7f2">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave, First Strike (1), Vampiric Attack (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Common Strigoi" hidden="false" id="c28f-d9a0-61bc-348d">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="13"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="7259-2c07-1ee5-3fba" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="ef30-f72f-4566-4ce1" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+            <categoryLink name="Vampire" hidden="false" id="f9f9-a0b7-343b-26cf" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Fangs" hidden="false" id="f2c5-1406-c7ef-bfe8" type="selectionEntry" targetId="4356-14a1-0956-071d"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Common Strigoi" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="7371-a429-dd9e-eb87">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Common Strigoi" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="3d57-8941-1e3f-56fa">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Offence (1), Frenzied, Vampiric Attack (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Ferryman" hidden="false" id="9e95-b3dd-ddbc-f108">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="9"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="a550-a23e-0173-c996" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="a7ca-83e6-5053-bf3c" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Oar" hidden="false" id="bdde-795e-a32b-4cc9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="57f5-3548-ebe9-9563-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57f5-3548-ebe9-9563-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Oar" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="d512-e788-ccac-188f">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">+1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Two-Handed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Ferryman" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="b072-69a2-6d03-a820">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8"/>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503"/>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476"/>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e"/>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d"/>
+              </characteristics>
+            </profile>
+            <profile name="Ferryman" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="38fa-c14f-2a84-b429">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fear (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Sculler" id="7e21-aa8d-8b2c-c8cc" hidden="false">
+              <description>For each character with this ability, you may purchase 1 extra Gondola from the Equipment list.
+
+
+This character may be deployed in water or on a Gondola and may also re-roll failed dice rolls when making Row actions.</description>
+            </rule>
+            <rule name="Dredge" id="c646-bde6-0288-29bd" hidden="false">
+              <description>When this character makes a Row action, any friendly characters with the Water Creature special rule in base contact with the Gondola at the start of its movement may be placed in base contact with the Gondola at the end of its movement.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Harpy" hidden="false" id="4e46-83ef-5369-4799">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="6"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="36e7-1364-c607-531a" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="6c25-b9a7-7547-9afe" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Fangs" hidden="false" id="6c71-b211-10cf-8813" type="selectionEntry" targetId="4356-14a1-0956-071d"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Harpy" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="36ee-1fed-a83d-9a8c">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">7</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Harpy" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="e190-d0d6-0802-c797">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Flight, Frenzied, Mindless, Vampiric Attack (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Newborn Strigoi" hidden="false" id="7cf9-95bc-4103-1ff9">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="8"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="33ae-bc23-762f-3bc5" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="fdd6-43a8-e88a-7b60" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+            <categoryLink name="Vampire" hidden="false" id="2b4a-4d86-6c60-cf65" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Fangs" hidden="false" id="676b-5caf-9785-b4ef" type="selectionEntry" targetId="4356-14a1-0956-071d"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Newborn Strigoi" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="4d5c-9163-0591-cbe8">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">8</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Newborn Strigoi" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="4b6d-7e2c-6f11-bfbf">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Frenzied, Mindless, Vampiric Attack (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Nosferatu" hidden="false" id="7b39-44c4-0ce7-6344">
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="7dd1-d4c1-58a8-f2c5" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Vampire" hidden="false" id="6e60-e833-a6b5-153a" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="3273-4899-1a9f-13e9" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="13"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Nosferatu" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="1d3a-eb47-441d-c596">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">2</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Nosferatu" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="fdf3-471a-f485-fcfd">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Concealment (1), Frenzied, Vampiric Attack (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ancient Claws" hidden="false" id="d77d-be9f-ecd8-4067">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e36d-e6db-01fa-d6c7-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e36d-e6db-01fa-d6c7-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Ancient Claws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="a3df-5ed0-5330-02aa">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Shadow Walker" id="d8ea-2893-1a06-40ad" hidden="false">
+              <description>*PULSE Command Ability*
+Pick one friendly character with the Vampire keyword within 1”. Remove this character and place them anywhere out of base contact within 8” of this character. This placement does not cause Attacks of Opportunity.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Romani" hidden="false" id="8443-f40c-fac1-2cd3">
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="c68d-9c45-c67c-e214" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="2fa4-fd42-b2ed-6bf9" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="9"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Knife" hidden="false" id="1ba5-51e2-31a9-b728">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e927-6c01-ee6c-ce06-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e927-6c01-ee6c-ce06-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Knife" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="b8de-f107-38ec-2ab0">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Romani" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="eef4-4f10-0e27-a98e">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Romani" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="d5f7-62e6-7659-2586">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Mage (0), Slippery</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Tarot" id="7db5-1422-6b61-31e5" hidden="false">
+              <description>When using more than one model with this ability, each must select magic from a different Discipline until all are represented.</description>
+            </rule>
+          </rules>
+          <entryLinks>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="3420-1921-5cb1-a6e6" type="selectionEntryGroup" targetId="3b1d-8496-a4a5-adbb"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Rotter" hidden="false" id="029c-932b-7279-9408">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="de83-b068-8018-bae4" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="f90a-7ebb-533d-40fe" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Claws" hidden="false" id="68aa-9cc5-b603-41ff">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="00c0-0fe2-840a-90e2-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="00c0-0fe2-840a-90e2-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Claws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="ca6f-e724-2702-9c00">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Rotter" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="3223-3793-1e94-2e0a">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Rotter" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="1828-292f-b886-4b1b">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Berserk, Fast Swimmer (2), Frenzied, Water Creature
+
+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Sinker" hidden="false" id="fb17-db08-3c01-7eeb">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="10"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="02d6-547d-db39-796b" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="1bea-d0a9-b91e-bbd1" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+            <categoryLink name="Vampire" hidden="false" id="cabc-3bcc-c278-eae1" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sinking Weights" hidden="false" id="bef5-06f4-be0e-1bcb">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e330-ad28-c4fb-134f-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e330-ad28-c4fb-134f-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Sinking Weights" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="7d44-1dc1-5b2a-267b">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+2</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Knockback</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Sinker" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="8a7a-1f48-4360-ac7d">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Sinker" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="b9b4-f7e7-38c9-62e9">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Frenzied, Limited Movement, Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Dead Weights" id="c894-6eab-144d-a787" hidden="false">
+              <description>This character is not deployed like normal. Instead, at the end of the first round, deploy it anywhere on the board in water at least 3&quot; away from any enemy characters in water. From that point on they take turns just like normal.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Starved Dhampir" hidden="false" id="e2d0-b349-d798-09bc">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="7"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="851a-44fb-f862-d017" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Vampire" hidden="false" id="3287-d74a-8219-a612" targetId="f681-8fe4-b2b2-5151" primary="false"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="3eec-eba6-fdf6-1455" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Fangs" hidden="false" id="5150-5025-e22a-3e79" type="selectionEntry" targetId="4356-14a1-0956-071d"/>
+          </entryLinks>
+          <rules>
+            <rule name="Rejuvenated" id="0103-87c2-7e91-908f" hidden="false">
+              <description>This character starts the game with only 5 Life Points remaining.Howe ver, if they start any turn with 6 or more Life Points, they increase their MOVEMENT, DEXTERITY, ATTACK, and MIND by 1 until the start of their next turn.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Starved Dhampir" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="cafc-f260-258f-f549">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Starved Dhampir" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="5f85-7522-0494-7823">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Frenzied, Vampiric Attack (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Targoveti" hidden="false" id="f80c-55c6-c3fd-4f39">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="10"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="4b70-e678-2718-65a7" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="adfd-d0ca-66c6-1101" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+            <categoryLink name="Soldier" hidden="false" id="990b-9485-3bc6-70f5" targetId="d5cc-1663-8fc4-1157" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Battle Axe" hidden="false" id="024d-5dc3-1465-034d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0dee-1b9d-e166-47c6-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0dee-1b9d-e166-47c6-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Battle Axe" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="ecac-7576-d4fd-2272">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Two-Handed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Targoveti" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="2e41-9031-ac78-2c6f">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Targoveti" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="001d-262f-2a4f-af65">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Companion (Vampire)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Thrall" hidden="false" id="dcb7-1faa-3cac-ce18">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="9"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="785f-a8ed-a3e3-5b88" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="97eb-13b0-2aaa-87f7" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Thrall Weapon Selection" hidden="false" id="9eb8-9985-9b21-f288" type="selectionEntryGroup" targetId="f852-d227-61b8-def6"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Thrall" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="deb4-e1e7-42c7-4c28">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Thrall" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="84d7-36ae-2266-df0a">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Companion (Vampire)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Bloodletting" id="d2ae-7ab9-413a-dac0" hidden="false">
+              <description>At the start of a friendly character with the Vampire keyword&apos;s turn, if they are within 3&quot; of this character they may drain blood. The Vampire character gains 1AP to use during their turn, and the Thrall loses 4 Life Points.
+
+
+This may only be done if the Thrall has at least 4 Life Points remaining, and can result in them dying!</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Vlad Dracula" hidden="false" id="d6d4-e937-0c90-7946" targetId="69cd-421b-c3cf-b7c4" type="selectionEntry"/>
+    <entryLink import="true" name="Blood Crone" hidden="false" id="b0a9-4ca1-24b2-8c39" targetId="5624-cc80-7840-a43e" type="selectionEntry"/>
+    <entryLink import="true" name="Noble Strigoi" hidden="false" id="e758-1692-dd83-6576" targetId="dd25-89f1-b816-8ac5" type="selectionEntry"/>
+    <entryLink import="true" name="Stryha Crone" hidden="false" id="6c90-76ae-29b9-0fc8" targetId="8edc-ba92-3ff1-5d3d" type="selectionEntry"/>
+    <entryLink import="true" name="Wallachian Hospodar" hidden="false" id="ab1d-f5d6-aab1-24b4" targetId="2dbd-bb29-0677-a50e" type="selectionEntry"/>
+    <entryLink import="true" name="Ceres" hidden="false" id="fb24-f8ee-ee5a-d043" targetId="90f5-b301-bb68-e277" type="selectionEntry"/>
+    <entryLink import="true" name="Ceres" hidden="false" id="1c76-3956-b64c-e48d" targetId="1ead-8104-19e7-5a69" type="selectionEntry"/>
+    <entryLink import="true" name="Cibele" hidden="false" id="ba0b-ba60-2251-8504" targetId="daa1-cfbe-910d-48c8" type="selectionEntry"/>
+    <entryLink import="true" name="Cibele" hidden="false" id="d023-59be-b556-2465" targetId="4212-9b74-7b23-6d26" type="selectionEntry"/>
+    <entryLink import="true" name="Miriam" hidden="false" id="4aee-0fb1-af18-3feb" targetId="bfe9-f8e3-6ca3-0c6c" type="selectionEntry"/>
+    <entryLink import="true" name="Miriam" hidden="false" id="0890-908b-c9f1-9c0f" targetId="77e6-3c66-aee6-7f65" type="selectionEntry"/>
+    <entryLink import="true" name="Monstrous Stryx" hidden="false" id="8ac6-eadf-b2d3-8151" targetId="a76a-ff42-d28e-2a9d" type="selectionEntry"/>
+    <entryLink import="true" name="Aquatic Strigoi" hidden="false" id="d099-1485-5c1f-5346" targetId="a400-1478-4c73-f085" type="selectionEntry"/>
+    <entryLink import="true" name="Cetean Upiór" hidden="false" id="8bca-3c73-e7fa-de6f" targetId="48df-269c-c9fe-0c4e" type="selectionEntry"/>
+    <entryLink import="true" name="Highborn Servant" hidden="false" id="c544-9e0f-f570-e9eb" targetId="a5c3-7b47-ed78-6205" type="selectionEntry"/>
+    <entryLink import="true" name="Hulking Moroi" hidden="false" id="2d1c-02e6-ff1c-a8fb" targetId="8065-d657-7053-289d" type="selectionEntry"/>
+    <entryLink import="true" name="Leech" hidden="false" id="6d2b-06b9-683f-b08d" targetId="e4ab-d4b0-38f5-d854" type="selectionEntry"/>
+    <entryLink import="true" name="Moon Eater" hidden="false" id="e4f3-8666-ebeb-4152" targetId="9716-74ee-001c-b71e" type="selectionEntry"/>
+    <entryLink import="true" name="Reaper" hidden="false" id="b338-f74c-ddde-36ab" targetId="47ef-6af4-00fd-7c0e" type="selectionEntry"/>
+    <entryLink import="true" name="Seer" hidden="false" id="33c3-fe47-6821-07bf" targetId="b243-6e52-a557-09e6" type="selectionEntry"/>
+    <entryLink import="true" name="Spatar" hidden="false" id="4237-365d-d4d1-8c62" targetId="ccb1-85e8-6e7e-d009" type="selectionEntry"/>
+    <entryLink import="true" name="Strige" hidden="false" id="b4f0-274f-0534-9924" targetId="2b6b-c474-8ec0-9276" type="selectionEntry"/>
+    <entryLink import="true" name="Strigoi Priest" hidden="false" id="93c2-34dc-cff4-2a41" targetId="8f65-ccea-b40b-8470" type="selectionEntry"/>
+    <entryLink import="true" name="Strzyga" hidden="false" id="d02c-1618-b666-8ac5" targetId="b854-a340-8bad-9387" type="selectionEntry"/>
+    <entryLink import="true" name="Tarot Reader" hidden="false" id="da4c-8146-9774-31a7" targetId="f4c6-c87c-516e-e6c5" type="selectionEntry"/>
+    <entryLink import="true" name="Varcolac" hidden="false" id="6331-7d97-c922-c8a8" targetId="cd31-1b34-9e8c-5bfc" type="selectionEntry"/>
+    <entryLink import="true" name="Wallachian Impaler" hidden="false" id="3cb4-a5e8-17fe-bc4f" targetId="e814-38d2-f923-1fb4" type="selectionEntry"/>
+    <entryLink import="true" name="Zoryi" hidden="false" id="b437-a248-5edd-900f" targetId="cb66-c4c0-499e-4243" type="selectionEntry"/>
+    <entryLink import="true" name="Al Naibii" hidden="false" id="90aa-cca0-a137-45fe" targetId="f33d-0457-59f5-5193" type="selectionEntry"/>
+    <entryLink import="true" name="Common Strigoi" hidden="false" id="4a58-556e-da08-6078" targetId="c28f-d9a0-61bc-348d" type="selectionEntry"/>
+    <entryLink import="true" name="Ferryman" hidden="false" id="4cb4-f1e7-0bf1-368e" targetId="9e95-b3dd-ddbc-f108" type="selectionEntry"/>
+    <entryLink import="true" name="Harpy" hidden="false" id="96fc-8422-c98b-c21f" targetId="4e46-83ef-5369-4799" type="selectionEntry"/>
+    <entryLink import="true" name="Newborn Strigoi" hidden="false" id="d493-febf-6d82-c62d" targetId="7cf9-95bc-4103-1ff9" type="selectionEntry"/>
+    <entryLink import="true" name="Nosferatu" hidden="false" id="fa5a-b458-e94a-6e68" targetId="7b39-44c4-0ce7-6344" type="selectionEntry"/>
+    <entryLink import="true" name="Romani" hidden="false" id="b9d9-5458-975b-7733" targetId="8443-f40c-fac1-2cd3" type="selectionEntry"/>
+    <entryLink import="true" name="Rotter" hidden="false" id="39c5-2b93-87b5-ac04" targetId="029c-932b-7279-9408" type="selectionEntry"/>
+    <entryLink import="true" name="Sinker" hidden="false" id="c6aa-13d6-1341-a7b6" targetId="fb17-db08-3c01-7eeb" type="selectionEntry"/>
+    <entryLink import="true" name="Starved Dhampir" hidden="false" id="a157-e518-10a2-98e8" targetId="e2d0-b349-d798-09bc" type="selectionEntry"/>
+    <entryLink import="true" name="Targoveti" hidden="false" id="4800-8c54-7126-411e" targetId="f80c-55c6-c3fd-4f39" type="selectionEntry"/>
+    <entryLink import="true" name="Thrall" hidden="false" id="4abd-dd44-af95-cd44" targetId="dcb7-1faa-3cac-ce18" type="selectionEntry"/>
+  </entryLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Thrall Weapon Selection" id="f852-d227-61b8-def6" hidden="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69a4-9c39-5fad-2ebb-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69a4-9c39-5fad-2ebb-max" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Crossbow" hidden="false" id="f83d-edb2-adb1-ddab">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bc4-9426-a4d9-da9e" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc5c-c799-72e1-bc06" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="dc5c-c799-72e1-bc06"/>
+          </modifiers>
+          <profiles>
+            <profile name="Crossbow" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="eb30-f5f6-e019-804d">
+              <characteristics>
+                <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">30&quot;</characteristic>
+                <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Reload (1), Two-Handed</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Club" hidden="false" id="d90f-df21-946c-6ac7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f041-fb60-f0a1-1592" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Club" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="dd6d-9408-30de-18d1">
+              <characteristics>
+                <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>

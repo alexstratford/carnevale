@@ -4,7 +4,6 @@
     <categoryEntry name="Leader" id="955d-3f8e-a1e3-88b9" hidden="false"/>
     <categoryEntry name="Hero" id="79d4-9b8b-7f29-cba5" hidden="false"/>
     <categoryEntry name="Henchman" id="cf01-1b3c-22d7-8d1b" hidden="false"/>
-    <categoryEntry name="Item" id="9369-3c94-3259-fa34" hidden="false"/>
     <categoryEntry name="Faction (The Guild)" id="3357-90ff-5d46-5cea" hidden="false"/>
     <categoryEntry name="House of Virtue" id="2a97-7fbe-7fcc-998c" hidden="false"/>
     <categoryEntry name="Discipline (Blood Rites)" id="1c8e-4a5e-59b3-37b6" hidden="false"/>
@@ -25,6 +24,15 @@
     <categoryEntry name="Officer" id="ad7e-4dd6-e37f-b106" hidden="false"/>
     <categoryEntry name="Faction (Patricians)" id="bb57-55b2-0ab2-6ce9" hidden="false"/>
     <categoryEntry name="Soldier" id="d5cc-1663-8fc4-1157" hidden="false"/>
+    <categoryEntry name="Councillor" id="b25f-6a71-be31-bc25" hidden="false"/>
+    <categoryEntry name="Ottoman" id="4d68-7f37-680b-6937" hidden="false"/>
+    <categoryEntry name="Faction (The Vatican)" id="b8c1-0bb0-ed53-bdfa" hidden="false"/>
+    <categoryEntry name="Invoker" id="9970-dc52-6e07-491d" hidden="false"/>
+    <categoryEntry name="Construct" id="2eab-808f-d9cb-a54d" hidden="false"/>
+    <categoryEntry name="Hospitaller" id="b836-1fe7-9ce1-d352" hidden="false"/>
+    <categoryEntry name="Vampire" id="f681-8fe4-b2b2-5151" hidden="false"/>
+    <categoryEntry name="Faction (Strigoi)" id="a8e5-9f8a-d8f0-02c7" hidden="false"/>
+    <categoryEntry name="Bride" id="0f7c-81d3-1da5-961c" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Gang" hidden="false" id="aeb3-6915-af1f-2a80">
@@ -118,9 +126,15 @@ Additionally, if at least 1 character with the Boat Crew ability is currently o
     <rule name="Bodyguard (X)" id="38ae-076d-0c32-3de2" hidden="false">
       <description>For this special rule, (X) may be a character name or a character with a certain keyword. If an enemy character charges (X), this character may immediately make an out of sequence Run/Climb action provided it is currently out of base contact with any enemy and it charges that active enemy. This action causes an Attack of Opportunity and takes place before the opponent’s Attack of Opportunity.</description>
       <alias>Bodyguard</alias>
+      <alias>Bodyguard (Vlad Dracula)</alias>
       <alias>Bodyguard (Hero)</alias>
+      <alias>Bodyguard (Leader, Hero)</alias>
       <alias>Bodyguard (Hero, Henchman)</alias>
+      <alias>Bodyguard (Henchman)</alias>
       <alias>Bodyguard (Doctor)</alias>
+      <alias>Bodyguard (Officer)</alias>
+      <alias>Bodyguard (Leader)</alias>
+      <alias>Bodyguard (Felix Baumgartner)</alias>
     </rule>
     <rule name="Bulky" id="00f3-82d1-348d-5868" hidden="false">
       <description>This character does not gain any benefit from being in cover, and cannot make Hide actions.</description>
@@ -137,6 +151,15 @@ In addition, while in line of sight to another (X) character they use that char
       <alias>Companion (Leader)</alias>
       <alias>Companion (Hydra)</alias>
       <alias>Companion (Doctor)</alias>
+      <alias>Companion (Sun)</alias>
+      <alias>Companion (Moon)</alias>
+      <alias>Companion (Officer)</alias>
+      <alias>Companion (Councillor)</alias>
+      <alias>Companion (Invoker)</alias>
+      <alias>Companion (Hospitaller)</alias>
+      <alias>Companion (Vlad Dracula)</alias>
+      <alias>Companion (Noble Strigoi)</alias>
+      <alias>Companion (Vampire)</alias>
     </rule>
     <rule name="Concealment (X)" id="b7b0-685b-3bfb-81b2" hidden="false">
       <description>While in cover this character modifies its PROTECTION by (X).</description>
@@ -206,6 +229,7 @@ In addition, this character knows (X) additional magic spells.</description>
     </rule>
     <rule name="Fear (X)" id="c73f-1fed-a6d4-ecd8" hidden="false">
       <description>When this character makes a Combat action, the target must first make a Basic MIND Roll, with their MIND value modified by (X), to a minimum of 1. If they roll at least 1 Ace (on a 7+ as normal), there is no effect. But if they roll no Aces, this character may re-roll any failed dice rolls for the Combat action.</description>
+      <alias>Fear</alias>
       <alias>Fear (-5)</alias>
       <alias>Fear (-4)</alias>
       <alias>Fear (-3)</alias>
@@ -292,6 +316,7 @@ If the opposing character has Engage however, then both players roll to disenga
     </rule>
     <rule name="Vampiric Attack (X)" id="ff68-ca7c-ccd2-65b9" hidden="false">
       <description>If this character makes a Combat action while in base contact with its target that causes the target to lose at least 1 Life Point, it replenishes (X) of its own Life Points.</description>
+      <alias>Vampiric Attack</alias>
       <alias>Vampiric Attack (1)</alias>
       <alias>Vampiric Attack (2)</alias>
       <alias>Vampiric Attack (3)</alias>
@@ -1046,6 +1071,236 @@ If that line does not pass through Impassable Terrain, any character touched by
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Discipline Choice" id="6b5c-39fb-112a-2a21" hidden="false" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1ae-0c84-ac93-7f0e" includeChildSelections="false"/>
+      </constraints>
+      <comment>Blood Crone version</comment>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Blood Rites" hidden="false" id="3c17-6989-2740-9c64" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Blood Rites" hidden="false" id="295f-a8fa-073e-331b" type="selectionEntryGroup" targetId="8a67-4210-43e4-12c7"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Divinity" hidden="false" id="761a-3b50-d0da-4668" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Divinity" hidden="false" id="5f23-872c-5ef0-4e4b" type="selectionEntryGroup" targetId="fc4d-ad28-7eaf-8b29"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fateweaving" hidden="false" id="547d-1179-eea1-fec1" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Fateweaving" hidden="false" id="3586-b936-0f4b-0c22" type="selectionEntryGroup" targetId="212f-e939-2613-8a45"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Runes of Sovereignty" hidden="false" id="8fa5-4d1a-6735-3a8e" sortIndex="4">
+          <entryLinks>
+            <entryLink import="true" name="Runes of Sovereignty" hidden="false" id="7b58-ab5d-0051-3ab0" type="selectionEntryGroup" targetId="29e9-f176-3278-77b3"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Wild Magic" hidden="false" id="c092-93a6-0138-9ca0" sortIndex="5">
+          <entryLinks>
+            <entryLink import="true" name="Wild Magic" hidden="false" id="1c9b-390d-901f-2b7f" type="selectionEntryGroup" targetId="5c35-8d65-7630-eaaa"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Minor Arcana Cantrip Choice" id="1e68-94b2-f0ed-3671" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4433-b329-0759-5bbe" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fateweaving" hidden="false" id="5696-c8d6-5147-02be" sortIndex="2">
+          <profiles>
+            <profile name="Cantrip of the Stars" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="c59b-6c9a-0ff7-542c">
+              <characteristics>
+                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">5</characteristic>
+                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Until the start of this character’s next turn, you may re-roll the Destiny Dice once, even though not usually able to, for whatever roll you wish.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Fateweaving" hidden="false" id="e962-0ecc-79a4-a9fd">
+              <profiles>
+                <profile name="Cantrip of the Stars" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="1eea-26da-f8b2-2f08">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">5</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Until the start of this character’s next turn, you may re-roll the Destiny Dice once, even though not usually able to, for whatever roll you wish.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Runes of Sovereignty" hidden="false" id="da4b-a046-b59e-865d">
+              <profiles>
+                <profile name="Cantrip of the Chariot" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="0c3c-d751-7abe-b507">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6” that isn’t in base contact with an enemy. That character immediately makes a Run/Climb action that cannot move into base contact with an enemy.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Wild Magic" hidden="false" id="35cb-1ea4-fb74-8461">
+              <profiles>
+                <profile name="Cantrip of Justice" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="62c0-0116-cf83-33f0">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">This character may immediately cast another magic spell for 0AP. This spell costs Will Points as normal, but can be any spell known by any other mage (friendly or enemy) within line of sight.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Runes of Sovereignty" hidden="false" id="c995-bf8d-7061-451f" sortIndex="3">
+          <profiles>
+            <profile name="Cantrip of the Chariot" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="7f7f-0626-7588-dcfe">
+              <characteristics>
+                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6” that isn’t in base contact with an enemy. That character immediately makes a Run/Climb action that cannot move into base contact with an enemy.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Fateweaving" hidden="false" id="be7f-6fea-4cbd-14ec">
+              <profiles>
+                <profile name="Cantrip of the Stars" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="66ac-bfda-910d-7bdb">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">5</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Until the start of this character’s next turn, you may re-roll the Destiny Dice once, even though not usually able to, for whatever roll you wish.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Runes of Sovereignty" hidden="false" id="e145-14f5-2291-b230">
+              <profiles>
+                <profile name="Cantrip of the Chariot" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="5783-4650-fd13-7850">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6” that isn’t in base contact with an enemy. That character immediately makes a Run/Climb action that cannot move into base contact with an enemy.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Wild Magic" hidden="false" id="84fa-a260-0718-a110">
+              <profiles>
+                <profile name="Cantrip of Justice" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="ea51-9114-ce3b-186a">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">This character may immediately cast another magic spell for 0AP. This spell costs Will Points as normal, but can be any spell known by any other mage (friendly or enemy) within line of sight.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Wild Magic" hidden="false" id="3f68-0eca-c5b9-b2b9" sortIndex="4">
+          <profiles>
+            <profile name="Cantrip of Justice" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="41e9-8bc5-26fd-7b6b">
+              <characteristics>
+                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">This character may immediately cast another magic spell for 0AP. This spell costs Will Points as normal, but can be any spell known by any other mage (friendly or enemy) within line of sight.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Fateweaving" hidden="false" id="2156-ca47-0a51-a985">
+              <profiles>
+                <profile name="Cantrip of the Stars" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="0050-e625-7d80-ce57">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">5</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Until the start of this character’s next turn, you may re-roll the Destiny Dice once, even though not usually able to, for whatever roll you wish.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Runes of Sovereignty" hidden="false" id="7fe9-6f25-5cf0-ad9d">
+              <profiles>
+                <profile name="Cantrip of the Chariot" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="0f70-daf1-76d4-12d9">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6” that isn’t in base contact with an enemy. That character immediately makes a Run/Climb action that cannot move into base contact with an enemy.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Wild Magic" hidden="false" id="5b03-4aa7-3bdb-0da6">
+              <profiles>
+                <profile name="Cantrip of Justice" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="bd8a-45d0-f50b-573d">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">This character may immediately cast another magic spell for 0AP. This spell costs Will Points as normal, but can be any spell known by any other mage (friendly or enemy) within line of sight.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Discipline Choice" id="3b1d-8496-a4a5-adbb" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f97-74dd-1ee5-8e04" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Blood Rites" hidden="false" id="c5a3-fc1c-2b14-b771" sortIndex="1">
+          <profiles>
+            <profile name="Cantrip of the Devil" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="2c6e-b769-ca3e-eba8">
+              <characteristics>
+                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one enemy character in line of sight within 3”. Choose for that character to either lose 1 Life Point, or take 2 Damage with Penetration -2.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fateweaving" hidden="false" id="ca24-8d4a-91a8-0187" sortIndex="2">
+          <profiles>
+            <profile name="Cantrip of the Stars" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="c00b-57e6-b301-21f2">
+              <characteristics>
+                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">5</characteristic>
+                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Until the start of this character’s next turn, you may re-roll the Destiny Dice once, even though not usually able to, for whatever roll you wish.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Runes of Sovereignty" hidden="false" id="6635-2efe-a4ce-5fb7" sortIndex="3">
+          <profiles>
+            <profile name="Cantrip of the Chariot" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="5544-4594-37f5-4ffa">
+              <characteristics>
+                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Pick one friendly character in line of sight within 6” that isn’t in base contact with an enemy. That character immediately makes a Run/Climb action that cannot move into base contact with an enemy.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Wild Magic" hidden="false" id="b6cc-bb46-2a6e-08a1" sortIndex="4">
+          <profiles>
+            <profile name="Cantrip of Justice" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="3f81-1c3d-5386-37e4">
+              <characteristics>
+                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
+                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
+                <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">This character may immediately cast another magic spell for 0AP. This spell costs Will Points as normal, but can be any spell known by any other mage (friendly or enemy) within line of sight.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <comment>Romani version</comment>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Cantrip of the Devil" hidden="false" id="dc8e-b0a0-9f2a-78cd">
@@ -1528,6 +1783,23 @@ Any enemy characters at least partially over the Blast marker receive a Stunned 
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fangs" hidden="false" id="4356-14a1-0956-071d">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d537-a24a-aa33-1aac-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d537-a24a-aa33-1aac-max" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Fangs" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="a1c6-e8e4-96b5-a031">
+          <characteristics>
+            <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+            <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+            <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+            <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+            <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
 </gameSystem>

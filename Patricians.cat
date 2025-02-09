@@ -1,8 +1,1912 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="26d8-c60d-b12b-a483" name="Patricians" gameSystemId="sys-c646-d5a1-2146-1042" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Hero" hidden="false" id="5715-a4b9-3218-5a26"/>
-    <selectionEntry type="upgrade" import="true" name="Henchman" hidden="false" id="1e37-2291-12b4-ba08"/>
+    <selectionEntry type="upgrade" import="true" name="Hero" hidden="false" id="5715-a4b9-3218-5a26">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Moon" hidden="false" id="338d-783c-b2e9-d27f">
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="2e28-e252-c7ac-f10f" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="2d00-b826-5661-000a" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+            <categoryLink name="Discipline (Blood Rites)" hidden="false" id="7ab7-aa27-ece5-770c" targetId="1c8e-4a5e-59b3-37b6" primary="false"/>
+            <categoryLink name="Discipline (Fateweaving)" hidden="false" id="48a7-cd99-07ca-61c2" targetId="0edf-0a9c-7e37-e3c3" primary="false"/>
+            <categoryLink name="Unique" hidden="false" id="ccd2-ea84-3863-f1c7" targetId="d3e1-4616-c557-d958" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="74b9-2951-4fa3-0c75" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Shadow Touch" hidden="false" id="7d1d-ee56-3f8c-61ef">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="494c-5f16-d44a-0fd9-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="494c-5f16-d44a-0fd9-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Shadow Touch" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="f535-5c08-4782-e86b">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">+1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Moon" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="c9be-86b5-14e2-f7fe">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Moon" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="babd-b5c4-8e14-d523">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Companion (Sun), Flight, Mage (2), Mindless
+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="e499-61e2-5c06-37c4" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+              <conditions>
+                <condition type="lessThan" value="-2" field="ef4a-6847-91c7-b1f8" scope="self" childId="entry" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Sun" hidden="false" id="8baa-4401-ee7b-054c">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="15"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="b02d-9d50-277e-8313" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Unique" hidden="false" id="dc04-11ed-d459-46d8" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="9942-9e64-1a21-cfa6" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2371-196c-6fd5-106f" includeChildSelections="true"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blinding Flash" hidden="false" id="a4c5-b5b5-a778-e58e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba40-240e-0bd4-9e57-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba40-240e-0bd4-9e57-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Blinding Flash" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="459b-6972-2171-ece2">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Knockback, Reload (2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Sun" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="3082-17f1-d68d-a0aa">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Sun" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="1153-ac3c-b152-0901">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">5</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Acrobatic (3), Companion (Moon), Expert Marksman (2), Mindless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Adventuring Noble" hidden="false" id="66b3-07b8-80b0-daeb">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="f15d-728f-f142-f480" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Councillor" hidden="false" id="b349-5e1a-e8c2-4aa3" targetId="b25f-6a71-be31-bc25" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="f9c3-1530-d121-ea79" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+            <categoryLink name="Discipline (Wild Magic)" hidden="false" id="bcc5-11fd-c9fe-95a9" targetId="6e89-8a6f-6b8d-6133" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sword" hidden="false" id="e84f-93ce-a19e-b2e1" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf04-e9a5-772f-f19a-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf04-e9a5-772f-f19a-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Sword" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="b99f-9dd7-41a9-6f81">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Adventuring Noble" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="6f9f-f830-742e-b108">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Adventuring Noble" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="cc1e-c413-7625-dad3">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Hunter, Mage (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Arcane Totem" id="e138-3d89-8dbf-dde7" hidden="false">
+              <description>This character knows every spell (including the Cantrip) from the Wild Magic Discipline. Each spell costs 0 Will Points to cast, but may only be attempted once per game.
+In addition, if this character ever fails to cast a spell, another spell is also removed at random.</description>
+            </rule>
+          </rules>
+          <entryLinks>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="2210-caeb-fe95-78c2" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Captain of the Guard" hidden="false" id="a45d-56ce-2319-33de">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="14"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="994a-ec4c-ec16-496e" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Officer" hidden="false" id="d498-35e8-574c-3351" targetId="ad7e-4dd6-e37f-b106" primary="false"/>
+            <categoryLink name="Soldier" hidden="false" id="ed3e-290b-bc86-36e9" targetId="d5cc-1663-8fc4-1157" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="c12a-fba9-d497-60f8" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Officer&apos;s Sabre" hidden="false" id="341a-b020-34af-a4e5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c729-278a-abd5-a2f1-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c729-278a-abd5-a2f1-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Officer&apos;s Sabre" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="0265-e046-d424-253c">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Take Aim!" id="42e5-2ffe-2fe9-d6a4" hidden="false">
+              <description>*AURA Command Ability*
+Until the end of the round, all friendly characters with the Soldier keyword within 6&quot; gain Expert Marksman (1) and Expert Offence (1).</description>
+            </rule>
+            <rule name="Chain of Command" id="b1e8-7fb3-ca2a-3df6" hidden="false">
+              <description>This character may only use the ORDER or COUNTER Commands on characters with the Soldier keyword.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Captain of the Guard" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="b0c6-773d-2537-9bcb">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">3</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Captain of the Guard" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="70ab-29b0-4905-f1de">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bodyguard (Officer), Companion (Officer)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Cat Burglar" hidden="false" id="d8bf-f98b-1c28-bb8a">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="15"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="c54d-c948-27df-52f0" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Councillor" hidden="false" id="bdca-f342-7147-9911" targetId="b25f-6a71-be31-bc25" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="b2f3-fd96-bdb0-8e0a" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Stiletto" hidden="false" id="aa62-362b-ef43-3c7d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4357-131f-cb06-9203-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4357-131f-cb06-9203-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Stiletto" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="9822-bdf5-60ec-a52e">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">+1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Cat Burglar" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="208f-b616-4549-2437">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Cat Burglar" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="e879-5791-6339-e7fa">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">6</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Aerial Attack, Concealment (+2), Infiltration, Pickpocket</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Fencing Master" hidden="false" id="8977-befb-5143-76f0">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="1be2-d6dd-22fc-8351" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="e2a7-27d1-7083-a07f" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Balanced Rapier" hidden="false" id="78e6-ab31-0afe-c47b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8593-eed4-6b78-46c7-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8593-eed4-6b78-46c7-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Balanced Rapier" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="5f2f-709b-26c8-8577">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Strike True" id="1c67-bbc1-98a4-578c" hidden="false">
+              <description>**-1AP**
+Pick one friendly character in line of sight within 6&quot;. The next Combat action they make this round while in base contact with the target ignores all Protection Rolls - even Universal Shielding!</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Fencing Master" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="b412-0813-f4e2-2ec3">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Fencing Master" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="95dd-aeef-9cff-71c2">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Engage, Expert Offence (2), Parry (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Foreign Dignitary" hidden="false" id="724c-02d8-693f-ba13">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="14"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="9cd7-bf99-b457-208a" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="f28c-ccde-ac70-da82" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sabre" hidden="false" id="3366-c868-13f9-3d44">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b86d-1c2b-f5ac-9e10-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b86d-1c2b-f5ac-9e10-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Sabre" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="2335-5303-1f12-de2c">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Business or Pleasure?" id="8e73-4d90-8bc4-7bc4" hidden="false">
+              <description>Any friendly character with the Councillor keyword with 0 Command Points remaining replenishes 1 Command Point if they start their turn within 6&quot; and line of sight of this character.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Foreign Dignitary" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="b161-329d-000a-c0d3">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Foreign Dignitary" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="e33d-f204-5033-1fea">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Companion (Councillor), Expert Offence (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Gourmand Noble" hidden="false" id="dd9a-873c-f6fe-1245">
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="3f65-2237-0508-a3af" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Councillor" hidden="false" id="54e6-ffaf-554d-7609" targetId="b25f-6a71-be31-bc25" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="67e9-6602-24ed-7eff" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="13"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Carving Knife" hidden="false" id="b49e-eb98-ea2b-1165">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d074-77e5-4f52-53ce-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d074-77e5-4f52-53ce-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Carving Knife" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="59eb-cbba-2961-3c94">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Gourmand Noble" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="fe90-34b0-cf1b-816a">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Gourmand Noble" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="e0ce-bc92-ff86-3982">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Engage, Fear (0), Mindless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="The Other, Other White Meat" id="640c-2196-e5c4-2139" hidden="false">
+              <description>*AURA Command Ability*
+Until the end of the round, every other friendly character in line of sight gains the Flesheater ability while in line of sight of this character.</description>
+            </rule>
+            <rule name="Flesheater" id="9932-8460-202f-3166" hidden="false">
+              <description>If this character makes a Combat action against a target in base contact that causes it to lose at least 1 Life Point, it replenishes 1 Will Point.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Naval Lieutenant" hidden="false" id="873f-d076-470d-238b">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="15"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="fce0-1de5-e92e-ad8e" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Officer" hidden="false" id="7cb3-82d7-bbc2-9862" targetId="ad7e-4dd6-e37f-b106" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="2a8f-d53a-b1e7-997c" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+            <categoryLink name="Soldier" hidden="false" id="4b77-a3f4-0820-4d5e" targetId="d5cc-1663-8fc4-1157" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Nock Gun" hidden="false" id="3ae5-5fe3-c76d-4a12">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b04a-5994-dbee-a0b4-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b04a-5994-dbee-a0b4-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Nock Gun" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="bf96-39d1-9516-1e11">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">12&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+3</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Reload (1)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Naval Lieutenant" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="438c-75d7-9706-6fa0">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Naval Lieutenant" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="1568-8686-c267-4ee4">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Boat Crew, Fast Swimmer (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="We Trained For This" id="77f2-9079-3f6a-b266" hidden="false">
+              <description>*AURA Command Ability*
+All friendly characters within 6&quot; increase their Fast Swimmer (X) value by 2 until the end of the round. Any characters without Fast Swimmer are unaffected.</description>
+            </rule>
+            <rule name="Chain of Command" id="1048-781e-3a3c-a31e" hidden="false">
+              <description>This character may only use the ORDER or COUNTER Commands on characters with the Soldier keyword.</description>
+            </rule>
+            <rule name="Unwieldy" id="ad87-51a1-9394-aa74" hidden="false">
+              <description>This character may only make Combat actions with the Nock Gun as the first action of their turn (including using it for Attacks of Opportunity).</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Janissary Sapper" hidden="false" id="87c4-38b8-666a-8ca7">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="0428-cf85-4b3c-854c" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Ottoman" hidden="false" id="d634-de10-b24d-30c6" targetId="4d68-7f37-680b-6937" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="7a6c-05f4-1634-515a" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Black Powder Grenade" hidden="false" id="75e1-78dd-30b7-fd89">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="146f-96c0-1f2b-4f0b-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="146f-96c0-1f2b-4f0b-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Black Powder Grenade" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="352a-624f-4a87-052d">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+2</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Blast, Reload (1)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Knife" hidden="false" id="8da1-198c-94c6-6368">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e3d5-1803-d827-e47c-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3d5-1803-d827-e47c-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Knife" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="1e98-0780-6cdb-fb41">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Janissary Sapper" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="77e6-d545-5513-8039">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Janissary Sapper" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="bf63-6ce4-17d7-919a">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">5</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Marksman (2), Universal Shielding (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Black Powder Arrows" id="6c8d-409e-b59c-ca14" hidden="false">
+              <description>Any friendly Ottoman Archer within 3&quot; of this character may use its BlackPowder Grenade as if it were listed on their own profile when making a Combat action.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Ottoman Cannoneer" hidden="false" id="58fd-07fe-af90-2192">
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="d17e-c909-2a02-6e64" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Ottoman" hidden="false" id="16b4-bccd-47f8-9eed" targetId="4d68-7f37-680b-6937" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="9fcb-bd71-595b-ef7d" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="15"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Grapeshot" hidden="false" id="0d63-065a-e47d-644d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e461-b5b9-9476-223b-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e461-b5b9-9476-223b-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Grapeshot" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="8251-d808-bed1-d914">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-4</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Template, Reload (1)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Cannon Barrel" hidden="false" id="e9a2-bb06-c2ed-943a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d9bc-3984-6f5c-ef40-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9bc-3984-6f5c-ef40-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Cannon Barrel" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="39cd-1bd7-2f49-1a2b">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Ottoman Cannoneer" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="3b8f-ecd7-59b4-38aa">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">15</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Ottoman Cannoneer" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="3ccd-c875-d289-8431">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brawler (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Ottoman Janissary" hidden="false" id="8342-13da-dfb0-4dbd">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="17"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="0926-a330-2e5a-fc56" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Ottoman" hidden="false" id="3645-20d2-8ed5-8522" targetId="4d68-7f37-680b-6937" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="0e2c-190d-c138-4fe8" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <rules>
+            <rule name="Barbary Discipline" id="533d-78c7-5e4e-d26b" hidden="false">
+              <description>*AURA Command Ability*
+Until the end of the round, all friendly characters within 6&quot; gain +2 MOVEMENT if their Run/Climb action is used to charge.</description>
+            </rule>
+          </rules>
+          <entryLinks>
+            <entryLink import="true" name="Ottoman Janissary Weapon Selection" hidden="false" id="9064-6bdb-452f-91a4" type="selectionEntryGroup" targetId="0775-831b-1acf-cbeb"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Ottoman Janissary" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="f79e-2f3d-9cb8-43b5">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">2</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Ottoman Janissary" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="6afa-9449-eaff-223c">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">5</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bodyguard (Leader), Brawler (1), Expert Offence (2), Universal Shielding (3)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Seven Years Veteran" hidden="false" id="ac19-afda-6f5e-8483">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="15"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="56c1-3060-cc53-5c85" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Soldier" hidden="false" id="20d7-bae6-9e79-4340" targetId="d5cc-1663-8fc4-1157" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="ec87-6109-e497-ffc0" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Service Pistol" hidden="false" id="ce25-9304-11c1-1d82" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6614-f897-d383-95ea-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6614-f897-d383-95ea-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Service Pistol" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="008e-b147-fb1a-5cc2">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">8&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Reload (2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Infantry Sabre" hidden="false" id="3754-eb47-1a15-6ea2" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e646-d54f-ec8a-ef9c-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e646-d54f-ec8a-ef9c-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Infantry Sabre" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="a751-858b-7506-3bbb">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Inspiring" id="7639-1886-bf7e-2785" hidden="false">
+              <description>Whenever another friendly character with the Soldier keyword in line of sight within 6” of this character uses one of its own Will Points (and not those from other characters), it instead counts as 2 Will Points.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Seven Years Veteran" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="0e06-b003-25c2-bf91">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Seven Years Veteran" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="8ecc-ea68-32a5-16eb">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave, Expert Offence (1), Expert Marksman (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Submissive Noble" hidden="false" id="1b7a-4226-731b-6678">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="17"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="f251-fd81-6e9b-8327" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Councillor" hidden="false" id="14e3-c498-6e47-ee6b" targetId="b25f-6a71-be31-bc25" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="72c4-950f-36d8-9134" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Cat O&apos;Nine Tails" hidden="false" id="15ec-8b12-bb69-e3fe">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e0b-99a6-e8af-b380-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e0b-99a6-e8af-b380-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Submissive Noble" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="fe38-3a7a-11ee-237c">
+              <characteristics>
+                <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>
+                <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Submissive Noble" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="8767-d3f2-64ee-cca5">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">14</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">2</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Submissive Noble" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="8f6a-128f-6419-f5cc">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Frenzied, Expert Offence (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Domination" id="fdbb-6d5c-ef3b-c16b" hidden="false">
+              <description>*PULSE Command Ability*
+Every friendly character in base contact makes an immediate Move action for 0AP. This action cannot be used to move into base contact with an enemy character.</description>
+            </rule>
+            <rule name="Sadism" id="a213-6da2-b836-35df" hidden="false">
+              <description>*PULSE Command Ability*
+This character loses 1 Life Point and gains +2 Attack until the end of the round.</description>
+            </rule>
+            <rule name="Barbed" id="595f-f3ff-b07d-9c5e" hidden="false">
+              <description>If a Combat action with the Cat O’Nine Tails results in no Protection roll for the target, add 2 to the Damage.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Syphilitic Noble" hidden="false" id="005f-a969-5f4d-e48e">
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="a3f1-6a98-1d50-c18c" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Councillor" hidden="false" id="472b-d120-a3b4-9703" targetId="b25f-6a71-be31-bc25" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="b7f8-85c8-55f1-ac72" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="13"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Rapier" hidden="false" id="7962-724f-b78d-af95">
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+                <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="312f-8402-c7c0-2fd6-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="312f-8402-c7c0-2fd6-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Rapier" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="bec8-2c27-921e-0993">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Syphilitic Noble" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="48b1-ac90-9617-8a92">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Syphilitic Noble" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="7c09-c5cc-aa83-0a17">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Berserk, Engage, Frenzied, Mindless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Venetian Heavy Guard" hidden="false" id="5e49-bf41-b480-96d0">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="5ecd-ea85-9650-7ab0" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Soldier" hidden="false" id="fa71-621b-8a74-7307" targetId="d5cc-1663-8fc4-1157" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="8cc0-8082-7dc2-143c" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Spiked Warhammer (Thrust)" hidden="false" id="aea1-de15-1f44-7c12">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="497f-2f43-4546-97f8-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="497f-2f43-4546-97f8-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Spiked Warhammer (Thrust)" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="5756-0582-bf7c-09a1">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">1&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Spiked Warhammer (Swing)" hidden="false" id="00c4-5057-e29b-abd7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b28a-1dfd-3cbb-00d4-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b28a-1dfd-3cbb-00d4-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Spiked Warhammer (Swing)" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="abbb-d36b-6a7f-a509">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Venetian Heavy Guard" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="e7e5-499e-053d-7339">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">15</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Venetian Heavy Guard" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="a112-0d09-3316-344a">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">5</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Companion (Officer), Expert Protection (3)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Venetian Spy" hidden="false" id="d339-2014-e7a2-3a4f">
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="b614-552c-407d-0253" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="7621-8e00-cec9-511f" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Long Rifle" hidden="false" id="abe5-ae1b-4d00-bf20">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="13af-fb08-fef6-f03d-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13af-fb08-fef6-f03d-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Long Rifle" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="6ce9-d764-e0b8-b251">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">30&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Knockback, Reload (1), Two-Handed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Unwieldy" id="1148-a8d6-fb60-23c1" hidden="false">
+              <description>This character may only make Combat actions with the Long Rifle as the first action of their turn (including using it for Attacks of Opportunity).</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Venetian Spy" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="ce6a-4031-976f-8459">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Venetian Spy" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="9da8-5789-7e4b-9d4b">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Concealment (1), Expert Marksman (2), Infiltration</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Wayfinder" hidden="false" id="816b-7e75-1ae1-6910">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="40ec-4ec1-b79d-d918" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="5d8b-8903-a76a-c0d7" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Unarmed" hidden="false" id="11be-a35c-168f-67c5" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Wayfinder" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="324f-248d-dab0-b290">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">3</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Wayfinder" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="2923-c088-776c-a6e9">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Gun Laying" id="b5a9-42f4-a47b-d193" hidden="false">
+              <description>**-1AP**
+Pick a friendly character within 6” and line of sight. Until the end of that character’s next activation, it gains -2 Evasion against targets outside of base contact with it.</description>
+            </rule>
+            <rule name="Nautical Bearings" id="0e38-af6b-7bb3-0b9d" hidden="false">
+              <description>Any friendly character within 3&quot; that makes a Combat action with a weapon that has a range of 6&quot; or higher increases their range by 6&quot;.</description>
+            </rule>
+            <rule name="Maps and Charts" id="2633-35ed-0642-a266" hidden="false">
+              <description>Whenever this character uses a Plan command, draw 2 extra Agendas, take a look, and discard 2 of your choice.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Henchman" hidden="false" id="1e37-2291-12b4-ba08">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Barnabotti" hidden="false" id="fbfd-8828-7272-3262">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="89d1-b881-69d5-c1e7" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="6000-3ae4-f30b-35a9" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="1038-13b6-21ac-5105">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="514c-52d2-45e3-318c-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="514c-52d2-45e3-318c-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Pistol" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="008f-46dd-e8b9-07ef">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">8&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Reload (2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sword" hidden="false" id="5783-732e-c2fb-a223">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad8f-cd41-4637-947a-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad8f-cd41-4637-947a-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Sword" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="7537-bccf-8e11-3912">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Inferiority Complex" id="d803-91a3-1612-77d2" hidden="false">
+              <description>This character cannot use the ORDER or COUNTER Commands.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Barnabotti" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="2512-f7cd-ff1c-9c42">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Barnabotti" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="93d9-4e46-568a-6e27">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Companion (Councillor), First Strike (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Butler" hidden="false" id="1d39-d00e-92f0-d1a2">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="10"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="e108-0ddc-a1a6-8fbe" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="1abc-9f2b-817a-1d5a" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="c689-888c-c4d5-ec47">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3fc0-4d1d-96c8-8493-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fc0-4d1d-96c8-8493-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Pistol" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="eb28-1a86-2dd9-6744">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">8&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Reload (2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Butler" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="941d-a177-11c7-d1f3">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Butler" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="565f-c660-1bfe-a353">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Companion (Councillor), Expert Marksman (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Cannibal Cultist" hidden="false" id="d509-0d4c-8348-34df">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="8"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="a58c-0378-ee90-a637" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="7e1c-31ac-fbaa-c600" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sharpened Dagger" hidden="false" id="bd7c-28dc-3368-33f4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a75f-5ef1-efd6-c183-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a75f-5ef1-efd6-c183-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Sharpened Dagger" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="9f48-f599-8880-1486">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Flesheater" id="39a7-d03f-864c-34c7" hidden="false">
+              <description>If this character makes a Combat action against a target in base contact that causes it to lose at least 1 Life Point, it replenishes 1 Will Point.</description>
+            </rule>
+            <rule name="The Hunger" id="a914-2340-0131-8374" hidden="false">
+              <description>If this character starts its turn within 4&quot; of one or more enemy characters, it must attempt to move into base contact with one of them.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Cannibal Cultist" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="0af6-c907-8eb4-7e7b">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Cannibal Cultist" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="7625-32ab-9b82-c100">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Mindless, Frenzied</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Cortigiane" hidden="false" id="3820-d4b5-ae8f-5f90">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="125b-4edd-6965-4b14" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="87c2-9a4f-ac10-00e7" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Rapier" hidden="false" id="85bc-f664-43a1-21e0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69fb-3de6-b3cd-99f2-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69fb-3de6-b3cd-99f2-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Rapier" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="5ee5-1992-8e0e-b1b3">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Affirmation" id="76d9-c65c-cbe0-21ea" hidden="false">
+              <description>At the start of this character&apos;s turn, pick one character with the Councillor keyword in line of sight. Both this character and that character replenish 1 Will Point.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Cortigiane" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="847b-6261-fd57-0a6e">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Cortigiane" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="7c02-ea44-0b7c-19d6">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Parry (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="City Guard" hidden="false" id="a887-df0f-1094-547f">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="10"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="3fd1-ca16-7ade-e169" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Soldier" hidden="false" id="8f6d-d917-b07c-8e50" targetId="d5cc-1663-8fc4-1157" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="f9cc-1ace-e76c-7996" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="City Guard Weapon Selection" hidden="false" id="d51f-9645-089c-3af9" type="selectionEntryGroup" targetId="eb98-e96b-196d-e70b"/>
+          </entryLinks>
+          <profiles>
+            <profile name="City Guard" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="eb99-6f83-ee3c-ea56">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="City Guard" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="27ae-795d-3d2c-d40e">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Companion (Officer)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Guard Marksman" hidden="false" id="ecf5-37c8-d738-4356">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="b8d7-3658-7443-554c" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Soldier" hidden="false" id="1f1f-9d75-8d47-6412" targetId="d5cc-1663-8fc4-1157" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="49ae-7fd0-fa8a-7cab" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Musket" hidden="false" id="8342-a4b1-0580-19ff">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7268-93bd-4023-ad08-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7268-93bd-4023-ad08-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Musket" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="23cf-b16f-2cd1-4ba3">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">24&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Reload (1), Two-Handed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bayonet" hidden="false" id="cd9d-7856-917f-bd16">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0249-b539-ca3e-c4a1-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0249-b539-ca3e-c4a1-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Bayonet" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="100d-e5ea-b970-0cdd">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">1&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Guard Marksman" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="fbf7-12e5-6576-2a33">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Guard Marksman" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="d62e-1284-ff99-2ffd">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Companion (Officer)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Guard Sentry" hidden="false" id="f493-8d34-2a38-cadf">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Boot Knife" hidden="false" id="5f35-14da-6a6c-22d3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="45d6-3256-3367-a0f1-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45d6-3256-3367-a0f1-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Boot Knife" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="7ce6-426c-99c3-22d2">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Lookout" id="e49c-57d8-d69b-694d" hidden="false">
+              <description>Once per round, this character may use a single ORDER or COUNTER Command for 0 Command Points if at least 3&quot; above the target character. However, those Commands may still only be done once per round as usual. </description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Guard Sentry" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="aa27-0867-8f2e-f14c">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Guard Sentry" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="8fa7-d699-8820-7057">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Acrobatic (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="cf01-1b3c-22d7-8d1b" id="e52b-5667-583e-6468" primary="true" name="Henchman"/>
+            <categoryLink targetId="d5cc-1663-8fc4-1157" id="c20c-3db5-49b7-b7e7" primary="false" name="Soldier"/>
+            <categoryLink targetId="bb57-55b2-0ab2-6ce9" id="a6ae-4672-bea2-1b03" primary="false" name="Faction (Patricians)"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Household Staff" hidden="false" id="30dc-2cba-722c-38f5">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="9"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="12e4-88be-9547-2063" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="9d41-8a47-7b6a-a836" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Cast Iron Utensil" hidden="false" id="4236-cba0-e2f0-1a62">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3cea-a36a-eccc-2f00-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cea-a36a-eccc-2f00-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Cast Iron Utensil" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="6a7a-0448-1df7-5c77">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Household Staff" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="1e64-9ab4-a04f-51a7">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Household Staff" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="3ad8-3c92-e1d6-f6b2">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bodyguard (Councillor)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Merchant" hidden="false" id="2dfc-0eb1-c1da-f87b">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="13"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="6eda-d70d-3672-c2b7" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="11dc-f075-c542-f697" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="0a23-9f7a-a80b-1b2b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6cc0-0952-9961-c0ea-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6cc0-0952-9961-c0ea-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Pistol" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="cf4b-e801-ca0f-eb82">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">8&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Reload (2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="There&apos;s Coin in it for You" id="5cfa-cf59-f76c-a252" hidden="false">
+              <description>*PULSE Command Ability* 
+One friendly character with the Henchman keyword in line of sight within 6&quot; gains First Strike (2) until the end of the round.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Merchant" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="4cab-27e1-b2af-2f31">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">3</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Merchant" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="1bd3-bf86-eb55-6234">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Naval Ensign" hidden="false" id="ca2a-6b2c-4b60-fcf7">
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="d648-6f14-f5b5-de20" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Soldier" hidden="false" id="37a3-e1b3-10d0-1c51" targetId="d5cc-1663-8fc4-1157" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="36ac-0051-31af-96b6" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Fishing Spear" hidden="false" id="3f6a-e65b-459e-a94d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="770c-8a9c-a845-042d-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="770c-8a9c-a845-042d-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Fishing Spear" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="1810-54a0-0e4a-7c84">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic, Two-Handed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Naval Ensign" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="a651-2ebb-8fa1-49b7">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Naval Ensign" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="d848-2196-3319-6978">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Companion (Officer), Hunter, Fast Swimmer (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Naval Recruit" hidden="false" id="ffd2-aea5-45bc-e2cb">
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="e8f6-3df0-7a13-3a84" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Soldier" hidden="false" id="eb6f-8ab0-9007-d55a" targetId="d5cc-1663-8fc4-1157" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="4ea6-77b6-dd25-38ac" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="9"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Naval Cutlass" hidden="false" id="6b50-efd5-6229-f1cb">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="966b-92e3-f535-80c4-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="966b-92e3-f535-80c4-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Naval Cutlass" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="8c80-deb0-f747-b8d9">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Naval Recruit" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="511c-aaf0-1975-3ea1">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Naval Recruit" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="eab8-2711-5241-a3c6">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fast Swimmer (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Noble Seafarer" hidden="false" id="500a-76bc-1247-f637">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="3a95-7878-db82-6e10" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Councillor" hidden="false" id="f5ed-48c9-bf91-07ea" targetId="b25f-6a71-be31-bc25" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="884f-7d2a-04b2-2371" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Coach Gun" hidden="false" id="931d-cd96-a517-35e0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5934-ae5d-9882-9b26-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5934-ae5d-9882-9b26-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Coach Gun" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="44f2-374a-c296-4236">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">12&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+2</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Reload (1), Two-Handed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dive Knife" hidden="false" id="5f74-4794-ca28-4d84">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ffd9-3235-4ed2-f04a-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffd9-3235-4ed2-f04a-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Dive Knife" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="e004-1c76-8813-f407">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Noble Seafarer" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="7a8b-fb1d-4142-662a">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Noble Seafarer" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="b39f-2e5a-73c3-2b52">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Boat Crew, Fast Swimmer (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Ottoman Archer" hidden="false" id="1c9c-0f53-a947-4a29">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="10"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="2f04-dac7-d9b0-0068" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="ae53-67c4-2846-b9b3" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+            <categoryLink name="Ottoman" hidden="false" id="b154-3976-85f9-0fb9" targetId="4d68-7f37-680b-6937" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Short Bow" hidden="false" id="47f3-da34-27b3-03e0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d09c-2d6a-810e-d20a-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d09c-2d6a-810e-d20a-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Short Bow" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="0fdb-0ca4-1aef-6a86">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">12&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Two-Handed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Ottoman Archer" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="32fe-2309-36f0-b9f7">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Ottoman Archer" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="0218-b7fe-52e2-299d">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Boat Crew, Universal Shielding (3)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Ottoman Pirate" hidden="false" id="5e50-bdb9-6808-8bbd">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="11"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="8daf-ab3c-57c7-6d7f" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Ottoman" hidden="false" id="4126-8d21-2063-e076" targetId="4d68-7f37-680b-6937" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="143e-aede-8c64-f24b" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Twin Blades" hidden="false" id="36a3-6279-134a-a118">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b10-c431-2949-81e1-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b10-c431-2949-81e1-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Twin Blades" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="0623-e2cd-85f8-c6d2">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Ottoman Pirate" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="e023-1b69-b5cd-3dbd">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Ottoman Pirate" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="87bc-69f8-fcb8-42eb">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Boat Crew, Parry (1), Universal Shielding (3)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Ottoman Rigger" hidden="false" id="f356-59d4-473d-3a1d">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="eb67-7a35-6ef9-ac19" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Ottoman" hidden="false" id="d377-5474-2218-6fa8" targetId="4d68-7f37-680b-6937" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="4584-77c0-8491-3b2e" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Knife" hidden="false" id="5502-89b3-1f7a-5f1b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c81-fb9b-5946-e517-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c81-fb9b-5946-e517-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Knife" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="faa6-96de-09ba-1243">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Grappling Hook" id="1c78-5bff-c745-eac0" hidden="false">
+              <description>This character never takes damage from Falling.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Ottoman Rigger" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="4c7f-cddb-03dd-2e42">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Ottoman Rigger" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="ae0f-e9ae-4218-8a10">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">6</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Boat Crew</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Leader" hidden="false" id="58e8-f48c-2da1-a641">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Guard Commander" hidden="false" id="38b5-6744-e739-726a">
@@ -66,10 +1970,533 @@ Any friendly characters with the Soldier keyword in line of sight gain Expert 
             </rule>
           </rules>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Noble Admiral" hidden="false" id="cd0c-831d-3649-34de">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="19"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="d328-ed93-4655-be3e" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="9e30-e56f-5973-7914" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+            <categoryLink name="Officer" hidden="false" id="9913-fc01-8356-f299" targetId="ad7e-4dd6-e37f-b106" primary="false"/>
+            <categoryLink name="Councillor" hidden="false" id="289c-3928-5845-990b" targetId="b25f-6a71-be31-bc25" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Rifled Duelling Pistol" hidden="false" id="408c-b047-5fd2-93d3" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="14ea-6d73-7f7b-a5c1-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14ea-6d73-7f7b-a5c1-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Rifled Duelling Pistol" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="0f9b-1588-f5e7-07cc">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">12&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Reload (2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin Rifled Duelling Pistols" hidden="false" id="56b0-26a1-a705-514e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a532-1bf1-fb52-82d3-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a532-1bf1-fb52-82d3-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Twin Rifled Duelling Pistols" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="50b0-a9fa-854e-fe05">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">12&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+3</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Reload (1)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Noble Admiral" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="046b-6a45-5c02-5044">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">4</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Noble Admiral" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="fae4-5d76-df1f-711f">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Boat Crew, Expert Marksman (2), Fast Swimmer (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Naval Discipline" id="06ac-55b4-64b6-b115" hidden="false">
+              <description>*PULSE Command Ability*
+Other friendly characters on the same Boat as this character replenish 1 Will Point. Other friendly characters with Boat Crew replenish 1 additional Will Point.
+
+</description>
+            </rule>
+            <rule name="Raise a Crew" id="c0d0-fbe1-0f90-8aad" hidden="false">
+              <description>All friendly characters may be set up on a Boat.</description>
+            </rule>
+            <rule name="Twin Pistols" id="2293-a710-6a4d-5e90" hidden="false">
+              <description>This character&apos;s weapons share the Reload ability - you may make 2 Combat actions with the Rifled Duelling Pistol or 1 with Twin Rifled Duelling Pistols in one round.</description>
+            </rule>
+            <rule name="Unwieldy" id="d97b-d9f6-7e83-2813" hidden="false">
+              <description>This character may only make Combat actions with the Twin Rifled Duelling Pistols as the first action of their turn (including using it for Attacks of Opportunity).</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Venetian Noble" hidden="false" id="701d-1ef4-dd25-cc11">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="21"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="8024-fae1-6235-abcb" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Councillor" hidden="false" id="4308-3ec3-6cfd-f14e" targetId="b25f-6a71-be31-bc25" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="4ec2-098b-194c-ff4b" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Rifled Duelling Pistol" hidden="false" id="d927-0a2d-22a9-294f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24f7-0a69-b77d-8056-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24f7-0a69-b77d-8056-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Rifled Duelling Pistol" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="ab12-12a7-c4aa-b8f8">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">12&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Reload (2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Cup Rapier" hidden="false" id="53c4-92c1-b519-3de7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ad1-fb92-3b10-e15f-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ad1-fb92-3b10-e15f-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Cup Rapier" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="f39d-5f59-0ef4-04b7">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Venetian Noble" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="550c-96e7-b9fe-bc0e">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">3</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Venetian Noble" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="87e2-2a8a-0275-8934">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Engage, Expert Offence (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="The Monster Behind the Mask" id="23ac-1e51-37cd-438a" hidden="false">
+              <description>*PULSE Command Ability*
+This character gains +1 to its MOVEMENT, DEXTERITY, and ATTACK until the end of the round. However, it reduces its MIND to 1.</description>
+            </rule>
+            <rule name="Murderous Patron" id="c5c0-7ee1-620c-cc87" hidden="false">
+              <description>Any other friendly character that kills an enemy character replenishes 1 Will Point if both are in line of sight to the Venetian Noble.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Janissary Chorbaji" hidden="false" id="65b1-8a71-8901-a104">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="23"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="7280-93dc-dca7-ac82" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="72d7-c0e1-5077-8eae" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+            <categoryLink name="Ottoman" hidden="false" id="5b2a-fa44-63ed-eed0" targetId="4d68-7f37-680b-6937" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Flanged Mace" hidden="false" id="12a8-2219-04e3-a213">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e480-e930-7cac-9f8f-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e480-e930-7cac-9f8f-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Flanged Mace" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="d399-c417-72ef-f682">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Knockback</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Janissary Chorbaji" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="4589-753c-b118-8a4f">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">14</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">3</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Janissary Chorbaji" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="5ea7-5253-11f7-a80d">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">5</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brawler (1), Expert Offence (2), Universal Shielding (3)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Coordinated Attack" id="9ec1-3487-b580-4ff5" hidden="false">
+              <description>*PULSE Command Ability*
+All friendly characters with the Ottoman keyword within 3&quot; (including this one) gain First Strike (2) until the end of the round.</description>
+            </rule>
+            <rule name="Disciplined Momentum" id="13ef-7511-252f-d185" hidden="false">
+              <description>When a friendly character with the Ottoman keyword within 6&quot; and line of sight kills an enemy character, this character replenishes 1 lost Command Point.</description>
+            </rule>
+            <rule name="Martial Elite" id="8211-177c-e3e6-bc4d" hidden="false">
+              <description>Friendly characters with the Ottoman keyword within 6&quot; may use their Expert Offence ability on the Destiny Dice. </description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Sopracomito" hidden="false" id="b292-eb29-99e7-dc00">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="15"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="0a8a-82de-628f-82bf" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Councillor" hidden="false" id="4947-ab75-975e-589a" targetId="b25f-6a71-be31-bc25" primary="false"/>
+            <categoryLink name="Officer" hidden="false" id="6ecb-482a-c59e-1c0e" targetId="ad7e-4dd6-e37f-b106" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="a6a6-6f62-8f3c-e965" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Naval Cutlass" hidden="false" id="72a0-a99f-0ce5-86f5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a71f-008e-9d64-f2d9-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a71f-008e-9d64-f2d9-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Naval Cutlass" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="d931-3193-55b5-138a">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Sopracomito" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="256e-e428-3556-b999">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">8</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">2</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Sopracomito" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="6828-2398-2890-92ad">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">5</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Boat Crew</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Wages Are Here" id="b24b-4d58-4006-23c7" hidden="false">
+              <description>*PULSE Command Ability*
+Any friendly characters in line of sight with the Soldier keyword that aren&apos;t in base contact with an enemy may immediately make a Run/Climb action for 0AP, but must move into base contact with this character. This move does not cause Attacks of Opportunity. Any characters that move into base contact immediately replenish 1 Will Point.</description>
+            </rule>
+            <rule name="Pay Out" id="5438-8bc8-90cd-3f94" hidden="false">
+              <description>Any friendly character within 6” may use this character’s Will Points as if they were their own.</description>
+            </rule>
+            <rule name="Second in Command" id="a379-db2b-484d-b624" hidden="false">
+              <description>If this is the only character with the Leader keyword in the gang, this character loses the Hero keyword and no other Sopracomitos may be chosen. However, if there is another character with the Leader keyword, this character loses the Leader keyword.</description>
+            </rule>
+          </rules>
+          <comment>leader version</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="8ef1-150a-164f-02ad" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="955d-3f8e-a1e3-88b9" childId="b292-eb29-99e7-dc00" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="955d-3f8e-a1e3-88b9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="955d-3f8e-a1e3-88b9" childId="b292-eb29-99e7-dc00" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="955d-3f8e-a1e3-88b9" childId="b292-eb29-99e7-dc00" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Sopracomito" hidden="true" id="8ef1-150a-164f-02ad">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="15"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="955d-3f8e-a1e3-88b9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atMost" value="0" field="selections" scope="force" childId="b292-eb29-99e7-dc00" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <categoryLinks>
+            <categoryLink name="Councillor" hidden="false" id="9a02-1a29-0eeb-20ac" targetId="b25f-6a71-be31-bc25" primary="false"/>
+            <categoryLink name="Officer" hidden="false" id="76d4-1f0a-94dc-1d75" targetId="ad7e-4dd6-e37f-b106" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="1fa2-9e84-a71f-210a" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+            <categoryLink name="Hero" hidden="false" id="bb5f-6545-5883-3601" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Naval Cutlass" hidden="false" id="ab16-324c-c40c-247f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="deb1-eb74-d0ef-a4eb-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="deb1-eb74-d0ef-a4eb-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Naval Cutlass" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="98c1-b07f-98df-dffa">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Sopracomito" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="3534-3be5-77e5-37e1">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">8</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">2</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Sopracomito" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="80d7-88dd-cbe1-584a">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">5</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Boat Crew</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Wages Are Here" id="653e-cdec-a251-2e8d" hidden="false">
+              <description>*PULSE Command Ability*
+Any friendly characters in line of sight with the Soldier keyword that aren&apos;t in base contact with an enemy may immediately make a Run/Climb action for 0AP, but must move into base contact with this character. This move does not cause Attacks of Opportunity. Any characters that move into base contact immediately replenish 1 Will Point.</description>
+            </rule>
+            <rule name="Pay Out" id="dbb9-c8fd-1a9a-cb63" hidden="false">
+              <description>Any friendly character within 6” may use this character’s Will Points as if they were their own.</description>
+            </rule>
+            <rule name="Second in Command" id="bab2-2c44-f021-1dfb" hidden="false">
+              <description>If this is the only character with the Leader keyword in the gang, this character loses the Hero keyword and no other Sopracomitos may be chosen. However, if there is another character with the Leader keyword, this character loses the Leader keyword.</description>
+            </rule>
+          </rules>
+          <comment>hero version</comment>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Guard Commander" hidden="false" id="1ca0-9a36-91df-8b89" targetId="38b5-6744-e739-726a" type="selectionEntry"/>
+    <entryLink import="true" name="Noble Admiral" hidden="false" id="6d01-7211-55e4-c1ad" targetId="cd0c-831d-3649-34de" type="selectionEntry"/>
+    <entryLink import="true" name="Venetian Noble" hidden="false" id="7149-7739-bc1e-5ec0" targetId="701d-1ef4-dd25-cc11" type="selectionEntry"/>
+    <entryLink import="true" name="Janissary Chorbaji" hidden="false" id="6d77-b373-ec4f-942c" targetId="65b1-8a71-8901-a104" type="selectionEntry"/>
+    <entryLink import="true" name="Sopracomito" hidden="false" id="417f-6888-051b-b2db" targetId="b292-eb29-99e7-dc00" type="selectionEntry"/>
+    <entryLink import="true" name="Sopracomito" hidden="false" id="489d-a65e-256e-132d" targetId="8ef1-150a-164f-02ad" type="selectionEntry"/>
+    <entryLink import="true" name="Moon" hidden="false" id="cb1e-b91f-b40f-640e" targetId="338d-783c-b2e9-d27f" type="selectionEntry"/>
+    <entryLink import="true" name="Sun" hidden="false" id="2147-6d21-33f4-aaff" targetId="8baa-4401-ee7b-054c" type="selectionEntry"/>
+    <entryLink import="true" name="Adventuring Noble" hidden="false" id="125b-5f90-1130-37c4" targetId="66b3-07b8-80b0-daeb" type="selectionEntry"/>
+    <entryLink import="true" name="Captain of the Guard" hidden="false" id="0f6d-dfec-4a28-e31c" targetId="a45d-56ce-2319-33de" type="selectionEntry"/>
+    <entryLink import="true" name="Cat Burglar" hidden="false" id="cefd-a6c2-0d72-3142" targetId="d8bf-f98b-1c28-bb8a" type="selectionEntry"/>
+    <entryLink import="true" name="Fencing Master" hidden="false" id="43e1-cf1a-5ed6-d123" targetId="8977-befb-5143-76f0" type="selectionEntry"/>
+    <entryLink import="true" name="Foreign Dignitary" hidden="false" id="b98c-e417-03f8-8fa0" targetId="724c-02d8-693f-ba13" type="selectionEntry"/>
+    <entryLink import="true" name="Gourmand Noble" hidden="false" id="2ab1-f6f1-d755-072d" targetId="dd9a-873c-f6fe-1245" type="selectionEntry"/>
+    <entryLink import="true" name="Naval Lieutenant" hidden="false" id="e858-aa12-21a3-248d" targetId="873f-d076-470d-238b" type="selectionEntry"/>
+    <entryLink import="true" name="Janissary Sapper" hidden="false" id="3f85-799f-f1a4-337a" targetId="87c4-38b8-666a-8ca7" type="selectionEntry"/>
+    <entryLink import="true" name="Ottoman Cannoneer" hidden="false" id="511d-6bfe-1483-74e3" targetId="58fd-07fe-af90-2192" type="selectionEntry"/>
+    <entryLink import="true" name="Ottoman Janissary" hidden="false" id="f860-8606-c720-5c9e" targetId="8342-13da-dfb0-4dbd" type="selectionEntry"/>
+    <entryLink import="true" name="Seven Years Veteran" hidden="false" id="19fd-3a2d-3733-44b0" targetId="ac19-afda-6f5e-8483" type="selectionEntry"/>
+    <entryLink import="true" name="Submissive Noble" hidden="false" id="ed1e-457c-67d2-8ea4" targetId="1b7a-4226-731b-6678" type="selectionEntry"/>
+    <entryLink import="true" name="Syphilitic Noble" hidden="false" id="7e10-397c-e585-414a" targetId="005f-a969-5f4d-e48e" type="selectionEntry"/>
+    <entryLink import="true" name="Venetian Heavy Guard" hidden="false" id="23ba-feca-23ae-3867" targetId="5e49-bf41-b480-96d0" type="selectionEntry"/>
+    <entryLink import="true" name="Venetian Spy" hidden="false" id="32f3-6590-0acf-1ceb" targetId="d339-2014-e7a2-3a4f" type="selectionEntry"/>
+    <entryLink import="true" name="Wayfinder" hidden="false" id="fa55-e57e-8259-0a20" targetId="816b-7e75-1ae1-6910" type="selectionEntry"/>
+    <entryLink import="true" name="Barnabotti" hidden="false" id="7598-0179-146d-fb2f" targetId="fbfd-8828-7272-3262" type="selectionEntry"/>
+    <entryLink import="true" name="Butler" hidden="false" id="3a22-339b-c1bb-dd21" targetId="1d39-d00e-92f0-d1a2" type="selectionEntry"/>
+    <entryLink import="true" name="Cannibal Cultist" hidden="false" id="df63-cfaf-9cf5-0111" targetId="d509-0d4c-8348-34df" type="selectionEntry"/>
+    <entryLink import="true" name="Cortigiane" hidden="false" id="8301-f7a3-8cfb-e85d" targetId="3820-d4b5-ae8f-5f90" type="selectionEntry"/>
+    <entryLink import="true" name="City Guard" hidden="false" id="6075-6508-e69f-0149" targetId="a887-df0f-1094-547f" type="selectionEntry"/>
+    <entryLink import="true" name="Guard Marksman" hidden="false" id="f63f-bc46-c7b9-f1b3" targetId="ecf5-37c8-d738-4356" type="selectionEntry"/>
+    <entryLink import="true" name="Guard Sentry" hidden="false" id="7792-cd05-d907-6a45" targetId="f493-8d34-2a38-cadf" type="selectionEntry"/>
+    <entryLink import="true" name="Household Staff" hidden="false" id="be55-1741-a0fe-66df" targetId="30dc-2cba-722c-38f5" type="selectionEntry"/>
+    <entryLink import="true" name="Merchant" hidden="false" id="7183-f50d-4589-d8e6" targetId="2dfc-0eb1-c1da-f87b" type="selectionEntry"/>
+    <entryLink import="true" name="Naval Ensign" hidden="false" id="f892-6509-aea9-6924" targetId="ca2a-6b2c-4b60-fcf7" type="selectionEntry"/>
+    <entryLink import="true" name="Naval Recruit" hidden="false" id="eba1-66bb-4394-f8d6" targetId="ffd2-aea5-45bc-e2cb" type="selectionEntry"/>
+    <entryLink import="true" name="Noble Seafarer" hidden="false" id="5386-0f4b-d45a-df9e" targetId="500a-76bc-1247-f637" type="selectionEntry"/>
+    <entryLink import="true" name="Ottoman Archer" hidden="false" id="60b1-1fda-f5e8-6cdc" targetId="1c9c-0f53-a947-4a29" type="selectionEntry"/>
+    <entryLink import="true" name="Ottoman Pirate" hidden="false" id="2d59-f431-2d1a-7469" targetId="5e50-bdb9-6808-8bbd" type="selectionEntry"/>
+    <entryLink import="true" name="Ottoman Rigger" hidden="false" id="07b5-5f4b-818b-4658" targetId="f356-59d4-473d-3a1d" type="selectionEntry"/>
   </entryLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Ottoman Janissary Weapon Selection" id="0775-831b-1acf-cbeb" hidden="false" collective="true">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Twin Swords" hidden="false" id="9afa-5e04-bb63-f6e9" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="224d-3615-d74b-7c5c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f606-3947-91c1-2c9e" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="224d-3615-d74b-7c5c"/>
+          </modifiers>
+          <profiles>
+            <profile name="Twin Swords" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="1050-91f6-bc78-eefd">
+              <characteristics>
+                <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Battle Axe" hidden="false" id="202b-db66-c24e-3a5e" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bf5-7db2-7f3e-1e68" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Battle Axe" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="a201-6e8b-50ff-2e5b">
+              <characteristics>
+                <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Two-Handed</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f717-07c7-4bed-f402-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f717-07c7-4bed-f402-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="City Guard Weapon Selection" id="eb98-e96b-196d-e70b" hidden="false" collective="true">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb43-e0ba-ffd8-3f8b-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb43-e0ba-ffd8-3f8b-max" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Bardiche" hidden="false" id="11cf-208b-3c52-6bec">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed06-b056-2a76-cbda" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="545d-515d-695d-bfe0" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="ed06-b056-2a76-cbda"/>
+          </modifiers>
+          <profiles>
+            <profile name="Bardiche" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="a234-3da1-bbeb-3403">
+              <characteristics>
+                <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Two-Handed</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Infantry Sabre" hidden="false" id="da0d-bed3-fd0c-daa7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41c8-1e3f-4578-3a2e" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Infantry Sabre" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="3699-2ead-42c8-1e74">
+              <characteristics>
+                <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
