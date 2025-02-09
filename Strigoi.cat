@@ -66,9 +66,7 @@ Remove this character and place it anywhere on solid ground within 8”, at le
               <description>All friendly characters with the Vampire keyword in line of sight to this character gain Bodyguard (Vlad Dracula) and Companion (Vlad Dracula).</description>
             </rule>
             <rule name="Connoisseur" id="4157-9cf3-79d4-802c" hidden="false">
-              <description>Vlad will not drink the blood of just anyone. When attacking a character with the Hero keyword, he gains Vampiric Attack (1). When attacking a character with the Leader keyword, he gains Vampiric Attack (3).
-
-</description>
+              <description>Vlad will not drink the blood of just anyone. When attacking a character with the Hero keyword, he gains Vampiric Attack (1). When attacking a character with the Leader keyword, he gains Vampiric Attack (3).</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -97,7 +95,7 @@ Until the end of the round, any friendly characters within 6&quot; may re-roll
               <description>When picking spells, this character always knows all Cantrips from all Disciplines (even those she doesn&apos;t have access to).</description>
             </rule>
             <rule name="Minor Incantata" id="d958-64ef-53c5-4b32" hidden="false">
-              <description> This character may cast a Cantrip for 0AP once per character turn. All the standard rules for casting spells apply.</description>
+              <description>This character may cast a Cantrip for 0AP once per character turn. All the standard rules for casting spells apply.</description>
             </rule>
           </rules>
           <modifiers>
@@ -207,9 +205,7 @@ Until the end of the round, any friendly characters with the Vampire keyword w
               <description>All friendly characters with the Vampire keyword in line of sight to this character gain Companion (Noble Strigoi).</description>
             </rule>
             <rule name="Sanguine Sabotage" id="90eb-165d-0c0d-0486" hidden="false">
-              <description>The Noble Strigoi has infiltrated the opponent&apos;s gang to take them down from within. Whenever an enemy character uses a Command within 6&quot; of this character, roll a dice. On a 7+ the Command costs an extra Command Point if possible.
-
-</description>
+              <description>The Noble Strigoi has infiltrated the opponent&apos;s gang to take them down from within. Whenever an enemy character uses a Command within 6&quot; of this character, roll a dice. On a 7+ the Command costs an extra Command Point if possible.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -876,9 +872,7 @@ Every friendly character with the Bride keyword gains 1 AP until the end of th
                 <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
                 <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
                 <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
-                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fast Swimmer (2), Frenzied, Vampiric Attack (1), Water Creature
-
-</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fast Swimmer (2), Frenzied, Vampiric Attack (1), Water Creature</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1173,8 +1167,7 @@ Every friendly character with the Bride keyword gains 1 AP until the end of th
           <rules>
             <rule name="Lunar Might" id="c966-b59b-efd2-057e" hidden="false">
               <description>During deployment let your opponent know when the moon will be brightest. Choose either the first 3 rounds, or the remaining rounds. 
-When the moon is brightest, all characters with this rule increase their MOVEMENT, DEXTERITY, and ATTACK by 1.
-</description>
+When the moon is brightest, all characters with this rule increase their MOVEMENT, DEXTERITY, and ATTACK by 1.</description>
             </rule>
             <rule name="Devourer of Will" id="7060-a478-02c5-5e20" hidden="false">
               <description>When this character kills an enemy character, it gains their starting Will Points. This is cumulative and can take this character above its starting Will Points.</description>
@@ -1350,9 +1343,7 @@ For every enemy character in line of sight to this character, add a re-roll to�
                 <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
                 <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">5</characteristic>
                 <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
-                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Vampiric Attack (1), Bodyguard (Leader), Parry (1), Frenzied
-
-</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Vampiric Attack (1), Bodyguard (Leader), Parry (1), Frenzied</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1582,8 +1573,7 @@ For every enemy character in line of sight to this character, add a re-roll to�
           <rules>
             <rule name="Lunar Might" id="f528-c38d-6f2d-6a5b" hidden="false">
               <description>During deployment let your opponent know when the moon will be brightest. Choose either the first 3 rounds, or the remaining rounds. 
-When the moon is brightest, all characters with this rule increase their MOVEMENT, DEXTERITY, and ATTACK by 1.
-</description>
+When the moon is brightest, all characters with this rule increase their MOVEMENT, DEXTERITY, and ATTACK by 1.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -1810,6 +1800,7 @@ When the moon is brightest, all characters with this rule increase their MOVEM
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="9"/>
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+            <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="1"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Henchman" hidden="false" id="a550-a23e-0173-c996" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
@@ -2096,9 +2087,7 @@ Pick one friendly character with the Vampire keyword within 1”. Remove this 
                 <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
                 <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
                 <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
-                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Berserk, Fast Swimmer (2), Frenzied, Water Creature
-
-</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Berserk, Fast Swimmer (2), Frenzied, Water Creature</characteristic>
               </characteristics>
             </profile>
           </profiles>
