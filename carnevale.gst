@@ -33,6 +33,9 @@
     <categoryEntry name="Vampire" id="f681-8fe4-b2b2-5151" hidden="false"/>
     <categoryEntry name="Faction (Strigoi)" id="a8e5-9f8a-d8f0-02c7" hidden="false"/>
     <categoryEntry name="Bride" id="0f7c-81d3-1da5-961c" hidden="false"/>
+    <categoryEntry name="Commedia dell&apos;Arte" id="a2bc-d54b-848b-73a7" hidden="false"/>
+    <categoryEntry name="Faction (Gifted)" id="9702-99aa-fc73-85a4" hidden="false"/>
+    <categoryEntry name="Equipment" id="9022-f78c-91d0-1a27" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Gang" hidden="false" id="aeb3-6915-af1f-2a80">
@@ -56,6 +59,7 @@
           </modifiers>
         </categoryLink>
         <categoryLink name="Henchman" hidden="false" id="6e01-147a-211b-9ef2" targetId="cf01-1b3c-22d7-8d1b"/>
+        <categoryLink name="Equipment" hidden="false" id="e36e-df10-9359-d400" targetId="9022-f78c-91d0-1a27" type="category"/>
       </categoryLinks>
       <constraints>
         <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="d83e-0d7f-ea3b-244e-min" includeChildSelections="true"/>
@@ -135,6 +139,7 @@ Additionally, if at least 1 character with the Boat Crew ability is currently o
       <alias>Bodyguard (Officer)</alias>
       <alias>Bodyguard (Leader)</alias>
       <alias>Bodyguard (Felix Baumgartner)</alias>
+      <alias>Bodyguard (The Artist)</alias>
     </rule>
     <rule name="Bulky" id="00f3-82d1-348d-5868" hidden="false">
       <description>This character does not gain any benefit from being in cover, and cannot make Hide actions.</description>
@@ -160,6 +165,8 @@ In addition, while in line of sight to another (X) character they use that char
       <alias>Companion (Vlad Dracula)</alias>
       <alias>Companion (Noble Strigoi)</alias>
       <alias>Companion (Vampire)</alias>
+      <alias>Companion (Il Capitano)</alias>
+      <alias>Companion (Francisco De Lorme)</alias>
     </rule>
     <rule name="Concealment (X)" id="b7b0-685b-3bfb-81b2" hidden="false">
       <description>While in cover this character modifies its PROTECTION by (X).</description>
