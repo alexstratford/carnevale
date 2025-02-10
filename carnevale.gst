@@ -47,6 +47,7 @@
   <forceEntries>
     <forceEntry name="Gang" hidden="false" id="aeb3-6915-af1f-2a80">
       <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="2a54-bf68-f423-9c0d" targetId="28d2-683b-af11-bd1f"/>
         <categoryLink name="Leader" hidden="false" id="5c90-5eb9-1242-6f1b" targetId="955d-3f8e-a1e3-88b9">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8627-c3a2-4976-f273-max" includeChildSelections="false"/>
@@ -93,7 +94,6 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Configuration" hidden="false" id="2a54-bf68-f423-9c0d" targetId="28d2-683b-af11-bd1f"/>
       </categoryLinks>
       <constraints>
         <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="d83e-0d7f-ea3b-244e-min" includeChildSelections="true"/>

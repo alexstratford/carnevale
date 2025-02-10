@@ -2701,4 +2701,7 @@ Move the character to that point as if moving down a zipline.</description>
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Gifted" id="999c-198e-851a-2b03" targetId="9a88-2a78-d055-70b8" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>
