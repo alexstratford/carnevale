@@ -165,65 +165,6 @@ Once per round, when any character with line of sight to this character (inclu
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="The Demolitionist" hidden="false" id="db48-d7de-492a-28e8">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3925-d5b4-06ad-35df" includeChildSelections="true"/>
-          </constraints>
-          <costs>
-            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="13"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
-          </costs>
-          <categoryLinks>
-            <categoryLink name="Henchman" hidden="false" id="ab9e-e971-72ed-06bf" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
-            <categoryLink name="Unique" hidden="false" id="5b60-4e53-6e88-cdb2" targetId="d3e1-4616-c557-d958" primary="false"/>
-            <categoryLink name="Faction (Gifted)" hidden="false" id="5c92-122b-6ba0-0372" targetId="9702-99aa-fc73-85a4" primary="false"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Bomb" hidden="false" id="b073-a2eb-5ee9-982e">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c34e-9c81-84b9-862a" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c83-46ea-bf25-cd5a" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Bomb" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="e75f-07ab-29aa-8f7c">
-                  <characteristics>
-                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
-                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
-                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+2</characteristic>
-                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
-                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Blast, Reload (1)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-          <profiles>
-            <profile name="The Demolitionist" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="878c-ac52-1855-3e8f">
-              <characteristics>
-                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
-                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
-                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
-                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
-                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="The Demolitionist" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="f63f-e63f-6b94-8c0b">
-              <characteristics>
-                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
-                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
-                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
-                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
-                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
-                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Berserk, Expert Marksman (2), Mindless</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule name="Deathwish" id="7aa6-838b-68c9-c12e" hidden="false">
-              <description>This character may not make Unarmed Combat actions. Additionally, any failed Combat actions with Bombs always count as fumbles.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
         <selectionEntry type="model" import="true" name="Escaped Madman" hidden="false" id="b7e1-2b24-e123-a0c6">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8040-48c4-22c3-949e" includeChildSelections="true"/>
@@ -464,6 +405,48 @@ Il Dottore finds himself extremely interesting, and so can be the target of Co
             </rule>
           </rules>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Pierrot" hidden="false" id="cf4e-e7dd-cc50-4b9b">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="8"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="5ddf-e0c5-bafc-d4f1" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Commedia dell&apos;Arte" hidden="false" id="633b-d893-9d7b-0316" targetId="a2bc-d54b-848b-73a7" primary="false"/>
+            <categoryLink name="Faction (Gifted)" hidden="false" id="8697-0eaf-e40d-a36a" targetId="9702-99aa-fc73-85a4" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Unarmed" hidden="false" id="1f0f-d749-ded5-f9a7" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Pierrot" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="85c6-772b-073f-6ea8">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">8</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Pierrot" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="85ac-cc22-0ba4-1411">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Everyman" id="a2e2-7714-8df5-f7e6" hidden="false">
+              <description>If a friendly character is charged within 6&quot; of one or more characters with this rule, you may choose to swap them with one friendly Pierrot that isn&apos;t in base contact with an enemy. This is done before any Attacks of Opportunity.
+
+Turns out it was Pierrot all along!</description>
+            </rule>
+          </rules>
+        </selectionEntry>
         <selectionEntry type="model" import="true" name="Scapino" hidden="false" id="ae64-4074-8d50-7081">
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="11"/>
@@ -567,48 +550,6 @@ Il Dottore finds himself extremely interesting, and so can be the target of Co
             </rule>
           </rules>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Pierrot" hidden="false" id="cf4e-e7dd-cc50-4b9b">
-          <costs>
-            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="8"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
-          </costs>
-          <categoryLinks>
-            <categoryLink name="Henchman" hidden="false" id="5ddf-e0c5-bafc-d4f1" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
-            <categoryLink name="Commedia dell&apos;Arte" hidden="false" id="633b-d893-9d7b-0316" targetId="a2bc-d54b-848b-73a7" primary="false"/>
-            <categoryLink name="Faction (Gifted)" hidden="false" id="8697-0eaf-e40d-a36a" targetId="9702-99aa-fc73-85a4" primary="false"/>
-          </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Unarmed" hidden="false" id="1f0f-d749-ded5-f9a7" type="selectionEntry" targetId="5091-2892-6bf4-3a53"/>
-          </entryLinks>
-          <profiles>
-            <profile name="Pierrot" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="85c6-772b-073f-6ea8">
-              <characteristics>
-                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
-                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">8</characteristic>
-                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
-                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
-                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Pierrot" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="85ac-cc22-0ba4-1411">
-              <characteristics>
-                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
-                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
-                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
-                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
-                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
-                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule name="Everyman" id="a2e2-7714-8df5-f7e6" hidden="false">
-              <description>If a friendly character is charged within 6&quot; of one or more characters with this rule, you may choose to swap them with one friendly Pierrot that isn&apos;t in base contact with an enemy. This is done before any Attacks of Opportunity.
-
-Turns out it was Pierrot all along!</description>
-            </rule>
-          </rules>
-        </selectionEntry>
         <selectionEntry type="model" import="true" name="The Artist" hidden="false" id="8208-c916-3472-9355">
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="18"/>
@@ -685,69 +626,69 @@ Each character can only be brought back in this way once.</description>
             </rule>
           </rules>
         </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Hero" hidden="false" id="6fbe-8c9d-fd18-caa2">
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="The Abberation" hidden="false" id="0861-b996-171f-5457">
+        <selectionEntry type="model" import="true" name="The Demolitionist" hidden="false" id="db48-d7de-492a-28e8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3925-d5b4-06ad-35df" includeChildSelections="true"/>
+          </constraints>
           <costs>
-            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="23"/>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="13"/>
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
           </costs>
           <categoryLinks>
-            <categoryLink name="Hero" hidden="false" id="242c-4ff3-0d4b-1196" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
-            <categoryLink name="Faction (Gifted)" hidden="false" id="7cb1-0efc-7d4d-17b1" targetId="9702-99aa-fc73-85a4" primary="false"/>
-            <categoryLink name="Unique" hidden="false" id="76ec-826c-625d-1e1f" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Henchman" hidden="false" id="ab9e-e971-72ed-06bf" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Unique" hidden="false" id="5b60-4e53-6e88-cdb2" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Faction (Gifted)" hidden="false" id="5c92-122b-6ba0-0372" targetId="9702-99aa-fc73-85a4" primary="false"/>
           </categoryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e130-a834-ea58-3272" includeChildSelections="true"/>
-          </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Monstrous Tentacles" hidden="false" id="8752-b244-78fc-0ac4">
+            <selectionEntry type="upgrade" import="true" name="Bomb" hidden="false" id="b073-a2eb-5ee9-982e">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ccb0-fef3-4c58-caac" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb49-2bb5-7e49-784f" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c34e-9c81-84b9-862a" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c83-46ea-bf25-cd5a" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Monstrous Tentacles" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="2c39-79ee-b44e-d59e">
+                <profile name="Bomb" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="e75f-07ab-29aa-8f7c">
                   <characteristics>
-                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">3&quot;</characteristic>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
                     <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
-                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+2</characteristic>
                     <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
-                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Blast, Reload (1)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
             </selectionEntry>
           </selectionEntries>
           <profiles>
-            <profile name="The Abberation" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="5203-894b-e27a-985a">
+            <profile name="The Demolitionist" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="878c-ac52-1855-3e8f">
               <characteristics>
                 <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
-                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">22</characteristic>
-                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
                 <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
-                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
               </characteristics>
             </profile>
-            <profile name="The Abberation" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="e798-9290-6ac4-b564">
+            <profile name="The Demolitionist" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="f63f-e63f-6b94-8c0b">
               <characteristics>
                 <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
                 <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
-                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
                 <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
-                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
-                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Berserk, Bulky, Mindless</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Berserk, Expert Marksman (2), Mindless</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <rules>
-            <rule name="Slavering Horror" id="73d0-1b4e-b3f4-9748" hidden="false">
-              <description>When this character makes Combat, Drown, or Grapple actions, it may re-roll any failed dice rolls (remember, you cannot re-roll the Destiny dice). Yes, even against Brave characters!</description>
+            <rule name="Deathwish" id="7aa6-838b-68c9-c12e" hidden="false">
+              <description>This character may not make Unarmed Combat actions. Additionally, any failed Combat actions with Bombs always count as fumbles.</description>
             </rule>
           </rules>
         </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hero" hidden="false" id="6fbe-8c9d-fd18-caa2">
+      <selectionEntries>
         <selectionEntry type="model" import="true" name="Artisan Elena" hidden="false" id="0dad-0129-836c-a9d3">
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="17"/>
@@ -1531,198 +1472,6 @@ A character can only be given a single Mask. Unique characters without Faction
             </rule>
           </rules>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Master Gerhard" hidden="false" id="c905-d26a-2ea1-7fea">
-          <costs>
-            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
-          </costs>
-          <categoryLinks>
-            <categoryLink name="Hero" hidden="false" id="9bb9-ec44-c00b-1729" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
-            <categoryLink name="Unique" hidden="false" id="62c1-17d8-6a2f-d6f2" targetId="d3e1-4616-c557-d958" primary="false"/>
-            <categoryLink name="Faction (Gifted)" hidden="false" id="bb6f-e6dc-ebcd-e6ae" targetId="9702-99aa-fc73-85a4" primary="false"/>
-          </categoryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="138a-1eff-e8d4-3d87" includeChildSelections="true"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Forge Hammer" hidden="false" id="b762-4399-2404-bb9c">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe29-36d2-70eb-c6d1" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f2b-dcc8-481e-3a72" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Forge Hammer" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="67a3-b9b6-1bcf-5d7f">
-                  <characteristics>
-                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
-                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
-                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
-                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
-                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-          <profiles>
-            <profile name="Master Gerhard" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="cbd9-1ca5-ed96-9af5">
-              <characteristics>
-                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
-                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
-                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
-                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
-                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Master Gerhard" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="60f8-1481-b94f-fe9f">
-              <characteristics>
-                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
-                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
-                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
-                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
-                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
-                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Universal Shielding (3)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule name="Armourer" id="6064-4dd6-8aec-d071" hidden="false">
-              <description>At the beginning of the game, before deployment, select another friendly character to wear one of this character’s Masks. For the entirety of the game that character gains one of the following:
-
-• Universal Shielding (2).
-• Whenever this character makes a Combat action against a character with 0 Will Points remaining, if the attack deals at least 1 Damage, increase the damage caused by 1 (before any PROTECTION rolls).
-
-A character can only be given a single Mask. Unique characters without Faction (Gifted) and Mindless characters cannot be given a Mask.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Solus Hydraea" hidden="false" id="541c-039e-431e-5890">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7f51-4f9e-8c73-838f" includeChildSelections="true"/>
-          </constraints>
-          <costs>
-            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="17"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
-          </costs>
-          <categoryLinks>
-            <categoryLink name="Hero" hidden="false" id="4cf5-1013-410b-994d" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
-            <categoryLink name="Unique" hidden="false" id="29ef-5988-abc8-b557" targetId="d3e1-4616-c557-d958" primary="false"/>
-            <categoryLink name="Faction (Gifted)" hidden="false" id="2e35-dcd3-ec89-9706" targetId="9702-99aa-fc73-85a4" primary="false"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Bronze Chisel" hidden="false" id="cb72-f040-faf1-86b6">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e97-b84b-59c8-f4b2" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0e0-ec16-8f5c-749e" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Bronze Chisel" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="c1e7-a782-2024-f8aa">
-                  <characteristics>
-                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
-                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
-                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
-                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
-                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-          <profiles>
-            <profile name="Solus Hydraea" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="4b66-0233-3913-bc4f">
-              <characteristics>
-                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
-                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
-                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
-                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
-                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Solus Hydraea" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="50c5-b8dd-3da7-a0d4">
-              <characteristics>
-                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
-                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
-                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
-                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
-                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
-                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fear (0), Water Creature</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule name="Mask of Dagon" id="1326-cdba-b478-e7ea" hidden="false">
-              <description>At the beginning of the game, before deployment, select another friendly character to wear one of this character’s Masks. For the entirety of the game that character gains one of the following:
-
-• Water Creature and the Monster keyword.
-• Fear (0) and +1 ATTACK.
-
-A character can only be given a single Mask. Unique characters without Faction (Gifted) and Mindless characters cannot be given a Mask.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="The Mask Maker" hidden="false" id="a43b-037b-ad72-efae">
-          <costs>
-            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="14"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
-          </costs>
-          <categoryLinks>
-            <categoryLink name="Hero" hidden="false" id="36a4-ee16-ca2b-fbb8" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
-            <categoryLink name="Unique" hidden="false" id="521c-ed3c-2077-7882" targetId="d3e1-4616-c557-d958" primary="false"/>
-            <categoryLink name="Faction (Gifted)" hidden="false" id="1351-db85-9c91-8e77" targetId="9702-99aa-fc73-85a4" primary="false"/>
-          </categoryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a3de-9dce-2ba0-4ffd" includeChildSelections="true"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Pliers" hidden="false" id="a9e8-27c3-f6a7-6ba1">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f29-3b13-17ec-5100" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd24-3601-9df3-0b3c" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Pliers" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="ec0a-121d-768f-b147">
-                  <characteristics>
-                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
-                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
-                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
-                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
-                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-          <rules>
-            <rule name="Split Personalities" id="d007-1d62-a5bd-e151" hidden="false">
-              <description>At the start of this character&apos;s turn, he puts on a mask. Pick one of the following for the Mask Maker to gain until the start of his next turn:
-
-• Fear (-2)
-• Slippery
-• Vampiric Attack (2)
-• Water Creature</description>
-            </rule>
-          </rules>
-          <profiles>
-            <profile name="The Mask Maker" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="1352-df9b-0294-9411">
-              <characteristics>
-                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
-                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
-                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">5</characteristic>
-                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
-                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="The Mask Maker" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="a083-33fd-c8df-e0c6">
-              <characteristics>
-                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
-                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
-                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
-                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
-                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
-                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Concealment (1)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
         <selectionEntry type="unit" import="true" name="Maria Fioritura" hidden="false" id="eed3-ddbd-b9f5-5d38" collective="true">
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="18"/>
@@ -1886,6 +1635,257 @@ A character can only be given a single Mask. Unique characters without Faction
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a26f-7573-7ac4-0f6f" includeChildSelections="true"/>
           </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Master Gerhard" hidden="false" id="c905-d26a-2ea1-7fea">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="9bb9-ec44-c00b-1729" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Unique" hidden="false" id="62c1-17d8-6a2f-d6f2" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Faction (Gifted)" hidden="false" id="bb6f-e6dc-ebcd-e6ae" targetId="9702-99aa-fc73-85a4" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="138a-1eff-e8d4-3d87" includeChildSelections="true"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Forge Hammer" hidden="false" id="b762-4399-2404-bb9c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe29-36d2-70eb-c6d1" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f2b-dcc8-481e-3a72" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Forge Hammer" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="67a3-b9b6-1bcf-5d7f">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Master Gerhard" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="cbd9-1ca5-ed96-9af5">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Master Gerhard" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="60f8-1481-b94f-fe9f">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Universal Shielding (3)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Armourer" id="6064-4dd6-8aec-d071" hidden="false">
+              <description>At the beginning of the game, before deployment, select another friendly character to wear one of this character’s Masks. For the entirety of the game that character gains one of the following:
+
+• Universal Shielding (2).
+• Whenever this character makes a Combat action against a character with 0 Will Points remaining, if the attack deals at least 1 Damage, increase the damage caused by 1 (before any PROTECTION rolls).
+
+A character can only be given a single Mask. Unique characters without Faction (Gifted) and Mindless characters cannot be given a Mask.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Solus Hydraea" hidden="false" id="541c-039e-431e-5890">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7f51-4f9e-8c73-838f" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="17"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="4cf5-1013-410b-994d" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Unique" hidden="false" id="29ef-5988-abc8-b557" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Faction (Gifted)" hidden="false" id="2e35-dcd3-ec89-9706" targetId="9702-99aa-fc73-85a4" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Bronze Chisel" hidden="false" id="cb72-f040-faf1-86b6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e97-b84b-59c8-f4b2" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0e0-ec16-8f5c-749e" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Bronze Chisel" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="c1e7-a782-2024-f8aa">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Solus Hydraea" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="4b66-0233-3913-bc4f">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Solus Hydraea" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="50c5-b8dd-3da7-a0d4">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fear (0), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Mask of Dagon" id="1326-cdba-b478-e7ea" hidden="false">
+              <description>At the beginning of the game, before deployment, select another friendly character to wear one of this character’s Masks. For the entirety of the game that character gains one of the following:
+
+• Water Creature and the Monster keyword.
+• Fear (0) and +1 ATTACK.
+
+A character can only be given a single Mask. Unique characters without Faction (Gifted) and Mindless characters cannot be given a Mask.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="The Abberation" hidden="false" id="0861-b996-171f-5457">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="23"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="242c-4ff3-0d4b-1196" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Gifted)" hidden="false" id="7cb1-0efc-7d4d-17b1" targetId="9702-99aa-fc73-85a4" primary="false"/>
+            <categoryLink name="Unique" hidden="false" id="76ec-826c-625d-1e1f" targetId="d3e1-4616-c557-d958" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e130-a834-ea58-3272" includeChildSelections="true"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Monstrous Tentacles" hidden="false" id="8752-b244-78fc-0ac4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ccb0-fef3-4c58-caac" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb49-2bb5-7e49-784f" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Monstrous Tentacles" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="2c39-79ee-b44e-d59e">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">3&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="The Abberation" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="5203-894b-e27a-985a">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">22</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="The Abberation" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="e798-9290-6ac4-b564">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">5</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Berserk, Bulky, Mindless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Slavering Horror" id="73d0-1b4e-b3f4-9748" hidden="false">
+              <description>When this character makes Combat, Drown, or Grapple actions, it may re-roll any failed dice rolls (remember, you cannot re-roll the Destiny dice). Yes, even against Brave characters!</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="The Mask Maker" hidden="false" id="a43b-037b-ad72-efae">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="14"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="36a4-ee16-ca2b-fbb8" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Unique" hidden="false" id="521c-ed3c-2077-7882" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Faction (Gifted)" hidden="false" id="1351-db85-9c91-8e77" targetId="9702-99aa-fc73-85a4" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a3de-9dce-2ba0-4ffd" includeChildSelections="true"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pliers" hidden="false" id="a9e8-27c3-f6a7-6ba1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f29-3b13-17ec-5100" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd24-3601-9df3-0b3c" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Pliers" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="ec0a-121d-768f-b147">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Split Personalities" id="d007-1d62-a5bd-e151" hidden="false">
+              <description>At the start of this character&apos;s turn, he puts on a mask. Pick one of the following for the Mask Maker to gain until the start of his next turn:
+
+• Fear (-2)
+• Slippery
+• Vampiric Attack (2)
+• Water Creature</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="The Mask Maker" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="1352-df9b-0294-9411">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">5</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="The Mask Maker" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="a083-33fd-c8df-e0c6">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Concealment (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="White Dove" hidden="false" id="29b1-6ec6-278b-24e1">
           <costs>
@@ -2410,16 +2410,16 @@ Place the Duke anywhere out of base contact within 12&quot;. This does not cau
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
           </costs>
           <categoryLinks>
-            <categoryLink name="Leader" hidden="false" id="6deb-e00d-491b-0cf4" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
-            <categoryLink name="Unique" hidden="false" id="f29e-72db-8087-baa9" targetId="d3e1-4616-c557-d958" primary="false"/>
-            <categoryLink name="Faction (Gifted)" hidden="false" id="a395-c3fa-90a7-5236" targetId="9702-99aa-fc73-85a4" primary="false"/>
+            <categoryLink name="Leader" hidden="false" id="a204-1f04-dcdf-8069" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Unique" hidden="false" id="36b3-d3e0-7bf7-3874" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Faction (Gifted)" hidden="false" id="f801-8985-ec92-d8c3" targetId="9702-99aa-fc73-85a4" primary="false"/>
           </categoryLinks>
           <comment>Leader version</comment>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b306-1d72-bb4a-195e" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c144-e222-a3e6-bae3" includeChildSelections="true"/>
           </constraints>
           <profiles>
-            <profile name="The Duke" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="1315-6fd3-120f-c458">
+            <profile name="The Duke" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="e6f1-42cc-6202-8ed3">
               <characteristics>
                 <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
                 <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
@@ -2428,7 +2428,7 @@ Place the Duke anywhere out of base contact within 12&quot;. This does not cau
                 <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
               </characteristics>
             </profile>
-            <profile name="The Duke" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="a840-50b9-38e2-0f7a">
+            <profile name="The Duke" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="75cd-c14a-3c58-7139">
               <characteristics>
                 <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
                 <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
@@ -2440,9 +2440,9 @@ Place the Duke anywhere out of base contact within 12&quot;. This does not cau
             </profile>
           </profiles>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="5568-58e0-3103-adef">
+            <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="5275-3df6-bec0-b4cf">
               <profiles>
-                <profile name="The Duke" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="619a-f236-e4a0-a42a">
+                <profile name="The Duke" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="3520-02c3-ff11-516a">
                   <characteristics>
                     <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">8&quot;</characteristic>
                     <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
@@ -2453,17 +2453,17 @@ Place the Duke anywhere out of base contact within 12&quot;. This does not cau
                 </profile>
               </profiles>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e949-1f3c-348c-37b2" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6890-3607-5221-8e2a" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8319-0991-ae28-e75d" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ba8-820c-40a3-bdcc" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Sword" hidden="false" id="ef81-faa7-2505-00c7">
+            <selectionEntry type="upgrade" import="true" name="Sword" hidden="false" id="5d25-60e1-37ea-6146">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="174a-d0e7-576f-3609" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf50-8c2c-1b05-ce61" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f4e4-b6fd-1aa9-056e" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9890-19bf-d8ae-2bbf" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Sword" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="a40b-676d-76e0-c51a">
+                <profile name="Sword" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="10ca-c730-1022-8e4f">
                   <characteristics>
                     <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
                     <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
@@ -2476,13 +2476,13 @@ Place the Duke anywhere out of base contact within 12&quot;. This does not cau
             </selectionEntry>
           </selectionEntries>
           <rules>
-            <rule name="Disappear" id="31b3-0955-86f4-64d5" hidden="false">
+            <rule name="Disappear" id="8ce8-1473-c7fc-6042" hidden="false">
               <description>**-2AP**
 If this character is in base contact with any enemy characters, it may Disappear in a cloud of smoke. All characters in base contact are counted as being hit with a weapon with the Smoke ability.
 
 Place the Duke anywhere out of base contact within 12&quot;. This does not cause Attacks of Opportunity.</description>
             </rule>
-            <rule name="Inspiring Hero" id="8513-db10-cf7e-dec6" hidden="false">
+            <rule name="Inspiring Hero" id="d61b-8432-aec0-7a92" hidden="false">
               <description>If this is the only character with the Leader keyword in the gang, this character loses the Hero keyword. However, if there is another character with the Leader keyword, this character loses the Leader keyword.</description>
             </rule>
           </rules>
@@ -2498,41 +2498,41 @@ Place the Duke anywhere out of base contact within 12&quot;. This does not cau
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Il Capitano" hidden="false" id="3924-d8c6-98a9-1369" targetId="c95f-9396-adfc-0ed5" type="selectionEntry"/>
-    <entryLink import="true" name="La Signora" hidden="false" id="ff4d-0de2-f3f7-f7c4" targetId="fa97-08e8-7e67-7291" type="selectionEntry"/>
-    <entryLink import="true" name="La Signora" hidden="false" id="6cdb-e7ba-8706-852c" targetId="bb0c-6cb5-a024-bc85" type="selectionEntry"/>
-    <entryLink import="true" name="The Duke" hidden="false" id="44d3-38bb-d24b-9ead" targetId="734c-aaea-a117-2b15" type="selectionEntry"/>
-    <entryLink import="true" name="The Duke" hidden="false" id="dd61-1de1-fe1e-b82b" targetId="ac30-c919-055d-c9c8" type="selectionEntry"/>
-    <entryLink import="true" name="The Abberation" hidden="false" id="27bb-ad5b-99ce-c9d0" targetId="7390-5630-8852-0ad6" type="selectionEntry"/>
-    <entryLink import="true" name="Artisan Elena" hidden="false" id="4985-1f03-1688-38b3" targetId="4f33-5f3c-0499-fe2d" type="selectionEntry"/>
-    <entryLink import="true" name="Black Spectre" hidden="false" id="496a-7c4e-5b5a-33d9" targetId="557f-3356-f378-8367" type="selectionEntry"/>
-    <entryLink import="true" name="Burattino" hidden="false" id="53b3-aec4-973c-4dcc" targetId="9c7d-123d-b9a5-4a2a" type="selectionEntry"/>
-    <entryLink import="true" name="Fadhila" hidden="false" id="1c12-bf88-40f0-a612" targetId="dc2c-2ac6-3da0-5141" type="selectionEntry"/>
-    <entryLink import="true" name="Fate" hidden="false" id="f25e-881f-d429-056a" targetId="83f7-672b-4c30-cc17" type="selectionEntry"/>
-    <entryLink import="true" name="Francisco De Lorme" hidden="false" id="b3d0-33a2-43e6-fc7d" targetId="73a6-b8a2-7c53-c977" type="selectionEntry"/>
-    <entryLink import="true" name="Harbinger&apos;s Reflection" hidden="false" id="2603-fd15-dd22-f88f" targetId="d987-8eed-d61d-b2e3" type="selectionEntry"/>
-    <entryLink import="true" name="Harlequin" hidden="false" id="1638-d09d-d1c0-6c47" targetId="dde0-50e0-34f7-9801" type="selectionEntry"/>
-    <entryLink import="true" name="Il Mentore" hidden="false" id="e5bf-9c06-eaa9-4da9" targetId="7eab-eeef-5687-1f5b" type="selectionEntry"/>
-    <entryLink import="true" name="Innamorati" hidden="false" id="9c39-d546-2704-5b4c" targetId="4a2c-6aaa-7a48-5ef5" type="selectionEntry"/>
-    <entryLink import="true" name="Justice" hidden="false" id="7e1f-1b5d-dc13-fad3" targetId="56a7-07e5-97cc-6f1f" type="selectionEntry"/>
-    <entryLink import="true" name="Marco Leontus" hidden="false" id="625b-57a1-e761-65fd" targetId="1b20-98a8-a0ab-e984" type="selectionEntry"/>
-    <entryLink import="true" name="Master Gerhard" hidden="false" id="01b6-cc65-4ce8-4f09" targetId="8b60-7603-8137-656b" type="selectionEntry"/>
-    <entryLink import="true" name="Solus Hydraea" hidden="false" id="7537-135a-723e-5681" targetId="6e34-cf77-c117-9f77" type="selectionEntry"/>
-    <entryLink import="true" name="The Mask Maker" hidden="false" id="3edd-4814-7cff-9bef" targetId="0220-ac98-562b-2dab" type="selectionEntry"/>
-    <entryLink import="true" name="Maria Fioritura" hidden="false" id="704e-cae7-51fe-039b" targetId="a913-da58-4833-4d16" type="selectionEntry"/>
-    <entryLink import="true" name="White Dove" hidden="false" id="0b5e-8bd0-509c-b8e7" targetId="73b6-e096-48cf-08f3" type="selectionEntry"/>
-    <entryLink import="true" name="Zovena Vela" hidden="false" id="8407-2a93-77ce-a7e6" targetId="da97-aebe-96f6-2897" type="selectionEntry"/>
-    <entryLink import="true" name="Brighella" hidden="false" id="6638-0de5-8fe0-96e1" targetId="2313-ecc9-c260-7983" type="selectionEntry"/>
-    <entryLink import="true" name="Colombina" hidden="false" id="f4a8-9991-0a09-c86b" targetId="f467-e699-cf0b-91ed" type="selectionEntry"/>
-    <entryLink import="true" name="Coviello" hidden="false" id="e0dd-72a0-fbd2-b186" targetId="476b-a16c-2122-e093" type="selectionEntry"/>
-    <entryLink import="true" name="The Demolitionist" hidden="false" id="1841-bbf0-e3ef-28c8" targetId="f692-af5a-2565-e322" type="selectionEntry"/>
-    <entryLink import="true" name="Escaped Madman" hidden="false" id="c2a0-acfb-a44e-946f" targetId="c609-38cc-4fcb-5ab4" type="selectionEntry"/>
-    <entryLink import="true" name="Il Dottore" hidden="false" id="78da-5ed1-33e3-9427" targetId="7a77-731a-2956-dfa5" type="selectionEntry"/>
-    <entryLink import="true" name="Mezzetino" hidden="false" id="64ef-d4c8-590d-9927" targetId="418f-72dd-b4ac-d7d1" type="selectionEntry"/>
-    <entryLink import="true" name="Pantaleone" hidden="false" id="6141-708d-90ae-99c6" targetId="125d-75f7-639a-4770" type="selectionEntry"/>
-    <entryLink import="true" name="Scapino" hidden="false" id="6bfc-3d8b-5fd3-4848" targetId="8bb6-b90d-d828-efe0" type="selectionEntry"/>
-    <entryLink import="true" name="Starspawn" hidden="false" id="2832-e5f2-6b16-e081" targetId="28e2-8cca-4bd8-32b4" type="selectionEntry"/>
-    <entryLink import="true" name="Pierrot" hidden="false" id="ca36-15d6-a643-2bdc" targetId="ba08-e97c-2d76-3979" type="selectionEntry"/>
-    <entryLink import="true" name="The Artist" hidden="false" id="6e1c-9d78-d348-3cf9" targetId="099b-508c-f9af-d969" type="selectionEntry"/>
+    <entryLink import="true" name="Brighella" hidden="false" id="f22a-20fa-5030-2c86" targetId="c7b4-41f7-5335-f7f3" type="selectionEntry"/>
+    <entryLink import="true" name="Colombina" hidden="false" id="87ab-eb65-ac3f-0766" targetId="b773-08ad-2b33-319c" type="selectionEntry"/>
+    <entryLink import="true" name="Coviello" hidden="false" id="da9b-aa7d-998a-f8db" targetId="6555-25d7-f5e3-6cac" type="selectionEntry"/>
+    <entryLink import="true" name="Escaped Madman" hidden="false" id="6c57-a9c6-9a50-30a3" targetId="b7e1-2b24-e123-a0c6" type="selectionEntry"/>
+    <entryLink import="true" name="Il Dottore" hidden="false" id="1364-755a-f53e-9cbd" targetId="6dd3-0e99-26bf-cff8" type="selectionEntry"/>
+    <entryLink import="true" name="Mezzetino" hidden="false" id="12b5-4689-a0b8-2264" targetId="e0b7-e87b-26dc-6fcb" type="selectionEntry"/>
+    <entryLink import="true" name="Pantaleone" hidden="false" id="35ae-bb9b-c35c-e7fb" targetId="f380-e6df-a27b-3db2" type="selectionEntry"/>
+    <entryLink import="true" name="Pierrot" hidden="false" id="f1e2-df56-f538-2167" targetId="cf4e-e7dd-cc50-4b9b" type="selectionEntry"/>
+    <entryLink import="true" name="Scapino" hidden="false" id="f5ce-7eac-6fce-ad15" targetId="ae64-4074-8d50-7081" type="selectionEntry"/>
+    <entryLink import="true" name="Starspawn" hidden="false" id="a46b-c538-3b56-2605" targetId="a179-6a46-13b3-c9bb" type="selectionEntry"/>
+    <entryLink import="true" name="The Artist" hidden="false" id="8fcb-c322-3a60-e391" targetId="8208-c916-3472-9355" type="selectionEntry"/>
+    <entryLink import="true" name="The Demolitionist" hidden="false" id="b8c1-a281-c12a-ba14" targetId="db48-d7de-492a-28e8" type="selectionEntry"/>
+    <entryLink import="true" name="Artisan Elena" hidden="false" id="d369-a1ee-f888-fbea" targetId="0dad-0129-836c-a9d3" type="selectionEntry"/>
+    <entryLink import="true" name="Black Spectre" hidden="false" id="a3e4-1ed5-d76a-2400" targetId="e257-214b-bf94-3f2b" type="selectionEntry"/>
+    <entryLink import="true" name="Burattino" hidden="false" id="e800-f288-76e6-5314" targetId="104d-adc2-b6d7-d8c0" type="selectionEntry"/>
+    <entryLink import="true" name="Fadhila" hidden="false" id="f722-d1aa-72ea-f574" targetId="a22f-15f1-ee8b-642c" type="selectionEntry"/>
+    <entryLink import="true" name="Fate" hidden="false" id="0714-e209-8985-53ae" targetId="646a-c45b-1b91-2b8a" type="selectionEntry"/>
+    <entryLink import="true" name="Francisco De Lorme" hidden="false" id="5a60-a60a-14d3-3a69" targetId="5829-204d-7d4f-e15b" type="selectionEntry"/>
+    <entryLink import="true" name="Harbinger&apos;s Reflection" hidden="false" id="f2ca-f80d-be5a-2165" targetId="d9cc-640c-e3ee-020f" type="selectionEntry"/>
+    <entryLink import="true" name="Harlequin" hidden="false" id="7382-dc41-86b5-0358" targetId="2ffa-5475-39d3-2aea" type="selectionEntry"/>
+    <entryLink import="true" name="Il Mentore" hidden="false" id="f853-aaa5-286b-4d95" targetId="2ed7-dd22-2680-367c" type="selectionEntry"/>
+    <entryLink import="true" name="Innamorati" hidden="false" id="0ec6-d832-5539-5006" targetId="a96d-37a4-20ee-f00d" type="selectionEntry"/>
+    <entryLink import="true" name="Justice" hidden="false" id="38fe-21d1-f789-e791" targetId="b775-985a-c6ad-6757" type="selectionEntry"/>
+    <entryLink import="true" name="Marco Leontus" hidden="false" id="d171-cd9b-bf21-3c35" targetId="7442-da25-9597-2ec6" type="selectionEntry"/>
+    <entryLink import="true" name="Maria Fioritura" hidden="false" id="ed0e-e7c6-1d5c-97e2" targetId="eed3-ddbd-b9f5-5d38" type="selectionEntry"/>
+    <entryLink import="true" name="Master Gerhard" hidden="false" id="820d-f2fa-a6f7-5683" targetId="c905-d26a-2ea1-7fea" type="selectionEntry"/>
+    <entryLink import="true" name="Solus Hydraea" hidden="false" id="a45b-a8c9-7616-183a" targetId="541c-039e-431e-5890" type="selectionEntry"/>
+    <entryLink import="true" name="The Abberation" hidden="false" id="5cf6-713c-8d59-44ce" targetId="0861-b996-171f-5457" type="selectionEntry"/>
+    <entryLink import="true" name="The Mask Maker" hidden="false" id="9e19-c00b-285a-2502" targetId="a43b-037b-ad72-efae" type="selectionEntry"/>
+    <entryLink import="true" name="White Dove" hidden="false" id="cbf6-b569-d324-9eec" targetId="29b1-6ec6-278b-24e1" type="selectionEntry"/>
+    <entryLink import="true" name="Zovena Vela" hidden="false" id="ee73-c3c2-2643-fe44" targetId="a9dc-e15a-5762-3c48" type="selectionEntry"/>
+    <entryLink import="true" name="Il Capitano" hidden="false" id="c850-4620-3ded-4afa" targetId="fcb3-c368-ce22-f675" type="selectionEntry"/>
+    <entryLink import="true" name="La Signora" hidden="false" id="1140-b4ea-49f1-40a3" targetId="bb0c-6cb5-a024-bc85" type="selectionEntry"/>
+    <entryLink import="true" name="La Signora" hidden="false" id="977f-fd41-953f-44d4" targetId="fa97-08e8-7e67-7291" type="selectionEntry"/>
+    <entryLink import="true" name="The Duke" hidden="false" id="4859-d0a2-9551-878b" targetId="1681-e603-f2ce-780a" type="selectionEntry"/>
+    <entryLink import="true" name="The Duke" hidden="false" id="d093-c5af-52e0-5033" targetId="faca-988a-10ae-a4c6" type="selectionEntry"/>
   </entryLinks>
 </catalogue>
