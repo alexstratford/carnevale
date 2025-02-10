@@ -263,7 +263,7 @@ All friendly characters within 3&quot; gain +1 ATTACK until the end of the rou
 Until the end of the round, any friendly characters within 3&quot; gain Universal Shielding (4).</description>
             </rule>
             <rule name="Beast Master" id="4673-0736-bda5-9b5c" hidden="false">
-              <description>All friendly characters with the Animal keyword gain Companion (Doctor) while in line of sight of this character. </description>
+              <description>All friendly characters with the Animal keyword gain Companion (Doctor) while in line of sight of this character.</description>
             </rule>
             <rule name="Voltaic Shield" id="b6b6-05dd-9332-f2e9" hidden="false">
               <description>If an enemy character makes a Combat action against this character in base contact and they don&apos;t lose any Life Points from the attack, the enemy character loses 3 Life Points.</description>
@@ -451,7 +451,7 @@ That many characters within 6&quot; with the Nexus ability replenish 1 Will Po
                 <characteristic name="Life" typeId="31ac-58c2-51eb-d503">40</characteristic>
                 <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
                 <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
-                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">60mm</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">75mm</characteristic>
               </characteristics>
             </profile>
             <profile name="The Unholy Union" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="a5ab-b5a5-9bf0-7f91">
@@ -726,7 +726,7 @@ One friendly character within 3&quot; gains either Acrobatic (3), Engage, or S
 One friendly character with the Animal keyword within 6&quot; gains Berserk until the end of the game.</description>
             </rule>
             <rule name="Beast Master" id="f4db-ca01-078a-0458" hidden="false">
-              <description>All friendly characters with the Animal keyword gain Companion (Doctor) while in line of sight of this character. </description>
+              <description>All friendly characters with the Animal keyword gain Companion (Doctor) while in line of sight of this character.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -2528,4 +2528,7 @@ Pick a character within 3&quot; and make a basic MIND roll. That character rep
     <entryLink import="true" name="Nurse" hidden="false" id="1e97-b80c-12e3-0820" targetId="e56d-331c-1b66-56d5" type="selectionEntry"/>
     <entryLink import="true" name="Rhino" hidden="false" id="a77d-f3e7-7c02-045e" targetId="4a80-5310-5e59-67bd" type="selectionEntry"/>
   </entryLinks>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Gifted" id="480e-20b6-9db6-d96f" targetId="9a88-2a78-d055-70b8" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>

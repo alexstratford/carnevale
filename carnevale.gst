@@ -2646,6 +2646,13 @@ The bearer of he Grand Tarot gains Mage (0) and knows every Cantrip from every M
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f677-99f4-a0b7-2b21" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>

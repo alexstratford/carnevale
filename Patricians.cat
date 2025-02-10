@@ -54,8 +54,7 @@
                 <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
                 <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
                 <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
-                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Companion (Sun), Flight, Mage (2), Mindless
-</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Companion (Sun), Flight, Mage (2), Mindless</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1441,7 +1440,7 @@ Pick a friendly character within 6” and line of sight. Until the end of that
           </selectionEntries>
           <rules>
             <rule name="Lookout" id="e49c-57d8-d69b-694d" hidden="false">
-              <description>Once per round, this character may use a single ORDER or COUNTER Command for 0 Command Points if at least 3&quot; above the target character. However, those Commands may still only be done once per round as usual. </description>
+              <description>Once per round, this character may use a single ORDER or COUNTER Command for 0 Command Points if at least 3&quot; above the target character. However, those Commands may still only be done once per round as usual.</description>
             </rule>
           </rules>
           <profiles>
@@ -2041,9 +2040,7 @@ Any friendly characters with the Soldier keyword in line of sight gain Expert 
           <rules>
             <rule name="Naval Discipline" id="06ac-55b4-64b6-b115" hidden="false">
               <description>*PULSE Command Ability*
-Other friendly characters on the same Boat as this character replenish 1 Will Point. Other friendly characters with Boat Crew replenish 1 additional Will Point.
-
-</description>
+Other friendly characters on the same Boat as this character replenish 1 Will Point. Other friendly characters with Boat Crew replenish 1 additional Will Point.</description>
             </rule>
             <rule name="Raise a Crew" id="c0d0-fbe1-0f90-8aad" hidden="false">
               <description>All friendly characters may be set up on a Boat.</description>
@@ -2192,7 +2189,7 @@ All friendly characters with the Ottoman keyword within 3&quot; (including thi
               <description>When a friendly character with the Ottoman keyword within 6&quot; and line of sight kills an enemy character, this character replenishes 1 lost Command Point.</description>
             </rule>
             <rule name="Martial Elite" id="8211-177c-e3e6-bc4d" hidden="false">
-              <description>Friendly characters with the Ottoman keyword within 6&quot; may use their Expert Offence ability on the Destiny Dice. </description>
+              <description>Friendly characters with the Ottoman keyword within 6&quot; may use their Expert Offence ability on the Destiny Dice.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -2499,4 +2496,7 @@ Any friendly characters in line of sight with the Soldier keyword that aren&ap
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Gifted" id="679d-ad30-93bd-4bf1" targetId="9a88-2a78-d055-70b8" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>

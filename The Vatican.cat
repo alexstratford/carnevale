@@ -214,7 +214,7 @@ Until the end of the round, whenever a friendly character with the Construct k
 Pick 1 enemy character within 6&quot;. Until the end of the round, whenever that character is hit by a Combat action, the attacker gains Fear (-2).</description>
             </rule>
             <rule name="Helm of Penitence" id="5440-0092-70ca-89df" hidden="false">
-              <description>This character may attempt to Dispel magic spells as if it has Mage (3). In addition, enemy characters may not use Will Points when within 3” of this character. </description>
+              <description>This character may attempt to Dispel magic spells as if it has Mage (3). In addition, enemy characters may not use Will Points when within 3” of this character.</description>
             </rule>
             <rule name="Exorcism" id="04ad-b156-4bc0-9ef1" hidden="false">
               <description>When making a Combat action with Divine Touch, if it causes at least 1 Damage, the target loses 1 Will Point. If the target has 0 Will Points remaining, the attack instead does +3 Damage.</description>
@@ -488,7 +488,7 @@ Pick 1 friendly character in line of sight within 6&quot;. If that character is
 Pick a friendly character in line of sight within 12&quot;. One of that character&apos;s weapons gains -4 Penetration until the end of the round</description>
             </rule>
             <rule name="Renewed Vigour" id="cc73-9bc2-f3b4-5ba8" hidden="false">
-              <description>When this character kills an enemy character, he replenishes his full Will Points. </description>
+              <description>When this character kills an enemy character, he replenishes his full Will Points.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -1119,9 +1119,7 @@ All other friendly characters within 3&quot; gain +1 MOVEMENT until the end of
               <description>When this character is killed, do not remove it from the board. At the start of the next round, make a Basic MIND Roll (Will Points may be used as normal). If successful, this character comes back to life with 5 Life Points and gains Berserk for the rest of the game.
 
 
-If the MIND Roll is unsuccessful, the character is completely dead and removed from the board.
-
-</description>
+If the MIND Roll is unsuccessful, the character is completely dead and removed from the board.</description>
             </rule>
           </rules>
           <profiles>
@@ -1176,7 +1174,7 @@ If the MIND Roll is unsuccessful, the character is completely dead and removed�
           </selectionEntries>
           <rules>
             <rule name="Burning Aura" id="3365-8e5d-f760-fd68" hidden="false">
-              <description>Any friendly characters without this ability within 3&quot; gain -2 Penetration on their weapons. </description>
+              <description>Any friendly characters without this ability within 3&quot; gain -2 Penetration on their weapons.</description>
             </rule>
           </rules>
           <profiles>
@@ -1456,7 +1454,7 @@ If the MIND Roll is unsuccessful, the character is completely dead and removed�
           </modifiers>
           <rules>
             <rule name="Stigmata" id="5678-8c78-96fd-86a4" hidden="false">
-              <description>If this character uses one or more Life Points as Will Points (due to Frenzied) either to increase the dice pool or to perform an action (like casting spells), it may re-roll an equal number of dice (including the Destiny Dice) during that action. If it does this on a Combat action, Hands of God instead has Penetration -3 for that action. </description>
+              <description>If this character uses one or more Life Points as Will Points (due to Frenzied) either to increase the dice pool or to perform an action (like casting spells), it may re-roll an equal number of dice (including the Destiny Dice) during that action. If it does this on a Combat action, Hands of God instead has Penetration -3 for that action.</description>
             </rule>
           </rules>
           <selectionEntries>
@@ -1976,7 +1974,7 @@ One other friendly character with the Construct keyword without this ability r
           <rules>
             <rule name="Enspirit" id="3ea3-779c-f3ab-8ccf" hidden="false">
               <description>**-4LP**
-This character may use the ORDER command on friendly characters with the Construct Keyword, consuming 4 Life Points instead of 1 Command Point. This can be used even if it would kill this character. If this character uses its last Life Points on this ability, the target replenishes 1 Will Point. </description>
+This character may use the ORDER command on friendly characters with the Construct Keyword, consuming 4 Life Points instead of 1 Command Point. This can be used even if it would kill this character. If this character uses its last Life Points on this ability, the target replenishes 1 Will Point.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -2720,7 +2718,7 @@ This character may use the ORDER command on friendly characters with the Const
           </entryLinks>
           <rules>
             <rule name="Relics of Malta" id="07fd-6e14-9c42-3d0a" hidden="false">
-              <description>Once per turn, any friendly character (including this character) may re-roll 1 single dice on any roll if they are in line of sight within 6&quot; of this character.</description>
+              <description>Once per each of their turns, any friendly character within 6&quot; and line of sight of a friendly character with this rule may re-roll 1 single dice on any roll they make. This character is affected by its own **Relics of Malta** rule. </description>
             </rule>
           </rules>
           <profiles>
@@ -2771,7 +2769,7 @@ This character may use the ORDER command on friendly characters with the Const
     <entryLink import="true" name="Scorpio Marksman" hidden="false" id="8836-9747-c3a1-17e7" targetId="3272-80ba-a6bc-2dd6" type="selectionEntry"/>
     <entryLink import="true" name="Sepulchral Vanguard" hidden="false" id="c85c-03c0-11ff-50a5" targetId="8113-41f6-718e-740d" type="selectionEntry"/>
     <entryLink import="true" name="Seraph" hidden="false" id="5acd-9650-96cf-6820" targetId="3608-c617-97db-287c" type="selectionEntry"/>
-    <entryLink import="true" name="SIlere Priest" hidden="false" id="f652-7f0e-f1ac-22ba" targetId="4c29-5431-af9b-bd6a" type="selectionEntry"/>
+    <entryLink import="true" name="Silere Priest" hidden="false" id="f652-7f0e-f1ac-22ba" targetId="4c29-5431-af9b-bd6a" type="selectionEntry"/>
     <entryLink import="true" name="Stigmatist" hidden="false" id="f031-8df1-58aa-7926" targetId="d399-3e31-7b34-2f74" type="selectionEntry"/>
     <entryLink import="true" name="Summoner Priest" hidden="false" id="46f6-d558-46d2-2c66" targetId="e453-6340-ec1f-aa44" type="selectionEntry"/>
     <entryLink import="true" name="Templar Marshal" hidden="false" id="bc49-a83e-a383-93be" targetId="971a-7144-c644-0326" type="selectionEntry"/>
@@ -2797,4 +2795,7 @@ This character may use the ORDER command on friendly characters with the Const
     <entryLink import="true" name="Witch Finder" hidden="false" id="be28-8c59-b250-6d0e" targetId="45ed-ffd2-125f-9ae4" type="selectionEntry"/>
     <entryLink import="true" name="Reliquary Page" hidden="false" id="ca1c-5db0-0db0-7f84" targetId="5f7a-238a-1f44-c1fd" type="selectionEntry"/>
   </entryLinks>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Gifted" id="f2c5-d9f8-8f11-6d73" targetId="9a88-2a78-d055-70b8" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>

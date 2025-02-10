@@ -764,7 +764,7 @@ Every friendly character with the Bride keyword gains 1 AP until the end of th
                 <characteristic name="Life" typeId="31ac-58c2-51eb-d503">30</characteristic>
                 <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
                 <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
-                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">60mm</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">75mm</characteristic>
               </characteristics>
             </profile>
             <profile name="Monstrous Stryx" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="d7b7-b311-7956-9d7f">
@@ -1736,7 +1736,7 @@ When the moon is brightest, all characters with this rule increase their MOVEM
           </selectionEntries>
           <rules>
             <rule name="The End is Near" id="991f-89ea-3b00-3924" hidden="false">
-              <description>At the start of each turn, this character loses 2 Life Points and gains 1 to either MOVEMENT, DEXTERITY, or ATTACK for the rest of the game.</description>
+              <description>At the start of each of this character&apos;s turns, this character loses 2 Life Points and gains 1 to either MOVEMENT, DEXTERITY, or ATTACK for the rest of the game.</description>
             </rule>
           </rules>
           <profiles>
@@ -1828,11 +1828,11 @@ When the moon is brightest, all characters with this rule increase their MOVEM
           <profiles>
             <profile name="Ferryman" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="b072-69a2-6d03-a820">
               <characteristics>
-                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8"/>
-                <characteristic name="Life" typeId="31ac-58c2-51eb-d503"/>
-                <characteristic name="Will" typeId="327e-ffc1-2c57-b476"/>
-                <characteristic name="Command" typeId="df00-2e98-5a44-876e"/>
-                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d"/>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
               </characteristics>
             </profile>
             <profile name="Ferryman" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="38fa-c14f-2a84-b429">
@@ -1842,7 +1842,7 @@ When the moon is brightest, all characters with this rule increase their MOVEM
                 <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
                 <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
                 <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
-                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fear (1)</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fear (-1)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2372,4 +2372,7 @@ This may only be done if the Thrall has at least 4 Life Points remaining, and 
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Gifted" id="eacd-2e4d-98f9-430c" targetId="9a88-2a78-d055-70b8" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>

@@ -62,6 +62,20 @@
               <description>When a friendly character with the Leader keyword uses a Command while in line of sight, Brighella gains 1AP until the end of the round. Remember that no character can use more than 3AP in one round!</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Colombina" hidden="false" id="b773-08ad-2b33-319c">
           <costs>
@@ -123,6 +137,20 @@
 Once per round, when any character with line of sight to this character (including herself ) is about to make a roll with at least 1 dice, you can decide to score a single Ace instead of rolling.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Coviello" hidden="false" id="6555-25d7-f5e3-6cac">
           <costs>
@@ -164,6 +192,20 @@ Once per round, when any character with line of sight to this character (inclu
               </characteristics>
             </profile>
           </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Escaped Madman" hidden="false" id="b7e1-2b24-e123-a0c6">
           <constraints>
@@ -223,6 +265,20 @@ Once per round, when any character with line of sight to this character (inclu
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Il Dottore" hidden="false" id="6dd3-0e99-26bf-cff8">
           <costs>
@@ -284,6 +340,20 @@ Once per round, when any character with line of sight to this character (inclu
 Il Dottore finds himself extremely interesting, and so can be the target of Commands as normal.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Mezzetino" hidden="false" id="e0b7-e87b-26dc-6fcb">
           <costs>
@@ -344,6 +414,20 @@ Il Dottore finds himself extremely interesting, and so can be the target of Co
               <description>If an enemy character causes damage to Mezzetino (before Protection Rolls), he may re-roll any failed dice rolls for Combat actions against that character for the rest of the game, including the Destiny Dice.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Pantaleone" hidden="false" id="f380-e6df-a27b-3db2">
           <costs>
@@ -404,6 +488,20 @@ Il Dottore finds himself extremely interesting, and so can be the target of Co
               <description>At the end of each round, if this character hasn&apos;t used any Will Points during that round, he gains 1 Will Point. This can take him above his starting number.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Pierrot" hidden="false" id="cf4e-e7dd-cc50-4b9b">
           <costs>
@@ -446,6 +544,20 @@ Il Dottore finds himself extremely interesting, and so can be the target of Co
 Turns out it was Pierrot all along!</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Scapino" hidden="false" id="ae64-4074-8d50-7081">
           <costs>
@@ -490,6 +602,20 @@ Turns out it was Pierrot all along!</description>
               <description>When this character successfully disengages, any enemy characters that were in base contact receive a Stunned counter.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Starspawn" hidden="false" id="a179-6a46-13b3-c9bb">
           <costs>
@@ -549,82 +675,25 @@ Turns out it was Pierrot all along!</description>
               <description>Any time a friendly or enemy character successfully casts a Magic Spell, after resolving all effects, this character replenishes 1 Will Point.</description>
             </rule>
           </rules>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="The Artist" hidden="false" id="8208-c916-3472-9355">
-          <costs>
-            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="18"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
-          </costs>
-          <categoryLinks>
-            <categoryLink name="Henchman" hidden="false" id="9376-0647-890b-200f" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
-            <categoryLink name="Discipline (Fateweaving)" hidden="false" id="61b9-e395-17d7-9340" targetId="0edf-0a9c-7e37-e3c3" primary="false"/>
-            <categoryLink name="Discipline (Runes of Sovereignty)" hidden="false" id="999c-3e0f-96b1-722f" targetId="162f-6e00-290f-b3be" primary="false"/>
-            <categoryLink name="Discipline (Wild Magic)" hidden="false" id="41cf-9dcc-5c6c-16e9" targetId="6e89-8a6f-6b8d-6133" primary="false"/>
-            <categoryLink name="Unique" hidden="false" id="2647-bee4-036f-f00b" targetId="d3e1-4616-c557-d958" primary="false"/>
-            <categoryLink name="Faction (Gifted)" hidden="false" id="d84f-409c-5006-d114" targetId="9702-99aa-fc73-85a4" primary="false"/>
-          </categoryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f5b6-7923-7634-2b7e" includeChildSelections="true"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Paintbrush" hidden="false" id="3421-f188-bb27-01b3">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ad2-ddd3-a4ed-1502" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7371-8884-5fe0-6884" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Paintbrush" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="f753-d985-62c5-a212">
-                  <characteristics>
-                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
-                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
-                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
-                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">+1</characteristic>
-                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-          <profiles>
-            <profile name="The Artist" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="196a-c1b0-8bfd-9072">
-              <characteristics>
-                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
-                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
-                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">6</characteristic>
-                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
-                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="The Artist" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="c28c-fb4f-421e-b9ab">
-              <characteristics>
-                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
-                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
-                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
-                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
-                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
-                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Sorcerer (1), Mage (2)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <entryLinks>
-            <entryLink import="true" name="Discipline Choice" hidden="false" id="a11e-c1c0-6a0e-d978" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
-          </entryLinks>
           <modifiers>
-            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="lessThan" value="-3" field="ef4a-6847-91c7-b1f8" scope="self" childId="entry" shared="true" includeChildSelections="false"/>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
-          <rules>
-            <rule name="Painted Protectors" id="379f-5da9-de45-78ac" hidden="false">
-              <description>Once per turn, this character may use 1 Will Point to place a character in base contact that was previously removed from the game. This character functions exactly as it did before, except it gains Bodyguard (The Artist), has MIND 1, and 4 Life Points.
-
-If this character ever ends its activation further than 3 inches from The Artist, it is removed from the game. 
-
-Each character can only be brought back in this way once.</description>
-            </rule>
-          </rules>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="The Demolitionist" hidden="false" id="db48-d7de-492a-28e8">
           <constraints>
@@ -684,6 +753,20 @@ Each character can only be brought back in this way once.</description>
               <description>This character may not make Unarmed Combat actions. Additionally, any failed Combat actions with Bombs always count as fumbles.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -753,6 +836,20 @@ Each character can only be brought back in this way once.</description>
 A character can only be given a single Mask. Unique characters without Faction (Gifted) and Mindless characters cannot be given a Mask.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Black Spectre" hidden="false" id="e257-214b-bf94-3f2b">
           <costs>
@@ -812,6 +909,20 @@ A character can only be given a single Mask. Unique characters without Faction
               <description>When making Protection Rolls against Spectral Touch, the target must use their MIND value instead of their PROTECTION value. If the character failed their Fear test, they must re-roll any Aces.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Burattino" hidden="false" id="104d-adc2-b6d7-d8c0">
           <costs>
@@ -871,6 +982,20 @@ A character can only be given a single Mask. Unique characters without Faction
               <description>This character counts all base sizes as larger than it. This affects Hunter, Grappling, and Drowning, for example.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Fadhila" hidden="false" id="a22f-15f1-ee8b-642c">
           <categoryLinks>
@@ -892,6 +1017,18 @@ A character can only be given a single Mask. Unique characters without Faction
               <conditions>
                 <condition type="lessThan" value="-3" field="ef4a-6847-91c7-b1f8" scope="self" childId="entry" shared="true" includeChildSelections="false"/>
               </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <profiles>
@@ -950,6 +1087,18 @@ Pick a number from 1-6. Until the end of the round, any characters (friendly a
               <conditions>
                 <condition type="lessThan" value="-4" field="ef4a-6847-91c7-b1f8" scope="self" childId="entry" shared="true" includeChildSelections="false"/>
               </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <selectionEntries>
@@ -1068,6 +1217,18 @@ If successful, the target loses 2 Will Points and 2 Life Points, and this char
                 <condition type="lessThan" value="-2" field="ef4a-6847-91c7-b1f8" scope="self" childId="entry" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <rules>
             <rule name="Take the Oath" id="0a45-4407-e5b9-f6f1" hidden="false">
@@ -1138,6 +1299,20 @@ Additionally, this character may use more than 2 Will Points to increase a rol
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e98d-2f30-081d-b8ca" includeChildSelections="true"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Harlequin" hidden="false" id="2ffa-5475-39d3-2aea">
           <costs>
@@ -1202,6 +1377,20 @@ On a 7+ the Will Point is still discarded, but there is no effect.</description
               <description>This character cannot have more than a +1 modifier to its DEXTERITY.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Il Mentore" hidden="false" id="2ed7-dd22-2680-367c">
           <costs>
@@ -1267,6 +1456,20 @@ On a 7+ the Will Point is still discarded, but there is no effect.</description
 A character can only be given a single Mask. Unique characters without Faction (Gifted) and Mindless characters cannot be given a Mask.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Innamorati" hidden="false" id="a96d-37a4-20ee-f00d">
           <costs>
@@ -1344,6 +1547,20 @@ A character can only be given a single Mask. Unique characters without Faction
               <description>When this character is reduced to 5 Life Points or less, it gains +2 ATTACK and Mindless.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Justice" hidden="false" id="b775-985a-c6ad-6757">
           <costs>
@@ -1407,6 +1624,20 @@ If both Fate and Justice are on the board (as friendly characters), swap their
               <description>During deployment, pick 1 enemy character. Justice re-rolls all failed dice rolls when making Combat actions against this character, including the Destiny Dice!</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Marco Leontus" hidden="false" id="7442-da25-9597-2ec6">
           <categoryLinks>
@@ -1471,6 +1702,25 @@ If both Fate and Justice are on the board (as friendly characters), swap their
 A character can only be given a single Mask. Unique characters without Faction (Gifted) and Mindless characters cannot be given a Mask.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Maria Fioritura" hidden="false" id="eed3-ddbd-b9f5-5d38" collective="true">
           <costs>
@@ -1635,6 +1885,20 @@ A character can only be given a single Mask. Unique characters without Faction
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a26f-7573-7ac4-0f6f" includeChildSelections="true"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Master Gerhard" hidden="false" id="c905-d26a-2ea1-7fea">
           <costs>
@@ -1699,6 +1963,20 @@ A character can only be given a single Mask. Unique characters without Faction
 A character can only be given a single Mask. Unique characters without Faction (Gifted) and Mindless characters cannot be given a Mask.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Solus Hydraea" hidden="false" id="541c-039e-431e-5890">
           <constraints>
@@ -1763,6 +2041,20 @@ A character can only be given a single Mask. Unique characters without Faction
 A character can only be given a single Mask. Unique characters without Faction (Gifted) and Mindless characters cannot be given a Mask.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="The Abberation" hidden="false" id="0861-b996-171f-5457">
           <costs>
@@ -1822,6 +2114,20 @@ A character can only be given a single Mask. Unique characters without Faction
               <description>When this character makes Combat, Drown, or Grapple actions, it may re-roll any failed dice rolls (remember, you cannot re-roll the Destiny dice). Yes, even against Brave characters!</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="The Mask Maker" hidden="false" id="a43b-037b-ad72-efae">
           <costs>
@@ -1886,6 +2192,20 @@ A character can only be given a single Mask. Unique characters without Faction
               </characteristics>
             </profile>
           </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="White Dove" hidden="false" id="29b1-6ec6-278b-24e1">
           <costs>
@@ -1946,6 +2266,25 @@ A character can only be given a single Mask. Unique characters without Faction
 Place the Blast marker on White Dove. Every enemy character at least partially touched by it receives a Stun counter.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Zovena Vela" hidden="false" id="a9dc-e15a-5762-3c48">
           <costs>
@@ -2022,6 +2361,108 @@ Place the Blast marker on White Dove. Every enemy character at least partially
               </characteristics>
             </profile>
           </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="The Artist" hidden="false" id="8208-c916-3472-9355">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="18"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Discipline (Fateweaving)" hidden="false" id="61b9-e395-17d7-9340" targetId="0edf-0a9c-7e37-e3c3" primary="false"/>
+            <categoryLink name="Discipline (Runes of Sovereignty)" hidden="false" id="999c-3e0f-96b1-722f" targetId="162f-6e00-290f-b3be" primary="false"/>
+            <categoryLink name="Discipline (Wild Magic)" hidden="false" id="41cf-9dcc-5c6c-16e9" targetId="6e89-8a6f-6b8d-6133" primary="false"/>
+            <categoryLink name="Unique" hidden="false" id="2647-bee4-036f-f00b" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Faction (Gifted)" hidden="false" id="d84f-409c-5006-d114" targetId="9702-99aa-fc73-85a4" primary="false"/>
+            <categoryLink name="Hero" hidden="false" id="52bc-06ca-ec50-072a" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f5b6-7923-7634-2b7e" includeChildSelections="true"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Paintbrush" hidden="false" id="3421-f188-bb27-01b3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ad2-ddd3-a4ed-1502" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7371-8884-5fe0-6884" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Paintbrush" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="f753-d985-62c5-a212">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">+1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="The Artist" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="196a-c1b0-8bfd-9072">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">6</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="The Artist" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="c28c-fb4f-421e-b9ab">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Sorcerer (1), Mage (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="a11e-c1c0-6a0e-d978" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+              <conditions>
+                <condition type="lessThan" value="-3" field="ef4a-6847-91c7-b1f8" scope="self" childId="entry" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Artistic Representation" id="379f-5da9-de45-78ac" hidden="false">
+              <description>Once during each of this character&apos;s turns, this character may use 1 Will Point to place a friendly character in base contact that was previously removed from the game. This character functions exactly as it did before, except it gains Bodyguard (The Artist), has MIND 1, and 4 Life Points.
+
+If this character ever ends its activation further than 3 inches from The Artist, it is removed from the game. 
+
+Each character can only be brought back in this way once.</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -2090,6 +2531,20 @@ Place the Blast marker on White Dove. Every enemy character at least partially
               <description>All friendly characters with the Commedia dell&apos;Arte keyword gain Companion (Il Capitano) as long as this character is on the board. Remember, that Companion characters must use the MIND value of their Companion, even if its lower (only Il Capitano thinks he&apos;s a great leader).</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="La Signora" hidden="false" id="bb0c-6cb5-a024-bc85">
           <costs>
@@ -2181,8 +2636,15 @@ Add up every character (friendly or enemy) within 3&quot; of this character. S
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="fcb3-c368-ce22-f675" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                        <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -2281,16 +2743,10 @@ Add up every character (friendly or enemy) within 3&quot; of this character. S
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="bb0c-6cb5-a024-bc85" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="955d-3f8e-a1e3-88b9" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="bb0c-6cb5-a024-bc85" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2388,11 +2844,17 @@ Place the Duke anywhere out of base contact within 12&quot;. This does not cau
             <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="955d-3f8e-a1e3-88b9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atMost" value="1" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="roster" childId="faca-988a-10ae-a4c6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2488,9 +2950,20 @@ Place the Duke anywhere out of base contact within 12&quot;. This does not cau
           </rules>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="955d-3f8e-a1e3-88b9" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="955d-3f8e-a1e3-88b9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="faca-988a-10ae-a4c6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                    <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>

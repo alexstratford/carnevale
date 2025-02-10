@@ -13,6 +13,7 @@
             <categoryLink name="Faction (Rashaar)" hidden="false" id="7955-60ba-8961-3e6f" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
             <categoryLink name="Monster" hidden="false" id="3f5c-c3fd-d540-c2e8" targetId="f067-a302-b855-c50a" primary="false"/>
             <categoryLink name="Unique" hidden="false" id="5e0d-388c-d984-8449" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink targetId="6b0f-5a84-d5b9-15b6" id="6ba6-03a7-0150-44a2" primary="false" name="Hydra"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Brawling Tentacles" hidden="false" id="f801-f102-c6de-8c7c">
@@ -2162,4 +2163,7 @@ The *Monster* character immediately replenishes 5 Life Points.</description>
     <entryLink import="true" name="Urchin" hidden="false" id="f4a7-980d-ab7f-7ba9" targetId="af32-6a0b-e06d-4b13" type="selectionEntry"/>
     <entryLink import="true" name="Wet Nurse" hidden="false" id="6879-f959-87ab-94a1" targetId="1d50-5e6d-d605-10be" type="selectionEntry"/>
   </entryLinks>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Gifted" id="5b2b-c198-5d98-b3e7" targetId="9a88-2a78-d055-70b8" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>
