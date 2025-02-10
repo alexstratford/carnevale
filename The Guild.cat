@@ -2186,13 +2186,11 @@ One friendly character in base contact replenishes 1 Life Point or one enemy c
             <categoryLink name="Henchman" hidden="false" id="4a4e-d826-51b0-db96" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
             <categoryLink name="Faction (The Guild)" hidden="false" id="edf2-cee4-e6cf-d633" targetId="3357-90ff-5d46-5cea" primary="false"/>
             <categoryLink name="Trade" hidden="false" id="72ab-d266-fe8b-cbb1" targetId="16a3-bc7b-caa8-b109" primary="false"/>
-            <categoryLink targetId="da06-942b-3b0e-5d03" id="6453-f0ff-318b-0e14" primary="false" name="Gondola Allowance"/>
           </categoryLinks>
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="11"/>
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
             <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="1"/>
-            <cost name="Gondola Allowance" typeId="e5cd-44a4-8388-2b87" value="1"/>
           </costs>
           <rules>
             <rule name="Sculler" id="3598-e99c-1cf0-382b" hidden="false">

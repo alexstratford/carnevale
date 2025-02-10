@@ -93,7 +93,7 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Options" hidden="false" id="2a54-bf68-f423-9c0d" targetId="28d2-683b-af11-bd1f"/>
+        <categoryLink name="Configuration" hidden="false" id="2a54-bf68-f423-9c0d" targetId="28d2-683b-af11-bd1f"/>
       </categoryLinks>
       <constraints>
         <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="d83e-0d7f-ea3b-244e-min" includeChildSelections="true"/>
@@ -1275,7 +1275,7 @@ If that line does not pass through Impassable Terrain, any character touched by
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Wild Magic" hidden="false" id="3f68-0eca-c5b9-b2b9" sortIndex="4">
           <profiles>
-            <profile name="Cantrip of Justice" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="41e9-8bc5-26fd-7b6b">
+            <profile name="Cantrip of Justice" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="9b13-990a-8b44-44a8">
               <characteristics>
                 <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">0</characteristic>
                 <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">7</characteristic>
@@ -2611,7 +2611,7 @@ The bearer of he Grand Tarot gains Mage (0) and knows every Cantrip from every M
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="List Options" hidden="false" id="ceab-436b-b2df-c783">
       <categoryLinks>
-        <categoryLink targetId="28d2-683b-af11-bd1f" id="4ec0-dd59-cda9-f9d6" primary="true" name="Options"/>
+        <categoryLink targetId="28d2-683b-af11-bd1f" id="4ec0-dd59-cda9-f9d6" primary="true" name="Configuration"/>
       </categoryLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="force" shared="true" id="ec2b-3585-24a1-bf64-min" includeChildSelections="false"/>
@@ -2623,7 +2623,7 @@ The bearer of he Grand Tarot gains Mage (0) and knows every Cantrip from every M
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f931-9c3d-cc44-d3b2" includeChildSelections="false"/>
           </constraints>
           <categoryLinks>
-            <categoryLink targetId="28d2-683b-af11-bd1f" id="f969-6279-cee6-b38b" primary="true" name="Options"/>
+            <categoryLink targetId="28d2-683b-af11-bd1f" id="f969-6279-cee6-b38b" primary="true" name="Configuration"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Show Ill Tides" hidden="false" id="c380-b5cb-003d-2b14">
@@ -2631,7 +2631,7 @@ The bearer of he Grand Tarot gains Mage (0) and knows every Cantrip from every M
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="beaf-bcee-548b-e27e" includeChildSelections="false"/>
           </constraints>
           <categoryLinks>
-            <categoryLink targetId="28d2-683b-af11-bd1f" id="54c9-f2b4-23ce-74be" primary="true" name="Options"/>
+            <categoryLink targetId="28d2-683b-af11-bd1f" id="54c9-f2b4-23ce-74be" primary="true" name="Configuration"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Show Artifacts" hidden="false" id="85f5-2925-2e9b-48fc">
@@ -2639,7 +2639,7 @@ The bearer of he Grand Tarot gains Mage (0) and knows every Cantrip from every M
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c708-5e00-5e57-efab" includeChildSelections="false"/>
           </constraints>
           <categoryLinks>
-            <categoryLink targetId="28d2-683b-af11-bd1f" id="e432-07a9-0a49-f8bb" primary="true" name="Options"/>
+            <categoryLink targetId="28d2-683b-af11-bd1f" id="e432-07a9-0a49-f8bb" primary="true" name="Configuration"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Show Gifted" hidden="false" id="7533-c8df-46cf-cac7">
@@ -2686,7 +2686,7 @@ The bearer of he Grand Tarot gains Mage (0) and knows every Cantrip from every M
     <entryLink import="true" name="Plate Armour" hidden="false" id="484f-162d-cab1-b7f8" targetId="621b-f860-635f-29d3" type="selectionEntry"/>
     <entryLink import="true" name="Shard of the Idol" hidden="false" id="627b-6ce4-3aba-0e0f" targetId="83be-2205-44de-45c7" type="selectionEntry"/>
     <entryLink import="true" name="The Grand Tarot" hidden="false" id="18f5-2dbd-682f-8942" targetId="8615-aa5f-1d7e-83a7" type="selectionEntry"/>
-    <entryLink import="true" name="Show options" hidden="false" id="8b77-6efa-3178-3c91" targetId="ceab-436b-b2df-c783" type="selectionEntry"/>
+    <entryLink import="true" name="List Options" hidden="false" id="8b77-6efa-3178-3c91" targetId="ceab-436b-b2df-c783" type="selectionEntry"/>
     <entryLink import="true" name="Command Abilities" hidden="false" id="5551-8d28-aea5-17fc" targetId="e78c-5360-9e5a-4de1" type="selectionEntry">
       <rules>
         <rule name="Mob Mentality" id="4e5b-28fb-e3bc-6b99" hidden="true">

@@ -2177,9 +2177,14 @@ Add up every character (friendly or enemy) within 3&quot; of this character. S
           </selectionEntries>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fcb3-c368-ce22-f675" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="fcb3-c368-ce22-f675" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="add" value="Cannot be taken as a Leader if Il Capitano is present. Delete and re-add as Hero." field="error">
               <conditions>
@@ -2274,13 +2279,18 @@ Add up every character (friendly or enemy) within 3&quot; of this character. S
           </selectionEntries>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="955d-3f8e-a1e3-88b9" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
               <conditionGroups>
                 <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="bb0c-6cb5-a024-bc85" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="bb0c-6cb5-a024-bc85" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="955d-3f8e-a1e3-88b9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2489,8 +2499,8 @@ Place the Duke anywhere out of base contact within 12&quot;. This does not cau
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Il Capitano" hidden="false" id="3924-d8c6-98a9-1369" targetId="c95f-9396-adfc-0ed5" type="selectionEntry"/>
-    <entryLink import="true" name="La Signora" hidden="false" id="ff4d-0de2-f3f7-f7c4" targetId="9dd5-2f59-1388-6615" type="selectionEntry"/>
-    <entryLink import="true" name="La Signora" hidden="false" id="6cdb-e7ba-8706-852c" targetId="2cc5-584b-be1f-82ba" type="selectionEntry"/>
+    <entryLink import="true" name="La Signora" hidden="false" id="ff4d-0de2-f3f7-f7c4" targetId="fa97-08e8-7e67-7291" type="selectionEntry"/>
+    <entryLink import="true" name="La Signora" hidden="false" id="6cdb-e7ba-8706-852c" targetId="bb0c-6cb5-a024-bc85" type="selectionEntry"/>
     <entryLink import="true" name="The Duke" hidden="false" id="44d3-38bb-d24b-9ead" targetId="734c-aaea-a117-2b15" type="selectionEntry"/>
     <entryLink import="true" name="The Duke" hidden="false" id="dd61-1de1-fe1e-b82b" targetId="ac30-c919-055d-c9c8" type="selectionEntry"/>
     <entryLink import="true" name="The Abberation" hidden="false" id="27bb-ad5b-99ce-c9d0" targetId="7390-5630-8852-0ad6" type="selectionEntry"/>
