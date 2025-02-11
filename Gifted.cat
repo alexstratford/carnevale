@@ -2631,12 +2631,14 @@ Add up every character (friendly or enemy) within 3&quot; of this character. S
             </selectionEntry>
           </selectionEntries>
           <modifiers>
+            <modifier type="add" value="Cannot be taken as a Leader if Il Capitano is present. Delete and re-add as Hero." field="error">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fcb3-c368-ce22-f675" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
                 <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="fcb3-c368-ce22-f675" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
@@ -2644,14 +2646,15 @@ Add up every character (friendly or enemy) within 3&quot; of this character. S
                         <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
                       </conditions>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="955d-3f8e-a1e3-88b9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="bb0c-6cb5-a024-bc85" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
-            </modifier>
-            <modifier type="add" value="Cannot be taken as a Leader if Il Capitano is present. Delete and re-add as Hero." field="error">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fcb3-c368-ce22-f675" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -2742,12 +2745,27 @@ Add up every character (friendly or enemy) within 3&quot; of this character. S
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="955d-3f8e-a1e3-88b9" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="bb0c-6cb5-a024-bc85" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="bb0c-6cb5-a024-bc85" shared="true" includeChildSelections="true" includeChildForces="true">
+                          <comment>Leader ver check</comment>
+                        </condition>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="955d-3f8e-a1e3-88b9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="955d-3f8e-a1e3-88b9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="bb0c-6cb5-a024-bc85" shared="true" includeChildSelections="true" includeChildForces="true">
+                          <comment>Leader ver check</comment>
+                        </condition>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -2842,20 +2860,24 @@ Place the Duke anywhere out of base contact within 12&quot;. This does not cau
           </rules>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="955d-3f8e-a1e3-88b9" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="atMost" value="1" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
               <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="faca-988a-10ae-a4c6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
                 <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="faca-988a-10ae-a4c6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="955d-3f8e-a1e3-88b9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="955d-3f8e-a1e3-88b9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="faca-988a-10ae-a4c6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -2951,17 +2973,21 @@ Place the Duke anywhere out of base contact within 12&quot;. This does not cau
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="955d-3f8e-a1e3-88b9" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="faca-988a-10ae-a4c6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
                 <conditionGroup type="or">
-                  <conditions>
-                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
-                    <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                        <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="955d-3f8e-a1e3-88b9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="faca-988a-10ae-a4c6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
