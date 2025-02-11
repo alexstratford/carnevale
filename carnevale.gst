@@ -466,7 +466,7 @@ At the start of the game, before deployment, choose a friendly character to carr
   </sharedRules>
   <costTypes>
     <costType name="Ducats" id="b5b3-aa8b-4d9c-5673" defaultCostLimit="-1"/>
-    <costType name="Spell slots" id="ef4a-6847-91c7-b1f8" defaultCostLimit="-1" hidden="false"/>
+    <costType name="Spell slots" id="ef4a-6847-91c7-b1f8" defaultCostLimit="-1" hidden="true"/>
     <costType name="Gondola Allowance" id="d185-073f-5416-c82f" defaultCostLimit="-1" hidden="true"/>
   </costTypes>
   <sharedSelectionEntryGroups>
