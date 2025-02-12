@@ -2453,11 +2453,11 @@ Any friendly characters in line of sight with the Soldier keyword that aren&ap
           </profiles>
           <rules>
             <rule name="You there! Do something!" id="d9ff-77a3-5d29-f275" hidden="false">
-              <description>*AURA* Command Ability*
+              <description>*AURA Command Ability*
 Until the end of the round, other friendly characters that start their turn within 6&quot; and line of sight of this character gain First Strike (2) until the end of their turns. Characters can only be affected by this Command Ability once per round.</description>
             </rule>
             <rule name="Stop them, damn you! I don&apos;t chare what it takes!" id="ca6a-7ca0-be57-fa7c" hidden="false">
-              <description>Friendly characters in line of sight of this character gain Bodyguard (Pinnacle of Affluence). </description>
+              <description>Friendly characters in line of sight of this character gain Bodyguard (Pinnacle of Affluence).</description>
             </rule>
             <rule name="Bask in my Magnificence!" id="f831-baf9-4c07-b1d6" hidden="false">
               <description>This character replenishes all of its Command Points at the start of each of its character turns, and may use each Command Ability twice per game round.</description>
