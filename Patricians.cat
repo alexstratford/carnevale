@@ -2362,6 +2362,108 @@ Any friendly characters in line of sight with the Soldier keyword that aren&ap
           </rules>
           <comment>hero version</comment>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Pinnacle of Affluence" hidden="false" id="41cb-91ab-210e-5a7a">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="38"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+            <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="8e01-ded5-7a2e-2046" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Unique" hidden="false" id="f1d7-fafa-2d7e-c7ce" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Councillor" hidden="false" id="5de6-cfe3-56b6-836a" targetId="b25f-6a71-be31-bc25" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="dda4-602e-6009-7429" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="aebf-3b50-65c2-cb89" includeChildSelections="true"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Strice&apos;s Paw" hidden="false" id="1de1-15ab-c4c0-05ad" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d1b0-183d-44b9-9089-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1b0-183d-44b9-9089-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Strice&apos;s Paw" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="0cc3-d42b-2dd9-6064">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gilded Table Scraps" hidden="false" id="884a-de95-2a28-6d80" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e69-3029-717d-1d84-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e69-3029-717d-1d84-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Gilded Table Scraps" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="df7f-73a1-2ac0-a711">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Blast, Harmless, Reload (1), Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Minty Fresh Breah" hidden="false" id="ea8e-8703-3519-4f2e" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e820-8589-55ce-9015-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e820-8589-55ce-9015-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Minty Fresh Breah" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="5a61-aa7a-ec78-32ef">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Poisoned, Reload (1), Template</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Pinnacle of Affluence" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="dab2-6393-0d4f-c0bf">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">30</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">3</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">60mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Pinnacle of Affluence" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="5995-3336-2f62-e8c5">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bulky, Limited Movement, Expert Grappler</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="You there! Do something!" id="d9ff-77a3-5d29-f275" hidden="false">
+              <description>*AURA* Command Ability*
+Until the end of the round, other friendly characters that start their turn within 6&quot; and line of sight of this character gain First Strike (2) until the end of their turns. Characters can only be affected by this Command Ability once per round.</description>
+            </rule>
+            <rule name="Stop them, damn you! I don&apos;t chare what it takes!" id="ca6a-7ca0-be57-fa7c" hidden="false">
+              <description>Friendly characters in line of sight of this character gain Bodyguard (Pinnacle of Affluence). </description>
+            </rule>
+            <rule name="Bask in my Magnificence!" id="f831-baf9-4c07-b1d6" hidden="false">
+              <description>This character replenishes all of its Command Points at the start of each of its character turns, and may use each Command Ability twice per game round.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -2405,6 +2507,7 @@ Any friendly characters in line of sight with the Soldier keyword that aren&ap
     <entryLink import="true" name="Ottoman Archer" hidden="false" id="60b1-1fda-f5e8-6cdc" targetId="1c9c-0f53-a947-4a29" type="selectionEntry"/>
     <entryLink import="true" name="Ottoman Pirate" hidden="false" id="2d59-f431-2d1a-7469" targetId="5e50-bdb9-6808-8bbd" type="selectionEntry"/>
     <entryLink import="true" name="Ottoman Rigger" hidden="false" id="07b5-5f4b-818b-4658" targetId="f356-59d4-473d-3a1d" type="selectionEntry"/>
+    <entryLink import="true" name="Pinnacle of Affluence" hidden="false" id="57d9-0ea2-8263-63e9" targetId="41cb-91ab-210e-5a7a" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Ottoman Janissary Weapon Selection" id="0775-831b-1acf-cbeb" hidden="false" collective="true">
