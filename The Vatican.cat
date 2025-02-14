@@ -1932,7 +1932,7 @@ One other friendly character with the Construct keyword without this ability r
             <categoryLink name="Faction (The Vatican)" hidden="false" id="098d-c849-c236-4f02" targetId="b8c1-0bb0-ed53-bdfa" primary="false"/>
           </categoryLinks>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Heavenly Grasp" hidden="false" id="8275-ec89-d99c-e8f5">
+            <selectionEntry type="upgrade" import="true" name="Heavenly Grasp" hidden="false" id="8275-ec89-d99c-e8f5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3906-91d6-bf4f-4cfd-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3906-91d6-bf4f-4cfd-max" includeChildSelections="false"/>
@@ -2718,7 +2718,7 @@ This character may use the ORDER command on friendly characters with the Const
           </entryLinks>
           <rules>
             <rule name="Relics of Malta" id="07fd-6e14-9c42-3d0a" hidden="false">
-              <description>Once per each of their turns, any friendly character within 6&quot; and line of sight of a friendly character with this rule may re-roll 1 single dice on any roll they make. This character is affected by its own **Relics of Malta** rule. </description>
+              <description>Once per each of their turns, any friendly character within 6&quot; and line of sight of a friendly character with this rule may re-roll 1 single dice on any roll they make. This character is affected by its own **Relics of Malta** rule.</description>
             </rule>
           </rules>
           <profiles>
