@@ -358,6 +358,9 @@ If the opposing character has Engage however, then both players roll to disenga
       <alias>Universal Shielding (3)</alias>
       <alias>Universal Shielding (4)</alias>
       <alias>Universal Shielding (5)</alias>
+      <alias>Universal Shielding (6)</alias>
+      <alias>Universal Shielding (7)</alias>
+      <alias>Universal Shielding (8)</alias>
     </rule>
     <rule name="Vampiric Attack (X)" id="ff68-ca7c-ccd2-65b9" hidden="false">
       <description>If this character makes a Combat action while in base contact with its target that causes the target to lose at least 1 Life Point, it replenishes (X) of its own Life Points.</description>
