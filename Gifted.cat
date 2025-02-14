@@ -2814,7 +2814,7 @@ Add up every character (friendly or enemy) within 3&quot; of this character. S
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="b2ac-9775-2c3f-11ae">
               <profiles>
-                <profile name="The Duke" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="a3c8-7763-eb6c-66a6">
+                <profile name="Pistol" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="a3c8-7763-eb6c-66a6">
                   <characteristics>
                     <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">8&quot;</characteristic>
                     <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
@@ -2926,7 +2926,7 @@ Place the Duke anywhere out of base contact within 12&quot;. This does not cau
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="5275-3df6-bec0-b4cf">
               <profiles>
-                <profile name="The Duke" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="3520-02c3-ff11-516a">
+                <profile name="Pistol" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="3520-02c3-ff11-516a">
                   <characteristics>
                     <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">8&quot;</characteristic>
                     <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
