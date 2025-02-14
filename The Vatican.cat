@@ -2575,7 +2575,7 @@ This character may use the ORDER command on friendly characters with the Const
                 <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
                 <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
                 <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
-                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
               </characteristics>
             </profile>
             <profile name="Thalassic Messenger" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="7176-97cf-30a3-e672">
