@@ -695,7 +695,7 @@ Turns out it was Pierrot all along!</description>
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="The Demolitionist" hidden="false" id="db48-d7de-492a-28e8">
+        <selectionEntry type="model" import="true" name="The Demolitionist" hidden="false" id="db48-d7de-492a-28e8" sortIndex="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3925-d5b4-06ad-35df" includeChildSelections="true"/>
           </constraints>

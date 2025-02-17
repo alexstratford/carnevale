@@ -1239,7 +1239,7 @@ Pick a friendly character within 6” and line of sight. Until the end of that
               <characteristics>
                 <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
                 <characteristic name="Life" typeId="31ac-58c2-51eb-d503">11</characteristic>
-                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
                 <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
                 <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
               </characteristics>
@@ -2040,7 +2040,7 @@ Any friendly characters with the Soldier keyword in line of sight gain Expert 
           <rules>
             <rule name="Naval Discipline" id="06ac-55b4-64b6-b115" hidden="false">
               <description>*PULSE Command Ability*
-Other friendly characters on the same Boat as this character replenish 1 Will Point. Other friendly characters with Boat Crew replenish 1 additional Will Point.</description>
+Other friendly characters on the same Boat as this character replenish 1 Will Point. Other friendly characters with Boat Crew on the same Boat as this character instead replenish 2 Will Points.</description>
             </rule>
             <rule name="Raise a Crew" id="c0d0-fbe1-0f90-8aad" hidden="false">
               <description>All friendly characters may be set up on a Boat.</description>

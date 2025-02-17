@@ -262,7 +262,7 @@ Place one **Crybaby** within 6&quot; of this character. The new Crybaby acts ju
           <rules>
             <rule name="Hide of The Deep" id="7cbc-12ee-69e9-9782" hidden="false">
               <description>*AURA Command Ability*
-Until the end of the round, all friendly characters within 3&quot; of this character gain Expert Defence (2).</description>
+Until the end of the round, all friendly characters within 3&quot; of this character gain Expert Protection (2).</description>
             </rule>
             <rule name="Foetid Pheromones" id="1ff6-1600-0655-0bbd" hidden="false">
               <description>Other friendly characters that start their activation within 6&quot; of this character gain First Strike (1) until the end of their activation.</description>
@@ -1881,7 +1881,7 @@ Until the end of the round, any enemy characters within 6&quot; of this charac
               <description>When this character makes a Combat action, it gains +1 to its ATTACK for every other Infant Kraken in base contact with the target.</description>
             </rule>
             <rule name="Writhe Inside" id="f219-b596-bb93-232b" hidden="false">
-              <description>When this character successfully damages an enemy character, you may remove this character from the game as if it were killed. If you do, place it on the damaged character’s card. For the rest of the game, that character always counts as having a Stun counter.</description>
+              <description>When this character successfully damages an enemy character (after its Protection roll), you may remove this character from the game as if it were killed. If you do, place it on the damaged character’s card. For the rest of the game, that character always counts as having a Stun counter.</description>
             </rule>
           </rules>
         </selectionEntry>

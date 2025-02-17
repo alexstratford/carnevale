@@ -42,7 +42,7 @@
           </profiles>
           <rules>
             <rule name="Aetheric Control" id="49e8-3779-b534-7e3f" hidden="false">
-              <description>This character replenishes all of its Command Points at the start of each character turn.</description>
+              <description>This character replenishes all of its Command Points at the start of each of its turns.</description>
             </rule>
             <rule name="Mind Gazing" id="3266-24cf-1000-d800" hidden="false">
               <description>*AURA Command Ability*
@@ -1324,7 +1324,7 @@ Make a Basic MIND Roll:
               <description>When placing the Blast template for Soul Bombard, it must be centred over this character (and is also hit).</description>
             </rule>
             <rule name="Explosive Mind" id="d8b6-3bb8-2975-4a85" hidden="false">
-              <description>Whenever this character loses Will Points (through using them itself or being used as part of the Nexus special rule), after the action is resolved, it must immediately make an out of sequence Combat action using Soul Bombard. This is done only once per action.</description>
+              <description>Whenever this character loses Will Points (through using them itself or being used as part of the Nexus special rule), after the action is resolved, it must immediately make an out of sequence Combat action using Soul Bombard. This is done only once per action. Combat actions caused by Explosive Mind cannot cause additional Combat actions.</description>
             </rule>
           </rules>
         </selectionEntry>

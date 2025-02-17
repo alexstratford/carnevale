@@ -1874,6 +1874,7 @@ Until the end of the round, any friendly character that starts its action with
           <categoryLinks>
             <categoryLink name="Henchman" hidden="false" id="6b67-59a7-69dc-ddcf" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
             <categoryLink name="Faction (The Vatican)" hidden="false" id="5d71-6018-9e27-ff76" targetId="b8c1-0bb0-ed53-bdfa" primary="false"/>
+            <categoryLink targetId="2eab-808f-d9cb-a54d" id="501d-6329-e075-8052" primary="false" name="Construct"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Heavenly Clamour" hidden="false" id="5948-4d05-4bce-3ca0">
@@ -1930,6 +1931,7 @@ One other friendly character with the Construct keyword without this ability r
           <categoryLinks>
             <categoryLink name="Henchman" hidden="false" id="477f-f291-da81-daf6" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
             <categoryLink name="Faction (The Vatican)" hidden="false" id="098d-c849-c236-4f02" targetId="b8c1-0bb0-ed53-bdfa" primary="false"/>
+            <categoryLink targetId="2eab-808f-d9cb-a54d" id="5342-05c0-0ce4-f921" primary="false" name="Construct"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Heavenly Grasp" hidden="false" id="8275-ec89-d99c-e8f5">

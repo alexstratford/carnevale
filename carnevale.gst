@@ -988,8 +988,8 @@ If that line does not pass through Impassable Terrain, any character touched by
           <profiles>
             <profile name="Kraken&apos;s Breath" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="5a54-5f1a-62ab-827f">
               <characteristics>
-                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44"/>
-                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71"/>
+                <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">2</characteristic>
+                <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">6</characteristic>
                 <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Place the narrow end of the teardrop shaped template in base contact with the casting character. Any character (friendly or enemy) at least partially touched by the template takes (X)+2 Damage with Penetration -(X).</characteristic>
               </characteristics>
             </profile>
@@ -1773,8 +1773,8 @@ Until the end of the round, any character within 6&quot; (friendly or enemy) can
                   <profiles>
                     <profile name="Kraken&apos;s Breath" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="1242-4612-5240-0296">
                       <characteristics>
-                        <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44"/>
-                        <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71"/>
+                        <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">2</characteristic>
+                        <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">6</characteristic>
                         <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Place the narrow end of the teardrop shaped template in base contact with the casting character. Any character (friendly or enemy) at least partially touched by the template takes (X)+2 Damage with Penetration -(X).</characteristic>
                       </characteristics>
                     </profile>
