@@ -1102,7 +1102,7 @@ Make a Basic MIND Roll:
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Ordnance Doctory" hidden="false" id="c43f-4d85-3c43-f659">
+        <selectionEntry type="model" import="true" name="Ordnance Doctor" hidden="false" id="c43f-4d85-3c43-f659">
           <categoryLinks>
             <categoryLink name="Hero" hidden="false" id="fbcb-5a77-a03f-296e" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
             <categoryLink name="Doctor" hidden="false" id="4910-e531-b654-8bb3" targetId="e76d-93d8-8615-d9ae" primary="false"/>
@@ -1128,7 +1128,7 @@ Make a Basic MIND Roll:
             </selectionEntry>
           </selectionEntries>
           <profiles>
-            <profile name="Ordnance Doctory" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="8f2d-3c85-1e29-408c">
+            <profile name="Ordnance Doctor" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="8f2d-3c85-1e29-408c">
               <characteristics>
                 <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
                 <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
@@ -1137,7 +1137,7 @@ Make a Basic MIND Roll:
                 <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
               </characteristics>
             </profile>
-            <profile name="Ordnance Doctory" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="9de0-48bd-0fad-4815">
+            <profile name="Ordnance Doctor" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="9de0-48bd-0fad-4815">
               <characteristics>
                 <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
                 <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>

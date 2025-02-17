@@ -2624,10 +2624,14 @@ The bearer of he Grand Tarot gains Mage (0) and knows every Cantrip from every M
         <selectionEntry type="upgrade" import="true" name="Show Equipment" hidden="false" id="58c6-b3de-1ece-63d7">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f931-9c3d-cc44-d3b2" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4c8-21c0-58be-690d" includeChildSelections="false"/>
           </constraints>
           <categoryLinks>
             <categoryLink targetId="28d2-683b-af11-bd1f" id="f969-6279-cee6-b38b" primary="true" name="Configuration"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="b4c8-21c0-58be-690d"/>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Show Ill Tides" hidden="false" id="c380-b5cb-003d-2b14">
           <constraints>
