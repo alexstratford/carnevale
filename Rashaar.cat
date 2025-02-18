@@ -1341,7 +1341,7 @@ Until the end of the round, any enemy characters within 6&quot; of this charac
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Agalope" hidden="false" id="8b4f-7da0-9d3f-6a84">
+        <selectionEntry type="model" import="true" name="Aglaope" hidden="false" id="8b4f-7da0-9d3f-6a84">
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
@@ -1358,7 +1358,7 @@ Until the end of the round, any enemy characters within 6&quot; of this charac
             <entryLink import="true" name="Discipline Choice" hidden="false" id="8bed-6716-4d93-e884" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
           </entryLinks>
           <profiles>
-            <profile name="Agalope" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="6067-38ba-4284-3703">
+            <profile name="Aglaope" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="6067-38ba-4284-3703">
               <characteristics>
                 <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
                 <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
