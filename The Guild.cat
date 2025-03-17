@@ -1679,11 +1679,11 @@ Up to 2 friendly characters within 3&quot; may make an immediate Run/Climb act
               <profiles>
                 <profile name="Whaling Lance" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="ae71-a5b4-5e24-4e50">
                   <characteristics>
-                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d"/>
-                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7"/>
-                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095"/>
-                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef"/>
-                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96"/>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+3</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Knockback, Two-Handed</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1705,7 +1705,7 @@ Up to 2 friendly characters within 3&quot; may make an immediate Run/Climb act
                 <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
                 <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
                 <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
-                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">8</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
                 <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Boat Crew, Hunter, Fast Swimmer (2)</characteristic>
               </characteristics>
             </profile>
