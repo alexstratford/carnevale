@@ -1378,6 +1378,57 @@ Make a Basic MIND Roll:
             </profile>
           </profiles>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Brined Horror" hidden="false" id="8f31-8566-8f41-44c7">
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="2b40-3543-a762-dfa0" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="d6f2-fd99-9f1d-43cf" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Webbed Appendages" hidden="false" id="ca21-9460-e6f4-64b8">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="643c-5d56-498c-cde0" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9d1-fc1e-9e75-ce98" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Webbed Appendages" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="f38c-784a-2bd4-bbbc">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Brined Horror" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="d4ca-0e37-8a38-b390">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">25</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Brined Horror" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="9520-bd85-299f-482d">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">3</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">6</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bulky, Fast Swimmer (3), Fear (-1), Mindless, Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Ducats" typeId="b5b3-aa8b-4d9c-5673" value="19"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+            <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Henchman" hidden="false" id="6467-0ab5-51bf-5e1e">
@@ -2503,7 +2554,7 @@ Pick a character within 3&quot; and make a basic MIND roll. That character rep
     <entryLink import="true" name="Alchemist Doctor" hidden="false" id="05ad-c4ac-331d-8a7f" targetId="9ee4-85aa-6b0d-24c3" type="selectionEntry"/>
     <entryLink import="true" name="Morgue Doctor" hidden="false" id="bb1b-67c7-da12-254b" targetId="70ba-7d69-a5b6-1226" type="selectionEntry"/>
     <entryLink import="true" name="Marine Biologist" hidden="false" id="e493-b1bb-f638-aea8" targetId="8d93-00ba-ccea-9ccf" type="selectionEntry"/>
-    <entryLink import="true" name="Ordnance Doctory" hidden="false" id="eebd-13bb-aefd-cbd7" targetId="c43f-4d85-3c43-f659" type="selectionEntry"/>
+    <entryLink import="true" name="Ordnance Doctor" hidden="false" id="eebd-13bb-aefd-cbd7" targetId="c43f-4d85-3c43-f659" type="selectionEntry"/>
     <entryLink import="true" name="Unleashed Madman" hidden="false" id="b4d9-f6a3-fee7-7edc" targetId="2e0c-154d-5931-e9b6" type="selectionEntry"/>
     <entryLink import="true" name="Voltage Bombardier" hidden="false" id="6752-5a53-0d1a-fcfb" targetId="abbc-80db-dcdc-02fa" type="selectionEntry"/>
     <entryLink import="true" name="Warden" hidden="false" id="3aa8-0120-1851-deed" targetId="d4ba-59e1-e1b2-75fb" type="selectionEntry"/>
@@ -2527,6 +2578,7 @@ Pick a character within 3&quot; and make a basic MIND roll. That character rep
     <entryLink import="true" name="Monstrosity" hidden="false" id="3367-8a4f-7264-60fd" targetId="a6c0-73ba-7727-fdfe" type="selectionEntry"/>
     <entryLink import="true" name="Nurse" hidden="false" id="1e97-b80c-12e3-0820" targetId="e56d-331c-1b66-56d5" type="selectionEntry"/>
     <entryLink import="true" name="Rhino" hidden="false" id="a77d-f3e7-7c02-045e" targetId="4a80-5310-5e59-67bd" type="selectionEntry"/>
+    <entryLink import="true" name="Brined Horror" hidden="false" id="4133-8410-a453-29a2" targetId="8f31-8566-8f41-44c7" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Gifted" id="480e-20b6-9db6-d96f" targetId="9a88-2a78-d055-70b8" importRootEntries="true"/>
