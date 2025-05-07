@@ -2456,7 +2456,7 @@ Any friendly characters in line of sight with the Soldier keyword that aren&ap
               <description>*AURA Command Ability*
 Until the end of the round, other friendly characters that start their turn within 6&quot; and line of sight of this character gain First Strike (2) until the end of their turns. Characters can only be affected by this Command Ability once per round.</description>
             </rule>
-            <rule name="Stop them, damn you! I don&apos;t chare what it takes!" id="ca6a-7ca0-be57-fa7c" hidden="false">
+            <rule name="Stop them, damn you! I don&apos;t care what it takes!" id="ca6a-7ca0-be57-fa7c" hidden="false">
               <description>Friendly characters in line of sight of this character gain Bodyguard (Pinnacle of Affluence).</description>
             </rule>
             <rule name="Bask in my Magnificence!" id="f831-baf9-4c07-b1d6" hidden="false">

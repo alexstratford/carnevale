@@ -1716,6 +1716,105 @@ Up to 2 friendly characters within 3&quot; may make an immediate Run/Climb act
             </rule>
           </rules>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Ostrich Chariot?!" hidden="false" id="a3ad-0636-34ab-9373">
+          <comment>Ostrich Chariot!?</comment>
+          <costs>
+            <cost name=" Ducats" typeId="b5b3-aa8b-4d9c-5673" value="34"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+            <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="79d4-9b8b-7f29-cba5" id="f890-9e1c-5f55-3ac6" primary="true" name="Hero"/>
+            <categoryLink targetId="49aa-9bf9-4c6e-e493" id="ddee-f56b-d794-ac34" primary="false" name="End of Days"/>
+            <categoryLink targetId="d3e1-4616-c557-d958" id="fe5d-2e88-bd5d-4c27" primary="false" name="Unique"/>
+            <categoryLink targetId="3357-90ff-5d46-5cea" id="ec15-1af8-75cf-0d03" primary="false" name="Faction (The Guild)"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="47bf-e676-dd7c-7750" includeChildSelections="true"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Club" hidden="false" id="b29b-6038-b4bf-0fd3" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7e6-f367-f2bf-5695" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="61cd-e245-cd8b-3316" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Club" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="f1b4-3080-7cb4-9aa6">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bottle burner" hidden="false" id="c240-af4e-465c-4324" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f05-704f-1ce7-dec7" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce1c-a9a0-48dc-cd95" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Bottle burner" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="0c55-c152-2c63-1618">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">5&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+2</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Blast</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bird Kick" hidden="false" id="0ae1-5cec-8c5e-1a2d" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="94b3-5527-7d26-c1b1" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4fe-19c0-6f91-f719" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Bird Kick" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="406d-bb99-d6b5-ac85">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+2</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Ostrich Chariot?!" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="74c3-d505-c7da-78f2">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">30</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">75mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Ostrich Chariot?!" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="d4b0-08d4-0e23-ed8a">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">7</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bulky, Companion (End of Days), First Strike (2), Limited Movement, Mindless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Uncoordinated Assault" id="bc08-dcb0-2161-94d7" hidden="false">
+              <description>After this character makes a Combat action, it may make a single 0AP Attack of Opportunity using a weapon it did not attack with in that Combat action. Attacks of Opportunity from this rule cannot cause additional Attacks of Opportunity and do not count as Attacks of Opportunity from charging &amp; charging from above.</description>
+            </rule>
+            <rule name="Levatevi di Mezzo, Imbecilli!" id="557c-6c19-0671-3f9d" hidden="false">
+              <description>This character may freely move over other characters as part of a Run/Climb action, but cannot end its action overlapping any other character. While making a Run/ Climb action, this character ignores the normal rules for disengaging. At the end of this character&apos;s Run/Climb actions, make a Basic DEXTERITY roll. For each ace rolled, each character (friendly and enemy) moved over loses 1 Life Point. If the roll is a Fumble, this character receives a Stun counter.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Henchman" hidden="false" id="939a-3df9-c0bb-75b9">
