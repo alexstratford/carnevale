@@ -1039,7 +1039,7 @@ Place a new Infant Kraken in base contact with this character. The new Infant 
             <entryLink import="true" name="Discipline Choice" hidden="false" id="c342-be3a-054c-40d4" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
           </entryLinks>
           <rules>
-            <rule name="New Rule" id="6151-06d0-d28c-8f69" hidden="false">
+            <rule name="Gift of the Elder Gods" id="6151-06d0-d28c-8f69" hidden="false">
               <description>*PULSE Command Ability*
 Until the end of the round, all friendly characters with the Henchman keyword gain +1 ATTACK while they are within 6” and line of sight of any number of other friendly characters with the *Monster* keyword.</description>
             </rule>
@@ -2146,7 +2146,7 @@ The *Monster* character immediately replenishes 5 Life Points.</description>
     <entryLink import="true" name="Secreting Myxin" hidden="false" id="1538-cf88-b351-e24c" targetId="9104-30ab-a443-9cc3" type="selectionEntry"/>
     <entryLink import="true" name="Sirena" hidden="false" id="916c-3317-4877-5b51" targetId="8935-e277-a354-e015" type="selectionEntry"/>
     <entryLink import="true" name="Advanced Hybrid" hidden="false" id="23bb-5e98-2963-2769" targetId="4282-0f92-2378-a40b" type="selectionEntry"/>
-    <entryLink import="true" name="Agalope" hidden="false" id="66c1-54fa-539f-f94d" targetId="8b4f-7da0-9d3f-6a84" type="selectionEntry"/>
+    <entryLink import="true" name="Aglaope" hidden="false" id="66c1-54fa-539f-f94d" targetId="8b4f-7da0-9d3f-6a84" type="selectionEntry"/>
     <entryLink import="true" name="Bouncing Telchine" hidden="false" id="1bef-f3a2-47d8-c7d7" targetId="d2e2-3898-36ac-19f0" type="selectionEntry"/>
     <entryLink import="true" name="Bulbous Toad" hidden="false" id="072c-05b1-833e-5a98" targetId="a94e-ab47-dcb8-fa20" type="selectionEntry"/>
     <entryLink import="true" name="Crybaby" hidden="false" id="e077-7097-30d7-aef5" targetId="d0e1-4d01-a4ef-70f1" type="selectionEntry"/>

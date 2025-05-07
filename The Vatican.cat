@@ -119,7 +119,7 @@ Until the end of the round, any friendly characters within 3&quot; gain Univer
                 <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
                 <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
                 <characteristic name="Command" typeId="df00-2e98-5a44-876e">3</characteristic>
-                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
               </characteristics>
             </profile>
             <profile name="Father Cesta" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="4787-3758-2a7e-317e">

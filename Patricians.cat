@@ -1397,7 +1397,7 @@ Pick a friendly character within 6” and line of sight. Until the end of that
               <characteristics>
                 <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
                 <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
-                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">-</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
                 <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
                 <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
               </characteristics>
