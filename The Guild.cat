@@ -1724,10 +1724,10 @@ Up to 2 friendly characters within 3&quot; may make an immediate Run/Climb act
             <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
           </costs>
           <categoryLinks>
-            <categoryLink targetId="79d4-9b8b-7f29-cba5" id="f890-9e1c-5f55-3ac6" primary="true" name="Hero"/>
-            <categoryLink targetId="49aa-9bf9-4c6e-e493" id="ddee-f56b-d794-ac34" primary="false" name="End of Days"/>
-            <categoryLink targetId="d3e1-4616-c557-d958" id="fe5d-2e88-bd5d-4c27" primary="false" name="Unique"/>
-            <categoryLink targetId="3357-90ff-5d46-5cea" id="ec15-1af8-75cf-0d03" primary="false" name="Faction (The Guild)"/>
+            <categoryLink name="Hero" hidden="false" id="f890-9e1c-5f55-3ac6" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="End of Days" hidden="false" id="ddee-f56b-d794-ac34" targetId="49aa-9bf9-4c6e-e493" primary="false"/>
+            <categoryLink name="Unique" hidden="false" id="fe5d-2e88-bd5d-4c27" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Faction (The Guild)" hidden="false" id="ec15-1af8-75cf-0d03" targetId="3357-90ff-5d46-5cea" primary="false"/>
           </categoryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="47bf-e676-dd7c-7750" includeChildSelections="true"/>
@@ -2753,6 +2753,7 @@ Move the character to that point as if moving down a zipline.</description>
     <entryLink import="true" name="Pulcinella" hidden="false" id="e124-f2ab-4394-34b4" targetId="84f3-f093-105f-2b30" type="selectionEntry"/>
     <entryLink import="true" name="Prince of Thieves" hidden="false" id="31eb-8e24-26b5-91d4" targetId="bc20-ac54-04ed-56af" type="selectionEntry"/>
     <entryLink import="true" name="Shipwright" hidden="false" id="487c-8a48-afed-0fd6" targetId="f2ef-6de1-837f-eac1" type="selectionEntry"/>
+    <entryLink import="true" name="Ostrich Chariot?!" hidden="false" id="18f6-12e7-62cd-2295" targetId="a3ad-0636-34ab-9373" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Fisherman Weapon Choice" id="e1b3-0e17-3d5a-6f7b" hidden="false">
