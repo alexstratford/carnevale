@@ -1904,6 +1904,58 @@ One friendly character with the Henchman keyword in line of sight within 6&quo
             </profile>
           </profiles>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Hunting Hound" hidden="false" id="47e8-7d75-315c-e129">
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="1685-e152-35e7-4f70" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Animal" hidden="false" id="3682-0823-e10a-a202" targetId="ce1c-47f0-9623-ec96" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="ad6c-a67e-4c1a-c15d" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Ducats" typeId="b5b3-aa8b-4d9c-5673" value="6"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+            <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Bite" hidden="false" id="e7c8-66cc-7ed6-a136">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="220b-20f6-784a-4c7a" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08de-6132-302c-76ff" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Bite" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="9b9f-aa2e-2e80-8d19">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Hunting Hound" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="c142-3be3-1c7a-efec">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">6</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Hunting Hound" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="1cd8-5b7a-20f2-c8bf">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">6</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Companion (Councillor), Limited Movement, Mindless, Engage</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Leader" hidden="false" id="58e8-f48c-2da1-a641">
@@ -2464,6 +2516,89 @@ Until the end of the round, other friendly characters that start their turn with
             </rule>
           </rules>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Mounted Venetian Noble" hidden="false" id="31c6-b82e-ca84-543b">
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="0281-21e7-d4ca-0f9c" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="5ac5-7234-4351-71f6" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+            <categoryLink name="Councillor" hidden="false" id="703a-44c4-ef00-2e89" targetId="b25f-6a71-be31-bc25" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Ducats" typeId="b5b3-aa8b-4d9c-5673" value="24"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+            <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Garter Pistol" hidden="false" id="ac1a-2031-3224-bbad">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf98-77b6-c49b-2b4b" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8f7-5811-a63c-2e13" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Garter Pistol" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="8770-1f22-0a6f-5ac8">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Reload (2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gilded Sabre" hidden="false" id="15e9-2a7c-47ba-b3a8">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="93db-4c55-e0dc-0412" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eec8-0c12-8b6e-7fc3" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Gilded Sabre" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="3a0a-82c5-781d-a4cf">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Mounted Venetian Noble" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="b256-b4e6-dee8-c62c">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">18</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">3</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Mounted Venetian Noble" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="6b1d-3e71-ce6d-2c16">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">6</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Engage, Expert Offence (2), Limited Movement</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Do Try To Keep Up!" id="b6ec-d7ad-ce43-dd22" hidden="false">
+              <description>Once per round, before this character makes a Run/Climb action, you may choose 1 other friendly character with the Councillor, Soldier, or Animal keyword within 3&quot;. 
+
+After this character completes that Run/Climb action, the chosen character makes an out of sequence Run/Climb action. This out of sequence action cannot cause Attacks of Opportunity from charging, but may require a character to Disengage as normal.</description>
+            </rule>
+            <rule name="Venetian Drive" id="5bd9-e501-bd71-4028" hidden="false">
+              <description>*PULSE Command Ability*
+This character gains First Strike (2) until the end of the round, however it reduces its PROTECTION to 1.</description>
+            </rule>
+            <rule name="Gleeful Charge" id="c47f-cebb-38d6-afed" hidden="false">
+              <description>When this character makes an Attack of Opportunity due to charging, Gilded Sabre&apos;s Evasion becomes -2 for that Attack of Opportunity.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -2508,6 +2643,8 @@ Until the end of the round, other friendly characters that start their turn with
     <entryLink import="true" name="Ottoman Pirate" hidden="false" id="2d59-f431-2d1a-7469" targetId="5e50-bdb9-6808-8bbd" type="selectionEntry"/>
     <entryLink import="true" name="Ottoman Rigger" hidden="false" id="07b5-5f4b-818b-4658" targetId="f356-59d4-473d-3a1d" type="selectionEntry"/>
     <entryLink import="true" name="Pinnacle of Affluence" hidden="false" id="57d9-0ea2-8263-63e9" targetId="41cb-91ab-210e-5a7a" type="selectionEntry"/>
+    <entryLink import="true" name="Mounted Venetian Noble" hidden="false" id="7282-b4de-7033-3fe2" targetId="31c6-b82e-ca84-543b" type="selectionEntry"/>
+    <entryLink import="true" name="Hunting Hound" hidden="false" id="64dd-796d-c313-4e75" targetId="47e8-7d75-315c-e129" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Ottoman Janissary Weapon Selection" id="0775-831b-1acf-cbeb" hidden="false" collective="true">
