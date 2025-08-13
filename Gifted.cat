@@ -206,6 +206,25 @@ Once per round, when any character with line of sight to this character (inclu
               </conditionGroups>
             </modifier>
           </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Prop Sword" hidden="false" id="72a1-db0d-9af1-be0a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e9f-9905-ee61-7e6d" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee81-27da-fb3d-8520" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Prop Sword" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="5fc2-f669-b43f-8798">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Escaped Madman" hidden="false" id="b7e1-2b24-e123-a0c6">
           <constraints>
