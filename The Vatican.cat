@@ -2864,64 +2864,64 @@ This character may use the ORDER command on friendly characters with the Const
             </profile>
           </profiles>
         </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
-    <selectionEntry type="model" import="true" name="Cherubim" hidden="false" id="350b-76f6-6a13-261a">
-      <categoryLinks>
-        <categoryLink targetId="cf01-1b3c-22d7-8d1b" id="7cf7-b3e9-9457-0928" primary="true" name="Henchman"/>
-        <categoryLink targetId="b8c1-0bb0-ed53-bdfa" id="7bfd-6994-ef44-bbde" primary="false" name="Faction (The Vatican)"/>
-        <categoryLink targetId="2eab-808f-d9cb-a54d" id="3012-3b91-7d2d-3e5b" primary="false" name="Construct"/>
-      </categoryLinks>
-      <costs>
-        <cost name=" Ducats" typeId="b5b3-aa8b-4d9c-5673" value="8"/>
-        <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
-        <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
-      </costs>
-      <profiles>
-        <profile name="Cherubim" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="50d8-724b-d3c4-4547">
-          <characteristics>
-            <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
-            <characteristic name="Life" typeId="31ac-58c2-51eb-d503">8</characteristic>
-            <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
-            <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
-            <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Cherubim" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="8114-053f-2810-c9c4">
-          <characteristics>
-            <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
-            <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
-            <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
-            <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
-            <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
-            <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fear (-1), Mindless, Limited Movement, Universal Shielding (2)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Feathers of Holy Light" hidden="false" id="b1c6-1268-ebdf-7ade">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9ba-8ab9-4f86-5414-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9ba-8ab9-4f86-5414-max" includeChildSelections="false"/>
-          </constraints>
+        <selectionEntry type="model" import="true" name="Cherubim" hidden="false" id="350b-76f6-6a13-261a">
+          <categoryLinks>
+            <categoryLink name="Henchman" hidden="false" id="7cf7-b3e9-9457-0928" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+            <categoryLink name="Faction (The Vatican)" hidden="false" id="7bfd-6994-ef44-bbde" targetId="b8c1-0bb0-ed53-bdfa" primary="false"/>
+            <categoryLink name="Construct" hidden="false" id="3012-3b91-7d2d-3e5b" targetId="2eab-808f-d9cb-a54d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Ducats" typeId="b5b3-aa8b-4d9c-5673" value="8"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+            <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
+          </costs>
           <profiles>
-            <profile name="Feathers of Holy Light" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="4af8-df29-04b9-6f13">
+            <profile name="Cherubim" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="50d8-724b-d3c4-4547">
               <characteristics>
-                <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
-                <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
-                <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
-                <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
-                <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">8</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Cherubim" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="8114-053f-2810-c9c4">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fear (-1), Mindless, Limited Movement, Universal Shielding (2)</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Feathers of Holy Light" hidden="false" id="b1c6-1268-ebdf-7ade">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9ba-8ab9-4f86-5414-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9ba-8ab9-4f86-5414-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Feathers of Holy Light" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="4af8-df29-04b9-6f13">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Living Proof of God&apos;s Majesty" id="27a1-b76b-2faf-54fa" hidden="false">
+              <description>Friendly characters with the Companion ability also have Companion (Cherubim).</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
-      <rules>
-        <rule name="Living Proof of God&apos;s Majesty" id="27a1-b76b-2faf-54fa" hidden="false">
-          <description>Friendly characters with the Companion ability also have Companion (Cherubim).</description>
-        </rule>
-      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -2974,6 +2974,7 @@ This character may use the ORDER command on friendly characters with the Const
     <entryLink import="true" name="Reliquary Page" hidden="false" id="ca1c-5db0-0db0-7f84" targetId="5f7a-238a-1f44-c1fd" type="selectionEntry"/>
     <entryLink import="true" name="Throne" hidden="false" id="75a7-af82-788d-0ddd" targetId="ea0d-2429-746e-9b0e" type="selectionEntry"/>
     <entryLink import="true" name="Divine Seraphim" hidden="false" id="69d1-153e-5672-3122" targetId="a313-86e9-d602-9c5d" type="selectionEntry"/>
+    <entryLink import="true" name="Cherubim" hidden="false" id="c034-66b2-e2b3-99df" targetId="350b-76f6-6a13-261a" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Gifted" id="f2c5-d9f8-8f11-6d73" targetId="9a88-2a78-d055-70b8" importRootEntries="true"/>
