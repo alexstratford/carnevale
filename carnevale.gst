@@ -205,6 +205,7 @@ In addition, while in line of sight to another (X) character they use that char
       <alias>Companion (Vampire)</alias>
       <alias>Companion (Il Capitano)</alias>
       <alias>Companion (Francisco De Lorme)</alias>
+      <alias>Companion (Emissary of Mother Hydra)</alias>
     </rule>
     <rule name="Concealment (X)" id="b7b0-685b-3bfb-81b2" hidden="false">
       <description>While in cover this character modifies its PROTECTION by (X).</description>

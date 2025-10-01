@@ -1246,13 +1246,6 @@ Pick one friendly character within 3&quot; and one different friendly character
 Both of those characters make an immediate **Run/Climb** action. This movement cannot be used to charge, but can be used to disengage.</description>
             </rule>
           </rules>
-          <modifiers>
-            <modifier type="add" value="{this} has too many selected spells" field="error">
-              <conditions>
-                <condition type="lessThan" value="0" field="ef4a-6847-91c7-b1f8" scope="parent" childId="any" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Fisherman" hidden="false" id="8e36-87bf-189f-ff7a" sortIndex="11">
           <categoryLinks>

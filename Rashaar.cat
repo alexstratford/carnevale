@@ -2123,6 +2123,777 @@ The *Monster* character immediately replenishes 5 Life Points.</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Emissary of Mother Hydra" hidden="false" id="5a17-68e8-8b17-378b">
+      <categoryLinks>
+        <categoryLink targetId="79d4-9b8b-7f29-cba5" id="a3e5-a4aa-35f5-6bc9" primary="true" name="Hero"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Ducats" typeId="b5b3-aa8b-4d9c-5673" value="51"/>
+        <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+        <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Emissary of Mother Hydra" hidden="false" id="769f-44e9-841d-2cf1" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Emissary of Mother Hydra" hidden="false" id="1199-acd9-36b4-d4e5">
+              <categoryLinks>
+                <categoryLink name="Faction (Rashaar)" hidden="false" id="2cd5-efb2-1afe-6e47" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+                <categoryLink name="Unique" hidden="false" id="e0b9-3ae6-885e-3da3" targetId="d3e1-4616-c557-d958" primary="false"/>
+                <categoryLink name="Monster" hidden="false" id="0960-1543-0c51-99cd" targetId="f067-a302-b855-c50a" primary="false"/>
+                <categoryLink name="Hydra" hidden="false" id="ae69-0a05-cab4-f55d" targetId="6b0f-5a84-d5b9-15b6" primary="false"/>
+                <categoryLink targetId="79d4-9b8b-7f29-cba5" id="f16f-11be-a807-3c0a" primary="true" name="Hero"/>
+              </categoryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e45-1dfd-bb1d-0317" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca3b-d880-7066-cf19" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fa7-43be-6daf-e55e" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name=" Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+                <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+                <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
+              </costs>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Eldritch Maw" hidden="false" id="612a-b0c9-eb22-8dbd">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db58-49f4-be18-a075" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="225e-95f0-f0c0-ba53" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Eldritch Maw" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="fd6e-459b-6b0d-a496">
+                      <characteristics>
+                        <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">1&quot;</characteristic>
+                        <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                        <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                        <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-4</characteristic>
+                        <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <profiles>
+                <profile name="Emissary of Mother Hydra" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="6466-4b6b-89ca-49e9">
+                  <characteristics>
+                    <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                    <characteristic name="Life" typeId="31ac-58c2-51eb-d503">30</characteristic>
+                    <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                    <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                    <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">75mm</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Emissary of Mother Hydra" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="d1d5-b8ba-3c48-f7ad">
+                  <characteristics>
+                    <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">1</characteristic>
+                    <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                    <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">7</characteristic>
+                    <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">5</characteristic>
+                    <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                    <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bulky, Fast Swimmer (3), Fear (-4), Limited Movement, Vampiric Attack (2), Water Creature</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Grasp of the Abyss" id="2d60-61cb-9cc8-ae6e" hidden="false">
+                  <description>A gang that includes this character also automatically includes the following (and count towards Henchman taken);
+
+• 1 Maw Tentacle
+• 1 Lash Tentacle
+• 1 Dagger Tentacle
+• 1 Thorn Tentacle
+
+You may pay an additional 12 Ducats to take 2 of each Tentacle instead. 
+
+After you complete this character&apos;s activation, place each of its remaining Tentacles within 3&quot; of it.</description>
+                </rule>
+                <rule name="Rip Apart" id="60f2-b920-0ed4-a597" hidden="false">
+                  <description>When one of this character&apos;s Tentacles kills an enemy character, this character replenishes 1 Will Point.</description>
+                </rule>
+                <rule name="Serpentine" id="c2f3-3daf-86f9-5473" hidden="false">
+                  <description>This character is able to move through spaces smaller than its base to a minimum of 2&quot;. It must be able to fit where it ends its turn.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe2d-529d-a2dd-f0da" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4868-d6ed-8c5d-b574" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8ba6-cf2e-5cc7-aa7d" includeChildSelections="true"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Tentacles" id="1e10-35c9-7c54-47d8" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a104-b257-ca1e-768f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ccd-3bac-733a-dcc4" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="One of each tentacle" hidden="false" id="fb04-da14-d3c1-e667">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="838b-2546-0554-eeb3" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6f2-724d-bfec-e8da" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="838b-2546-0554-eeb3"/>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry type="unit" import="true" name="Maw Tentacle" hidden="false" id="1adf-00d3-d644-603f" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c5c-a06f-6953-8b35" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19e6-8df1-9887-a27e" includeChildSelections="false"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink name="Henchman" hidden="false" id="07f5-5f48-af96-997f" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+                    <categoryLink name="Faction (Rashaar)" hidden="false" id="d8b7-b10c-240a-ccd1" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+                  </categoryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Fanged Maw" hidden="false" id="ed59-7e4d-da17-e876">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0dfc-5e16-4e08-94bf" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5766-3154-7a55-a190" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Fanged Maw" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="72bd-ccaa-7a88-c350">
+                          <characteristics>
+                            <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                            <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                            <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                            <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                            <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <profiles>
+                    <profile name="Maw Tentacle" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="01e0-015d-2bc6-200d">
+                      <characteristics>
+                        <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                        <characteristic name="Life" typeId="31ac-58c2-51eb-d503">5</characteristic>
+                        <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                        <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                        <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Maw Tentacle" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="ec8d-97da-74d0-32e1">
+                      <characteristics>
+                        <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">2</characteristic>
+                        <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                        <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                        <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                        <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                        <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave, Companion (Emissary of Mother Hydra), Engage, Expert Grappler (2), Limited Movement, Mindless, Water Creature</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Part of the Whole" id="6372-1cab-18f6-f3ba" hidden="false" type="rule" targetId="2b68-6674-75a4-d546"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="unit" import="true" name="Lash Tentacle" hidden="false" id="2d8e-0b0f-ca6e-cb39" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="962e-7c28-cd42-7367" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a30e-e48b-dbb6-49c3" includeChildSelections="false"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink name="Henchman" hidden="false" id="9084-b3df-3935-6648" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+                    <categoryLink name="Faction (Rashaar)" hidden="false" id="68d5-61f8-8853-0a19" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+                  </categoryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Lashing Swipe" hidden="false" id="b5b8-588a-9969-83b4">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f035-b982-0715-ef23" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea97-50bf-6d38-2a6a" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Lashing Swipe" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="acde-5779-8a21-0eed">
+                          <characteristics>
+                            <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                            <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                            <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                            <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                            <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <profiles>
+                    <profile name="Lash Tentacle" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="3404-376b-6d03-91e6">
+                      <characteristics>
+                        <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                        <characteristic name="Life" typeId="31ac-58c2-51eb-d503">5</characteristic>
+                        <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                        <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                        <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Lash Tentacle" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="4123-1c9b-8b81-95d1">
+                      <characteristics>
+                        <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">2</characteristic>
+                        <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                        <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                        <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                        <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                        <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave, Companion (Emissary of Mother Hydra), First Strike (2), Limited Movement, Mindless, Water Creature</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Part of the Whole" id="7fb1-651b-8146-9366" hidden="false" type="rule" targetId="2b68-6674-75a4-d546"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="unit" import="true" name="Dagger Tentacle" hidden="false" id="0827-fc03-6bbb-ba86" sortIndex="3">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f54-4d94-e468-6ddb" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="20e1-6e3b-9353-bddf" includeChildSelections="false"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink name="Henchman" hidden="false" id="122d-c3ee-87ef-615c" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+                    <categoryLink name="Faction (Rashaar)" hidden="false" id="104a-c1fc-4355-234d" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+                  </categoryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Rending Spine" hidden="false" id="2044-3826-ee65-798d">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b083-78f7-e8b6-b2cd" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d612-cb00-8f1a-e80f" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Rending Spine" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="fa5e-14b0-2de2-c9e0">
+                          <characteristics>
+                            <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
+                            <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                            <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                            <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                            <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Knockback</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <profiles>
+                    <profile name="Dagger Tentacle" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="c583-c7df-bb1a-6534">
+                      <characteristics>
+                        <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                        <characteristic name="Life" typeId="31ac-58c2-51eb-d503">5</characteristic>
+                        <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                        <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                        <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Dagger Tentacle" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="2704-1cf4-520b-e193">
+                      <characteristics>
+                        <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">2</characteristic>
+                        <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                        <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                        <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                        <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                        <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave, Companion (Emissary of Mother Hydra), Expert Marksman (1), Limited Movement, Mindless, Water Creature</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Part of the Whole" id="89e5-2b33-59c7-18ce" hidden="false" type="rule" targetId="2b68-6674-75a4-d546"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="unit" import="true" name="Thorn Tentacle" hidden="false" id="d94d-c2ce-41a2-114c" sortIndex="4">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="75e2-3e46-cee2-b712" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2fb-63ae-eac6-9636" includeChildSelections="false"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink name="Henchman" hidden="false" id="64ff-8820-48b7-7738" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+                    <categoryLink name="Faction (Rashaar)" hidden="false" id="16f8-4dd5-c4ac-7181" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+                  </categoryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Thorned Grasp" hidden="false" id="40e1-c5d0-bc37-ad27">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9934-e1e2-7ed5-3873" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="308a-a29b-7f05-f7c7" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Thorned Grasp" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="35f8-c7bb-19fe-3579">
+                          <characteristics>
+                            <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                            <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                            <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                            <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                            <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <profiles>
+                    <profile name="Thorn Tentacle" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="8db2-6d99-dfa8-19bc">
+                      <characteristics>
+                        <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                        <characteristic name="Life" typeId="31ac-58c2-51eb-d503">5</characteristic>
+                        <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                        <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                        <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Thorn Tentacle" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="d607-afda-efdb-8d1d">
+                      <characteristics>
+                        <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">2</characteristic>
+                        <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                        <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                        <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                        <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                        <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave, Companion (Emissary of Mother Hydra), Limited Movement, Mindless, Water Creature</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Part of the Whole" id="6ff2-645e-74aa-bd9f" hidden="false" type="rule" targetId="2b68-6674-75a4-d546"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Two of each tentacle" hidden="false" id="f086-529b-e4ca-eea8">
+              <costs>
+                <cost name=" Ducats" typeId="b5b3-aa8b-4d9c-5673" value="12"/>
+                <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+                <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
+              </costs>
+              <selectionEntries>
+                <selectionEntry type="unit" import="true" name="Dagger Tentacle" hidden="false" id="5dbd-12ca-b142-d868" sortIndex="5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6532-cf1b-d6c9-2e09" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f75c-53f0-8b7d-acab" includeChildSelections="false"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink name="Henchman" hidden="false" id="c72b-4e47-623e-0f18" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+                    <categoryLink name="Faction (Rashaar)" hidden="false" id="2596-0760-3e0b-5eb4" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+                  </categoryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Rending Spine" hidden="false" id="b3f6-0829-99a7-6110">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e9b-7a30-7ed3-7266" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4865-9197-d238-97f0" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Rending Spine" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="8245-097f-085e-b9d6">
+                          <characteristics>
+                            <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
+                            <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                            <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                            <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                            <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Knockback</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <profiles>
+                    <profile name="Dagger Tentacle" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="df11-ade3-2ced-41dc">
+                      <characteristics>
+                        <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                        <characteristic name="Life" typeId="31ac-58c2-51eb-d503">5</characteristic>
+                        <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                        <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                        <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Dagger Tentacle" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="f7b8-b1f4-fb72-2336">
+                      <characteristics>
+                        <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">2</characteristic>
+                        <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                        <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                        <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                        <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                        <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave, Companion (Emissary of Mother Hydra), Expert Marksman (1), Limited Movement, Mindless, Water Creature</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Part of the Whole" id="6a49-1b08-68e2-ae6c" hidden="false" type="rule" targetId="2b68-6674-75a4-d546"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="unit" import="true" name="Lash Tentacle" hidden="false" id="5d88-2990-f40f-ce21" sortIndex="4">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a289-1052-5aa0-ed0e" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2af4-d538-2439-9959" includeChildSelections="false"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink name="Henchman" hidden="false" id="4a50-dd45-f712-6e82" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+                    <categoryLink name="Faction (Rashaar)" hidden="false" id="9f44-3a01-e61c-494d" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+                  </categoryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Lashing Swipe" hidden="false" id="2ba7-0518-d99b-e88e">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce5d-8fd2-386a-199a" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6ac-cf24-0fcf-9c4c" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Lashing Swipe" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="2e3f-feae-0fb7-d03c">
+                          <characteristics>
+                            <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                            <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                            <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                            <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                            <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <profiles>
+                    <profile name="Lash Tentacle" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="1d49-a45f-bf62-c86a">
+                      <characteristics>
+                        <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                        <characteristic name="Life" typeId="31ac-58c2-51eb-d503">5</characteristic>
+                        <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                        <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                        <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Lash Tentacle" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="858b-54e9-bcca-8d4f">
+                      <characteristics>
+                        <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">2</characteristic>
+                        <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                        <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                        <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                        <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                        <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave, Companion (Emissary of Mother Hydra), First Strike (2), Limited Movement, Mindless, Water Creature</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Part of the Whole" id="8a3a-27ae-dc19-18dc" hidden="false" type="rule" targetId="2b68-6674-75a4-d546"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="unit" import="true" name="Maw Tentacle" hidden="false" id="3a61-9259-a95c-663c" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff8b-5ad8-2619-6d3a" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1518-b495-66bc-f125" includeChildSelections="false"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink name="Henchman" hidden="false" id="b8d3-4a2f-51d7-7db8" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+                    <categoryLink name="Faction (Rashaar)" hidden="false" id="91d6-1cef-b305-1208" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+                  </categoryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Fanged Maw" hidden="false" id="7ac1-1e9c-5ef2-1e0f">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7889-d25b-c682-9030" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d54-7554-8440-e654" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Fanged Maw" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="1fd0-ec2f-436a-40e3">
+                          <characteristics>
+                            <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                            <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                            <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                            <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                            <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <profiles>
+                    <profile name="Maw Tentacle" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="ae45-8732-9443-2c3f">
+                      <characteristics>
+                        <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                        <characteristic name="Life" typeId="31ac-58c2-51eb-d503">5</characteristic>
+                        <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                        <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                        <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Maw Tentacle" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="6d08-b59a-edf5-8d88">
+                      <characteristics>
+                        <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">2</characteristic>
+                        <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                        <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                        <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                        <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                        <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave, Companion (Emissary of Mother Hydra), Engage, Expert Grappler (2), Limited Movement, Mindless, Water Creature</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Part of the Whole" id="9d13-5a6e-8693-69cd" hidden="false" type="rule" targetId="2b68-6674-75a4-d546"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="unit" import="true" name="Thorn Tentacle" hidden="false" id="7a51-14f3-c1bf-a017" sortIndex="7">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69eb-dafb-3d67-52b3" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26f2-d7d2-f070-d634" includeChildSelections="false"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink name="Henchman" hidden="false" id="1701-b372-0b67-2e11" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+                    <categoryLink name="Faction (Rashaar)" hidden="false" id="0023-adeb-b0c2-5e36" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+                  </categoryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Thorned Grasp" hidden="false" id="7c5b-d679-019d-dfe7">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9124-8217-d421-5b41" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f5e-6aea-c17a-b05f" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Thorned Grasp" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="7b7b-7262-0460-3d61">
+                          <characteristics>
+                            <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                            <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                            <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                            <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                            <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <profiles>
+                    <profile name="Thorn Tentacle" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="c59a-a0ab-7fb6-0665">
+                      <characteristics>
+                        <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                        <characteristic name="Life" typeId="31ac-58c2-51eb-d503">5</characteristic>
+                        <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                        <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                        <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Thorn Tentacle" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="050a-baf5-2d02-fc6c">
+                      <characteristics>
+                        <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">2</characteristic>
+                        <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                        <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                        <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                        <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                        <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave, Companion (Emissary of Mother Hydra), Limited Movement, Mindless, Water Creature</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Part of the Whole" id="c56c-8a0e-5720-c338" hidden="false" type="rule" targetId="2b68-6674-75a4-d546"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="unit" import="true" name="Dagger Tentacle" hidden="false" id="6fab-7c28-a41d-309f" sortIndex="6">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="11fe-cef8-0d82-9c3d" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="015a-484e-402c-8f4f" includeChildSelections="false"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink name="Henchman" hidden="false" id="a430-8932-f894-c406" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+                    <categoryLink name="Faction (Rashaar)" hidden="false" id="1132-f29e-61a5-ece0" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+                  </categoryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Rending Spine" hidden="false" id="07c7-4195-0e88-f8fc">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="038e-f102-f28b-e8fa" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fa2-1c83-b886-268d" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Rending Spine" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="7e5d-e52c-6b8c-b97b">
+                          <characteristics>
+                            <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
+                            <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                            <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                            <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                            <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Knockback</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <profiles>
+                    <profile name="Dagger Tentacle" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="9f06-2498-4b64-968d">
+                      <characteristics>
+                        <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                        <characteristic name="Life" typeId="31ac-58c2-51eb-d503">5</characteristic>
+                        <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                        <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                        <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Dagger Tentacle" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="874c-628a-15fc-0700">
+                      <characteristics>
+                        <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">2</characteristic>
+                        <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                        <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                        <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                        <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                        <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave, Companion (Emissary of Mother Hydra), Expert Marksman (1), Limited Movement, Mindless, Water Creature</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Part of the Whole" id="da42-ba87-4961-d16c" hidden="false" type="rule" targetId="2b68-6674-75a4-d546"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="unit" import="true" name="Lash Tentacle" hidden="false" id="660d-7eae-66fe-cefa" sortIndex="3">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f9f0-519b-21ad-e534" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70bd-46aa-99f7-bdce" includeChildSelections="false"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink name="Henchman" hidden="false" id="e233-5dae-215d-5be0" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+                    <categoryLink name="Faction (Rashaar)" hidden="false" id="10f3-a8d5-8144-94b2" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+                  </categoryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Lashing Swipe" hidden="false" id="2233-696a-a349-2950">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="786c-6c62-db59-53be" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93e5-1d80-951b-d414" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Lashing Swipe" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="c38c-0d63-bfb3-d64d">
+                          <characteristics>
+                            <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                            <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                            <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                            <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                            <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <profiles>
+                    <profile name="Lash Tentacle" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="d4ed-6c36-4c01-654b">
+                      <characteristics>
+                        <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                        <characteristic name="Life" typeId="31ac-58c2-51eb-d503">5</characteristic>
+                        <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                        <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                        <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Lash Tentacle" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="aee0-6709-707b-648b">
+                      <characteristics>
+                        <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">2</characteristic>
+                        <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                        <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                        <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                        <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                        <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave, Companion (Emissary of Mother Hydra), First Strike (2), Limited Movement, Mindless, Water Creature</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Part of the Whole" id="6a47-1c6f-86c7-20d8" hidden="false" type="rule" targetId="2b68-6674-75a4-d546"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="unit" import="true" name="Maw Tentacle" hidden="false" id="caf2-c4dd-8272-0277" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cde3-a5ed-3813-5dda" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f73-4cff-e3c4-cb38" includeChildSelections="false"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink name="Henchman" hidden="false" id="55d3-e782-986b-927e" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+                    <categoryLink name="Faction (Rashaar)" hidden="false" id="ba32-a426-2e06-be54" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+                  </categoryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Fanged Maw" hidden="false" id="6ddf-a355-a4f8-4c1d">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="166a-af5c-b237-905b" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85c8-1956-de6b-849c" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Fanged Maw" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="b436-5c83-f2ab-d38b">
+                          <characteristics>
+                            <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                            <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                            <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                            <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                            <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <profiles>
+                    <profile name="Maw Tentacle" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="5355-692a-5242-deb0">
+                      <characteristics>
+                        <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                        <characteristic name="Life" typeId="31ac-58c2-51eb-d503">5</characteristic>
+                        <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                        <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                        <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Maw Tentacle" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="bf76-43de-a5bd-04f3">
+                      <characteristics>
+                        <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">2</characteristic>
+                        <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                        <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                        <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                        <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                        <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave, Companion (Emissary of Mother Hydra), Engage, Expert Grappler (2), Limited Movement, Mindless, Water Creature</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Part of the Whole" id="f389-d330-f9e0-980e" hidden="false" type="rule" targetId="2b68-6674-75a4-d546"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="unit" import="true" name="Thorn Tentacle" hidden="false" id="2dbd-3270-be62-8014" sortIndex="8">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9d0d-9d8d-4eb8-3918" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef2c-490d-718c-bec8" includeChildSelections="false"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink name="Henchman" hidden="false" id="2ed2-18f7-3498-6cd5" targetId="cf01-1b3c-22d7-8d1b" primary="true"/>
+                    <categoryLink name="Faction (Rashaar)" hidden="false" id="1209-8a59-f19b-c77b" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+                  </categoryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Thorned Grasp" hidden="false" id="329a-5faa-e0ca-0e86">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8421-adc5-3482-4666" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="568e-8031-f8c5-25a5" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Thorned Grasp" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="4e82-66b7-5124-7fc3">
+                          <characteristics>
+                            <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                            <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                            <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                            <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                            <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <profiles>
+                    <profile name="Thorn Tentacle" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="03f3-7cc3-174d-16e2">
+                      <characteristics>
+                        <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                        <characteristic name="Life" typeId="31ac-58c2-51eb-d503">5</characteristic>
+                        <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                        <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                        <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Thorn Tentacle" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="1c5a-f0a7-f91c-ba15">
+                      <characteristics>
+                        <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">2</characteristic>
+                        <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                        <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                        <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">1</characteristic>
+                        <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                        <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave, Companion (Emissary of Mother Hydra), Limited Movement, Mindless, Water Creature</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Part of the Whole" id="e5c4-403b-3aa8-f751" hidden="false" type="rule" targetId="2b68-6674-75a4-d546"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc5e-a655-47b5-7203" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="The Flame That Burns Underwater" hidden="false" id="014e-ba0b-1f11-2448" targetId="7212-c743-5b6d-69e5" type="selectionEntry"/>
@@ -2162,8 +2933,18 @@ The *Monster* character immediately replenishes 5 Life Points.</description>
     <entryLink import="true" name="Slave" hidden="false" id="2531-e3e6-3dbe-df68" targetId="55d3-d9bd-9727-59df" type="selectionEntry"/>
     <entryLink import="true" name="Urchin" hidden="false" id="f4a7-980d-ab7f-7ba9" targetId="af32-6a0b-e06d-4b13" type="selectionEntry"/>
     <entryLink import="true" name="Wet Nurse" hidden="false" id="6879-f959-87ab-94a1" targetId="1d50-5e6d-d605-10be" type="selectionEntry"/>
+    <entryLink import="true" name="Emissary of Mother Hydra" hidden="false" id="31c4-11e7-0002-5e47" targetId="5a17-68e8-8b17-378b" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Gifted" id="5b2b-c198-5d98-b3e7" targetId="9a88-2a78-d055-70b8" importRootEntries="true"/>
   </catalogueLinks>
+  <sharedRules>
+    <rule name="Part of the Whole" id="2b68-6674-75a4-d546" hidden="false">
+      <description>This character can only be taken with the Emissary of Mother Hydra and cannot move or be moved further than 6&quot; from it.
+
+At the end of each enemy turn, if this character is further than 6&quot; away from the Emissary, it moves the shortest distance to be within 6&quot; of it, ignoring disengaging or charging.
+
+If the Emissary is killed, this character is also killed.</description>
+    </rule>
+  </sharedRules>
 </catalogue>
