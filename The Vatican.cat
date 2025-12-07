@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="04c2-cc3f-aaa1-e44d" name="The Vatican" gameSystemId="sys-c646-d5a1-2146-1042" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="04c2-cc3f-aaa1-e44d" name="The Vatican" gameSystemId="sys-c646-d5a1-2146-1042" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Leader" hidden="false" id="6686-c18e-1952-36db">
       <selectionEntries>
@@ -1812,23 +1812,23 @@ Remove 1 friendly character with the Construct keyword from the board. Place i
             </rule>
           </rules>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Gethsemane" hidden="false" id="7f30-62d8-1427-33b6">
-          <categoryLinks>
-            <categoryLink name="Hero" hidden="false" id="7edb-a838-1493-cac0" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
-            <categoryLink name="Faction (The Vatican)" hidden="false" id="cdb8-b0fb-0633-68a3" targetId="b8c1-0bb0-ed53-bdfa" primary="false"/>
-            <categoryLink name="Construct" hidden="false" id="b063-94f1-6135-f244" targetId="2eab-808f-d9cb-a54d" primary="false"/>
-            <categoryLink name="Unique" hidden="false" id="f90c-8a22-4741-635d" targetId="d3e1-4616-c557-d958" primary="false"/>
-          </categoryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fdb5-8fdf-29d4-5d67" includeChildSelections="true"/>
-          </constraints>
+        <selectionEntry type="model" import="true" name="Gethsemane" hidden="false" id="9b28-36dc-3edf-62d5">
           <costs>
             <cost name=" Ducats" typeId="b5b3-aa8b-4d9c-5673" value="37"/>
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
             <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="17f2-eee8-4d62-ba87" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (The Vatican)" hidden="false" id="a5b5-5120-d76c-2a94" targetId="b8c1-0bb0-ed53-bdfa" primary="false"/>
+            <categoryLink name="Unique" hidden="false" id="e635-94af-ad1f-0403" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Construct" hidden="false" id="5e90-4edb-fee3-2aee" targetId="2eab-808f-d9cb-a54d" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d2f1-819f-079d-1b9c" includeChildSelections="true"/>
+          </constraints>
           <profiles>
-            <profile name="Gethsemane" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="809b-dc53-b4a3-8fce">
+            <profile name="Gethsemane" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="aac6-5311-853d-052a">
               <characteristics>
                 <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
                 <characteristic name="Life" typeId="31ac-58c2-51eb-d503">28</characteristic>
@@ -1837,21 +1837,27 @@ Remove 1 friendly character with the Construct keyword from the board. Place i
                 <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">75mm</characteristic>
               </characteristics>
             </profile>
-            <profile name="Gethsemane" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="0056-f1ae-544f-3a72">
+            <profile name="Gethsemane" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="770e-64a2-38e7-93d4">
               <characteristics>
                 <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
                 <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
                 <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">5</characteristic>
                 <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">0</characteristic>
                 <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
-                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Acrobatic (2), Brave, Brawler (1), Bulky, Companion (Invoker), Frenzied, Mindless, Primitive</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Acrobatic (2), Brave, Brawler (1), Bulky, Companion (Invoker), Frenzied, Mindless, Primitive
+
+</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Agonising Strike" hidden="false" id="9e98-f333-ad48-afd0">
+            <selectionEntry type="upgrade" import="true" name="Agonising Strike" hidden="false" id="c317-68a4-2ada-a7bd">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f50-c0b3-e638-73c6-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f50-c0b3-e638-73c6-max" includeChildSelections="false"/>
+              </constraints>
               <profiles>
-                <profile name="Agonising Strike" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="2fb1-56c5-a323-0a14">
+                <profile name="Agonising Strike" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="1bf8-d132-0325-c457">
                   <characteristics>
                     <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
                     <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
@@ -1861,18 +1867,14 @@ Remove 1 friendly character with the Construct keyword from the board. Place i
                   </characteristics>
                 </profile>
               </profiles>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6758-f7ff-e828-92ef" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2887-1e01-2acb-e12d" includeChildSelections="false"/>
-              </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Claw of Anguish" hidden="false" id="dcdd-e589-cca2-e912">
+            <selectionEntry type="upgrade" import="true" name="Claw of Anguish" hidden="false" id="e762-baf3-b69f-8a15">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b9be-db60-b266-92a8" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17cf-d066-eb21-2777" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a11f-1600-5bb3-e637-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a11f-1600-5bb3-e637-max" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Claw of Anguish" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="293d-c53b-3f39-c821">
+                <profile name="Claw of Anguish" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="adb9-9a71-66bb-5007">
                   <characteristics>
                     <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
                     <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
@@ -1883,13 +1885,13 @@ Remove 1 friendly character with the Construct keyword from the board. Place i
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Maw Press" hidden="false" id="9704-acbf-f1a8-e624">
+            <selectionEntry type="upgrade" import="true" name="Maw Press" hidden="false" id="d2cd-31ab-c4b5-50a5">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1aa-a5ee-3471-2643" includeChildSelections="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="66ee-e1fd-22ba-e2dc" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="811a-1573-1e25-c6c2-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="811a-1573-1e25-c6c2-max" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Maw Press" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="1ff5-6da0-ad10-a011">
+                <profile name="Maw Press" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="622e-e13c-a5a5-fd84">
                   <characteristics>
                     <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
                     <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
@@ -1902,8 +1904,18 @@ Remove 1 friendly character with the Construct keyword from the board. Place i
             </selectionEntry>
           </selectionEntries>
           <rules>
-            <rule name="Stoneskin (WIP)" id="be23-c5f3-7e0e-1f3c" hidden="false">
-              <description>Whenever this character takes damage, reduce the amount of damage caused by 3 (to a minimum of 1). In addition, if this character is </description>
+            <rule name="Stoneskin" id="0b7c-0791-0fd1-3033" hidden="false">
+              <description>Whenever this character takes damage, reduce the amount of damage caused by 3 (to a minimum of 1). In addition, if this character is hit by a Poisoned weapon, roll 2 dice and choose 1 to see if they shrug off the poison.</description>
+            </rule>
+            <rule name="Feline Indifference" id="377a-7fda-825a-9752" hidden="false">
+              <description>This character cannot be picked as a target for magic and is not affected by the effects of magic (other characters affected by magic are still affected)</description>
+            </rule>
+            <rule name="Serpentine" id="fd6c-1e3d-7915-c8e1" hidden="false">
+              <description>This character is able to move through spaces smaller than its base to a minimum of 2&quot;. It must be able to fit where it ends its turn</description>
+            </rule>
+            <rule name="Atonement from Above" id="c89e-8794-090e-e135" hidden="false">
+              <description>Before applying Stoneskin, If this character would take damage from falling, all other characters (friendly and enemy) within 3&quot; also take that much damage.
+When this character charges from above, it may be placed on top of other characters. Any characters underneath it are moved by their controlling player so that they are in base contact with this character.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -3071,6 +3083,7 @@ This character may use the ORDER command on friendly characters with the Const
     <entryLink import="true" name="Divine Seraphim" hidden="false" id="69d1-153e-5672-3122" targetId="a313-86e9-d602-9c5d" type="selectionEntry"/>
     <entryLink import="true" name="Cherubim" hidden="false" id="c034-66b2-e2b3-99df" targetId="350b-76f6-6a13-261a" type="selectionEntry"/>
     <entryLink import="true" name="Gethsemane" hidden="false" id="b54a-1391-26a7-6364" targetId="7f30-62d8-1427-33b6" type="selectionEntry"/>
+    <entryLink import="true" name="Gethsemane" hidden="false" id="2b3a-df47-494d-6e03" targetId="9b28-36dc-3edf-62d5" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Gifted" id="f2c5-d9f8-8f11-6d73" targetId="9a88-2a78-d055-70b8" importRootEntries="true"/>
