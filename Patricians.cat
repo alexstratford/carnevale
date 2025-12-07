@@ -1956,6 +1956,57 @@ One friendly character with the Henchman keyword in line of sight within 6&quo
             </profile>
           </profiles>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Hired Muscle" hidden="false" id="064d-042f-40d8-fa9f">
+          <profiles>
+            <profile name="Hired Muscle" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="a92f-2f5c-7cfe-3ca4">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">1</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Hired Muscle" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="c1c7-84ad-beb3-7d7a">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Grappler (1), Expert Offense (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Ducats" typeId="b5b3-aa8b-4d9c-5673" value="11"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+            <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="cf01-1b3c-22d7-8d1b" id="ae71-b1e5-9b7d-3237" primary="true" name="Henchman"/>
+            <categoryLink targetId="bb57-55b2-0ab2-6ce9" id="28c9-f3db-1c91-000f" primary="false" name="Faction (Patricians)"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sword" hidden="false" id="38a7-71a9-88f1-ef49">
+              <profiles>
+                <profile name="Sword" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="62b1-6fbf-d98b-97f8">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa31-fb08-e9cd-423b-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa31-fb08-e9cd-423b-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Leader" hidden="false" id="58e8-f48c-2da1-a641">
@@ -2645,6 +2696,7 @@ This character gains First Strike (2) until the end of the round, however it red
     <entryLink import="true" name="Pinnacle of Affluence" hidden="false" id="57d9-0ea2-8263-63e9" targetId="41cb-91ab-210e-5a7a" type="selectionEntry"/>
     <entryLink import="true" name="Mounted Venetian Noble" hidden="false" id="7282-b4de-7033-3fe2" targetId="31c6-b82e-ca84-543b" type="selectionEntry"/>
     <entryLink import="true" name="Hunting Hound" hidden="false" id="64dd-796d-c313-4e75" targetId="47e8-7d75-315c-e129" type="selectionEntry"/>
+    <entryLink import="true" name="Hired Muscle" hidden="false" id="b003-cffe-cc09-49ee" targetId="064d-042f-40d8-fa9f" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Ottoman Janissary Weapon Selection" id="0775-831b-1acf-cbeb" hidden="false" collective="true">

@@ -3082,7 +3082,6 @@ This character may use the ORDER command on friendly characters with the Const
     <entryLink import="true" name="Throne" hidden="false" id="75a7-af82-788d-0ddd" targetId="ea0d-2429-746e-9b0e" type="selectionEntry"/>
     <entryLink import="true" name="Divine Seraphim" hidden="false" id="69d1-153e-5672-3122" targetId="a313-86e9-d602-9c5d" type="selectionEntry"/>
     <entryLink import="true" name="Cherubim" hidden="false" id="c034-66b2-e2b3-99df" targetId="350b-76f6-6a13-261a" type="selectionEntry"/>
-    <entryLink import="true" name="Gethsemane" hidden="false" id="b54a-1391-26a7-6364" targetId="7f30-62d8-1427-33b6" type="selectionEntry"/>
     <entryLink import="true" name="Gethsemane" hidden="false" id="2b3a-df47-494d-6e03" targetId="9b28-36dc-3edf-62d5" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
