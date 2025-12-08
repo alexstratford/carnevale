@@ -387,7 +387,8 @@ On a 7+ this Command doesn&apos;t use a Command Point.</description>
           </profiles>
           <rules>
             <rule name="Shield to the Enlightened" id="3573-ce57-4b0f-5982" hidden="false">
-              <description>*1CP* Until the end of the round, all friendly characters within 3&quot; gain Universal Shielding (3). Additionally, until the end of the round, all friendly characters with the Feral Keyword within 3&quot; gain Expert Protection (1).</description>
+              <description>*PULSE Command Ability* 
+Until the end of the round, all friendly characters within 3&quot; gain Universal Shielding (3). Additionally, until the end of the round, all friendly characters with the Feral Keyword within 3&quot; gain Expert Protection (1).</description>
             </rule>
             <rule name="Vatican Apostate" id="9d8c-c6dc-6b67-ce4e" hidden="false">
               <description>This character can re-roll the destiny dice when making Attack or Protection rolls.</description>
@@ -1394,7 +1395,7 @@ Until the end of the round, any enemy characters within 6&quot; of this charac
               <profiles>
                 <profile name="Razor Maw" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="c686-6481-baad-0eb5">
                   <characteristics>
-                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">-0&quot;</characteristic>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
                     <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
                     <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
                     <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>

@@ -178,6 +178,7 @@ Additionally, if at least 1 character with the Boat Crew ability is currently o
       <alias>Bodyguard (Leader)</alias>
       <alias>Bodyguard (Felix Baumgartner)</alias>
       <alias>Bodyguard (Pinnacle of Affluence)</alias>
+      <alias>Bodyguard (Leader, Feral)</alias>
     </rule>
     <rule name="Bulky" id="00f3-82d1-348d-5868" hidden="false">
       <description>This character does not gain any benefit from being in cover, and cannot make Hide actions.</description>

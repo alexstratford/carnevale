@@ -1447,7 +1447,7 @@ Make a Basic MIND Roll:
                 <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
                 <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
                 <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
-                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Concealment (+2), Universal Shielding (2)</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Concealment (2), Universal Shielding (2)</characteristic>
               </characteristics>
             </profile>
           </profiles>
