@@ -2356,7 +2356,7 @@ The *Monster* character immediately replenishes 5 Life Points.</description>
                     <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">-</characteristic>
                     <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
                     <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
-                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
                     <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Two-handed</characteristic>
                   </characteristics>
                 </profile>
@@ -3179,7 +3179,13 @@ After you complete this character&apos;s activation, place each of its remainin
     <entryLink import="true" name="Emissary of Mother Hydra" hidden="false" id="31c4-11e7-0002-5e47" targetId="5a17-68e8-8b17-378b" type="selectionEntry"/>
     <entryLink import="true" name="Sir Tiburcio" hidden="false" id="995e-62ee-a3b5-0428" targetId="3ecc-843d-f982-4984" type="selectionEntry"/>
     <entryLink import="true" name="Tainted Maw" hidden="false" id="e8f6-9acc-432e-1008" targetId="1676-c093-cad2-c3b3" type="selectionEntry"/>
-    <entryLink import="true" name="Dagonite Page" hidden="false" id="2068-03ef-cda2-ffdd" targetId="4aa9-f1e4-991b-5d95" type="selectionEntry"/>
+    <entryLink import="true" name="Dagonite Page" hidden="false" id="2068-03ef-cda2-ffdd" targetId="4aa9-f1e4-991b-5d95" type="selectionEntry">
+      <rules>
+        <rule name="Corrupted Relic" id="d337-916c-221d-1ecb" hidden="false">
+          <description>Whenever an enemy character within 6&quot; and Line of Sight of this character makes a Basic roll, they must re-roll a single Ace in that roll.</description>
+        </rule>
+      </rules>
+    </entryLink>
     <entryLink import="true" name="Encrusted Squire" hidden="false" id="a8b3-c83e-2a6d-29f6" targetId="0dff-fbe2-b091-c806" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
