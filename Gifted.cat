@@ -3146,5 +3146,6 @@ Place the Duke anywhere out of base contact within 12&quot;. This does not cau
     <entryLink import="true" name="La Signora" hidden="false" id="977f-fd41-953f-44d4" targetId="fa97-08e8-7e67-7291" type="selectionEntry"/>
     <entryLink import="true" name="The Duke" hidden="false" id="4859-d0a2-9551-878b" targetId="1681-e603-f2ce-780a" type="selectionEntry"/>
     <entryLink import="true" name="The Duke" hidden="false" id="d093-c5af-52e0-5033" targetId="faca-988a-10ae-a4c6" type="selectionEntry"/>
+    <entryLink import="true" name="Senshi the Undying" hidden="false" id="0829-cc61-78bf-fccc" type="selectionEntry" targetId="9320-7f06-b442-da71"/>
   </entryLinks>
 </catalogue>

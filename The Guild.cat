@@ -1936,7 +1936,7 @@ Up to 2 friendly characters within 3&quot; may make an immediate Run/Climb act
             </rule>
           </rules>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Ebenezer Chummage" hidden="false" id="4547-cdd4-3400-33bb" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Ebenezer Chummage" hidden="false" id="4758-196a-531c-647c" sortIndex="2">
           <categoryLinks>
             <categoryLink name="Faction (The Guild)" hidden="false" id="0b2e-ba03-7c65-8d4c" targetId="3357-90ff-5d46-5cea" primary="false"/>
             <categoryLink name="Hero" hidden="false" id="231c-8d5a-00df-a195" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
@@ -1963,9 +1963,7 @@ Up to 2 friendly characters within 3&quot; may make an immediate Run/Climb act
                 <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
                 <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
                 <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
-                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brawler (2), Expert Grappler (2), Fast Swimmer (1), Hunter
-
-</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brawler (2), Expert Grappler (2), Fast Swimmer (1), Hunter</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1983,8 +1981,9 @@ All friendly characters with the Trade Keyword within 6&quot; gain Brave and E
             </rule>
           </rules>
           <costs>
-            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="17"/>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="18"/>
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+            <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
           </costs>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Thrown Harpoon" hidden="false" id="fc31-82d5-7108-3bbe">
@@ -3021,6 +3020,7 @@ Move the character to that point as if moving down a zipline.</description>
     <entryLink import="true" name="Bloodletter" hidden="false" id="5c28-2ec2-390f-c6e2" targetId="1aa4-2198-c219-8e84" type="selectionEntry"/>
     <entryLink import="true" name="Death Duelist" hidden="false" id="d338-6154-c4a3-f6b6" targetId="7e6b-755d-dbd9-b2c1" type="selectionEntry"/>
     <entryLink import="true" name="Indebted" hidden="false" id="bcb8-517c-249e-e188" targetId="338c-0578-f804-aef1" type="selectionEntry"/>
+    <entryLink import="true" name="Ebenezer Chummage" hidden="false" id="bfa4-0a47-95d5-5abb" type="selectionEntry" targetId="4758-196a-531c-647c"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Fisherman Weapon Choice" id="e1b3-0e17-3d5a-6f7b" hidden="false">
