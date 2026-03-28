@@ -2489,6 +2489,94 @@ Each character can only be brought back in this way once.</description>
             </rule>
           </rules>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Senshi the Undying" hidden="false" id="9320-7f06-b442-da71">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="20"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+            <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="82a8-adaa-b598-dfb4" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Unique" hidden="false" id="a5f3-dfea-2575-b22b" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Faction (Gifted)" hidden="false" id="4e86-c32d-bf2f-cda4" targetId="9702-99aa-fc73-85a4" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="465d-a168-892c-74b7" includeChildSelections="true"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Daishō" hidden="false" id="4f3f-b632-359e-6b33">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0304-f3a1-1938-36b0" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1656-24c7-f61c-be2d" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Daishō" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="55cc-86be-bb58-b4e9">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Senshi the Undying" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="3067-8a6a-4e1a-95f9">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">14</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Senshi the Undying" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="64ba-82df-0ae2-72de">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Acrobatic (2), Expert Offence (2), First Strike (1), Parry (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Undying Deathseeker" id="d0df-c66a-d19e-b2c0" hidden="false">
+              <description>When this character is killed, do not remove it from the board, it remains in play but cannot be targeted or
+chosen. At the start of the next round, make a Basic MIND Roll (Will Points may be used as normal). If successful, this character comes back to life with 7 Life Points.
+If the MIND Roll is unsuccessful, the character is completely dead and removed from the board.</description>
+            </rule>
+            <rule name="Ronin" id="c31f-f245-d855-8ef2" hidden="false">
+              <description>This character cannot receive ORDER or COUNTER Commands.</description>
+            </rule>
+            <rule name="Hōfuku Kōgeki" id="494b-2914-5076-5081" hidden="false">
+              <description>If this character&apos;s Undying Deathseeker roll is a critical, it may make either a 0AP Attack
+of Opportunity against an enemy character in base contact, or it may make a 0AP Run/Climb action, but must end this action in base contact with an enemy character.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Leader" hidden="false" id="a590-b33a-1e39-ece6">
