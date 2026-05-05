@@ -1844,9 +1844,7 @@ Remove 1 friendly character with the Construct keyword from the board. Place i
                 <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">5</characteristic>
                 <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">0</characteristic>
                 <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
-                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Acrobatic (2), Brave, Brawler (1), Bulky, Companion (Invoker), Frenzied, Mindless, Primitive
-
-</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Acrobatic (2), Brave, Brawler (1), Bulky, Companion (Invoker), Frenzied, Mindless, Primitive</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1916,6 +1914,69 @@ Remove 1 friendly character with the Construct keyword from the board. Place i
             <rule name="Atonement from Above" id="c89e-8794-090e-e135" hidden="false">
               <description>Before applying Stoneskin, If this character would take damage from falling, all other characters (friendly and enemy) within 3&quot; also take that much damage.
 When this character charges from above, it may be placed on top of other characters. Any characters underneath it are moved by their controlling player so that they are in base contact with this character.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Eater of Sin" hidden="false" id="5444-325a-4fdb-74cd">
+          <costs>
+            <cost name=" Ducats" typeId="b5b3-aa8b-4d9c-5673" value="16"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+            <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="b8c1-0bb0-ed53-bdfa" id="cce6-9a98-a54d-4917" primary="false" name="Faction (The Vatican)"/>
+            <categoryLink targetId="79d4-9b8b-7f29-cba5" id="7e30-0433-0b08-d9dc" primary="false" name="Hero"/>
+            <categoryLink targetId="d3e1-4616-c557-d958" id="31bd-cb0b-68db-bc37" primary="false" name="Unique"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Eater of Sin" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="104a-dd47-3a60-156a">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">13</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">2</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Eater of Sin" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="380e-889e-c2e8-aac4">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave, Universal Shielding (3)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Compelled Confession" hidden="false" id="1061-fd71-fdc2-96c2">
+              <profiles>
+                <profile name="Compelled Confession" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="9825-ef8c-fa82-b4ec">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-2</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7791-f869-6531-5722"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0803-f8dd-195f-f463"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <rules>
+            <rule name="Let Your Sins Be Absolved" id="b245-6928-13c4-6446" hidden="false">
+              <description>When making a Combat action with Compelled Confession, if it causes at least 1 Damage, the target loses 1 Will Point.</description>
+            </rule>
+            <rule name="Communion for the Sinless" id="2c32-1639-2dc8-1a0e" hidden="false">
+              <description>When this character kills an enemy character that has 0 Will Points remaining (after absolving its sins), it replenishes 2 Will Points.</description>
+            </rule>
+            <rule name="He Searches Your Soul Alone" id="7c1d-350d-cbfe-f5bf" hidden="false">
+              <description>Enemy characters that can draw line of sight to this character cannot use the MIND value of other characters.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -3083,6 +3144,7 @@ This character may use the ORDER command on friendly characters with the Const
     <entryLink import="true" name="Divine Seraphim" hidden="false" id="69d1-153e-5672-3122" targetId="a313-86e9-d602-9c5d" type="selectionEntry"/>
     <entryLink import="true" name="Cherubim" hidden="false" id="c034-66b2-e2b3-99df" targetId="350b-76f6-6a13-261a" type="selectionEntry"/>
     <entryLink import="true" name="Gethsemane" hidden="false" id="2b3a-df47-494d-6e03" targetId="9b28-36dc-3edf-62d5" type="selectionEntry"/>
+    <entryLink import="true" name="Eater of Sin" hidden="false" id="0e4f-2418-1097-0933" targetId="5444-325a-4fdb-74cd" type="selectionEntry"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Gifted" id="f2c5-d9f8-8f11-6d73" targetId="9a88-2a78-d055-70b8" importRootEntries="true"/>

@@ -1161,28 +1161,30 @@ Make a Basic MIND Roll:
             </rule>
           </rules>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Unleashed Madman" hidden="false" id="8f2f-e1ed-78dd-86d7">
+        <selectionEntry type="model" import="true" name="Patient 42" hidden="false" id="f91f-7895-d5c8-8b79">
           <categoryLinks>
             <categoryLink name="Hero" hidden="false" id="57a2-313f-26c9-b01a" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
             <categoryLink name="Faction (The Doctors)" hidden="false" id="9204-db1e-8f13-24b3" targetId="e482-2d30-1001-a6a1" primary="false"/>
+            <categoryLink targetId="d3e1-4616-c557-d958" id="977f-ecaf-de61-a088" primary="false" name="Unique"/>
           </categoryLinks>
           <costs>
-            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="15"/>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="14"/>
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+            <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
           </costs>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Grasping Tentacles" hidden="false" id="4c3f-e733-ad7d-dcf4">
+            <selectionEntry type="upgrade" import="true" name="Bladed Limbs" hidden="false" id="4c3f-e733-ad7d-dcf4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd61-da3b-a59a-9f31-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd61-da3b-a59a-9f31-max" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="Grasping Tentacles" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="fae8-9537-59e7-0390">
+                <profile name="Bladed Limbs" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="fae8-9537-59e7-0390">
                   <characteristics>
-                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
                     <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
                     <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
-                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
                     <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
                   </characteristics>
                 </profile>
@@ -1193,8 +1195,8 @@ Make a Basic MIND Roll:
             <profile name="Unleashed Madman" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="2c1f-86d3-b6ad-d024">
               <characteristics>
                 <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
-                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
-                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">14</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
                 <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
                 <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
               </characteristics>
@@ -1205,14 +1207,19 @@ Make a Basic MIND Roll:
                 <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
                 <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
                 <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
-                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
-                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brawler (1), Expert Grappler (3), Mindless</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Berserk, Engage, Mindless, Primitive</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Nexus" id="0adb-3364-a020-9d25" hidden="false" type="rule" targetId="e0d5-20e1-7a0a-6447"/>
           </infoLinks>
+          <rules>
+            <rule name="Madness Infused Muscle" id="6e93-f876-d3d0-e222" hidden="false">
+              <description>If this character rolls no Aces for its Primitive rolls, instead of receiving a Stunned counter, it makes a Run/ Climb action towards the nearest other character (friendly or enemy) and then makes a Combat action against it. This character then replenishes 1 Will Point and activates as normal (with full AP).</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Unleashed Madman" hidden="false" id="2e0c-154d-5931-e9b6">
           <categoryLinks>
@@ -1484,6 +1491,59 @@ Make a Basic MIND Roll:
               <description>*1WP* Change the result of the Destiny Dice in any roll (for you or your opponent) for a character within 6&quot; and line of sight to either a 1 or a 10.</description>
             </rule>
           </rules>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Unleashed Madman" hidden="false" id="7ad6-f7f9-03c7-1bf6">
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="3727-72d6-a372-0192" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (The Doctors)" hidden="false" id="7dc6-18fc-556e-bcb5" targetId="e482-2d30-1001-a6a1" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="15"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Grasping Tentacles" hidden="false" id="2ed2-bf39-96e7-5f96">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb98-0977-58a6-718f" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c09f-0f47-dfb0-173f" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Grasping Tentacles" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="b98a-06be-f2fd-8515">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Unleashed Madman" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="63db-5141-6a9a-6691">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Unleashed Madman" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="40f0-dc6f-6afa-fdaa">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">5</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">1</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brawler (1), Expert Grappler (3), Mindless</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Nexus" id="e013-3986-74e2-0c18" hidden="false" type="rule" targetId="e0d5-20e1-7a0a-6447"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -2735,6 +2795,7 @@ Pick a character within 3&quot; and make a basic MIND roll. That character rep
     <entryLink import="true" name="Ghoul" hidden="false" id="82a6-7de1-cdd8-800d" targetId="19c2-c928-6569-191f" type="selectionEntry"/>
     <entryLink import="true" name="Shackled Feaster" hidden="false" id="3b3b-44be-e9bb-ecd8" targetId="9a67-1470-c01a-7290" type="selectionEntry"/>
     <entryLink import="true" name="Doctor of Divine Probabilities" hidden="false" id="db35-d3b0-79d7-17a6" targetId="b041-2965-918b-f181" type="selectionEntry"/>
+    <entryLink import="true" name="Patient 42" hidden="false" id="8f2f-e1ed-78dd-86d7" type="selectionEntry" targetId="f91f-7895-d5c8-8b79"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Gifted" id="480e-20b6-9db6-d96f" targetId="9a88-2a78-d055-70b8" importRootEntries="true"/>
