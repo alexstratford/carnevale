@@ -1428,6 +1428,77 @@ Until the end of the round, any enemy characters within 6&quot; of this charac
             <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="The Drowned Nun" hidden="false" id="1dff-b31f-0575-01c2">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="18"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="4501-6765-c700-ee7e" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
+          </entryLinks>
+          <profiles>
+            <profile name="The Drowned Nun" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="418e-3d2f-ee5a-d8e7">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">10</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">2</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="The Drowned Nun" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="da5a-268d-814b-2598">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f"> Fast Swimmer (1), Mage (2), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="228a-f579-a808-a931" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="db8e-ebc9-1e03-7d0f" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+            <categoryLink name="Discipline (Runes of Sovereignty)" hidden="false" id="defd-9f5b-e9bd-6e7d" targetId="162f-6e00-290f-b3be" primary="false"/>
+            <categoryLink targetId="0edf-0a9c-7e37-e3c3" id="6078-3a42-11a1-7608" primary="false" name="Discipline (Fateweaving)"/>
+            <categoryLink targetId="d3e1-4616-c557-d958" id="9964-da57-6b01-5ed4" primary="false" name="Unique"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+              <conditions>
+                <condition type="lessThan" value="-2" field="ef4a-6847-91c7-b1f8" scope="self" childId="entry" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Truth of Dagon" id="8aad-e7ca-4c4b-2a2c" hidden="false">
+              <description>Whenever an enemy character in line of sight loses life due to Drowning or Dagonite Baptism, it must roll a Basic MIND roll. If it rolls no Aces, it receives a Stunned counter.</description>
+            </rule>
+            <rule name="Fanaticism For Dagon" id="46ca-6e40-1907-7f06" hidden="false">
+              <description>*PULSE Command Ability*
+Friendly characters in line of sight within 3&quot; lose 1 Life Point and gain Frenzied until the end of the round.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Staff" hidden="false" id="2eb6-4b65-3bc7-55e6">
+              <profiles>
+                <profile name="Staff" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="22bf-825f-2230-7fd5">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">1&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d6e7-cf55-ca60-7376"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c5a-22db-ada4-a8f3"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Henchman" hidden="false" id="8225-99eb-ed6f-2ab4">
@@ -3187,6 +3258,7 @@ After you complete this character&apos;s activation, place each of its remainin
       </rules>
     </entryLink>
     <entryLink import="true" name="Encrusted Squire" hidden="false" id="a8b3-c83e-2a6d-29f6" targetId="0dff-fbe2-b091-c806" type="selectionEntry"/>
+    <entryLink import="true" name="The Drowned Nun" hidden="false" id="babb-e950-d7af-026d" type="selectionEntry" targetId="1dff-b31f-0575-01c2"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Gifted" id="5b2b-c198-5d98-b3e7" targetId="9a88-2a78-d055-70b8" importRootEntries="true"/>

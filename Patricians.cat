@@ -1072,6 +1072,90 @@ Pick a friendly character within 6” and line of sight. Until the end of that
             </rule>
           </rules>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Don Gregorio Morisini" hidden="false" id="1730-6c3a-4491-1ceb">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="18"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+            <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="1e86-8652-7487-69a1" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Unique" hidden="false" id="c4e2-d5ae-041e-e4ee" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Faction (Patricians)" hidden="false" id="6483-5bc7-936e-17f6" targetId="bb57-55b2-0ab2-6ce9" primary="false"/>
+            <categoryLink targetId="b25f-6a71-be31-bc25" id="0510-8064-882d-2c8e" primary="false" name="Councillor"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6f8b-2a46-f872-45db" includeChildSelections="true"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Cane Sword" hidden="false" id="4aa6-6bce-b395-7e31">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b54c-03b6-0459-580d" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa43-7e0f-0e59-f27b" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Cane Sword" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="5085-0f1a-feef-c968">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Cornelius&apos; Bite" hidden="false" id="1271-52c8-38c3-527b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f8d8-92be-7c4d-853f" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15dc-7b12-2a07-3be4" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Cornelius&apos; Bite" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="39a9-da37-ea28-0725">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Don Gregorio Morisini" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="b955-a9b7-0756-aac3">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Don Gregorio Morisini" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="8d17-a323-9d27-6abf">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Pickpocket, Slippery, Parry (1), Universal Shielding (3)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Collector of Treasures" id="6775-3184-dad7-58dc" hidden="false">
+              <description>When building your gang, if it contains this character, you may purchase a second Artifact. This character may also have a purchased Artifact as if it did not have the Unique keyword. If this character is killed while carrying an Artifact, place a marker (use a 30mm base) for that Artifact in base contact with this character, then remove this character from the board. Any character that ends an action in base contact with one of these markers may remove that marker to claim and carry that Artifact.</description>
+            </rule>
+            <rule name="Little Gremlin Cornelius" id="3f3d-c63f-80dc-8dd3" hidden="false">
+              <description>This character automatically carries this Artifact at the start of the game (not counting towards Artifact limits). A character with this Artifact gains the Cornelius&apos; Bite weapon and Pickpocket special rule</description>
+            </rule>
+            <rule name="Rings of Puissance" id="8fb4-8113-fc87-3a2f" hidden="false">
+              <description>This character automatically carries this Artifact at the start of the game (not counting towards Artifact limits). A character with this Artifact gains Slippery and Universal Shielding (3).</description>
+            </rule>
+          </rules>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Henchman" hidden="false" id="1e37-2291-12b4-ba08">
@@ -2697,6 +2781,7 @@ This character gains First Strike (2) until the end of the round, however it red
     <entryLink import="true" name="Mounted Venetian Noble" hidden="false" id="7282-b4de-7033-3fe2" targetId="31c6-b82e-ca84-543b" type="selectionEntry"/>
     <entryLink import="true" name="Hunting Hound" hidden="false" id="64dd-796d-c313-4e75" targetId="47e8-7d75-315c-e129" type="selectionEntry"/>
     <entryLink import="true" name="Hired Muscle" hidden="false" id="b003-cffe-cc09-49ee" targetId="064d-042f-40d8-fa9f" type="selectionEntry"/>
+    <entryLink import="true" name="Don Gregorio Morisini" hidden="false" id="1f51-976a-3d02-c5fa" type="selectionEntry" targetId="1730-6c3a-4491-1ceb"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Ottoman Janissary Weapon Selection" id="0775-831b-1acf-cbeb" hidden="false" collective="true">

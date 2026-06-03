@@ -3144,13 +3144,7 @@ This character may use the ORDER command on friendly characters with the Const
     <entryLink import="true" name="Divine Seraphim" hidden="false" id="69d1-153e-5672-3122" targetId="a313-86e9-d602-9c5d" type="selectionEntry"/>
     <entryLink import="true" name="Cherubim" hidden="false" id="c034-66b2-e2b3-99df" targetId="350b-76f6-6a13-261a" type="selectionEntry"/>
     <entryLink import="true" name="Gethsemane" hidden="false" id="2b3a-df47-494d-6e03" targetId="9b28-36dc-3edf-62d5" type="selectionEntry"/>
-    <entryLink import="true" name="Eater of Sin" hidden="false" id="0e4f-2418-1097-0933" targetId="5444-325a-4fdb-74cd" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink targetId="79d4-9b8b-7f29-cba5" id="87eb-54b3-ef64-7bad" primary="false" name="Hero"/>
-        <categoryLink targetId="b8c1-0bb0-ed53-bdfa" id="3114-3b60-0878-40ec" primary="false" name="Faction (The Vatican)"/>
-        <categoryLink targetId="d3e1-4616-c557-d958" id="22e7-a4df-be2b-907f" primary="false" name="Unique"/>
-      </categoryLinks>
-    </entryLink>
+    <entryLink import="true" name="Eater of Sin" hidden="false" id="64a4-6a7a-902c-52bc" type="selectionEntry" targetId="5444-325a-4fdb-74cd"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Gifted" id="f2c5-d9f8-8f11-6d73" targetId="9a88-2a78-d055-70b8" importRootEntries="true"/>
