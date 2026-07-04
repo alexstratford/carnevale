@@ -2579,6 +2579,115 @@ of Opportunity against an enemy character in base contact, or it may make a 0A
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Serenade of Sorrows" hidden="false" id="c24c-4ca9-95c9-b000">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="20"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="2"/>
+            <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="82a8-adaa-b598-dfb4" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Unique" hidden="false" id="a5f3-dfea-2575-b22b" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Faction (Gifted)" hidden="false" id="4e86-c32d-bf2f-cda4" targetId="9702-99aa-fc73-85a4" primary="false"/>
+            <categoryLink name="Discipline (Runes of Sovereignty)" hidden="false" id="c09c-43f4-2cb2-b326" targetId="162f-6e00-290f-b3be" primary="false"/>
+            <categoryLink name="Discipline (Blood Rites)" hidden="false" id="c046-7466-a7ed-43b9" targetId="1c8e-4a5e-59b3-37b6" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="4552-6d63-d00b-6c3a" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+              <conditions>
+                <condition type="lessThan" value="-2" field="ef4a-6847-91c7-b1f8" scope="self" childId="entry" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type=
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="465d-a168-892c-74b7" includeChildSelections="true"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Siren Song" hidden="false" id="4f3f-b632-359e-6b33">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0304-f3a1-1938-36b0" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1656-24c7-f61c-be2d" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Siren Song" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="55cc-86be-bb58-b4e9">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">3&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">--</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">--</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Serenade of Sorrows" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="c24c-4ca9-95c9-b000">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">-</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Serenade of Sorrows" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="d5d1-4de0-a869-5b97">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Ethereal, Mage (2), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Longful Serenade" id="dcf2-4897-aa3d-ea9e" hidden="false">
+              <description>This character can make one 0 AP Drown action in each of its turns.</description>
+            </rule>
+            <rule name="Call of the Canals" id="b1c2-46ad-9992-1636" hidden="false">
+              <description>**-1AP**
+                Pick one enemy character in line of sight within 12" and make an Opposed MIND Roll. For every Ace, move that character 2" horizontally directly towards either this character or the nearest Water (to either character). This movement does not count as charging or disengaging, and cannot cause Attacks of Opportunity.</description>
+            </rule>
+            <rule name="Beguiling Ballad" id="8faa-4b4b-96d3-1e87" hidden="false">
+              <description>Enemy characters that start a Run/
+Climb or Jump action within 3" of this
+character must pass a Basic MIND
+roll to move them further than 3" away
+from this character. When an enemy
+character disengages from this character,
+the disengaging character uses its MIND
+instead of DEXTERITY for its opposed
+roll. Mindless characters are unaffected by
+this rule.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atMost" value="0" field="selections" scope="roster" childId="7533-c8df-46cf-cac7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="primary-catalogue" childId="9a88-2a78-d055-70b8" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Leader" hidden="false" id="a590-b33a-1e39-ece6">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Il Capitano" hidden="false" id="fcb3-c368-ce22-f675">
