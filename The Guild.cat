@@ -63,7 +63,7 @@ One friendly character in line of sight with the Trade keyword replenishes 2 W
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Harbourmaster" hidden="false" id="4191-0668-b474-c27d">
+        <selectionEntry type="model" import="true" name="Mira O&apos;Shea" hidden="false" id="4191-0668-b474-c27d">
           <costs>
             <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="21"/>
             <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
@@ -71,45 +71,54 @@ One friendly character in line of sight with the Trade keyword replenishes 2 W
           <categoryLinks>
             <categoryLink name="Leader" hidden="false" id="c80f-30e7-a573-aae8" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
             <categoryLink name="Faction (The Guild)" hidden="false" id="1630-a71c-bef5-9b67" targetId="3357-90ff-5d46-5cea" primary="false"/>
+            <categoryLink targetId="d3e1-4616-c557-d958" id="b73d-a4df-156b-e37a" primary="false" name="Unique"/>
           </categoryLinks>
           <profiles>
-            <profile name="Harbourmaster" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="a897-6916-651d-8f50">
+            <profile name="Mira O&apos;Shea" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="a897-6916-651d-8f50">
               <characteristics>
                 <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
-                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">14</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">12</characteristic>
                 <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
                 <characteristic name="Command" typeId="df00-2e98-5a44-876e">4</characteristic>
                 <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
               </characteristics>
             </profile>
-            <profile name="Harbourmaster" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="b546-0ca5-547b-ae49">
+            <profile name="Mira O&apos;Shea" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="b546-0ca5-547b-ae49">
               <characteristics>
                 <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
-                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
                 <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
-                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
                 <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
-                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fast Swimmer (2), Parry (2)</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Boat Crew, Expert Offence (2), First Strike (1)</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <rules>
-            <rule name="Born to Swim" id="e203-e622-4204-29ea" hidden="false">
-              <description>Other friendly characters gain Fast Swimmer (2) while this character is on the board.</description>
+            <rule name="A Bounty Worth Taking" id="e203-e622-4204-29ea" hidden="false">
+              <description>Whenever a friendly character in line of sight kills an enemy character, add 1 coin to your coin pile. At the start of any friendly character&apos;s turn, you may spend any number of coins from your pile to give that character the following benefits for that character&apos;s turn, at the cost of 1 coin per benefit (each may only be chosen once per turn):
+• Gain Aerial Attack
+• Gain Acrobatic (2)
+• Gain Fast Swimmer (2)
+• Gain First Strike (1)
+• Replenish 1 Will Point or 1 Command Point</description>
             </rule>
-            <rule name="Toughen Up" id="8369-df4a-74cc-916c" hidden="false">
-              <description>*AURA Command Ability*
-Until the end of the round, any friendly characters within 6” gain Expert Protection (3).</description>
+            <rule name="A Stately Ransom" id="8369-df4a-74cc-916c" hidden="false">
+              <description>*PULSE Command Ability*
+Until the end of the round, enemy characters grant 1 coin when killed out of line of sight, or 2 coins when killed in line of sight (instead of 1).</description>
+            </rule>
+            <rule name="Pirate&apos;s Retinue" id="7587-e7a2-a71f-52d0" hidden="false">
+              <description>All friendly characters gain Companion (Mira O&apos;Shea) but lose all of the following keywords: Trade, End of Days, House of Virtue.</description>
             </rule>
           </rules>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Clockwork Pistol" hidden="false" id="1401-a2ba-4814-28b8" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Duelling Pistol" hidden="false" id="1401-a2ba-4814-28b8" sortIndex="1">
               <profiles>
                 <profile name="Clockwork Pistol" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="64eb-e227-fc82-0596">
                   <characteristics>
-                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
-                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
-                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">8&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
                     <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
                     <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Reload (2)</characteristic>
                   </characteristics>
@@ -120,9 +129,9 @@ Until the end of the round, any friendly characters within 6” gain Expert Pr
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3ac-a993-6003-f735-max" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Sailor&apos;s Knife" hidden="false" id="29ba-a8e3-941c-6220" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Naval Cutlass" hidden="false" id="29ba-a8e3-941c-6220" sortIndex="2">
               <profiles>
-                <profile name="Sailor&apos;s Knife" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="e7a5-3646-46a7-045d">
+                <profile name="Naval Cutlass" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="e7a5-3646-46a7-045d">
                   <characteristics>
                     <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
                     <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
@@ -548,6 +557,82 @@ One friendly character within 6&quot; gains Pickpocket until the end of the ga
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Harbourmaster" hidden="false" id="03da-30f7-3341-133c">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="21"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Leader" hidden="false" id="2c2b-cfcd-cc91-66bb" targetId="955d-3f8e-a1e3-88b9" primary="true"/>
+            <categoryLink name="Faction (The Guild)" hidden="false" id="fd1f-21cd-4d06-c9ac" targetId="3357-90ff-5d46-5cea" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Harbourmaster" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="a894-beb3-17e0-fc7c">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">14</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">4</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Harbourmaster" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="1c86-f544-8cb9-738c">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fast Swimmer (2), Parry (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Born to Swim" id="5bd4-945f-a9ee-daee" hidden="false">
+              <description>Other friendly characters gain Fast Swimmer (2) while this character is on the board.</description>
+            </rule>
+            <rule name="Toughen Up" id="9d47-bd4a-d1cf-575b" hidden="false">
+              <description>*AURA Command Ability*
+Until the end of the round, any friendly characters within 6” gain Expert Protection (3).</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Clockwork Pistol" hidden="false" id="7949-c1fc-cd1a-b118" sortIndex="1">
+              <profiles>
+                <profile name="Clockwork Pistol" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="d7bf-6bca-dd35-95ae">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">6&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+1</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Black Powder, Reload (2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="11fe-dd73-1cde-25cb" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6769-dd1c-2eeb-37d4" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sailor&apos;s Knife" hidden="false" id="bec7-1ab4-2015-00f0" sortIndex="2">
+              <profiles>
+                <profile name="Sailor&apos;s Knife" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="5f36-2e18-1b15-9867">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-1</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f14-1da8-d714-f1a5" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10e2-8367-7c85-fbda" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -3021,6 +3106,7 @@ Move the character to that point as if moving down a zipline.</description>
     <entryLink import="true" name="Death Duelist" hidden="false" id="d338-6154-c4a3-f6b6" targetId="7e6b-755d-dbd9-b2c1" type="selectionEntry"/>
     <entryLink import="true" name="Indebted" hidden="false" id="bcb8-517c-249e-e188" targetId="338c-0578-f804-aef1" type="selectionEntry"/>
     <entryLink import="true" name="Ebenezer Chummage" hidden="false" id="bfa4-0a47-95d5-5abb" type="selectionEntry" targetId="4758-196a-531c-647c"/>
+    <entryLink import="true" name="Mira O&apos;Shea" hidden="false" id="3c9a-bd2c-fe42-c03e" type="selectionEntry" targetId="4191-0668-b474-c27d"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Fisherman Weapon Choice" id="e1b3-0e17-3d5a-6f7b" hidden="false">

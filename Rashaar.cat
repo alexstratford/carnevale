@@ -1452,7 +1452,7 @@ Until the end of the round, any enemy characters within 6&quot; of this charac
                 <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">2</characteristic>
                 <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">3</characteristic>
                 <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">4</characteristic>
-                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f"> Fast Swimmer (1), Mage (2), Water Creature</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Fast Swimmer (1), Mage (2), Water Creature</characteristic>
               </characteristics>
             </profile>
           </profiles>
