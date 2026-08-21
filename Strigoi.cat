@@ -1904,156 +1904,153 @@ When a friendly Mage attempts to Dispel a spell cast by a Judged character, co
             <entryLink import="true" name="Discipline Choice" hidden="false" id="d9d7-760e-4568-620b" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Yune Lobravym" hidden="false" id="fda4-6526-0892-4b3c">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Yune Lobravym" id="e9a6-bf84-8671-5705" hidden="false">
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Yune Lobravym" id="912d-9558-3076-fa8b" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Yune Lobravym" hidden="false" id="a499-25e2-bf81-9dbd">
+              <categoryLinks>
+                <categoryLink name="Hero" hidden="false" id="da6d-1e18-16a5-06c6" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+                <categoryLink name="Faction (Strigoi)" hidden="false" id="e46b-d57f-b485-f3d4" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+                <categoryLink name="Discipline (Wild Magic)" hidden="false" id="3b6e-21ef-ea4b-61a1" targetId="6e89-8a6f-6b8d-6133" primary="false"/>
+                <categoryLink name="Unique" hidden="false" id="8f77-c961-8111-e81c" targetId="d3e1-4616-c557-d958" primary="false"/>
+                <categoryLink name="Discipline (Blood Rites)" hidden="false" id="1216-9870-ac50-8b3d" targetId="1c8e-4a5e-59b3-37b6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+                <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+                <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Discipline Choice" hidden="false" id="6b3e-b4fd-7c2e-b305" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
+              </entryLinks>
+              <profiles>
+                <profile name="Yune Lobravym" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="6fe1-f35a-4c6d-e23e">
+                  <characteristics>
+                    <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                    <characteristic name="Life" typeId="31ac-58c2-51eb-d503">19</characteristic>
+                    <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                    <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                    <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Yune Lobravym" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="5065-fded-65d2-3e1b">
+                  <characteristics>
+                    <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                    <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                    <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                    <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                    <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                    <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Offence (2), First Strike (1), Mage (2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Moonliege" id="757f-53cc-f688-71ba" hidden="false">
+                  <description>During deployment let youropponent know when the moon will be brightest. Choose either the first 3 rounds, or the remaining rounds. When the moon is brightest, every time a friendly character kills an enemy character when either are within line of sight, this character replenishes 1 Will Point.</description>
+                </rule>
+                <rule name="Runic Blood" id="2a21-d3a6-deb8-800c" hidden="false">
+                  <description>his character may use the Cast Spell action for its Attacks of Opportunity.</description>
+                </rule>
+                <rule name="Violent Transformation" id="81d4-4894-f6b7-61ba" hidden="false">
+                  <description>At the start of this character&apos;s turn, you may choose to either stay as Yune or transform into The Beast Within. Place The Beast Within as close to Yune&apos;s position as possible. The two characters share their Life Points, Will Points and Command Points (including any that have been lost), but The Beast Within cannot use Will Points or Command Points.</description>
+                </rule>
+              </rules>
               <selectionEntries>
-                <selectionEntry type="model" import="true" name="Yune Lobravym" hidden="false" id="956f-30be-dce7-44b3">
-                  <categoryLinks>
-                    <categoryLink name="Hero" hidden="false" id="e0a0-7c04-ee98-b4a2" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
-                    <categoryLink name="Faction (Strigoi)" hidden="false" id="3409-3556-8ee4-3c20" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
-                    <categoryLink name="Discipline (Wild Magic)" hidden="false" id="cf2f-1244-eb5e-ddb3" targetId="6e89-8a6f-6b8d-6133" primary="false"/>
-                    <categoryLink name="Unique" hidden="false" id="a8ff-74ac-5a72-3edd" targetId="d3e1-4616-c557-d958" primary="false"/>
-                    <categoryLink name="Discipline (Blood Rites)" hidden="false" id="deeb-d626-d51c-2221" targetId="1c8e-4a5e-59b3-37b6" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
-                    <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
-                    <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
-                  </costs>
-                  <entryLinks>
-                    <entryLink import="true" name="Discipline Choice" hidden="false" id="ca9e-3cfd-ee0b-241e" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
-                  </entryLinks>
+                <selectionEntry type="upgrade" import="true" name="Kriegsmesser" hidden="false" id="bf7e-c6d4-22af-e810">
                   <profiles>
-                    <profile name="Yune Lobravym" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="06fd-afef-5279-f399">
+                    <profile name="Kriegsmesser" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="888c-ce55-9f95-72cd">
                       <characteristics>
-                        <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
-                        <characteristic name="Life" typeId="31ac-58c2-51eb-d503">19</characteristic>
-                        <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
-                        <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
-                        <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
-                      </characteristics>
-                    </profile>
-                    <profile name="Yune Lobravym" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="28cd-4cec-2b51-53d3">
-                      <characteristics>
-                        <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
-                        <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
-                        <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
-                        <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
-                        <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
-                        <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Offence (2), First Strike (1), Mage (2)</characteristic>
+                        <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                        <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                        <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                        <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>
+                        <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96"/>
                       </characteristics>
                     </profile>
                   </profiles>
-                  <rules>
-                    <rule name="Moonliege" id="e83f-889a-6a6d-3636" hidden="false">
-                      <description>During deployment let youropponent know when the moon will be brightest. Choose either the first 3 rounds, or the remaining rounds. When the moon is brightest, every time a friendly character kills an enemy character when either are within line of sight, this character replenishes 1 Will Point.</description>
-                    </rule>
-                    <rule name="Runic Blood" id="6827-d010-4db8-6ad2" hidden="false">
-                      <description>his character may use the Cast Spell action for its Attacks of Opportunity.</description>
-                    </rule>
-                    <rule name="Violent Transformation" id="2d5d-56fb-5bfe-6592" hidden="false">
-                      <description>At the start of this character&apos;s turn, you may choose to either stay as Yune or transform into The Beast Within. Place The Beast Within as close to Yune&apos;s position as possible. The two characters share their Life Points, Will Points and Command Points (including any that have been lost), but The Beast Within cannot use Will Points or Command Points.</description>
-                    </rule>
-                  </rules>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Kriegsmesser" hidden="false" id="0185-b6da-3c86-239c">
-                      <profiles>
-                        <profile name="Kriegsmesser" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="0c72-62be-8204-29df">
-                          <characteristics>
-                            <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
-                            <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
-                            <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
-                            <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>
-                            <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b20-59e1-7a8f-dcfb"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf55-91ba-f9be-5374"/>
-                      </constraints>
-                    </selectionEntry>
-                  </selectionEntries>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8526-6d00-dc7b-03fe"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6ff-c30c-7723-2385"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="model" import="true" name="The Beast Within" hidden="false" id="ede2-e331-114e-4cfe">
-                  <categoryLinks>
-                    <categoryLink name="Hero" hidden="false" id="dc6d-8181-3935-1fd6" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
-                    <categoryLink name="Faction (Strigoi)" hidden="false" id="689a-9dec-4fd0-8758" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
-                    <categoryLink name="Unique" hidden="false" id="c5df-99f5-e396-98e7" targetId="d3e1-4616-c557-d958" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
-                    <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
-                    <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
-                  </costs>
-                  <profiles>
-                    <profile name="The Beast Within" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="5fe8-e424-86b2-434e">
-                      <characteristics>
-                        <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
-                        <characteristic name="Life" typeId="31ac-58c2-51eb-d503">19</characteristic>
-                        <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
-                        <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
-                        <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
-                      </characteristics>
-                    </profile>
-                    <profile name="The Beast Within" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="06f6-c952-e044-fd98">
-                      <characteristics>
-                        <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">6</characteristic>
-                        <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
-                        <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
-                        <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
-                        <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
-                        <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave, Bulky Fear (-2)</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules>
-                    <rule name="Moonliege" id="e929-b581-a8cc-f458" hidden="false">
-                      <description>During deployment let youropponent know when the moon will be brightest. Choose either the first 3 rounds, or the remaining rounds. When the moon is brightest, every time a friendly character kills an enemy character when either are within line of sight, this character replenishes 1 Will Point.</description>
-                    </rule>
-                    <rule name="Violent Transformation" id="93b3-1a78-0fa0-72cf" hidden="false">
-                      <description>At the start of this character&apos;s turn, you may choose to either stay as Yune or transform into The Beast Within. Place The Beast Within as close to Yune&apos;s position as possible. The two characters share their Life Points, Will Points and Command Points (including any that have been lost), but The Beast Within cannot use Will Points or Command Points.</description>
-                    </rule>
-                  </rules>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Lupine Claws" hidden="false" id="0279-165a-b63f-6eea">
-                      <profiles>
-                        <profile name="Lupine Claws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="739a-f4e9-84ea-208d">
-                          <characteristics>
-                            <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">1&quot;</characteristic>
-                            <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
-                            <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+2</characteristic>
-                            <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
-                            <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b699-db9c-5a04-a945"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f613-10b3-2dce-8cad"/>
-                      </constraints>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad06-f820-5fda-b39a"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9ae-b774-ad24-3feb"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc24-eb81-c782-64e7"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f8a-c838-129c-3916"/>
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name=" Ducats" typeId="b5b3-aa8b-4d9c-5673" value="23"/>
-            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
-            <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f07-acbc-0a3a-3822"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb8a-d9f1-b091-6ed9"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="The Beast Within" hidden="false" id="ea85-3e4b-b265-cb17">
+              <categoryLinks>
+                <categoryLink name="Hero" hidden="false" id="188b-ed83-cac4-31bf" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+                <categoryLink name="Faction (Strigoi)" hidden="false" id="e6f3-01ff-f26d-5253" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+                <categoryLink name="Unique" hidden="false" id="89c9-82d5-3f49-9bb5" targetId="d3e1-4616-c557-d958" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+                <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+                <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="The Beast Within" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="58df-03ca-48a4-c114">
+                  <characteristics>
+                    <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                    <characteristic name="Life" typeId="31ac-58c2-51eb-d503">19</characteristic>
+                    <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                    <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                    <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="The Beast Within" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="7506-f0f4-424e-51c6">
+                  <characteristics>
+                    <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">6</characteristic>
+                    <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                    <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                    <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                    <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                    <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave, Bulky Fear (-2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Moonliege" id="1380-6e98-ee4c-2cfc" hidden="false">
+                  <description>During deployment let youropponent know when the moon will be brightest. Choose either the first 3 rounds, or the remaining rounds. When the moon is brightest, every time a friendly character kills an enemy character when either are within line of sight, this character replenishes 1 Will Point.</description>
+                </rule>
+                <rule name="Violent Transformation" id="b3cd-f586-57e6-2ee2" hidden="false">
+                  <description>At the start of this character&apos;s turn, you may choose to either stay as Yune or transform into The Beast Within. Place The Beast Within as close to Yune&apos;s position as possible. The two characters share their Life Points, Will Points and Command Points (including any that have been lost), but The Beast Within cannot use Will Points or Command Points.</description>
+                </rule>
+              </rules>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Lupine Claws" hidden="false" id="6db6-9099-1190-61fc">
+                  <profiles>
+                    <profile name="Lupine Claws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="170e-f9b4-e24b-03fd">
+                      <characteristics>
+                        <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">1&quot;</characteristic>
+                        <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                        <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+2</characteristic>
+                        <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                        <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bdca-eec3-f809-f3b6"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1a7-1839-6f6c-96b0"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e00a-25c2-a675-06ee"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8dd-90fe-cba3-265e"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="d9eb-7f38-0f3a-f89d" targetId="79d4-9b8b-7f29-cba5" primary="false"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="fde8-18b3-4450-d6a2" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+          </categoryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Henchman" hidden="false" id="fdcf-6d75-cd47-05a7">
       <selectionEntries>
@@ -2743,6 +2740,157 @@ This may only be done if the Thrall has at least 4 Life Points remaining, and 
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Yune Lobravym" hidden="false" id="fda4-6526-0892-4b3c">
+      <costs>
+        <cost name=" Ducats" typeId="b5b3-aa8b-4d9c-5673" value="23"/>
+        <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+        <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Hero" hidden="false" id="7617-b9e4-acde-0daa" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Yune Lobravym" hidden="false" id="c05a-3f29-1f30-ed15">
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="948b-e3f5-2dcb-6852" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="cb0e-80c0-f8ad-99f6" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+            <categoryLink name="Discipline (Wild Magic)" hidden="false" id="0e58-3234-5653-498c" targetId="6e89-8a6f-6b8d-6133" primary="false"/>
+            <categoryLink name="Unique" hidden="false" id="3d5e-0658-218f-8bd9" targetId="d3e1-4616-c557-d958" primary="false"/>
+            <categoryLink name="Discipline (Blood Rites)" hidden="false" id="acd9-8f81-fe97-db33" targetId="1c8e-4a5e-59b3-37b6" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+            <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="e1f0-253d-7d98-176c" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Yune Lobravym" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="5330-b78c-1a89-59ea">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">19</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">30mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Yune Lobravym" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="5036-4522-a5ec-485d">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">5</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">4</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">3</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Expert Offence (2), First Strike (1), Mage (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Moonliege" id="5dff-fce1-e612-1763" hidden="false">
+              <description>During deployment let youropponent know when the moon will be brightest. Choose either the first 3 rounds, or the remaining rounds. When the moon is brightest, every time a friendly character kills an enemy character when either are within line of sight, this character replenishes 1 Will Point.</description>
+            </rule>
+            <rule name="Runic Blood" id="3d52-3045-59bd-f05d" hidden="false">
+              <description>his character may use the Cast Spell action for its Attacks of Opportunity.</description>
+            </rule>
+            <rule name="Violent Transformation" id="2abe-d363-696b-94c4" hidden="false">
+              <description>At the start of this character&apos;s turn, you may choose to either stay as Yune or transform into The Beast Within. Place The Beast Within as close to Yune&apos;s position as possible. The two characters share their Life Points, Will Points and Command Points (including any that have been lost), but The Beast Within cannot use Will Points or Command Points.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Kriegsmesser" hidden="false" id="7d3f-4b6f-607c-15f7">
+              <profiles>
+                <profile name="Kriegsmesser" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="b508-6a20-d9c4-513a">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">0&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-2</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed1e-4073-e450-4fff"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a96f-034e-74ce-3b23"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d66-5369-63af-eae8"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fdac-d0d4-7503-dd9d"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="The Beast Within" hidden="false" id="ede2-e331-114e-4cfe">
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="dc6d-8181-3935-1fd6" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Strigoi)" hidden="false" id="689a-9dec-4fd0-8758" targetId="a8e5-9f8a-d8f0-02c7" primary="false"/>
+            <categoryLink name="Unique" hidden="false" id="c5df-99f5-e396-98e7" targetId="d3e1-4616-c557-d958" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+            <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="The Beast Within" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="5fe8-e424-86b2-434e">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">3</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">19</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">3</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">1</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">50mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="The Beast Within" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="06f6-c952-e044-fd98">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">6</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">4</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">4</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">2</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Brave, Bulky Fear (-2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Moonliege" id="e929-b581-a8cc-f458" hidden="false">
+              <description>During deployment let youropponent know when the moon will be brightest. Choose either the first 3 rounds, or the remaining rounds. When the moon is brightest, every time a friendly character kills an enemy character when either are within line of sight, this character replenishes 1 Will Point.</description>
+            </rule>
+            <rule name="Violent Transformation" id="93b3-1a78-0fa0-72cf" hidden="false">
+              <description>At the start of this character&apos;s turn, you may choose to either stay as Yune or transform into The Beast Within. Place The Beast Within as close to Yune&apos;s position as possible. The two characters share their Life Points, Will Points and Command Points (including any that have been lost), but The Beast Within cannot use Will Points or Command Points.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Lupine Claws" hidden="false" id="0279-165a-b63f-6eea">
+              <profiles>
+                <profile name="Lupine Claws" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="739a-f4e9-84ea-208d">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">1&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+2</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b699-db9c-5a04-a945"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f613-10b3-2dce-8cad"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad06-f820-5fda-b39a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9ae-b774-ad24-3feb"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6cb1-9017-2933-e514" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Vlad Dracula" hidden="false" id="d6d4-e937-0c90-7946" targetId="69cd-421b-c3cf-b7c4" type="selectionEntry"/>
@@ -2790,9 +2938,7 @@ This may only be done if the Thrall has at least 4 Life Points remaining, and 
     <entryLink import="true" name="Strigoi Sluger" hidden="false" id="a7a0-8214-7b29-0c95" targetId="32e6-9701-a725-e421" type="selectionEntry"/>
     <entryLink import="true" name="Strigoi Jude" hidden="false" id="b4fc-5b6f-7163-bbae" targetId="d7d2-7acd-d1a6-6da5" type="selectionEntry"/>
     <entryLink import="true" name="Radu Basarab" hidden="false" id="64e8-616b-e101-fb91" type="selectionEntry" targetId="ec5c-d3ae-fa9c-e1e7"/>
-    <entryLink import="true" name="Yune Lobravym" hidden="false" id="70ff-d6a0-1b14-3049" type="selectionEntry" targetId="fda4-6526-0892-4b3c"/>
-    <entryLink import="true" name="Yune Lobravym" hidden="false" id="a584-8d80-cc32-0a8d" type="selectionEntry" targetId="956f-30be-dce7-44b3"/>
-    <entryLink import="true" name="The Beast Within" hidden="false" id="7ad8-7c34-ff98-cf8d" type="selectionEntry" targetId="ede2-e331-114e-4cfe"/>
+    <entryLink import="true" name="Yune Lobravym" hidden="false" id="a584-8d80-cc32-0a8d" type="selectionEntry" targetId="fda4-6526-0892-4b3c"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Thrall Weapon Selection" id="f852-d227-61b8-def6" hidden="false">
