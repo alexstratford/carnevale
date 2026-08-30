@@ -1499,6 +1499,117 @@ Friendly characters in line of sight within 3&quot; lose 1 Life Point and gain F
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Brine Shaman" hidden="false" id="b05a-b78d-f4b5-0e0c">
+          <costs>
+            <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="20"/>
+            <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+            <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Discipline Choice" hidden="false" id="10e3-5c43-eaa5-aeb2" type="selectionEntryGroup" targetId="6b0f-3d31-2e99-66c8"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Brine Shaman" typeId="bae0-c790-751d-d51b" typeName="Attributes" hidden="false" id="8827-2a09-5a13-afb3">
+              <characteristics>
+                <characteristic name="Actions" typeId="34e2-c88d-a598-4ae8">2</characteristic>
+                <characteristic name="Life" typeId="31ac-58c2-51eb-d503">16</characteristic>
+                <characteristic name="Will" typeId="327e-ffc1-2c57-b476">4</characteristic>
+                <characteristic name="Command" typeId="df00-2e98-5a44-876e">2</characteristic>
+                <characteristic name="Base Size" typeId="f3d7-629c-2937-da2d">40mm</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Brine Shaman" typeId="6ba8-3e9b-e9ec-4fc1" typeName="Statistics" hidden="false" id="c03e-84a4-3980-462e">
+              <characteristics>
+                <characteristic name="MOVE" typeId="926c-cb61-0860-4a75">4</characteristic>
+                <characteristic name="DEX." typeId="dd2a-10f4-717a-4bc1">3</characteristic>
+                <characteristic name="ATTACK" typeId="772d-9054-3e95-2611">3</characteristic>
+                <characteristic name="PROT." typeId="b01b-8d00-8a94-dfe8">2</characteristic>
+                <characteristic name="MIND" typeId="72c9-ec3f-8c3e-6edf">5</characteristic>
+                <characteristic name="Abilities" typeId="332e-5255-7c9b-115f">Bulky, Expert Grappler (2), Fear (-1), Mage (2), Water Creature</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Hero" hidden="false" id="8299-b300-7ceb-3188" targetId="79d4-9b8b-7f29-cba5" primary="true"/>
+            <categoryLink name="Faction (Rashaar)" hidden="false" id="caaf-c446-4ba3-a6a6" targetId="69fa-ba23-e7f2-3a6d" primary="false"/>
+            <categoryLink name="Discipline (Runes of Sovereignty)" hidden="false" id="2d4f-e117-9dc6-a19a" targetId="162f-6e00-290f-b3be" primary="false"/>
+            <categoryLink targetId="d3e1-4616-c557-d958" id="fe88-8dd4-10f6-1a47" primary="false" name="Unique"/>
+            <categoryLink targetId="6b0f-5a84-d5b9-15b6" id="d12f-6b9f-856a-6370" primary="false" name="Hydra"/>
+            <categoryLink targetId="f067-a302-b855-c50a" id="2d53-1085-2848-d3fc" primary="false" name="Monster"/>
+            <categoryLink targetId="9be3-8582-1a9a-6bc8" id="e4f3-d67c-b475-754c" primary="false" name="Discipline (Divinity)"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="{this} has more spells than they have Mage (X) and Expert Sorcerer (X) ranks." field="error">
+              <conditions>
+                <condition type="lessThan" value="-2" field="ef4a-6847-91c7-b1f8" scope="self" childId="entry" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Abyssal Guidance" id="5f2e-50cd-55f0-90f9" hidden="false">
+              <description>*PULSE Command ability*
+Pick a different friendly character in Water with Water Creature within 8&quot;. Remove that character and place them anywhere in Water within 8&quot; of this character. This placement does not cause Attacks of Opportunity. </description>
+            </rule>
+            <rule name="Unending Whispers" id="05df-29ad-1433-ddef" hidden="false">
+              <description>Enemy characters within 6&quot; have -1 MIND. In addition, enemy characters are always treated as having a STUN counter while in base contact with this character. </description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Encrusted Stave" hidden="false" id="867d-fe19-393a-c732">
+              <profiles>
+                <profile name="Encrusted Stave" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="8ad8-bca0-b13b-cae5">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">2&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">-</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">-</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="12a1-8751-3127-9ebb"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a84e-480c-ddba-25f6"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gutteral Maw" hidden="false" id="65cf-0f9a-6725-0325">
+              <profiles>
+                <profile name="Gutteral Maw" typeId="8753-fb9c-9080-5b6d" typeName="Weapon" hidden="false" id="38cc-7250-28fa-1060">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3cfb-86e0-287b-a76d">-&quot;</characteristic>
+                    <characteristic name="Evasion" typeId="5f7c-5acd-3b4e-c9a7">+1</characteristic>
+                    <characteristic name="Damage" typeId="b6ca-2a6b-06bb-8095">+2</characteristic>
+                    <characteristic name="Penetration" typeId="83ec-d4d3-8451-aaef">-</characteristic>
+                    <characteristic name="Abilities" typeId="2afb-1ec3-9d1e-cf96">Aquatic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6534-5325-018c-6ead"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48e9-530e-6bf2-28a7"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Noxious Brine" hidden="false" id="f174-20c0-02c5-c5f2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fdc8-f6b4-d61b-4114" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="b5b3-aa8b-4d9c-5673" value="0"/>
+                <cost name="Spell slots" typeId="ef4a-6847-91c7-b1f8" value="0"/>
+                <cost name="Gondola Allowance" typeId="d185-073f-5416-c82f" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Boiling Veins" typeId="cf20-c8a5-e631-dd24" typeName="Spells" hidden="false" id="9b8c-8ecd-c3ab-06c0">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="3fdf-3bab-154b-7d44">1</characteristic>
+                    <characteristic name="Difficulty" typeId="d6be-25b1-beed-0e71">6</characteristic>
+                    <characteristic name="Effect" typeId="4c0e-daf3-4c85-8b30">Place the Blast marker on solid ground within 6&quot; and in line of sight. All enemy characters at least partially under the blast template lose *2 Life Points*. The Area under the Blast marker is treated as water. Remove the Blast marker at the end of the round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Henchman" hidden="false" id="8225-99eb-ed6f-2ab4">
@@ -3259,6 +3370,7 @@ After you complete this character&apos;s activation, place each of its remainin
     </entryLink>
     <entryLink import="true" name="Encrusted Squire" hidden="false" id="a8b3-c83e-2a6d-29f6" targetId="0dff-fbe2-b091-c806" type="selectionEntry"/>
     <entryLink import="true" name="The Drowned Nun" hidden="false" id="babb-e950-d7af-026d" type="selectionEntry" targetId="1dff-b31f-0575-01c2"/>
+    <entryLink import="true" name="Brine Shaman" hidden="false" id="79c1-ffb6-f869-7841" type="selectionEntry" targetId="b05a-b78d-f4b5-0e0c"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Gifted" id="5b2b-c198-5d98-b3e7" targetId="9a88-2a78-d055-70b8" importRootEntries="true"/>
